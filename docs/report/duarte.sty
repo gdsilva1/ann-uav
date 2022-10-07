@@ -1,0 +1,128 @@
+\ProvidesPackage{duarte}
+% Baseado na ABNT
+
+% ============================
+% PACOTES ESSENCIAIS
+\usepackage{amsmath,
+            amsfonts,
+            amssymb,
+            amsthm}
+\usepackage[brazil]{babel}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[
+    colorlinks=true,                   
+    allcolors=blue
+]{hyperref}
+\usepackage{booktabs}
+% ----------------------------
+
+% ============================
+% PACOTES OPCIONAIS
+\usepackage[locale=DE]{siunitx}
+\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{cancel}
+\usepackage{multicol}
+\usepackage{tikz, pgf}
+    \tikzset{>=stealth}
+\usepackage{xcolor}
+\usepackage{fancybox}
+\usepackage{physics}
+\usepackage{authblk}
+% \usepackage{mathtools}
+\usepackage[
+    style=abnt,
+    % ittitles,
+    justify,
+    noslsn,
+    repeatfields,
+    % backref
+]{biblatex}
+\addbibresource{ref.bib}
+\usepackage{csquotes}
+% ----------------------------
+
+% ============================
+% FORMATAÇÃO DA PÁGINA
+\usepackage[
+    left=3cm,
+    right=2cm,
+    top=3cm,
+    bottom=2cm
+]{geometry}
+\usepackage{fancyhdr}
+\fancyhead[L]{\titulo} 
+\setlength{\headheight}{14pt}
+\usepackage{titlesec}
+\titleformat{\chapter}
+            {\sffamily\bfseries\normalsize}
+            {\makebox[1.25cm][l]{\thechapter}}
+            {0pt}
+            {\sffamily\bfseries\normalsize\MakeUppercase}
+\titleformat{\section}
+            {\sffamily\bfseries\normalsize}
+            {\makebox[1.25cm][l]{\thesection}}
+            {0pt}
+            {\sffamily\bfseries\normalsize}  
+\titleformat{\subsection}
+            {\sffamily\itshape\normalsize}
+            {\makebox[1.25cm][l]{\thesubsection}}
+            {0pt}
+            {\sffamily\itshape\normalsize}  
+\titleformat{\subsubsection}
+            {\sffamily\normalsize}
+            {\makebox[1.25cm][l]{\thesubsubsection}}
+            {0pt}
+            {\sffamily\normalsize}
+\titlespacing{\chapter}{0em}{0.5em}{0.5em}
+\titlespacing{\section}{0em}{0.5em}{0.5em}
+\titlespacing{\subsection}{0em}{0.5em}{0.5em}
+\titlespacing{\subsubsection}{0em}{0.5em}{0.5em}
+\usepackage{setspace}
+    \setstretch{1.50}
+\usepackage[nottoc]{tocbibind}
+\usepackage[
+    labelsep=endash,
+    labelfont={bf,sf},
+    justification=centering
+]{caption}
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\counterwithin{figure}{chapter}
+\counterwithin{equation}{chapter}
+\counterwithin{table}{chapter}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+% ----------------------------
+
+% ============================
+% FONTE DO TEXTO
+\usepackage[semibold]{sourcesanspro}
+% \usepackage[partial=upright]{unicode-math}
+% \usepackage{fontspec}
+% \setmathfont{STIXTwoMath-Regular.otf}[
+%     Path=./fonts/STIXTwo/,
+%     Extension=.otf,
+%     StylisticSet={01,08,10}
+% ]
+% \setmainfont{STIXTwoText}[
+%     Path=./fonts/STIXTwo/,
+%     Extension=.otf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Bold,
+%     ItalicFont=*-Italic,
+%     BoldItalicFont=*-BoldItalic
+% ]
+% \setsansfont{SourceSans3}[
+%     Path=./fonts/SourceSans/,
+%     Extension=.otf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Semibold,
+%     ItalicFont=*-It,
+%     BoldItalicFont=*-SemiboldIt,
+% ] 
+% ----------------------------
+
+%\thispagestyle{empty} retira a numeracao da pagina
