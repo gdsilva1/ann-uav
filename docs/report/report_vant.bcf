@@ -2426,6 +2426,11 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">ref.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">de2020method</bcf:citekey>
+    <bcf:citekey order="2">de2020method</bcf:citekey>
+    <bcf:citekey order="3">dadrasjavan2019automatic</bcf:citekey>
+    <bcf:citekey order="4">de2020method</bcf:citekey>
+    <bcf:citekey order="5">dadrasjavan2019automatic</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
