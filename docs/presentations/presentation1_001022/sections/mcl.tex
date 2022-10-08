@@ -4,13 +4,13 @@
 
 \begin{frame}{MCL Algorithm}
     
-    {\scshape Goal:} localizing the position of the UAV at a given instant of time.
+    {\scshape Goal:} localizing the position of the UAV.
 
     \begin{block}{How does it work?}
         \begin{itemize}
-            \item Estimates its position and orientation as it moves;
-            \item the first interaction assumes a uniform distribution;
-            \item the later ones gets more precise as the UAV moves.
+            \item Estimates its position and orientation;
+            \item first interaction: uniform distribution;
+            \item the later ones gets more precise.
         \end{itemize}
     \end{block}
 
@@ -46,7 +46,7 @@
                 \begin{itemize}
                     \item initial position is unknown;
                     \item particles uniformly distributed;
-                    \item more particles needed, less performance.
+                    \item less performance.
                 \end{itemize}
             \end{block}
         \end{column}
@@ -56,7 +56,7 @@
                 \begin{itemize}
                     \item initial location is given;
                     \item more particles acummulated at the initial pose;
-                    \item less number of particles needed, more performance.
+                    \item more performance.
                 \end{itemize}
             \end{block}
         \end{column}
