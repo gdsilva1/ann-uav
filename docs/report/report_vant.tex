@@ -5,27 +5,61 @@
 ]{report}
 \usepackage{duarte}
 \usepackage{blindtext}
-
-% ============================
-% DADOS
-\author{\small Gabriel Duarte da Silva
-(RA: 182054047) \\ gd.silva@unesp.br}
-\affil{UNESP --  Universidade Estadual Paulista \\
-       Faculdade de Engenharia de Ilha Solteira \\
-       Departamento de Engenharia Mecânica      \\
-       Disciplina}
-\title{Modelo de Documento \LaTeX}
-\date{\today}
 % ----------------------------
 
 \begin{document}
 
 % ============================
+% CAPA
+\input{sections/pre/capa}
+% ----------------------------
+
+% ============================
+% RELATÓRIO DE PESQUISA
+\setcounter{page}{1}
+\pagenumbering{roman}
+\pagestyle{empty}
+\input{sections/pre/research}
+% ----------------------------
+
+% ============================
+% LISTA DE FIGURAS
+% \renewcommand{\listfigurename}{\hfill LIST OF FIGURES\hfill}
+\listoffigures
+\newpage
+% ----------------------------
+
+% ============================
+% LISTA DE TABELAS
+% \renewcommand{\listtablename}{\hfill LIST OF TABLES\hfill}
+\listoftables
+\newpage
+% ----------------------------
+
+% ============================
+% SUMÁRIO
+% \renewcommand{\contentsname}{\hfill CONTENTS\hfill}
+\tableofcontents
+\newpage
+% ----------------------------
+
+% ============================
+% FORMATAÇÕES EXTRAS
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\pagestyle{fancy}
+% ----------------------------
+
+% ============================
 % SEÇÕES
-\input{sections/intro}
+
 % ----------------------------
 
 % ============================
 % REFERÊNCIAS
 \printbibliography
+% ----------------------------
+
+% ============================
+% RELATÓRIO DE PESQUISA
 \end{document}

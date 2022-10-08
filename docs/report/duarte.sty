@@ -7,7 +7,7 @@
             amsfonts,
             amssymb,
             amsthm}
-\usepackage[brazil]{babel}
+\usepackage[main=english, brazil]{babel}
 \usepackage{microtype}
 \usepackage{graphicx}
 \usepackage{float}
@@ -53,23 +53,27 @@
     bottom=2cm
 ]{geometry}
 \usepackage{fancyhdr}
-\fancyhead[L]{\titulo} 
+\fancyhead[LO,RE]{\thepage}
+\fancyhead[RO,LE]{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 \setlength{\headheight}{14pt}
 \usepackage{titlesec}
 \titleformat{\chapter}
-            {\sffamily\bfseries\normalsize}
+            {\sffamily\bfseries\Large}
             {\makebox[1.25cm][l]{\thechapter}}
             {0pt}
-            {\sffamily\bfseries\normalsize\MakeUppercase}
+            {\sffamily\bfseries\Large\MakeUppercase}
 \titleformat{\section}
-            {\sffamily\bfseries\normalsize}
+            {\sffamily\bfseries\large}
             {\makebox[1.25cm][l]{\thesection}}
             {0pt}
-            {\sffamily\bfseries\normalsize}  
+            {\sffamily\bfseries\large}  
 \titleformat{\subsection}
             {\sffamily\itshape\normalsize}
             {\makebox[1.25cm][l]{\thesubsection}}
-            {0pt}
+            {0pt}f
             {\sffamily\itshape\normalsize}  
 \titleformat{\subsubsection}
             {\sffamily\normalsize}
@@ -84,9 +88,9 @@
     \setstretch{1.50}
 \usepackage[nottoc]{tocbibind}
 \usepackage[
-    labelsep=endash,
+    labelsep=period,
     labelfont={bf,sf},
-    justification=centering
+    justification=justified
 ]{caption}
 \usepackage{indentfirst}
 \setlength{\parindent}{1.25cm}
