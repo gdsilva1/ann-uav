@@ -13,9 +13,13 @@
 \usepackage{float}
 \usepackage[
     colorlinks=true,                   
-    allcolors=blue
+    allcolors=blue!50!black
 ]{hyperref}
 \usepackage{booktabs}
+\usepackage[
+    capitalise,
+    nameinlink
+]{cleveref}
 % ----------------------------
 
 % ============================
@@ -62,10 +66,10 @@
 \setlength{\headheight}{14pt}
 \usepackage{titlesec}
 \titleformat{\chapter}
-            {\sffamily\bfseries\Large}
+            {\sffamily\bfseries\large}
             {\makebox[1.25cm][l]{\thechapter}}
             {0pt}
-            {\sffamily\bfseries\Large\MakeUppercase}
+            {\sffamily\bfseries\large\MakeUppercase}
 \titleformat{\section}
             {\sffamily\bfseries\large}
             {\makebox[1.25cm][l]{\thesection}}
@@ -105,6 +109,7 @@
 % ============================
 % FONTE DO TEXTO
 \usepackage[semibold, proportional]{sourcesanspro}
+% \usepackage{mlmodern}
 % \usepackage[partial=upright]{unicode-math}
 % \usepackage{fontspec}
 % \setmathfont{STIXTwoMath-Regular.otf}[

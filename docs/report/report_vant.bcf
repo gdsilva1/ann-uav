@@ -2427,9 +2427,19 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">nex2014uav</bcf:citekey>
-    <bcf:citekey order="2">sushant2017localization</bcf:citekey>
-    <bcf:citekey order="3">nex2014uav</bcf:citekey>
-    <bcf:citekey order="4">sushant2017localization</bcf:citekey>
+    <bcf:citekey order="2">abade2016construccao</bcf:citekey>
+    <bcf:citekey order="3">abade2016construccao</bcf:citekey>
+    <bcf:citekey order="4">otake2017produtos</bcf:citekey>
+    <bcf:citekey order="5">otake2017produtos</bcf:citekey>
+    <bcf:citekey order="6">dadrasjavan2019automatic</bcf:citekey>
+    <bcf:citekey order="7">dadrasjavan2019automatic</bcf:citekey>
+    <bcf:citekey order="8">sushant2017localization</bcf:citekey>
+    <bcf:citekey order="9">sushant2017localization</bcf:citekey>
+    <bcf:citekey order="10">nex2014uav</bcf:citekey>
+    <bcf:citekey order="11">abade2016construccao</bcf:citekey>
+    <bcf:citekey order="12">otake2017produtos</bcf:citekey>
+    <bcf:citekey order="13">dadrasjavan2019automatic</bcf:citekey>
+    <bcf:citekey order="14">sushant2017localization</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
