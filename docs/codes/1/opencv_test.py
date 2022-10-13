@@ -1,4 +1,5 @@
 import cv2 as cv
+import numpy as np
 
 
 # LOAD THE IMAGE
@@ -12,9 +13,14 @@ img = cv.imread('railway3.png', 0)
 # be black or white
 # Third parameter is the maximum value of a calor (remeber RGB scale)
 # Fourth parameter set the threshhold type
-thresh, img_bi = cv.threshold(img, 120, 255, cv.THRESH_BINARY)
+# thresh, img_bi = cv.threshold(img, 80, 255, cv.THRESH_BINARY)
+
+with open('railway3.txt', 'w') as f:
+    with np.printoptions(threshold=np.inf):
+        f.write(f'{img}')
 
 # SHOWING THE IMAGE
-cv.imshow('Display Windows', img_bi)
 # cv.imshow('Display Windows', img)
-k = cv.waitKey(0)
+# k = cv.waitKey(0)
+# cv.imshow('Display Windows', img_bi)
+# k = cv.waitKey(0)
