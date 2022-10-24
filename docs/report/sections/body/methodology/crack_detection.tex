@@ -1,16 +1,6 @@
-\section{\gls*{uav} Localization}
+\section{Crack Detection}\label{sec:crack_detection}
 
-There are three main ways to detect cracks: graphical inspection, non-destructive testing technologies and shuddering based global methods \citep{addagatlamodern}. The \gls*{uav} usage for this purpose fits in the first way, i.e., graphical inspection.
-
-To have a complete approach, it is needed to localize the \gls*{uav} initially. \citet{sushant2017localization} implemented a way to do it based on \gls*{mcl} method through MATLAB, where a three element vector (\(x,y,\theta\)) is provided giving the initial pose.
-%
-\begin{figure}[H]
-    \centering
-    \includegraphics{figures/uav_localization.pdf}
-    \caption{State representation of \gls*{uav}}
-\end{figure}
-
-To assume the first iteraction to detect the \gls*{uav} position, it's needed either to give the initial coordinates or let the algorithm detect where it might be.
-The later one is less performatic due the necessity to resample the particles more times to localize its pose.
-
-Localized the \gls*{uav}, the algorithm will verify when it'll need to resample the particles once more. This way, \emph{UpdateThreshhold} MATLAB function defines the minimum amount of change required in the three element vector to trigger the update, i.e., if \(x\), \(y\) or \(\theta\) changes by more than this minimum defined amount, an update will be triggered. The \emph{ResamplingInterval} function defines the number of updates necessary for the particle resampling, because not all variation means a real variation in the \gls*{uav} pose, they just might be some random noises.
+\begin{align}
+    A \oplus B &= \{z \,|\, (B')_z \cap A \neq \emptyset\} \\
+    A \ominus B &= \{z \,|\, B_z \subseteq A\}
+\end{align}
