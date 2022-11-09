@@ -1,0 +1,52 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Abade et~al.]{Abade, de~Campos, Porto, Coelho, Sousa \harvardand\
+  Nespolo}{n.d.}{abade_construcao_nodate}
+Abade, A., de~Campos, M.~D., Porto, L.~F., Coelho, Y. d.~F., Sousa, Y. d.~M.
+  \harvardand\ Nespolo, J.~P.  \harvardyearleft n.d.\harvardyearright , `A
+  construção otimizada de um drone para aplicações na agricultura e
+  pecuária de precisão.',  p.~10.
+
+\harvarditem[Dadrasjavan et~al.]{Dadrasjavan, Zarrinpanjeh \harvardand\
+  Ameri}{n.d.}{dadrasjavan_automatic_2019}
+Dadrasjavan, F., Zarrinpanjeh, N. \harvardand\ Ameri, A.  \harvardyearleft
+  n.d.\harvardyearright , `Automatic {{Crack Detection}} of {{Road Pavement
+  Based}} on {{Aerial UAV Imagery}}'.
+
+\harvarditem[LeCun et~al.]{LeCun, Bengio \harvardand\
+  Hinton}{n.d.}{lecun_deep_2015}
+LeCun, Y., Bengio, Y. \harvardand\ Hinton, G.  \harvardyearleft
+  n.d.\harvardyearright , `Deep learning',  {\bf 521}(7553),~436--444.
+
+\harvarditem{Lesiak}{n.d.}{lesiak_inspection_2020}
+Lesiak, P.  \harvardyearleft n.d.\harvardyearright , `Inspection and
+  {{Maintenance}} of {{Railway Infrastructure}} with the {{Use}} of {{Unmanned
+  Aerial Vehicles}}',  {\bf 64}(188),~115--127.
+
+\harvarditem{Mundrey}{n.d.}{mundrey_railway_2010}
+Mundrey, J.  \harvardyearleft n.d.\harvardyearright , {\em Railway {{Track
+  Engineering}}}, Vol.~1, 4 edn, {Tata McGraw-Hill}.
+
+\harvarditem{Nex \harvardand\ Remondino}{n.d.}{nex_uav_2014}
+Nex, F. \harvardand\ Remondino, F.  \harvardyearleft n.d.\harvardyearright ,
+  `{{UAV}} for {{3D}} mapping applications: A review',  {\bf 6}(1),~1--15.
+
+\harvarditem{Otake}{n.d.}{otake_produtos_nodate}
+Otake, V.~S.  \harvardyearleft n.d.\harvardyearright , `Produtos cartǵráficos
+  gerados a partir de drones e aplicações na agricultura',  p.~20.
+
+\harvarditem{{Prashanth Addagatla} \harvardand\ {G. Koteshwar
+  Rao}}{n.d.}{prashanth_addagatla_modern_nodate}
+{Prashanth Addagatla} \harvardand\ {G. Koteshwar Rao}  \harvardyearleft
+  n.d.\harvardyearright , `A {{Modern Method}} for {{Detecting Cracks In
+  Railway Tracks By The Efficient Utilization Of LDR And LED System}}'.
+
+\harvarditem[Sushant et~al.]{Sushant, Anand, James, Aravind \harvardand\
+  Narayanan}{n.d.}{sushant_localization_2017}
+Sushant, S., Anand, S., James, T., Aravind, V. \harvardand\ Narayanan, G.
+  \harvardyearleft n.d.\harvardyearright , Localization of an unmanned aerial
+  vehicle for crack detection in railway tracks, {\em in} `2017 {{International
+  Conference}} on {{Advances}} in {{Computing}}, {{Communications}} and
+  {{Informatics}} ({{ICACCI}})', {IEEE}, pp.~1360--1365.
+
+\end{thebibliography}
