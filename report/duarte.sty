@@ -12,7 +12,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage[
-    colorlinks=true,                   
+    colorlinks=true,
     allcolors=blue!50!black
 ]{hyperref}
 \usepackage{booktabs}
@@ -104,14 +104,14 @@
 
 % ============================
 % FONTE DO TEXTO
-\renewcommand{\familydefault}{\rmdefault}
+% \renewcommand{\familydefault}{\rmdefault}
 \usepackage[partial=upright]{unicode-math}
 \usepackage{fontspec}
-\setmathfont{STIXTwoMath-Regular.otf}[
-    Path=./fonts/STIXTwo/,
-    Extension=.otf,
-    StylisticSet={01,08,10}
-]
+% \setmathfont{STIXTwoMath-Regular.otf}[
+%     Path=./fonts/STIXTwo/,
+%     Extension=.otf,
+%     StylisticSet={01,08,10}
+% ]
 \setmainfont{STIXTwoText}[
     Path=./fonts/STIXTwo/,
     Extension=.otf,
@@ -120,14 +120,16 @@
     ItalicFont=*-Italic,
     BoldItalicFont=*-BoldItalic
 ]
-\setsansfont{SourceSans3}[
-    Path=./fonts/SourceSans/,
-    Extension=.otf,
-    UprightFont=*-Regular,
-    BoldFont=*-Semibold,
-    ItalicFont=*-It,
-    BoldItalicFont=*-SemiboldIt,
-]
+\setsansfont{Tex Gyre Heros}
+% \setsansfont{SourceSans3}[
+%     Path=./fonts/SourceSans/,
+%     Extension=.otf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Semibold,
+%     ItalicFont=*-It,
+%     BoldItalicFont=*-SemiboldIt,
+% ]
+
 % ----------------------------
 
 %\thispagestyle{empty} retira a numeracao da pagina

@@ -2,82 +2,65 @@
 
 % ============================
 % CORES
-\definecolor{cor}{rgb}{1,1,1}
+\definecolor{cor}{HTML}{0b2d39}
 \definecolor{azulunesp}{RGB}{0, 159, 224}
 \definecolor{vermelho}{rgb}{0.34, 0.01, 0.1}
 % ----------------------------
 
 % ============================
 % BASE
-% \useoutertheme{infolines}
+\usetheme{Madrid}
+\setbeamertemplate{title page}[default][left]
+\setbeamertemplate{blocks}[default]
 \useinnertheme{circles}
 % ----------------------------
 
 % ============================
 % CONFIGURAÇÃO
 % Cor
-\setbeamercolor{normal text}{fg=white, bg=black}
-\setbeamercolor{title}{fg=cor, bg=black}
-\setbeamercolor{frametitle}{bg=black, fg=cor}
-\setbeamercolor{structure}{fg=cor, bg=cor!50}
-\setbeamercolor{block title}{fg=cor, bg=black!85}
-\setbeamercolor{block body}{fg=white, bg=black!93}
-\setbeamercolor{block title example}{fg=black, bg=black!50!green}
-\setbeamercolor{block body example}{fg=white, bg=black!90!green}
-\setbeamercolor{block title alerted}{fg=black, bg=black!50!red}
-\setbeamercolor{block body alerted}{fg=white, bg=black!90!red}
-\setbeamercolor{section in head/foot}{fg=white, bg=black!93}
-\setbeamercolor{subsection in head/foot}{fg=white, bg=black!90}
-\setbeamercolor{author in head/foot}{fg=white, bg=black!93}
-\setbeamercolor{title in head/foot}{fg=white, bg=black!90}
-\setbeamercolor{date in head/foot}{fg=white, bg=black!87}
-\setbeamercolor{section number projected}{fg=black, bg=cor}
-\setbeamercolor{lower separation line head}{bg=white}
-% Tamanho                                                     
-% \setbeamersize{
-%     text margin left=20mm,
-%     text margin right=20mm,
-% }
-%Fonte                                                        
+\usecolortheme[named=cor]{structure}
+\setbeamercolor{background canvas}{bg=black!10}
+\setbeamercolor{block body}{bg=black!15}
+\setbeamercolor{enumerate item}{bg=black!10}
+
+% Tamanho
+\setbeamersize{
+    text margin left=15mm,
+    text margin right=15mm,
+}
+
+% Fonte
 \usefonttheme{serif}
-\setbeamerfont{footline}{series=\sffamily\bfseries}
-\setbeamerfont{headline}{series=\sffamily\bfseries}
-\setbeamerfont{title}{series=\sffamily\bfseries}
-\setbeamerfont{author}{series=\sffamily}
-\setbeamerfont{date}{series=\sffamily}
-\setbeamerfont{frametitle}{series=\sffamily\bfseries}
-\setbeamerfont{block title}{series=\sffamily\bfseries}  
-\setbeamerfont{section in toc}{series=\sffamily\bfseries}  
-\setbeamerfont{subsection in toc}{series=\sffamily\bfseries}
-\setbeamerfont{subsubsection in toc}{series=\sffamily\bfseries}
-\setbeamerfont{section number projected}{series=\sffamily\bfseries}
-\setbeamerfont{subsection number projected}{series=\sffamily\bfseries}
-\setbeamerfont{subsubsection number projected}{series=\sffamily\bfseries}
+\setbeamerfont{title}{series=\scshape\bfseries}
+\setbeamerfont{frametitle}{series=\scshape\bfseries}
+\setbeamerfont{block title}{series=\bfseries}
+\setbeamerfont{section in toc}{series=\bfseries}
+
 % Estrutura
-\setbeamertemplate{caption}[numbered]                                   
-\setbeamertemplate{navigation symbols}{}                                
-% \setbeamertemplate{background}{\tikz[overlay,remember picture]          
-%     \node[opacity=0.04] at (12cm, -5.2cm){\includegraphics[scale=0.4]   
-%     {figures/logos/unesp_acessorio2.eps}};}                             
-\counterwithin{figure}{section}                                         
-\counterwithin{table}{section}                                          
-\counterwithin{equation}{section}                                       
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{navigation symbols}{}
+% \setbeamertemplate{background}{\tikz[overlay,remember picture]
+%     \node[opacity=0.04] at (12cm, -5.2cm){\includegraphics[scale=0.4]
+%     {figures/logos/unesp_acessorio2.eps}};}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+\counterwithin{equation}{section}
 % ----------------------------
 
 % ============================
 % CONFIGURAÇÕES EXTRAS
-\AtBeginSection[]                                                       
-{                                                                       
-    \begin{frame}                                                       
-        \tableofcontents[currentsection]                                 
-    \end{frame}                                                         
-}                                                                       
-% \AtBeginSubsection[]                                                  
-% {                                                                     
-%     \begin{frame}                                                     
-%         \tableofcontents[currentsubsection]                            
-%     \end{frame}                                                       
-% }                                                                     
+% \AtBeginSection[]
+% {
+%     \begin{frame}
+%         \tableofcontents[currentsection]
+%     \end{frame}
+% }
+% \AtBeginSubsection[]
+% {
+%     \begin{frame}
+%         \tableofcontents[currentsubsection]
+%     \end{frame}
+% }
 % ----------------------------
 
 % ============================
@@ -87,8 +70,8 @@
 	amsfonts,
 	amssymb,
 	amsthm
-}                                                     
-\usepackage[english]{babel}
+}
+\usepackage[brazil]{babel}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{booktabs}
@@ -100,35 +83,36 @@
     \sisetup{locale=DE}
 \usepackage{cancel}
 \usepackage{tikz, pgf}
-    \tikzset{>=stealth}
-\usepackage{physics}
+\usepackage[italicdiff]{physics}
 \usepackage{mathtools}
-%\usepackage{transparent}                                               
+\usepackage{array}
+%\usepackage{transparent}
 % ----------------------------
 
 % ============================
-% FONTES DO TEXTO
-\usepackage[partial=upright]{unicode-math}                              
-\usepackage{fontspec} % Usar com XeLaTeX/LuaLaTeX                       
-\setmathfont{STIXTwoMath-Regular.otf}[                                  
-    Path=./fonts/STIXTwo/,                                              
-    Extension=.otf,                                                     
-    StylisticSet={01,08,10}                                             
-]                                                                       
-\setmainfont{STIXTwoText}[
+% % FONTES DO TEXTO
+\usepackage[partial=upright]{unicode-math}
+\usepackage{fontspec} % Usar com XeLaTeX/LuaLaTeX
+\setmathfont{STIXTwoMath-Regular.otf}[
     Path=./fonts/STIXTwo/,
     Extension=.otf,
-    UprightFont=*-Medium,
-    BoldFont=*-Bold,
-    ItalicFont=*-MediumItalic,
-    BoldItalicFont=*-BoldItalic
+    StylisticSet={01,08,10}
 ]
-\setsansfont{SourceSans3}[
+% \setmainfont{STIXTwoText}[
+%     Path=./fonts/STIXTwo/,
+%     Extension=.otf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Bold,
+%     ItalicFont=*-Italic,
+%     BoldItalicFont=*-BoldItalic
+% ]
+\setmainfont{SourceSans3}[
     Path=./fonts/SourceSans/,
     Extension=.otf,
     UprightFont=*-Regular,
-    BoldFont=*-Semibold,
+    BoldFont=*-Bold,
     ItalicFont=*-It,
-    BoldItalicFont=*-SemiboldIt
+    BoldItalicFont=*-Bold,
+    Numbers=OldStyle
 ]
 % ----------------------------
