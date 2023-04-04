@@ -36,10 +36,12 @@
 \usepackage{physics}
 \usepackage{authblk}
 \usepackage[
-    numbers,
-    round
+    % numbers,
+    % round
+    % super
 ]{natbib}
-\usepackage[acronym]{glossaries}
+\usepackage[automake]{glossaries-extra}
+\makeglossaries
 % ----------------------------
 
 % ============================
@@ -51,7 +53,8 @@
     bottom=2.5cm
 ]{geometry}
 \usepackage{fancyhdr}
-\setlength{\headheight}{14.5pt}
+\setlength{\headheight}{15pt}
+\addtolength{\topmargin}{-0.5pt}
 \fancyhead[LO,RE]{\thepage}
 \fancyhead[RO,LE]{}
 \fancyfoot{}
@@ -136,8 +139,15 @@
 
 % ============================
 % ACRONIMOS
-\newacronym{uav}{UAV}{Unnamed Aerial Vehicle}
-\newacronym{svm}{SVM}{Support Vector Machine}
-\newacronym{mcl}{MCL}{Monte Carlo Localization}
-\newacronym{ai}{AI}{Artificial Intelligence}
-\newacronym{ml}{ML}{Machine Learning}
+\setabbreviationstyle{long-short}
+\newabbreviation{uav}{UAV}{Unnamed Aerial Vehicle}
+\newabbreviation{svm}{SVM}{Support Vector Machine}
+\newabbreviation{mcl}{MCL}{Monte Carlo Localization}
+\newabbreviation{ai}{AI}{Artificial Intelligence}
+\newabbreviation{ml}{ML}{Machine Learning}
+\newabbreviation{dl}{DL}{Deep Learning}
+\newabbreviation{shm}{SHM}{Structural Health Monitoring}
+\newabbreviation{nn}{NN}{Neural Network}
+\newabbreviation{iot}{IoT}{Internet of Things}
+\newabbreviation{bd}{BD}{Big Data}
+

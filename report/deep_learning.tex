@@ -7,7 +7,6 @@
 \usepackage{duarte}
 \usepackage{blindtext}
 % ----------------------------
-
 \begin{document}
 
 % ============================
@@ -25,14 +24,20 @@
 
 % ============================
 % LISTA DE FIGURAS
-{\sffamily\listoffigures}
-\newpage
+% {\sffamily\listoffigures}
+% \newpage
 % ----------------------------
 
 % ============================
 % LISTA DE TABELAS
-{\sffamily\listoftables}
-\newpage
+% {\sffamily\listoftables}
+% \newpage
+% ----------------------------
+
+% ============================
+% LISTA DE ABREVIAÇÕES
+% \printglossary
+% \newpage
 % ----------------------------
 
 % ============================
@@ -51,14 +56,23 @@
 % ============================
 % SEÇÕES
 \input{sections/body/intro/intro.tex}
+
+\input{sections/body/methodology/ai.tex}
 % ----------------------------
 
 % ============================
 % REFERÊNCIAS
 % \printbibliography
-\bibliographystyle{agsm}
+\bibliographystyle{chicago}
 \bibliography{ref}
 % ----------------------------
+
+% ============================
+% APÊNDICE
+\appendix
+\titleformat{\chapter}{\sffamily\centering\bfseries\large}%
+{APPENDIX \thechapter \,--}{1mm}{\large}
+\input{sections/pos/linear_algebra.tex}
 
 % ============================
 % RELATÓRIO DE PESQUISA
