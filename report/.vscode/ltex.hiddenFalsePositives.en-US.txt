@@ -1,0 +1,2 @@
+{"rule":"AI","sentence":"^\\QGetting into the smart systems application, the use of ai is widely used to shm, which is heavily used in the aerospace and civil fields, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"PASSIVE_VOICE","sentence":"^\\QGetting into the smart systems application, the use of ai is widely used to shm, which is heavily used in the aerospace and civil fields, \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
