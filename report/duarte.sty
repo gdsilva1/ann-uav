@@ -1,11 +1,12 @@
 \ProvidesPackage{duarte}
-% Baseado na ABNT
+
+% \usepackage[neoeuler]{fontsetup}
 
 % ============================
 % PACOTES ESSENCIAIS
 \usepackage{amsmath,
             amsfonts,
-            amssymb,
+            % amssymb,
             amsthm}
 \usepackage[main=english, brazil]{babel}
 \usepackage{microtype}
@@ -36,13 +37,13 @@
 \usepackage{physics}
 \usepackage{authblk}
 \usepackage[
-    % numbers,
+    numbers
     % round
     % super
 ]{natbib}
 \usepackage[automake]{glossaries-extra}
 \makeglossaries
-% \renewcommand{\sffamily}{\rm}
+
 % ----------------------------
 
 % ============================
@@ -108,8 +109,11 @@
 
 % ============================
 % FONTE DO TEXTO
-\usepackage[partial=upright]{unicode-math}
+% \renewcommand{\sffamily}{\rm}
+
 \usepackage{fontspec}
+\usepackage[partial=upright]{unicode-math}
+
 \setmathfont{STIXTwoMath-Regular.otf}[
     Path=./fonts/STIXTwo/,
     Extension=.otf,
@@ -123,15 +127,25 @@
     ItalicFont=*-Italic,
     BoldItalicFont=*-BoldItalic,
 ]
-\setsansfont{SourceSans3}[
-    Path=./fonts/SourceSans/,
+\setsansfont{Inter}[
+    Path=./fonts/Inter/,
     Extension=.otf,
     UprightFont=*-Regular,
-    BoldFont=*-Semibold,
-    ItalicFont=*-It,
-    BoldItalicFont=*-SemiboldIt,
-    Numbers=Proportional,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic,
+    Scale=0.89,
+    % StylisticSet={03,04}
 ]
+% \setsansfont{SourceSans3}[
+%     Path=./fonts/SourceSans/,
+%     Extension=.otf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Semibold,
+%     ItalicFont=*-It,
+%     BoldItalicFont=*-SemiboldIt,
+%     Numbers=Proportional,
+% ]
 
 % ----------------------------
 
