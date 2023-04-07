@@ -1,12 +1,9 @@
 \ProvidesPackage{duarte}
-
-% \usepackage[neoeuler]{fontsetup}
-
 % ============================
 % PACOTES ESSENCIAIS
 \usepackage{amsmath,
             amsfonts,
-            % amssymb,
+            amssymb,
             amsthm}
 \usepackage[main=english, brazil]{babel}
 \usepackage{microtype}
@@ -36,14 +33,17 @@
 \usepackage{fancybox}
 \usepackage{physics}
 \usepackage{authblk}
+\usepackage{blindtext}
 \usepackage[
-    numbers
-    % round
+    % authoryear
+    numbers,
+    % round,
     % super
 ]{natbib}
 \usepackage[automake]{glossaries-extra}
 \makeglossaries
-
+\glssetcategoryattribute{acronym}{glossnamefont}{textsf}
+\glssetcategoryattribute{acronym}{glossdescfont}{textsf}
 % ----------------------------
 
 % ============================
@@ -93,9 +93,10 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[
     labelsep=period,
-    labelfont={bf,sf},
-    textfont=sf,
-    justification=justified
+    labelfont={bf,sf,small},
+    textfont={sf,small},
+    justification=justified,
+    % format=hang
 ]{caption}
 \usepackage{indentfirst}
 \setlength{\parindent}{1.25cm}
@@ -110,10 +111,9 @@
 % ============================
 % FONTE DO TEXTO
 % \renewcommand{\sffamily}{\rm}
-
+% \usepackage{mlmodern}
 \usepackage{fontspec}
 \usepackage[partial=upright]{unicode-math}
-
 \setmathfont{STIXTwoMath-Regular.otf}[
     Path=./fonts/STIXTwo/,
     Extension=.otf,
@@ -135,18 +135,9 @@
     ItalicFont=*-Italic,
     BoldItalicFont=*-BoldItalic,
     Scale=0.89,
+    CharacterVariant={05,06,10},
     % StylisticSet={03,04}
 ]
-% \setsansfont{SourceSans3}[
-%     Path=./fonts/SourceSans/,
-%     Extension=.otf,
-%     UprightFont=*-Regular,
-%     BoldFont=*-Semibold,
-%     ItalicFont=*-It,
-%     BoldItalicFont=*-SemiboldIt,
-%     Numbers=Proportional,
-% ]
-
 % ----------------------------
 
 %\thispagestyle{empty} retira a numeracao da pagina
@@ -154,14 +145,16 @@
 % ============================
 % ACRONIMOS
 \setabbreviationstyle{long-short}
-\newabbreviation{uav}{UAV}{Unnamed Aerial Vehicle}
-\newabbreviation{svm}{SVM}{Support Vector Machine}
-\newabbreviation{mcl}{MCL}{Monte Carlo Localization}
-\newabbreviation{ai}{AI}{Artificial Intelligence}
-\newabbreviation{ml}{ML}{Machine Learning}
-\newabbreviation{dl}{DL}{Deep Learning}
-\newabbreviation{shm}{SHM}{Structural Health Monitoring}
-\newabbreviation{nn}{NN}{Neural Network}
-\newabbreviation{iot}{IoT}{Internet of Things}
-\newabbreviation{bd}{BD}{Big Data}
+\newacronym{uav}{UAV}{Unnamed Aerial Vehicle}
+\newacronym{svm}{SVM}{Support Vector Machine}
+\newacronym{mcl}{MCL}{Monte Carlo Localization}
+\newacronym{ai}{AI}{Artificial Intelligence}
+\newacronym{ml}{ML}{Machine Learning}
+\newacronym{dl}{DL}{Deep Learning}
+\newacronym{shm}{SHM}{Structural Health Monitoring}
+\newacronym{nn}{NN}{Neural Networks}
+\newacronym{iot}{IoT}{Internet of Things}
+\newacronym{bd}{BD}{Big Data}
+\newacronym{cnn}{CNN}{Convolutional Neural Networks}
+\newacronym{mems}{MEMS}{Micro Electromechanical Systems}
 

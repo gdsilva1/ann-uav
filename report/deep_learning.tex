@@ -36,7 +36,9 @@
 
 % ============================
 % LISTA DE ABREVIAÇÕES
-\printglossary[title={List of Abbreviation}]
+\setlist[description]{leftmargin=!, labelwidth=3em} % Change for glossaries
+\printglossary[title={List of Abbreviation}, nonumberlist]
+\setlist[description]{style=standard} % reset settings back to default
 \newpage
 % ----------------------------
 
@@ -59,8 +61,8 @@
 
 \input{sections/2body/2methodology/intro.tex}
 \input{sections/2body/2methodology/shm.tex}
-\input{sections/2body/2methodology/uav_dynamiic.tex}
-\input{sections/2body/2methodology/neural_netowrk.tex}
+\input{sections/2body/2methodology/uav.tex}
+\input{sections/2body/2methodology/nn.tex}
 \input{sections/2body/2methodology/toolbox.tex}
 
 \input{sections/2body/3results/intro.tex}
