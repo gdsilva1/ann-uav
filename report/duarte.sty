@@ -28,7 +28,7 @@
 \usepackage{cancel}
 \usepackage{multicol}
 \usepackage{tikz, pgf}
-    \tikzset{>=stealth}
+\usepackage{listings}
 \usepackage{xcolor}
 \usepackage{fancybox}
 \usepackage{physics}
@@ -93,8 +93,8 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[
     labelsep=period,
-    labelfont={bf,sf,small},
-    textfont={sf,small},
+    labelfont={bf,sf,footnotesize},
+    textfont={sf,footnotesize},
     justification=justified,
     % format=hang
 ]{caption}
@@ -112,32 +112,34 @@
 % FONTE DO TEXTO
 % \renewcommand{\sffamily}{\rm}
 % \usepackage{mlmodern}
-\usepackage{fontspec}
-\usepackage[partial=upright]{unicode-math}
-\setmathfont{STIXTwoMath-Regular.otf}[
-    Path=./fonts/STIXTwo/,
-    Extension=.otf,
-    StylisticSet={01,08,10}
-]
-\setmainfont{STIXTwoText}[
-    Path=./fonts/STIXTwo/,
-    Extension=.otf,
-    UprightFont=*-Regular,
-    BoldFont=*-Bold,
-    ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic,
-]
-\setsansfont{Inter}[
-    Path=./fonts/Inter/,
-    Extension=.otf,
-    UprightFont=*-Regular,
-    BoldFont=*-Bold,
-    ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic,
-    Scale=0.89,
-    CharacterVariant={05,06,10},
-    % StylisticSet={03,04}
-]
+\usepackage[default]{fontsetup}
+\setmonofont{Fira Code}
+% \usepackage{fontspec}
+% \usepackage[partial=upright]{unicode-math}
+% \setmathfont{STIXTwoMath-Regular.otf}[
+%     Path=./fonts/STIXTwo/,
+%     Extension=.otf,
+%     StylisticSet={01,08,10}
+% ]
+% \setmainfont{STIXTwoText}[
+%     Path=./fonts/STIXTwo/,
+%     Extension=.otf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Bold,
+%     ItalicFont=*-Italic,
+%     BoldItalicFont=*-BoldItalic,
+% ]
+% \setsansfont{Inter}[
+%     Path=./fonts/Inter/,
+%     Extension=.otf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Bold,
+%     ItalicFont=*-Italic,
+%     BoldItalicFont=*-BoldItalic,
+%     % Scale=0.89,
+%     CharacterVariant={05,06,10},
+%     % StylisticSet={03,04}
+% ]
 % ----------------------------
 
 %\thispagestyle{empty} retira a numeracao da pagina
@@ -145,16 +147,49 @@
 % ============================
 % ACRONIMOS
 \setabbreviationstyle{long-short}
-\newacronym{uav}{UAV}{Unnamed Aerial Vehicle}
-\newacronym{svm}{SVM}{Support Vector Machine}
-\newacronym{mcl}{MCL}{Monte Carlo Localization}
-\newacronym{ai}{AI}{Artificial Intelligence}
-\newacronym{ml}{ML}{Machine Learning}
-\newacronym{dl}{DL}{Deep Learning}
-\newacronym{shm}{SHM}{Structural Health Monitoring}
-\newacronym{nn}{NN}{Neural Networks}
-\newacronym{iot}{IoT}{Internet of Things}
-\newacronym{bd}{BD}{Big Data}
-\newacronym{cnn}{CNN}{Convolutional Neural Networks}
-\newacronym{mems}{MEMS}{Micro Electromechanical Systems}
+\newabbreviation{uav}{UAV}{Unnamed Aerial Vehicle}
+\newabbreviation{svm}{SVM}{Support Vector Machine}
+\newabbreviation{mcl}{MCL}{Monte Carlo Localization}
+\newabbreviation{ai}{AI}{Artificial Intelligence}
+\newabbreviation{ml}{ML}{Machine Learning}
+\newabbreviation{dl}{DL}{Deep Learning}
+\newabbreviation{shm}{SHM}{Structural Health Monitoring}
+\newabbreviation{nn}{NN}{Neural Networks}
+\newabbreviation{iot}{IoT}{Internet of Things}
+\newabbreviation{bd}{BD}{Big Data}
+\newabbreviation{cnn}{CNN}{Convolutional Neural Networks}
+\newabbreviation{mems}{MEMS}{Micro Electromechanical Systems}
+\newabbreviation{ann}{ANN}{Artificial Neural Networks}
+\newabbreviation{mlp}{MLP}{Multilayer Perceptron}
+\newabbreviation{fem}{FEM}{Finite Element Method}
+% -----------------------------
+
+% =============================
+% FORMATAÇÃO DO CÓDIGO
+\definecolor{codegreen}{HTML}{007c1b}
+\definecolor{codegray}{HTML}{99c1ff}
+\definecolor{codepurple}{HTML}{6a0173}
+\definecolor{my_red}{HTML}{9e0100}
+\definecolor{backcolour}{HTML}{f0f6ff}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegray},
+    keywordstyle=\color{my_red},
+    numberstyle=\ttfamily\tiny\color{black},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
 

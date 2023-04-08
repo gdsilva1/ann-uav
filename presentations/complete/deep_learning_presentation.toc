@@ -1,0 +1,2 @@
+\babel@toc {brazil}{}
+\beamer@sectionintoc {1}{Structural Health Monitoring}{3}{0}{1}

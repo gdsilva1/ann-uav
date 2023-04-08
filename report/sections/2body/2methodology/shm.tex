@@ -31,18 +31,26 @@ He also verified that the statistical patter recognition had not been embraced b
 
 Nowadays, in order to contour inherent issues of \gls*{shm} methods, as large computational effort and hand-crafted work that results in poor classification performance, many deep learning techniques have been used, such as \gls*{cnn} \citep{avci2017}.
 
-\subsection{Main Techniques}
+\subsection{Main Techniques}\label{sec:shm_main_techniques}
 
 \subsubsection*{Accelerometers}
 
 The use of accelerometers is consolidated in the engineering community to be used in several areas and it is present in the people daily life in things like game consoles, smartphones, and tablets.
 
 \gls*{mems} sensor have several applications in measuring linear acceleration or angular motion along axis as an input to control a system.
-\gls*{mems} accelerometer sensors often measure the movement of a mass with a position-measuring interface circuit that is converted into a digital electrical signal by an analog-to-digital converter for digital processing \citep{dadafshar2014}.
+\gls*{mems} accelerometer sensors often measure the movement of a mass with a position measuring interface circuit that is converted into a digital electrical signal by an analog-to-digital converter for digital processing \citep{dadafshar2014}.
 
 In \gls*{shm} situation, the accelerometers are in the \gls*{mems}. The \gls*{mems} are, then, embedded in the structure and can provide information about the structure by detecting low-amplitude and low-frequency vibrations that are not always viable with the conventional low-cost sensor boards \citep{sabato2017}.
 
 There are many others sensors used in vibration-base techniques like velocity and displacement sensors, however the accelerometers are widely used for this purpose.
+
+\subsubsection*{Optical-based} 
+
+The use of digital cameras to detect any kind of irregularity in the surface is also a way to monitor the structure, mainly in the surface areas. The camera itself may be static in a strategical position that allow it to provide good images to be analyzed or can be embedded in the structure itself or in an \gls*{uav} that will surround it.
+
+To automate and improve the accuracy of the damage detection, image processing techniques are employed, that being a non-conventional approach \citep{sharma2016}. In the civil engineering context, it is commonly utilized computer vision to damage detection \citep{feng2018} and also \gls*{uav} integrated in the same local as the structures for \gls*{shm} \citep{sankarasrinivasan2015}.
+
+Many of the images obtained can have their not only the images improved by \gls*{ai}, but also the analyses can take advantage of it.
 
 \subsubsection*{Piezoelectric materials}
 
@@ -56,14 +64,14 @@ The application of these materials in \gls*{shm} is basically to install the pie
 The signal indicates that something not usual is happening in the structure. Of course there are levels of the signals and each case must be evaluated in its context. 
 In the last years the use of piezoelectric materials has been capable to identify failures, like the presence of delamination damage, as long as the piezoelectric sensors are close to the damage \citep{maio2011}.
 
-\subsubsection*{Optical-based} %  digital image correlation
+\subsection{Railway Cracks}
 
-The use of digital cameras to detect any kind of irregularity in the surface is also a way to monitor the structure, mainly in the surface areas. The camera itself may be static in a strategical position that allow it to provide good images to be analyzed or can be embedded in the structure itself or in an \gls*{uav} that will surround it.
+Train is one of the most used means of transportation around the world, either to transport people or groceries, therefore, there are inherent problems in the attached to it. 
+One of the most common problems is the crack on the railway track, mainly due to the expansion and contraction caused by the heat and to constant pressure because of the wagon.
 
-To automate and improve the accuracy of the damage detection, image processing techniques are employed, that being a non-conventional approach \citep{sharma2016}. In the civil engineering context, it is commonly utilized computer vision to damage detection \citep{feng2018} and also \gls*{uav} integrated in the same local as the structures for \gls*{shm} \citep{sankarasrinivasan2015}.
+The crack in a railway is considerable problem because it may cause fatal accidents since the wagon is able to leave the railway. In this scenario, many methods are used to detect the crack or to foresee it before any misfortune happen. \citet{karthick2017} proposed a system to identify the cracks and prevent the accidents. One of its advantages is that if some crack is detected on the track, the train starts to slow and stop before it passes by there. Other method includes the use of sensor coupled in the track that allow to detect the crack and send a signal to the command center through \gls*{iot} \citep{sakenabenazer2021}.
 
-Many of the images obtained can have their not only the images improved by \gls*{ai}, but also the analyses can take advantage of it.
-
-\subsection{Railway}
+The use of piezoelectric materials for \gls*{shm} is very common, as seen in the \cref{sec:shm_main_techniques}. \citet{loveday2000} presents a system where piezoelectric transducer are installed along the railway track. 
+They receive an electrical wave and send it, then, a signal to the receiver, making it possible, also through \gls*{fem}, to detect any inconsistency that should not be there.
 
 \subsection{SHM and Crack Detection on Railway}
