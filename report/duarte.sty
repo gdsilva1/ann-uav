@@ -42,8 +42,8 @@
 ]{natbib}
 \usepackage[automake]{glossaries-extra}
 \makeglossaries
-\glssetcategoryattribute{acronym}{glossnamefont}{textsf}
-\glssetcategoryattribute{acronym}{glossdescfont}{textsf}
+% \glssetcategoryattribute{abbreviation}{glossnamefont}{textsf}
+% \glssetcategoryattribute{abbreviation}{glossdescfont}{textsf}
 % ----------------------------
 
 % ============================
@@ -112,34 +112,34 @@
 % FONTE DO TEXTO
 % \renewcommand{\sffamily}{\rm}
 % \usepackage{mlmodern}
-\usepackage[default]{fontsetup}
-\setmonofont{Fira Code}
+% \usepackage[default]{fontsetup}
+\urlstyle{rm}
 % \usepackage{fontspec}
-% \usepackage[partial=upright]{unicode-math}
-% \setmathfont{STIXTwoMath-Regular.otf}[
-%     Path=./fonts/STIXTwo/,
-%     Extension=.otf,
-%     StylisticSet={01,08,10}
-% ]
-% \setmainfont{STIXTwoText}[
-%     Path=./fonts/STIXTwo/,
-%     Extension=.otf,
-%     UprightFont=*-Regular,
-%     BoldFont=*-Bold,
-%     ItalicFont=*-Italic,
-%     BoldItalicFont=*-BoldItalic,
-% ]
-% \setsansfont{Inter}[
-%     Path=./fonts/Inter/,
-%     Extension=.otf,
-%     UprightFont=*-Regular,
-%     BoldFont=*-Bold,
-%     ItalicFont=*-Italic,
-%     BoldItalicFont=*-BoldItalic,
-%     % Scale=0.89,
-%     CharacterVariant={05,06,10},
-%     % StylisticSet={03,04}
-% ]
+\usepackage[bold-style=ISO]{unicode-math}
+\setmathfont{STIXTwoMath-Regular.otf}[
+    Path=./fonts/STIXTwo/,
+    Extension=.otf,
+    StylisticSet={01,08,10}
+]
+\setmainfont{STIXTwoText}[
+    Path=./fonts/STIXTwo/,
+    Extension=.otf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic,
+]
+\setsansfont{Inter}[
+    Path=./fonts/Inter/,
+    Extension=.otf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic,
+    % Scale=0.89,
+    CharacterVariant={05,06,10},
+    % StylisticSet={03,04}
+]
 % ----------------------------
 
 %\thispagestyle{empty} retira a numeracao da pagina

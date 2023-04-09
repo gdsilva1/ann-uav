@@ -26,7 +26,7 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="2.9077442"
-     inkscape:cx="99.561715"
+     inkscape:cx="78.755208"
      inkscape:cy="100.59344"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
@@ -64,7 +64,7 @@
        id="text1012"><tspan
          sodipodi:role="line"
          id="tspan1010"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'NewComputerModern Roman';-inkscape-font-specification:'NewComputerModern Roman, ';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.132027"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:Inter;-inkscape-font-specification:Inter;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.132027"
          x="104.96472"
          y="128.989">Deep Learning</tspan></text>
     <text
@@ -75,7 +75,7 @@
        id="text1012-3"><tspan
          sodipodi:role="line"
          id="tspan1010-6"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'NewComputerModern Roman';-inkscape-font-specification:'NewComputerModern Roman, ';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.132027"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:Inter;-inkscape-font-specification:Inter;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.132027"
          x="104.9612"
          y="111.80281">Machine Learning</tspan></text>
     <text
@@ -86,7 +86,7 @@
        id="text1012-7"><tspan
          sodipodi:role="line"
          id="tspan1010-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'NewComputerModern Roman';-inkscape-font-specification:'NewComputerModern Roman, ';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.132027"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:Inter;-inkscape-font-specification:Inter;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.132027"
          x="104.99648"
          y="90.912476">Artificial Intelligence</tspan></text>
     <ellipse
