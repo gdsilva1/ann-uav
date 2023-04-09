@@ -27,8 +27,8 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="2.0560856"
-     inkscape:cx="391.27748"
-     inkscape:cy="416.56825"
+     inkscape:cx="391.76384"
+     inkscape:cy="416.56826"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
      inkscape:window-x="0"
@@ -50,7 +50,7 @@
      id="defs2"><color-profile
        name="Tela-embutida"
        xlink:href="../../../../../../.local/share/icc/edid-160067e8f544956d1cb3d616a4927506.icc"
-       id="color-profile989" /></defs><g
+       id="color-profile1316" /></defs><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -214,7 +214,7 @@
        id="text1745"><tspan
          sodipodi:role="line"
          id="tspan1743"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Inter;-inkscape-font-specification:Inter;fill:#c52108;stroke:none;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'NewComputerModern Roman';-inkscape-font-specification:'NewComputerModern Roman, ';fill:#c52108;stroke:none;stroke-width:0.264583"
          x="49.542965"
          y="109.94832">Input Layer</tspan></text><text
        xml:space="preserve"
@@ -224,7 +224,7 @@
        id="text1745-2"><tspan
          sodipodi:role="line"
          id="tspan1743-0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Inter;-inkscape-font-specification:Inter;fill:#c08600;stroke:none;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'NewComputerModern Roman';-inkscape-font-specification:'NewComputerModern Roman, ';fill:#c08600;stroke:none;stroke-width:0.264583"
          x="105.00423"
          y="138.67587">Hidden Layers</tspan></text><text
        xml:space="preserve"
@@ -234,6 +234,6 @@
        id="text1745-23"><tspan
          sodipodi:role="line"
          id="tspan1743-7"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Inter;-inkscape-font-specification:Inter;fill:#007c1b;stroke:none;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'NewComputerModern Roman';-inkscape-font-specification:'NewComputerModern Roman, ';fill:#007c1b;stroke:none;stroke-width:0.264583"
          x="162.25294"
          y="109.99489">Output Layer</tspan></text></g></svg>

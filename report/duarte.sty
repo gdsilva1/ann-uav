@@ -9,6 +9,8 @@
 \usepackage{microtype}
 \usepackage{graphicx}
 \usepackage{float}
+\setcounter{bottomnumber}{1}
+\setcounter{topnumber}{1}
 \usepackage[
     colorlinks=true,
     allcolors=blue!60!black
@@ -65,25 +67,25 @@
 \setlength{\headheight}{14pt}
 \usepackage{titlesec}
 \titleformat{\chapter}
-            {\sffamily\bfseries\large}
+            {\bfseries\large}
             {\makebox[1.25cm][l]{\thechapter}}
             {0pt}
-            {\sffamily\bfseries\large\MakeUppercase}
+            {\scshape\bfseries\large\MakeUppercase}
 \titleformat{\section}
-            {\sffamily\bfseries\large}
+            {\bfseries\large}
             {\makebox[1.25cm][l]{\thesection}}
             {0pt}
-            {\sffamily\bfseries\large}  
+            {\bfseries\large}  
 \titleformat{\subsection}
-            {\sffamily\itshape\large}
+            {\itshape\large}
             {\makebox[1.25cm][l]{\thesubsection}}
             {0pt}
-            {\sffamily\itshape\large}  
+            {\itshape\large}  
 \titleformat{\subsubsection}
-            {\sffamily\large}
+            {\scshape\large}
             {\makebox[1.25cm][l]{\thesubsubsection}}
             {0pt}
-            {\sffamily\large}
+            {\scshape\large}
 \titlespacing{\chapter}{0em}{0.5em}{0.5em}
 \titlespacing{\section}{0em}{0.5em}{0.5em}
 \titlespacing{\subsection}{0em}{0.5em}{0.5em}
@@ -93,8 +95,8 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[
     labelsep=period,
-    labelfont={bf,sf,footnotesize},
-    textfont={sf,footnotesize},
+    labelfont={bf,footnotesize},
+    textfont={footnotesize},
     justification=justified,
     % format=hang
 ]{caption}
@@ -112,34 +114,34 @@
 % FONTE DO TEXTO
 % \renewcommand{\sffamily}{\rm}
 % \usepackage{mlmodern}
-% \usepackage[default]{fontsetup}
+\usepackage[default]{fontsetup}
 \urlstyle{rm}
 % \usepackage{fontspec}
-\usepackage[bold-style=ISO]{unicode-math}
-\setmathfont{STIXTwoMath-Regular.otf}[
-    Path=./fonts/STIXTwo/,
-    Extension=.otf,
-    StylisticSet={01,08,10}
-]
-\setmainfont{STIXTwoText}[
-    Path=./fonts/STIXTwo/,
-    Extension=.otf,
-    UprightFont=*-Regular,
-    BoldFont=*-Bold,
-    ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic,
-]
-\setsansfont{Inter}[
-    Path=./fonts/Inter/,
-    Extension=.otf,
-    UprightFont=*-Regular,
-    BoldFont=*-Bold,
-    ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic,
-    % Scale=0.89,
-    CharacterVariant={05,06,10},
-    % StylisticSet={03,04}
-]
+% \usepackage[bold-style=ISO]{unicode-math}
+% \setmathfont{STIXTwoMath-Regular.otf}[
+%     Path=./fonts/STIXTwo/,
+%     Extension=.otf,
+%     StylisticSet={01,08,10}
+% ]
+% \setmainfont{STIXTwoText}[
+%     Path=./fonts/STIXTwo/,
+%     Extension=.otf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Bold,
+%     ItalicFont=*-Italic,
+%     BoldItalicFont=*-BoldItalic,
+% ]
+% \setsansfont{Inter}[
+%     Path=./fonts/Inter/,
+%     Extension=.otf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Bold,
+%     ItalicFont=*-Italic,
+%     BoldItalicFont=*-BoldItalic,
+%     % Scale=0.89,
+%     CharacterVariant={05,06,10},
+%     % StylisticSet={03,04}
+% ]
 % ----------------------------
 
 %\thispagestyle{empty} retira a numeracao da pagina

@@ -27,8 +27,8 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="2.8284271"
-     inkscape:cx="383.42865"
-     inkscape:cy="385.90353"
+     inkscape:cx="353.02306"
+     inkscape:cy="386.25708"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
      inkscape:window-x="0"
@@ -75,7 +75,7 @@
     <color-profile
        name="Tela-embutida"
        xlink:href="../../../../.local/share/icc/edid-160067e8f544956d1cb3d616a4927506.icc"
-       id="color-profile3181" />
+       id="color-profile1561" />
   </defs>
   <g
      inkscape:groupmode="layer"
@@ -846,25 +846,25 @@
      style="display:inline">
     <text
        xml:space="preserve"
-       style="font-size:4.23333px;font-family:Inter;-inkscape-font-specification:Inter;text-align:center;text-anchor:middle;display:inline;fill:#000000;stroke:none;stroke-width:0.176389"
+       style="font-size:4.23333px;font-family:'NewComputerModern Roman';-inkscape-font-specification:'NewComputerModern Roman, ';text-align:center;text-anchor:middle;display:inline;fill:#000000;stroke:none;stroke-width:0.176389;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
        x="-100.19238"
        y="62.303295"
        id="text4114-6"
        transform="rotate(-90)"><tspan
          sodipodi:role="line"
          id="tspan4112-5"
-         style="fill:#000000;stroke:none;stroke-width:0.176389"
+         style="fill:#000000;stroke:none;stroke-width:0.176389;-inkscape-font-specification:'NewComputerModern Roman, ';font-family:'NewComputerModern Roman';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          x="-100.19238"
          y="62.303295">Attribute 1</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:4.23333px;font-family:Inter;-inkscape-font-specification:Inter;text-align:center;text-anchor:middle;display:inline;fill:#000000;stroke:none;stroke-width:0.176389"
+       style="font-size:4.23333px;font-family:'NewComputerModern Roman';-inkscape-font-specification:'NewComputerModern Roman, ';text-align:center;text-anchor:middle;display:inline;fill:#000000;stroke:none;stroke-width:0.176389;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
        x="102.09171"
        y="131.11685"
        id="text4114-6-9"><tspan
          sodipodi:role="line"
          id="tspan4112-5-6"
-         style="fill:#000000;stroke:none;stroke-width:0.176389"
+         style="fill:#000000;stroke:none;stroke-width:0.176389;-inkscape-font-specification:'NewComputerModern Roman, ';font-family:'NewComputerModern Roman';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
          x="102.09171"
          y="131.11685">Attribute 2</tspan></text>
   </g>
