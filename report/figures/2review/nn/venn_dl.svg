@@ -26,7 +26,7 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="2.9077442"
-     inkscape:cx="49.007062"
+     inkscape:cx="29.232283"
      inkscape:cy="100.59344"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
@@ -58,35 +58,35 @@
      transform="translate(-68.900765,-78.522786)">
     <text
        xml:space="preserve"
-       style="font-size:4.23333px;fill:none;stroke:#000000;stroke-width:0.132027;-inkscape-font-specification:'NewComputerModern Roman, ';font-family:'NewComputerModern Roman';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-size:4.23333px;fill:none;stroke:#000000;stroke-width:0.132027;-inkscape-font-specification:'TeX Gyre Heros';font-family:'TeX Gyre Heros';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;letter-spacing:-0.05291667px"
        x="104.96472"
        y="128.989"
        id="text1012"><tspan
          sodipodi:role="line"
          id="tspan1010"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'NewComputerModern Roman';-inkscape-font-specification:'NewComputerModern Roman, ';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.132027"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.132027"
          x="104.96472"
          y="128.989">Deep Learning</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:4.23333px;fill:none;stroke:#000000;stroke-width:0.132027;-inkscape-font-specification:'NewComputerModern Roman, ';font-family:'NewComputerModern Roman';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-size:4.23333px;fill:none;stroke:#000000;stroke-width:0.132027;-inkscape-font-specification:'TeX Gyre Heros';font-family:'TeX Gyre Heros';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;letter-spacing:-0.05291667px"
        x="104.9612"
        y="111.80281"
        id="text1012-3"><tspan
          sodipodi:role="line"
          id="tspan1010-6"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'NewComputerModern Roman';-inkscape-font-specification:'NewComputerModern Roman, ';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.132027"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.132027"
          x="104.9612"
          y="111.80281">Machine Learning</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:4.23333px;fill:none;stroke:#000000;stroke-width:0.132027"
+       style="font-size:4.23333px;fill:none;stroke:#000000;stroke-width:0.132027;-inkscape-font-specification:'TeX Gyre Heros';font-family:'TeX Gyre Heros';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;letter-spacing:-0.05291667px"
        x="104.99648"
        y="90.912476"
        id="text1012-7"><tspan
          sodipodi:role="line"
          id="tspan1010-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'NewComputerModern Roman';-inkscape-font-specification:'NewComputerModern Roman, ';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.132027"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.132027"
          x="104.99648"
          y="90.912476">Artificial Intelligence</tspan></text>
     <ellipse

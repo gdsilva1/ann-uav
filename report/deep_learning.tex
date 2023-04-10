@@ -18,14 +18,14 @@
 % RELATÓRIO DE PESQUISA
 \setcounter{page}{1}
 \pagenumbering{roman}
+\renewcommand{\thepage}{\textit{\roman{page}}}
 \pagestyle{empty}
 \input{sections/1pre/research}
 % ----------------------------
 
 % ============================
 % LISTA DE FIGURAS
-% {\sffamily\listoffigures}
-\listoffigures
+{\sffamily\listoffigures}
 \newpage
 % ----------------------------
 
@@ -46,8 +46,7 @@
 
 % ============================
 % SUMÁRIO
-% {\sffamily\tableofcontents}
-\tableofcontents
+{\sffamily\tableofcontents}
 \newpage
 % ----------------------------
 
@@ -62,15 +61,16 @@
 % SEÇÕES
 \input{sections/2body/1intro/intro.tex}
 
-\input{sections/2body/2methodology/intro.tex}
-\input{sections/2body/2methodology/shm.tex}
-\input{sections/2body/2methodology/uav.tex}
-\input{sections/2body/2methodology/nn.tex}
-\input{sections/2body/2methodology/toolbox.tex}
+\input{sections/2body/2review/intro.tex}
+\input{sections/2body/2review/shm.tex}
+\input{sections/2body/2review/uav.tex}
+\input{sections/2body/2review/nn.tex}
 
-\input{sections/2body/3results/intro.tex}
+\input{sections/2body/3methodology/intro.tex}
 
-\input{sections/2body/4conclusion/intro.tex}
+\input{sections/2body/4results/intro.tex}
+
+\input{sections/2body/5conclusion/intro.tex}
 % ----------------------------
 
 % ============================

@@ -27,7 +27,7 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="0.72693605"
-     inkscape:cx="339.09448"
+     inkscape:cx="261.371"
      inkscape:cy="634.85639"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
@@ -49,13 +49,27 @@
        inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="41,201.63971"
+       orientation="-1,0"
+       id="guide230"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="169,173.61398"
+       orientation="-1,0"
+       id="guide232"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,134,229)" />
   </sodipodi:namedview>
   <defs
      id="defs2">
     <color-profile
        name="Tela-embutida"
        xlink:href="../../../../.local/share/icc/edid-160067e8f544956d1cb3d616a4927506.icc"
-       id="color-profile481" />
+       id="color-profile429" />
   </defs>
   <g
      inkscape:label="Layer 1"

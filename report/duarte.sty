@@ -43,6 +43,8 @@
     % super
 ]{natbib}
 \usepackage[automake]{glossaries-extra}
+\renewcommand{\glossarypreamble}{\sffamily}
+\renewcommand{\glsnamefont}[1]{\textsf{#1}}
 \makeglossaries
 % \glssetcategoryattribute{abbreviation}{glossnamefont}{textsf}
 % \glssetcategoryattribute{abbreviation}{glossdescfont}{textsf}
@@ -67,36 +69,36 @@
 \setlength{\headheight}{14pt}
 \usepackage{titlesec}
 \titleformat{\chapter}
-            {\bfseries\large}
+            {\sffamily\bfseries\large}
             {\makebox[1.25cm][l]{\thechapter}}
             {0pt}
-            {\scshape\bfseries\large\MakeUppercase}
+            {\sffamily\scshape\bfseries\large\MakeUppercase}
 \titleformat{\section}
-            {\bfseries\large}
+            {\sffamily\bfseries\large}
             {\makebox[1.25cm][l]{\thesection}}
             {0pt}
-            {\bfseries\large}  
+            {\sffamily\bfseries\large}  
 \titleformat{\subsection}
-            {\itshape\large}
+            {\sffamily\itshape\large}
             {\makebox[1.25cm][l]{\thesubsection}}
             {0pt}
-            {\itshape\large}  
+            {\sffamily\itshape\large}  
 \titleformat{\subsubsection}
-            {\scshape\large}
+            {\sffamily\large}
             {\makebox[1.25cm][l]{\thesubsubsection}}
             {0pt}
-            {\scshape\large}
+            {\sffamily\large}
 \titlespacing{\chapter}{0em}{0.5em}{0.5em}
 \titlespacing{\section}{0em}{0.5em}{0.5em}
 \titlespacing{\subsection}{0em}{0.5em}{0.5em}
 \titlespacing{\subsubsection}{0em}{0.5em}{0.5em}
 \usepackage{setspace}
-    \setstretch{1.50}
+    \setstretch{1.5}
 \usepackage[nottoc]{tocbibind}
 \usepackage[
     labelsep=period,
-    labelfont={bf,footnotesize},
-    textfont={footnotesize},
+    labelfont={bf,sf,footnotesize},
+    textfont={sf,footnotesize},
     justification=justified,
     % format=hang
 ]{caption}
@@ -114,23 +116,29 @@
 % FONTE DO TEXTO
 % \renewcommand{\sffamily}{\rm}
 % \usepackage{mlmodern}
-\usepackage[default]{fontsetup}
+% \usepackage[xcharter]{fontsetup}
+% \usepackage{stix2}
 \urlstyle{rm}
-% \usepackage{fontspec}
-% \usepackage[bold-style=ISO]{unicode-math}
-% \setmathfont{STIXTwoMath-Regular.otf}[
-%     Path=./fonts/STIXTwo/,
-%     Extension=.otf,
-%     StylisticSet={01,08,10}
-% ]
-% \setmainfont{STIXTwoText}[
-%     Path=./fonts/STIXTwo/,
-%     Extension=.otf,
-%     UprightFont=*-Regular,
-%     BoldFont=*-Bold,
-%     ItalicFont=*-Italic,
-%     BoldItalicFont=*-BoldItalic,
-% ]
+\usepackage{fontspec}
+\usepackage[
+    bold-style=ISO,
+    math-style=ISO,
+]{unicode-math}
+% \defaultfontfeatures{Scale=MatchUppercase}
+\setmathfont{STIXTwoMath-Regular.otf}[
+    Path=./fonts/STIXTwo/,
+    Extension=.otf,
+    StylisticSet={01,08,10}
+]
+\setmainfont{STIXTwoText}[
+    Path=./fonts/STIXTwo/,
+    Extension=.otf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic,
+]
+\setsansfont{TeX Gyre Heros}[LetterSpace=-0.2]
 % \setsansfont{Inter}[
 %     Path=./fonts/Inter/,
 %     Extension=.otf,
@@ -139,6 +147,7 @@
 %     ItalicFont=*-Italic,
 %     BoldItalicFont=*-BoldItalic,
 %     % Scale=0.89,
+%     % Scale=MatchUppercase,
 %     CharacterVariant={05,06,10},
 %     % StylisticSet={03,04}
 % ]
