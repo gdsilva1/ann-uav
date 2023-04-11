@@ -13,7 +13,7 @@
 \setcounter{topnumber}{1}
 \usepackage[
     colorlinks=true,
-    allcolors=blue!60!black
+    allcolors=blue!50!black
 ]{hyperref}
 \usepackage{booktabs}
 \usepackage[
@@ -36,6 +36,21 @@
 \usepackage{physics}
 \usepackage{authblk}
 \usepackage{blindtext}
+\usepackage{tocloft}
+\cftsetindents{figure}{0em}{3.5em}
+\cftsetindents{table}{0em}{3.5em}
+% \cftsetindents{chapter}{0em}{3em}
+% \cftsetindents{section}{3em}{2em}
+% \cftsetindents{subsection}{6em}{3em}
+\renewcommand{\cftchapfont}{\sffamily\bfseries}
+\renewcommand{\cftsecfont}{\sffamily}
+\renewcommand{\cftsubsecfont}{\sffamily\itshape}
+\renewcommand{\cftchappagefont}{\sffamily\bfseries}
+\renewcommand{\cftsecpagefont}{\sffamily\bfseries}
+\renewcommand{\cftsubsecpagefont}{\sffamily}
+\renewcommand{\cfttoctitlefont}{\large\sffamily\bfseries\MakeUppercase}
+\renewcommand{\cftloftitlefont}{\large\sffamily\bfseries\MakeUppercase}
+\renewcommand{\cftlottitlefont}{\large\sffamily\bfseries\MakeUppercase}
 \usepackage[
     % authoryear
     numbers,
@@ -45,6 +60,8 @@
 \usepackage[automake]{glossaries-extra}
 \renewcommand{\glossarypreamble}{\sffamily}
 \renewcommand{\glsnamefont}[1]{\textsf{#1}}
+\setglossarystyle{alttree}
+\glssetwidest{MEMS}
 \makeglossaries
 % \glssetcategoryattribute{abbreviation}{glossnamefont}{textsf}
 % \glssetcategoryattribute{abbreviation}{glossdescfont}{textsf}
@@ -115,8 +132,7 @@
 % ============================
 % FONTE DO TEXTO
 % \renewcommand{\sffamily}{\rm}
-% \usepackage{mlmodern}
-% \usepackage[xcharter]{fontsetup}
+% \usepackage[concrete]{fontsetup}
 % \usepackage{stix2}
 \urlstyle{rm}
 \usepackage{fontspec}
@@ -124,7 +140,6 @@
     bold-style=ISO,
     math-style=ISO,
 ]{unicode-math}
-% \defaultfontfeatures{Scale=MatchUppercase}
 \setmathfont{STIXTwoMath-Regular.otf}[
     Path=./fonts/STIXTwo/,
     Extension=.otf,
@@ -138,7 +153,10 @@
     ItalicFont=*-Italic,
     BoldItalicFont=*-BoldItalic,
 ]
-\setsansfont{TeX Gyre Heros}[LetterSpace=-0.2]
+\setsansfont{TeX Gyre Heros}[
+    LetterSpace=-0.2,
+    Scale=0.92,
+]
 % \setsansfont{Inter}[
 %     Path=./fonts/Inter/,
 %     Extension=.otf,
@@ -172,6 +190,7 @@
 \newabbreviation{mems}{MEMS}{Micro Electromechanical Systems}
 \newabbreviation{ann}{ANN}{Artificial Neural Networks}
 \newabbreviation{mlp}{MLP}{Multilayer Perceptron}
+\newabbreviation{slp}{SLP}{Single-Layer Perceptron}
 \newabbreviation{fem}{FEM}{Finite Element Method}
 % -----------------------------
 

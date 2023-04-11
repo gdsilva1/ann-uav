@@ -25,41 +25,43 @@ One of the motivations of the neural perspective was to understand that the brai
 
 \gls*{dl} today goes beyond the neuroscientist perspective and it is more of general principle of learning multiple levels of composition.
 
-\subsection{Multilayer Perceptron}
+% \subsection{Perceptron}
 
-\subsubsection*{Perceptron}
+% \subsubsection*{Single-Layer Perceptron}
 
-A perceptron is a supervised learning algorithm that provides binary classifiers. It is the simplest kind of \gls*{ann}, but the complex ones are based on it and it serves to solve many problems yet.
+% A perceptron is a supervised learning algorithm that provides binary classifiers. It is the simplest kind of \gls*{ann}, but the complex ones are based on it and it serves to solve many problems yet.
 
-\begin{figure}[!htb]
-    \centering
-    \includegraphics{figures/2review/nn/perceptron.pdf}
-    \caption[Perceptron Scheme]{Perceptron Scheme. It is a simple machine learning algorithm that provides a binary output. It resembles a human neuron: input layer data is equivalent to the dendrites; hidden layers are the equivalent of the axons; and the output layer are the equivalent of the nerve ending.}
-    \label{fig:perceptron}
-\end{figure}
+% \begin{figure}[!htb]
+%     \centering
+%     \includegraphics{figures/2review/nn/perceptron.pdf}
+%     \caption[Perceptron Scheme]{Perceptron Scheme. It is a simple machine learning algorithm that provides a binary output. It resembles a human neuron: input layer data is equivalent to the dendrites; hidden layers are the equivalent of the axons; and the output layer are the equivalent of the nerve ending.}
+%     \label{fig:perceptron}
+% \end{figure}
 
-The principle is quite simple, from the input data \(\mathbf{x}\) and initial random weights \(\mathbf{w}\), it returns the weighted sum \(f(\mathbf{x},\mathbf{w})\). This is graphically represented in the~\cref{fig:perceptron}.
-%
-\begin{equation}\label{eq:perceptron_weighted_sum}
-    f(\mathbf{x},\mathbf{w}) = \sum_{i=1}^n x_iw_i =  x_1w_1 + x_2w_2 + \cdots + x_nw_n
-\end{equation}
-%
-where \(\mathbf{x}\) is a vector containing the input data and \(\mathbf{w}\) is a vector containing the weights, both with \(n\) elements.
+% The principle is quite simple, from the input data \(\mathbf{x}\) and initial random weights \(\mathbf{w}\), it returns the weighted sum \(f(\mathbf{x},\mathbf{w})\). This is graphically represented in the~\cref{fig:perceptron}.
+% %
+% \begin{equation}\label{eq:perceptron_weighted_sum}
+%     f(\mathbf{x},\mathbf{w}) = \sum_{i=1}^n x_iw_i =  x_1w_1 + x_2w_2 + \cdots + x_nw_n
+% \end{equation}
+% %
+% where \(\mathbf{x}\) is a vector containing the input data and \(\mathbf{w}\) is a vector containing the weights, both with \(n\) elements.
 
-It splits the data with a straight line classifying them in two groups and that is the reason it is a binary classifier.
+% It splits the data with a straight line classifying them in two groups and that is the reason it is a binary classifier.
 
-\begin{figure}[!htb]
-    \centering
-    \includegraphics{figures/2review/nn/perceptron_charge.pdf}
-    \caption[Perceptron Behavior]{Perceptron Behavior. It is a binary classifier.}
-\end{figure}
+% \begin{figure}[!htb]
+%     \centering
+%     \includegraphics{figures/2review/nn/perceptron_charge.pdf}
+%     \caption[Perceptron Behavior]{Perceptron Behavior. It is a binary classifier.}
+% \end{figure}
 
-Surely, for the first iteration, the output should not be the best one and the procedure must begin from the start, but now with the new values obtained. Then, for each iteration it tends to get better and learn to label each received data.
+% Surely, for the first iteration, the output should not be the best one and the procedure must begin from the start, but now with the new values obtained. Then, for each iteration it tends to get better and learn to label each received data.
+
+% \subsubsection*{Multilayer Perceptron}
  
-A \gls*{mlp}, also known as \emph{deep network}, is the essence of \gls*{dl}. Basically, it is a mathematical function, formed by composing many simpler functions, mapping some set of input values to output values.
-%
-\begin{figure}[!htb]
-    \centering
-    \includegraphics{figures/2review/nn/mlp.pdf}
-    \caption[Multilayer Perceptron Scheme]{Multilayer Perceptron Scheme. The figure show two hidden layers, totalizing eight neurons. A \gls*{mlp} accepts multiple hidden layers and neurons. It can also have several outputs.}
-\end{figure}
+% A \gls*{mlp}, also known as \emph{deep network}, is the essence of \gls*{dl}. Basically, it is a mathematical function, formed by composing many simpler functions, mapping some set of input values to output values.
+% %
+% \begin{figure}[!htb]
+%     \centering
+%     \includegraphics{figures/2review/nn/mlp.pdf}
+%     \caption[Multilayer Perceptron Scheme]{Multilayer Perceptron Scheme. The figure show two hidden layers, totalizing eight neurons. A \gls*{mlp} accepts multiple hidden layers and neurons. It can also have several outputs.}
+% \end{figure}
