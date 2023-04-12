@@ -17,7 +17,7 @@ plt.rcParams.update({
     # 'pgf.preamble':  r'\usepackage{stix2}\usepackage[scale=0.88]{inter}',
     # 'pgf.preamble': r'\usepackage{unicode-math,fontspec}\setmathfont{STIX Two Math}\setsansfont{Inter}[Scale=0.88]',
     # 'pgf.preamble': r'\usepackage[default]{fontsetup}',
-    'pgf.preamble': r'\usepackage{unicode-math,fontspec}\setmathfont{STIX Two Math}\setmainfont{STIX Two Text}\setsansfont{TeX Gyre Heros}',
+    'pgf.preamble': r'\usepackage{unicode-math,fontspec}\setmathfont{STIX Two Math}\setmainfont{STIX Two Text}\setsansfont{TeX Gyre Heros}[LetterSpace=-0.2]',
     'pgf.rcfonts' : False
 })
 
