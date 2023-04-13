@@ -69,6 +69,7 @@
 \makeglossaries
 % \glssetcategoryattribute{abbreviation}{glossnamefont}{textsf}
 % \glssetcategoryattribute{abbreviation}{glossdescfont}{textsf}
+\usepackage{bm}
 % ----------------------------
 
 % ============================
@@ -118,8 +119,8 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[
     labelsep=period,
-    labelfont={bf,sf,footnotesize},
-    textfont={sf,footnotesize},
+    labelfont={bf,footnotesize},
+    textfont={footnotesize},
     justification=justified,
     % format=hang
 ]{caption}
@@ -167,14 +168,20 @@
 %     ItalicFont=*-It,
 %     BoldItalicFont=*-SemiBoldIt,
 %     Numbers=Proportional,
-    % Scale=0.89,
-    % Scale=MatchUppercase,
-    % CharacterVariant={05,06,10},
-    % StylisticSet={03,04}
+%     Scale=0.89,
+%     Scale=MatchUppercase,
+%     CharacterVariant={05,06,10},
+%     StylisticSet={03,04}
 % ]
 % ----------------------------
 
 %\thispagestyle{empty} retira a numeracao da pagina
+
+% ============================
+% COMANDOS
+\newcommand{\mae}{\text{MAE}}
+\newcommand{\mse}{\text{MSE}}
+% ----------------------------
 
 % ============================
 % ACRONIMOS
@@ -195,6 +202,10 @@
 \newabbreviation{mlp}{MLP}{Multilayer Perceptron}
 \newabbreviation{slp}{SLP}{Single-Layer Perceptron}
 \newabbreviation{fem}{FEM}{Finite Element Method}
+\newabbreviation{mae}{MAE}{Mean Absolute Error}
+\newabbreviation{mse}{MSE}{Mean Squared Error}
+\newabbreviation{sgd}{SGD}{Stochastic Gradient Descent}
+
 % -----------------------------
 
 % =============================

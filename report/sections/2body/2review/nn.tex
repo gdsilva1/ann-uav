@@ -2,7 +2,7 @@
 
 \subsection{Deep Learning}
 
-The concepts of deep learning \(ax^2+bx+c = 0\) studied in this section is going to be based on the work of \citet{goodfellow2016} and the documentation of PyTorch\footnote{\url{https://pytorch.org/docs/stable/index.html}} and MATLAB\footnote{\url{https://www.mathworks.com/help/matlab/}}.
+The concepts of deep learning studied in this section is going to be based on the work of \citet{goodfellow2016} and the documentation of PyTorch\footnote{\url{https://pytorch.org/docs/stable/index.html}} and MATLAB\footnote{\url{https://www.mathworks.com/help/matlab/}}.
 
 There are several definitions of \gls*{ai} \citep{winston1992}, but the  computer scientist \citet{mccarthy2007} defines it as ``the science and engineering of making intelligent machines, especially intelligent computer programs.''.
 He also states that ``it is related to the similar task of using computers to understand human intelligence, but AI does not have to confine itself to methods that are biologically observable.''.
@@ -21,49 +21,86 @@ However, all the three terms can be interchangeable in the major context.
 
 The deep learning history goes back to the 1940s and it had several names over the years. It was called by \emph{cybernetics} (1940s--1960s), \emph{connectionism} (1980s--1990s), and from 2006 until now is known as \emph{deep learning}.
 The \gls*{dl} models were engineered systems inspired by the biological brain and they were denominated \gls*{ann}.
-One of the motivations of the neural perspective was to understand that the brain provides a proof by example that intelligent behavior is possible and try to reverse engineer the computation principals behind the brain, duplicating its functionality.
+One of the motivations of the neural  perspective was to understand that the brain provides a proof by example that intelligent behavior is possible and try to reverse engineer the computation principals behind the brain, duplicating its functionality.
 
 \gls*{dl} today goes beyond the neuroscientist perspective and it is more of general principle of learning multiple levels of composition.
 
-\subsection{Perceptron}
+\subsection{Model Choice}
 
-\subsubsection*{Single-Layer Perceptron}
+\subsubsection*{Model for objctive A}
+\subsubsection*{Model for objctive B}
 
-A \gls*{slp} is a supervised learning algorithm that provides binary classifiers. It is the simplest kind of \gls*{ann}, but the complex ones are based on it and it serves to solve many problems yet.
+\subsection{Loss Function}
 
-\begin{figure}[!htb]
-    \centering
-    \includegraphics{figures/2review/nn/perceptron.pdf}
-    \caption[Perceptron Scheme]{Perceptron Scheme. It is a simple machine learning algorithm that provides a binary output. It resembles a human neuron: input layer data is equivalent to the dendrites; hidden layers are the equivalent of the axons; and the output layer are the equivalent of the nerve ending.}
-    \label{fig:perceptron}
-\end{figure}
+The \emph{loss function}, also called \emph{cost function} or \emph{error function} is the one used measure the error between the predicted output of an algorithm and the real target output. There are several loss functions suitable to different kind of situation and for each distributed data there is one that fits better.
 
-The principle is quite simple, from the input data \(\mathbf{x}\) and initial random weights \(\mathbf{w}\), it returns the weighted sum \(f(\mathbf{x},\mathbf{w})\). This is graphically represented in the~\cref{fig:perceptron}.
+For a linear distribution of the data, for instance, a common loss function adopted is the \gls*{mae}.
 %
-\begin{equation}\label{eq:perceptron_weighted_sum}
-    f(\mathbf{x},\mathbf{w}) = \sum_{i=1}^n x_iw_i =  x_1w_1 + x_2w_2 + \cdots + x_nw_n
+\begin{equation}
+    \mae = \frac{1}{n} \sum_{i=1}^n |y_i - x_i|
+    \label{eq:mae}
 \end{equation}
 %
-where \(\mathbf{x}\) is a vector containing the input data and \(\mathbf{w}\) is a vector containing the weights, both with \(n\) elements.
-
-It splits the data with a straight line classifying them in two groups and that is the reason it is a binary classifier.
-
-\begin{figure}[!htb]
-    \centering
-    \includegraphics{figures/2review/nn/perceptron_charge.pdf}
-    \caption[Perceptron Behavior]{Perceptron Behavior. It is a binary classifier.}
-\end{figure}
-
-Surely, for the first iteration, the output should not be the best one and the procedure must begin from the start, but now with the new values obtained. Then, for each iteration it tends to get better and learn to label each received data.
-
-\subsubsection*{Multilayer Perceptron}
- 
-A \gls*{mlp}, also known as \emph{deep network}, \emph{feedforward neural networks} or \emph{deep feedforward networks}, is the essence of \gls*{dl}. Basically, it is a mathematical function, formed by composing many simpler functions, mapping some set of input values to output values.
+where \(n\) is the sample size; \(y_i\) is the predicted output; and \(x_i\) is the real target. Or the \gls*{mse} \cite{bussab2017}:
 %
-\begin{figure}[!htb]
-    \centering
-    \includegraphics{figures/2review/nn/mlp.pdf}
-    \caption[Multilayer Perceptron Scheme]{Multilayer Perceptron Scheme. The figure show two hidden layers, totalizing eight neurons. A \gls*{mlp} accepts multiple hidden layers and neurons. It can also have several outputs.}
-\end{figure}
+\begin{equation}
+    \mse = \frac{1}{n} \sum_{i=1}^n (\hat{y}_i - y_i)^2
+    \label{eq:mse}
+\end{equation}
+%
+where \(n\) is the sample size; \(\hat{y}_i\) is the predicted output; and \(y_i\) is the real target.
 
-It increases the complexity and gives a more complete machine training, allowing results even more precise, when compared to the \gls*{slp}.
+These methods are the simplest ones and both lead to poor results when using complex data patterns, but through them it is easy to recognize the essence of what the cost function does. Other methods like cross-entropy are more likely to get better results when having a pattern of complex data.
+
+Therefore, the loss function measures how far from the real value the data is. Many kinds of them are available and must be analyzed the most proper one. It will depend on not only the data and its pattern, but also the computational processing and the cost attached to it.
+
+
+\subsubsection*{Loss Function for objctive A}
+\subsubsection*{Loss Function for objctive B}
+
+\subsection{Optimizer}
+
+\subsubsection*{Optimizer for objctive A}
+\subsubsection*{Optimizer for objctive B}
+% \subsection{Perceptron}
+
+% \subsubsection*{Single-Layer Perceptron}
+
+% A \gls*{slp} is a supervised learning algorithm that provides binary classifiers. It is the simplest kind of \gls*{ann}, but the complex ones are based on it and it serves to solve many problems yet.
+
+% \begin{figure}[!htb]
+%     \centering
+%     \includegraphics{figures/2review/nn/perceptron.pdf}
+%     \caption[Perceptron Scheme]{Perceptron Scheme. It is a simple machine learning algorithm that provides a binary output. It resembles a human neuron: input layer data is equivalent to the dendrites; hidden layers are the equivalent of the axons; and the output layer are the equivalent of the nerve ending.}
+%     \label{fig:perceptron}
+% \end{figure}
+
+% The principle is quite simple, from the input data \(\mathbf{x}\) and initial random weights \(\mathbf{w}\), it returns the weighted sum \(f(\mathbf{x},\mathbf{w})\). This is graphically represented in the~\cref{fig:perceptron}.
+% %
+% \begin{equation}\label{eq:perceptron_weighted_sum}
+%     f(\mathbf{x},\mathbf{w}) = \sum_{i=1}^n x_iw_i =  x_1w_1 + x_2w_2 + \cdots + x_nw_n
+% \end{equation}
+% %
+% where \(\mathbf{x}\) is a vector containing the input data and \(\mathbf{w}\) is a vector containing the weights, both with \(n\) elements.
+
+% It splits the data with a straight line classifying them in two groups and that is the reason it is a binary classifier.
+
+% \begin{figure}[!htb]
+%     \centering
+%     \includegraphics{figures/2review/nn/perceptron_charge.pdf}
+%     \caption[Perceptron Behavior]{Perceptron Behavior. It is a binary classifier.}
+% \end{figure}
+
+% Surely, for the first iteration, the output should not be the best one and the procedure must begin from the start, but now with the new values obtained. Then, for each iteration it tends to get better and learn to label each received data.
+
+% \subsubsection*{Multilayer Perceptron}
+ 
+% A \gls*{mlp}, also known as \emph{deep network}, \emph{feedforward neural networks} or \emph{deep feedforward networks}, is the essence of \gls*{dl}. Basically, it is a mathematical function, formed by composing many simpler functions, mapping some set of input values to output values.
+% %
+% \begin{figure}[!htb]
+%     \centering
+%     \includegraphics{figures/2review/nn/mlp.pdf}
+%     \caption[Multilayer Perceptron Scheme]{Multilayer Perceptron Scheme. The figure show two hidden layers, totalizing eight neurons. A \gls*{mlp} accepts multiple hidden layers and neurons. It can also have several outputs.}
+% \end{figure}
+
+% It increases the complexity and gives a more complete machine training, allowing results even more precise, when compared to the \gls*{slp}.
