@@ -38,7 +38,10 @@ ax.annotate(
     xytext=(-1,3.8),
     verticalalignment='center',
     horizontalalignment='center',
-    arrowprops={'arrowstyle': 'wedge'},
+    arrowprops={
+        'arrowstyle': 'wedge',
+        'facecolor': 'black'
+    },
     
 
 )
@@ -47,10 +50,13 @@ ax.annotate(
     (-0,0),
     verticalalignment='center',
     horizontalalignment='center',
-    arrowprops={'arrowstyle': 'wedge'},
+    arrowprops={
+        'arrowstyle': 'wedge',
+        'facecolor': 'black'
+    },
     xytext=(0.25,1.5),
 
 )
 fig.tight_layout()
-fig.savefig('figures/2review/nn/gradient_descent.pdf', backend='pgf')
+fig.savefig('figures/3review/nn/gradient_descent.pdf', backend='pgf')
 # plt.show()

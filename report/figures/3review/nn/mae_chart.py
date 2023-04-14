@@ -24,8 +24,8 @@ fig, ax =  plt.subplots(1,1, figsize=(5,3)) # figsize=(5,x)
 ax.plot([5,5], [5,5.9], color='goldenrod')
 ax.scatter(x_data,y_data, marker='.', label='Prediction Data', color='darkred')
 ax.plot(y_data,y_data, label='Target Data')
-ax.set_xlabel('$x$')
-ax.set_ylabel('$y$')
+ax.set_xlabel('Input data')
+ax.set_ylabel('Output data')
 ax.legend(loc=4, frameon=True)
 ax.set_yticklabels([])
 ax.set_xticklabels([])
@@ -35,8 +35,11 @@ ax.annotate(
     xytext=(2.7,5.5),
     verticalalignment='center',
     horizontalalignment='center',
-    arrowprops={'arrowstyle': 'wedge'},
+    arrowprops={
+        'arrowstyle': 'wedge',
+        'facecolor': 'black'
+    },
 )
 fig.tight_layout()
-fig.savefig('figures/2review/nn/mae_chart.pdf', backend='pgf')
+fig.savefig('figures/3review/nn/mae_chart.pdf', backend='pgf')
 # plt.show()
