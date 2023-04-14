@@ -42,19 +42,19 @@
 % \cftsetindents{chapter}{0em}{3em}
 % \cftsetindents{section}{3em}{2em}
 % \cftsetindents{subsection}{6em}{3em}
-\renewcommand{\cftfigfont}{\sffamily}
-\renewcommand{\cftfigpagefont}{\sffamily}
-\renewcommand{\cfttabfont}{\sffamily}
-\renewcommand{\cfttabpagefont}{\sffamily}
-\renewcommand{\cftchapfont}{\sffamily\bfseries}
-\renewcommand{\cftsecfont}{\sffamily}
-\renewcommand{\cftsubsecfont}{\sffamily\itshape}
-\renewcommand{\cftchappagefont}{\sffamily\bfseries}
-\renewcommand{\cftsecpagefont}{\sffamily\bfseries}
-\renewcommand{\cftsubsecpagefont}{\sffamily}
-\renewcommand{\cfttoctitlefont}{\large\sffamily\bfseries\MakeUppercase}
-\renewcommand{\cftloftitlefont}{\large\sffamily\bfseries\MakeUppercase}
-\renewcommand{\cftlottitlefont}{\large\sffamily\bfseries\MakeUppercase}
+% \renewcommand{\cftfigfont}{\sffamily}
+% \renewcommand{\cftfigpagefont}{\sffamily}
+% \renewcommand{\cfttabfont}{\sffamily}
+% \renewcommand{\cfttabpagefont}{\sffamily}
+\renewcommand{\cftchapfont}{\bfseries}
+% \renewcommand{\cftsecfont}{\sffamily}
+\renewcommand{\cftsubsecfont}{\itshape}
+\renewcommand{\cftchappagefont}{\bfseries}
+\renewcommand{\cftsecpagefont}{\bfseries}
+% \renewcommand{\cftsubsecpagefont}{\sffamily}
+\renewcommand{\cfttoctitlefont}{\large\bfseries\MakeUppercase}
+\renewcommand{\cftloftitlefont}{\large\bfseries\MakeUppercase}
+\renewcommand{\cftlottitlefont}{\large\bfseries\MakeUppercase}
 \usepackage[
     % authoryear
     numbers,
@@ -62,8 +62,8 @@
     % super
 ]{natbib}
 \usepackage[automake]{glossaries-extra}
-\renewcommand{\glossarypreamble}{\sffamily}
-\renewcommand{\glsnamefont}[1]{\textsf{#1}}
+% \renewcommand{\glossarypreamble}{\sffamily}
+% \renewcommand{\glsnamefont}[1]{\textsf{#1}}
 \setglossarystyle{alttree}
 \glssetwidest{MEMS}
 \makeglossaries
@@ -91,25 +91,25 @@
 \setlength{\headheight}{14pt}
 \usepackage{titlesec}
 \titleformat{\chapter}
-            {\sffamily\bfseries\large}
+            {\bfseries\large}
             {\makebox[1.25cm][l]{\thechapter}}
             {0pt}
-            {\sffamily\scshape\bfseries\large\MakeUppercase}
+            {\scshape\bfseries\large\MakeUppercase}
 \titleformat{\section}
-            {\sffamily\bfseries\large}
+            {\bfseries\large}
             {\makebox[1.25cm][l]{\thesection}}
             {0pt}
-            {\sffamily\bfseries\large}  
+            {\bfseries\large}  
 \titleformat{\subsection}
-            {\sffamily\itshape\large}
+            {\itshape\large}
             {\makebox[1.25cm][l]{\thesubsection}}
             {0pt}
-            {\sffamily\itshape\large}  
+            {\itshape\large}  
 \titleformat{\subsubsection}
-            {\sffamily\large}
+            {\scshape\large}
             {\makebox[1.25cm][l]{\thesubsubsection}}
             {0pt}
-            {\sffamily\large}
+            {\scshape\large}
 \titlespacing{\chapter}{0em}{0.5em}{0.5em}
 \titlespacing{\section}{0em}{0.5em}{0.5em}
 \titlespacing{\subsection}{0em}{0.5em}{0.5em}
@@ -143,19 +143,28 @@
     bold-style=ISO,
     math-style=ISO,
 ]{unicode-math}
-\setmathfont{STIXTwoMath-Regular.otf}[
-    Path=./fonts/STIXTwo/,
-    Extension=.otf,
-    StylisticSet={01,08,10}
-]
-\setmainfont{STIXTwoText}[
-    Path=./fonts/STIXTwo/,
-    Extension=.otf,
-    UprightFont=*-Regular,
+\setmainfont{NewCM10}[
+    UprightFont=*-Book,
     BoldFont=*-Bold,
-    ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic,
+    ItalicFont=*-BookItalic,
+    BoldItalicFont=*-BoldItalic
 ]
+\setmathfont{NewCMMath-Book}[
+    StylisticSet={02}
+]
+% \setmathfont{STIXTwoMath-Regular.otf}[
+%     Path=./fonts/STIXTwo/,
+%     Extension=.otf,
+%     StylisticSet={01,08,10}
+% ]
+% \setmainfont{STIXTwoText}[
+%     Path=./fonts/STIXTwo/,
+%     Extension=.otf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Bold,
+%     ItalicFont=*-Italic,
+%     BoldItalicFont=*-BoldItalic,
+% ]
 \setsansfont{TeX Gyre Heros}[
     LetterSpace=-0.2,
     Scale=0.92,

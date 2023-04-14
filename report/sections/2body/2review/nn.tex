@@ -19,20 +19,26 @@ However, all the three terms can be interchangeable in the major context.
     \label{fig:venn_dl}
 \end{figure}
 
-The deep learning history goes back to the 1940s and it had several names over the years. It was called by \emph{cybernetics} (1940s--1960s), \emph{connectionism} (1980s--1990s), and from 2006 until now is known as \emph{deep learning}.
+The deep learning history goes back to the 1940s and it had several names over the years. 
+It was called by \emph{cybernetics} (1940s--1960s), \emph{connectionism} (1980s--1990s), and from 2006 until now is known as \emph{deep learning}.
 The \gls*{dl} models were engineered systems inspired by the biological brain and they were denominated \gls*{ann}.
 One of the motivations of the neural  perspective was to understand that the brain provides a proof by example that intelligent behavior is possible and try to reverse engineer the computation principals behind the brain, duplicating its functionality.
 
 \gls*{dl} today goes beyond the neuroscientist perspective and it is more of general principle of learning multiple levels of composition.
 
-\subsection{Model Choice}
-
-\subsubsection*{Model for objctive A}
-\subsubsection*{Model for objctive B}
+\subsection{Neural Networks Models}
 
 \subsection{Loss Function}
 
-The \emph{loss function}, also called \emph{cost function} or \emph{error function} is the one used measure the error between the predicted output of an algorithm and the real target output. There are several loss functions suitable to different kind of situation and for each distributed data there is one that fits better.
+The \emph{loss function}, also called \emph{cost function} or \emph{error function}, is the one used measure the error between the predicted output of an algorithm and the real target output. 
+There are several loss functions suitable to different kind of situation. For each distributed data there is one that fits better.
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics{figures/2review/nn/mae_chart.pdf}
+    \caption[Linear Data and Loss Function]{Linear Data and Loss Function. The loss function take all the distances between the predicted and the target value to verify if the model is in the right path. The lower the distance, the better.}
+    \label{fig:mae_chart}
+\end{figure}
 
 For a linear distribution of the data, for instance, a common loss function adopted is the \gls*{mae}.
 %
@@ -50,18 +56,64 @@ where \(n\) is the sample size; \(y_i\) is the predicted output; and \(x_i\) is 
 %
 where \(n\) is the sample size; \(\hat{y}_i\) is the predicted output; and \(y_i\) is the real target.
 
-These methods are the simplest ones and both lead to poor results when using complex data patterns, but through them it is easy to recognize the essence of what the cost function does. Other methods like cross-entropy are more likely to get better results when having a pattern of complex data.
+\gls*{mae} and \gls*{mse} are simple methods and both lead to poor results for complex data patterns
+Although, through them, it is easy to recognize the essence of what the cost function does. 
+Other methods like \emph{cross-entropy} are more likely to get better results when having a pattern of complex data.
 
-Therefore, the loss function measures how far from the real value the data is. Many kinds of them are available and must be analyzed the most proper one. It will depend on not only the data and its pattern, but also the computational processing and the cost attached to it.
+Therefore, the loss function measures how far from the real value the data is. Many kinds of them are available and must be analyzed the most proper one to each case. 
+It will depend on not only the data and its pattern, but also the computational processing and the cost attached to it.
 
+\subsubsection*{Cross Entropy}
 
-\subsubsection*{Loss Function for objctive A}
-\subsubsection*{Loss Function for objctive B}
+\subsubsection*{Binary Cross Entropy}
 
 \subsection{Optimizer}
 
-\subsubsection*{Optimizer for objctive A}
-\subsubsection*{Optimizer for objctive B}
+The optimizer is an algorithm that updates the model in response to the output of the loss function, that is, it aids minimizing the loss function. 
+As the loss function minimizes, the model is getting closer to the target values and, hence, closer to the real pattern.
+
+The \emph{gradient descent} is one of the main algorithm \citep{nesterov2004} that optimizes the model and many important ones are based on it, like the \gls*{sgd}. The goal is to get the minimum, as the error (loss) between the predicted and the target data is null. This would mean that the model fits to the pattern of the data.
+%
+\begin{figure}[H]
+    \centering
+    \includegraphics{figures/2review/nn/gradient_descent.pdf}
+    \caption[Gradient Descent Process]{Gradient Descent Process. In this case, the loss function can be represented in a two-axes plan. Depending on the data, it is not possible to represent graphically due to its multi dimension.}
+\end{figure}
+
+\subsubsection*{Gradient Descent}
+
+The gradient descent is a powerful algorithm that reduces the loss function, minimizing the error between the predicted value and the target value.
+
+Since the gradient of a function gives the direction of the steepest ascent of a function and it is orthogonal to the surface at a determined point, it seems reasonable that moving in the perpendicular direction gives the maximum increase of the function \cite{stewart2016}.
+On the other hand, the negative of the gradient may be used to find the opposite, that is, the minimum decrease of the function.
+If the steps given to the direction of the negative gradient of the function are small, there is a good chance to get minimum value of the function.
+However, if the steps are too long, the chance to pass by the minimum value is high \citep{nielsen2015}.
+These steps are called \emph{learning rate} and should be chosen wisely.
+
+This way, let \(\vb{x}\) be the entry vector with the predicted data and \(L\) the loss function adopted for some deep learning model, and \(\gamma\) the learning rate, the gradient descent is:
+%
+\begin{equation}
+    x_{t+1} = x_t - \gamma\nabla L(x_t)
+\end{equation}
+%
+Therefore, the gradient descent gets the loss function tending to its minimum possible value.
+
+\subsubsection*{Stochastic Gradient Descent}
+
+As seen, gradient descent is a powerful tool to minimize the loss function, however, for large data, the cost of operation is very high and its use is not feasible. 
+The main ideia of \gls*{sgd} is that the gradient is an expectation.
+Later, the data is divided in subsets, also called \emph{mini-batches} and then the gradient is performed over them.
+The data inside each subset may be considered redundant, that is why it uses one single value of the subset to compute the gradient descent.
+This way, the process is considerable better for computational resources.
+
+The \gls*{sgd} can be written as:
+%
+\begin{equation}
+    \vb{x}_{t+1} = \vb{x}_t - \frac{\gamma}{m} \sum_{i=1}^m \nabla L(\vb{x}_t; p^{(i)},q^{(i)})
+\end{equation}
+%
+where \(m\) is the mini-batch size, and \(\nabla L(\theta; p^{(i)}, q^{(i)})\) is the gradient of the loss function with respect to the parameter vector \(\vb{x}\) for the \(i^{\text{th}}\) example \((p^{(i)}, q^{(i)})\) in the mini-batch.
+
 % \subsection{Perceptron}
 
 % \subsubsection*{Single-Layer Perceptron}
