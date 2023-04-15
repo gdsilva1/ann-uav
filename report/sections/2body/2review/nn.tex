@@ -23,8 +23,9 @@ The deep learning history goes back to the 1940s and it had several names over t
 It was called by \emph{cybernetics} (1940s--1960s), \emph{connectionism} (1980s--1990s), and from 2006 until now is known as \emph{deep learning}.
 The \gls*{dl} models were engineered systems inspired by the biological brain and they were denominated \gls*{ann}.
 One of the motivations of the neural  perspective was to understand that the brain provides a proof by example that intelligent behavior is possible and try to reverse engineer the computation principals behind the brain, duplicating its functionality.
+Today it goes beyond the neuroscientist perspective and it is more of general principle of learning multiple levels of composition.
 
-\gls*{dl} today goes beyond the neuroscientist perspective and it is more of general principle of learning multiple levels of composition.
+\gls*{dl} dwells in the programming sphere. The approach, however, it is not like the traditional programming scripts and models. To automate stuff, there are three main parts: (i) the input data, (ii) the rule (function) and (iii) the output data. In both types there are two of three parts available, but different ones for each other. In the traditional programming, there is the input data and the rule, for the algorithm output the data. In deep learning, there is the input data and the output data, for the algorithm provides the rule. A good analogy is cooking: in the traditional programming context, one has the ingredients and the recipe to make the main course; in the deep learning context, one has the ingredients and the main course to discover the recipe.
 
 \subsection{Neural Networks Models}
 
@@ -64,7 +65,7 @@ It will depend on not only the data and its pattern, but also the computational 
 
 \subsection{Optimizer}
 
-The optimizer is an algorithm that updates the model in response to the output of the loss function, that is, it aids minimizing the loss function. 
+The optimizer is an algorithm that updates the model in response to the output of the loss function, that is, it aids to minimize the loss function. 
 As the loss function minimizes, the model is getting closer to the target values and, hence, closer to the real pattern.
 
 The \emph{gradient descent} is one of the main algorithm \citep{nesterov2004} that optimizes the model and many important ones are based on it, like the \gls*{sgd}. The goal is to get the minimum, as the error (loss) between the predicted and the target data is null. This would mean that the model fits to the pattern of the data.
@@ -80,15 +81,15 @@ The \emph{gradient descent} is one of the main algorithm \citep{nesterov2004} th
 The gradient descent is a powerful algorithm that reduces the loss function, minimizing the error between the predicted value and the target value.
 
 Since the gradient of a function gives the direction of the steepest ascent of a function and it is orthogonal to the surface at a determined point, it seems reasonable that moving in the perpendicular direction gives the maximum increase of the function \cite{stewart2016}.
-On the other hand, the negative of the gradient may be used to find the opposite, that is, the minimum decrease of the function.
+On the other hand, the negative of the gradient may be used to find the opposite, that is, the steepest descent of the function, or the minimum decrease.
 If the steps given to the direction of the negative gradient of the function are small, there is a good chance to get minimum value of the function.
 However, if the steps are too long, the chance to pass by the minimum value is high \citep{nielsen2015}.
 These steps are called \emph{learning rate} and should be chosen wisely.
 
-This way, let \(\symbf{x}\) be the entry vector with the predicted data and \(L\) the loss function adopted for some deep learning model, and \(\gamma\) the learning rate, the gradient descent is:
+This way, let \(\symbf{x}\) be the entry vector with the predicted data and \(L\) the loss function adopted for some deep learning model, and \(\epsilon\) the learning rate, the gradient descent is:
 %
 \begin{equation}
-    \symbf{x}_{t+1} = \symbf{x}_t - \gamma\nabla L(\symbf{x}_t)
+    \symbf{x}_{t+1} = \symbf{x}_t - \epsilon \nabla L(\symbf{x}_t)
 \end{equation}
 
 In determined cases, it is possible to avoid running the iterative algorithm and just go directly to the critical point by solving \(\nabla L(\symbf{x}_t) = 0\) for \(\symbf{x}\).
@@ -105,9 +106,9 @@ This way, the process is considerable better for computational resources.
 The \gls*{sgd} can be written as:
 %
 \begin{equation}
-    \symbf{x}_{t+1} = \symbf{x}_t - \frac{\gamma}{m} \sum_{i=1}^m \nabla L(\symbf{x}_t; p^{(i)},q^{(i)})
+    \symbf{x}_{t+1} = \symbf{x}_t - \frac{\epsilon}{m} \sum_{i=1}^m \nabla L(\symbf{x}_t; p^{(i)},q^{(i)})
 \end{equation}
 %
-where \(m\) is the mini-batch size, and \(\nabla L(\theta; p^{(i)}, q^{(i)})\) is the gradient of the loss function with respect to the parameter vector \(\symbf{x}\) for the \(i^{\text{th}}\) example \((p^{(i)}, q^{(i)})\) in the mini-batch.
+where \(m\) is the mini-batch size, and \(\nabla L(\symbf{x}; p^{(i)}, q^{(i)})\) is the gradient of the loss function with respect to the parameter vector \(\symbf{x}\) for the \(i^{\text{th}}\) example \((p^{(i)}, q^{(i)})\) in the mini-batch.
 
 Yet, nowadays, with the amount of data, many techniques are still applied in \gls*{sgd} as creating an automatic adaptive learning rates which achieve the optimal rate of convergence \citep{darken1991} and the momentum technique to improve it \citep{sutskever2013}.
