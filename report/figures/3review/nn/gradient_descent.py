@@ -10,8 +10,10 @@ x_points = np.array([2,1.5,1,0.6,0.3,0.1,0])*(-1)
 
 
 
-plt.style.use(['seaborn-v0_8-darkgrid', 'seaborn-v0_8-dark-palette'])
+plt.style.use(['seaborn-v0_8-white'])
 plt.rcParams.update({
+    'axes.linewidth': 0.5,
+    'lines.linewidth': 0.7,
     'font.family': 'serif',
     'font.size': 12,
     'pgf.texsystem': 'xelatex',
@@ -25,7 +27,7 @@ plt.rcParams.update({
 
 fig, ax =  plt.subplots(1,1, figsize=(5,3)) # figsize=(5,x)
 
-ax.scatter(x_points, loss_fn(x_points), label='Learning Steps', color='darkred', zorder=2)
+ax.scatter(x_points, loss_fn(x_points), label='Learning Steps', zorder=2)
 ax.plot(x_cont, loss_fn(x_cont), label='Loss Function', zorder=1)
 ax.set_xlabel('Weight')
 ax.set_ylabel('Loss Function')
@@ -58,5 +60,6 @@ ax.annotate(
 
 )
 fig.tight_layout()
-fig.savefig('figures/3review/nn/gradient_descent.pdf', backend='pgf')
+fig.savefig('gradient_descent.pdf', backend='pgf')
+# fig.savefig('figures/3review/nn/gradient_descent.pdf', backend='pgf')
 # plt.show()

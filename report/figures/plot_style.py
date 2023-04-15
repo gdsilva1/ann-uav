@@ -9,9 +9,17 @@ def f(x):
 def g(x):
     return np.sin(x)
 
-plt.style.use(['seaborn-v0_8-darkgrid', 'seaborn-v0_8-dark-palette'])
-# plt.style.use(['ggplot', 'seaborn-v0_8-dark-palette'])
+# Use 'seaborn-v0_8-darkgrid' for results/real data 
+# Use 'seaborn-v0_8-white' for literature review/theory explanations
+
+plt.style.use(['seaborn-v0_8-darkgrid'])
+# plt.style.use(['dracula'])
 plt.rcParams.update({
+    'axes.grid': True,
+    # 'axes.linewidth': 0.5, # Use with seaborn-v0_8-white and dracula
+    # 'grid.alpha': 0.1, # Use with dracula
+    'lines.linewidth': 0.7,
+    'grid.linewidth': 0.5,
     'font.family': 'serif',
     'font.size': 12,
     'pgf.texsystem': 'xelatex',

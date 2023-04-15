@@ -2,29 +2,41 @@
 
 \begin{frame}{Sistema Inteligente}
 
-\[\boxed{\text{Computação} + \text{\alert<2>{Engenharia}} = \text{Sistemas Inteligentes}}\] 
-    
+    \[\boxed{\text{\alert<2>{Inteligência artificial}} + \text{Engenharia} = \text{Sistema Inteligente}}\] 
 \end{frame}
 
-\begin{frame}{Monitoramento da Integridade Estrutural (SHM)}
+\begin{frame}{Redes Neurais (Artificiais)}
+\pause
+\begin{figure}
+\centering
+\includegraphics{figures/rede_neural.pdf}
+\end{figure}
+\pause
+\begin{table}
+\centering
+\begin{tabular}{|l|l|l|}
+    \hline
+    Caso & \(x_i\)           & \(y_i\)             \\ \hline
+    SHM  & dados PZT         & \alert<4>{problemas no trilho} \\ \hline
+    VANT & \(S_0\) e \(S_i\) & forças atuantes     \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
 
-\begin{block}{Finalidade}
-    Diagnóstico e análise de uma estrutura.
-\end{block} \pause
-
+\begin{frame}{Implementação}
+\pause
 \begin{itemize}
-    \item Mecânica
-    \item Civil
-    \item Aeroespacial/Aeronáutica
-\end{itemize} \pause
-
-Sensores \(\rightarrow\) Sistema central \(\rightarrow\) \alert<3>{Análise dos dados} \(\rightarrow\) Decisão
-\end{frame}
-
-\begin{frame}{Monitoramento da Integridade Estrutural (SHM)}
-    
-\end{frame}
-
-\begin{frame}{Controle de VANT}
+    \item \textbf{SHM}
+        \begin{itemize}
+            \item<3-4> Utilização do algoritmo já disponível.
+            \item<3-4> MATLAB para geração de dados.
+            \item<3-4> PyTorch para modelagem da rede neural.
+        \end{itemize}
+    \item \textbf{VANT}
+    \begin{itemize}
+        \item<4> Dados fornecidos pela VALE.
+        \item<4> PyTorch para modelagem da rede neural.
+    \end{itemize}
+\end{itemize}
     
 \end{frame}
