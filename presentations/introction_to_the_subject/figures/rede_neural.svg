@@ -26,12 +26,12 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="1.990573"
-     inkscape:cx="136.1417"
-     inkscape:cy="93.942797"
-     inkscape:window-width="1920"
-     inkscape:window-height="1003"
-     inkscape:window-x="0"
-     inkscape:window-y="40"
+     inkscape:cx="174.82403"
+     inkscape:cy="155.73405"
+     inkscape:window-width="1366"
+     inkscape:window-height="731"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer2">
     <sodipodi:guide
@@ -196,69 +196,61 @@
      transform="translate(-30.849097,-18.317051)">
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';text-align:center;text-anchor:middle;fill:#f8f8f2;stroke:none;stroke-width:0.176389;paint-order:markers fill stroke"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.176389;paint-order:markers fill stroke"
        x="32.294781"
        y="27.958456"
        id="text1326"><tspan
          sodipodi:role="line"
          id="tspan1324"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';fill:#f8f8f2;stroke:none;stroke-width:0.176389"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';fill:#ffffff;stroke:none;stroke-width:0.176389"
          x="32.294781"
-         y="27.958456">x<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;baseline-shift:sub"
-   id="tspan1532">1</tspan></tspan></text>
+         y="27.958456">\(x_1\)<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;baseline-shift:sub;fill:#ffffff"
+   id="tspan1532" /></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';text-align:center;text-anchor:middle;fill:#f8f8f2;stroke:none;stroke-width:0.176389;paint-order:markers fill stroke"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.176389;paint-order:markers fill stroke"
        x="109.02943"
        y="33.96756"
        id="text1326-8"><tspan
          sodipodi:role="line"
          id="tspan1324-7"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';fill:#f8f8f2;stroke:none;stroke-width:0.176389"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';fill:#ffffff;stroke:none;stroke-width:0.176389"
          x="109.02943"
-         y="33.96756">y<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;baseline-shift:sub"
-   id="tspan1532-9">1</tspan></tspan></text>
+         y="33.96756">\(y_1\)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';text-align:center;text-anchor:middle;fill:#f8f8f2;stroke:none;stroke-width:0.176389;paint-order:markers fill stroke"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.176389;paint-order:markers fill stroke"
        x="108.98677"
        y="44.19474"
        id="text1326-8-2"><tspan
          sodipodi:role="line"
          id="tspan1324-7-0"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';fill:#f8f8f2;stroke:none;stroke-width:0.176389"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';fill:#ffffff;stroke:none;stroke-width:0.176389"
          x="108.98677"
-         y="44.19474">y<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;baseline-shift:sub"
-   id="tspan1532-9-2">2</tspan></tspan></text>
+         y="44.19474">\(y_2\)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';text-align:center;text-anchor:middle;fill:#f8f8f2;stroke:none;stroke-width:0.176389;paint-order:markers fill stroke"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.176389;paint-order:markers fill stroke"
        x="32.294781"
        y="39.090355"
        id="text1326-6"><tspan
          sodipodi:role="line"
          id="tspan1324-0"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';fill:#f8f8f2;stroke:none;stroke-width:0.176389"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';fill:#ffffff;stroke:none;stroke-width:0.176389"
          x="32.294781"
-         y="39.090355">x<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;baseline-shift:sub"
-   id="tspan1532-6">2</tspan></tspan></text>
+         y="39.090355">\(x_2\)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';text-align:center;text-anchor:middle;fill:#f8f8f2;stroke:none;stroke-width:0.176389;paint-order:markers fill stroke"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:0.176389;paint-order:markers fill stroke"
        x="32.294781"
        y="50.191986"
        id="text1326-2"><tspan
          sodipodi:role="line"
          id="tspan1324-6"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';fill:#f8f8f2;stroke:none;stroke-width:0.176389"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NewComputerModern;-inkscape-font-specification:'NewComputerModern Italic';fill:#ffffff;stroke:none;stroke-width:0.176389"
          x="32.294781"
-         y="50.191986">x<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65%;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;baseline-shift:sub"
-   id="tspan1532-1">3</tspan></tspan></text>
+         y="50.191986">\(x_3\)</tspan></text>
     <g
        id="g2772"
        style="stroke:#3d3c3d;stroke-width:0.176389;stroke-dasharray:none">
@@ -394,27 +386,27 @@
     <g
        id="g1215"
        transform="translate(0.35444774,2.6915941)"
-       style="fill:none;stroke:#6a0173;stroke-width:0.176389;stroke-dasharray:none">
+       style="fill:none;stroke:#c08600;stroke-width:0.176389;stroke-dasharray:none">
       <circle
-         style="fill:none;stroke:#6a0173;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#c08600;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-7"
          cx="60.743607"
          cy="19.406054"
          r="3.6924024" />
       <circle
-         style="fill:none;stroke:#6a0173;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#c08600;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-5"
          cx="60.743607"
          cy="30.393955"
          r="3.6924024" />
       <circle
-         style="fill:none;stroke:#6a0173;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#c08600;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-35"
          cx="60.743607"
          cy="41.381859"
          r="3.6924024" />
       <circle
-         style="fill:none;stroke:#6a0173;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#c08600;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-62"
          cx="60.743607"
          cy="52.369759"
@@ -475,61 +467,61 @@
     <g
        id="g1215-2"
        transform="translate(19.383899,2.6915941)"
-       style="fill:none;stroke:#6a0173;stroke-width:0.176389;stroke-dasharray:none">
+       style="fill:none;stroke:#c08600;stroke-width:0.176389;stroke-dasharray:none">
       <circle
-         style="fill:none;stroke:#6a0173;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#c08600;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-7-7"
          cx="60.743607"
          cy="19.406054"
          r="3.6924024" />
       <circle
-         style="fill:none;stroke:#6a0173;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#c08600;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-5-0"
          cx="60.743607"
          cy="30.393955"
          r="3.6924024" />
       <circle
-         style="fill:none;stroke:#6a0173;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#c08600;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-35-9"
          cx="60.743607"
          cy="41.381859"
          r="3.6924024" />
       <circle
-         style="fill:none;stroke:#6a0173;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#c08600;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-62-3"
          cx="60.743607"
          cy="52.369759"
          r="3.6924024" />
     </g>
     <path
-       style="fill:none;stroke:#f8f8f2;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1);paint-order:markers fill stroke"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1);paint-order:markers fill stroke"
        d="m 34.704827,27.446224 h 2.44367"
        id="path2969" />
     <path
-       style="fill:none;stroke:#f8f8f2;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1-3);paint-order:markers fill stroke"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1-3);paint-order:markers fill stroke"
        d="m 34.704827,38.579498 h 2.44367"
        id="path2969-5" />
     <path
-       style="fill:none;stroke:#f8f8f2;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1-9);paint-order:markers fill stroke"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1-9);paint-order:markers fill stroke"
        d="m 34.704827,49.711399 h 2.44367"
        id="path2969-2" />
     <path
-       style="fill:none;stroke:#f8f8f2;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1-8);paint-order:markers fill stroke"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1-8);paint-order:markers fill stroke"
        d="m 103.9925,33.173744 h 2.44367"
        id="path2969-7" />
     <path
-       style="fill:none;stroke:#f8f8f2;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1-36);paint-order:markers fill stroke"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1-36);paint-order:markers fill stroke"
        d="m 103.9925,43.763309 h 2.44367"
        id="path2969-29" />
     <text
        xml:space="preserve"
-       style="font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;display:inline;fill:#6a0173;stroke:#3d3c3d;stroke-width:0.176389;paint-order:markers fill stroke"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;display:inline;fill:#c08600;stroke:#3d3c3d;stroke-width:0.176389;paint-order:markers fill stroke"
        x="70.709564"
        y="63.82328"
        id="text1781"><tspan
          sodipodi:role="line"
          id="tspan1779"
-         style="fill:#6a0173;stroke:none;stroke-width:0.176389"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;fill:#c08600;stroke:none;stroke-width:0.176389"
          x="70.709564"
          y="63.82328">Hidden Layers</tspan></text>
   </g>

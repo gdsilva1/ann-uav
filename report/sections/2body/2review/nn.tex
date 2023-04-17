@@ -32,16 +32,18 @@ Today it goes beyond the neuroscientist perspective and it is more of general pr
 \subsection{Loss Function}
 
 The \emph{loss function}, also called \emph{cost function} or \emph{error function}, is the one used measure the error between the predicted output of an algorithm and the real target output. 
-There are several loss functions suitable to different kind of situation. For each distributed data there is one that fits better.
+There are several loss functions suitable to different kind of situation. 
+For each distributed data there is one that fits better.
+The~\cref{fig:mae_chart} represents domain of the loss function.
 %
 \begin{figure}[!htb]
     \centering
     \includegraphics{figures/3review/nn/mae_chart.pdf}
-    \caption[Linear Data and Loss Function]{Linear Data and Loss Function. The loss function take all the distances between the predicted and the target value to verify if the model is in the right path. The lower the distance, the better.}
+    \caption[Loss Function for Linear Regression]{Loss Function for Linear Regression. The loss function take all the distances between the predicted and the target value to verify if the model is in the right path. The lower the distance, the better.}
     \label{fig:mae_chart}
 \end{figure}
 
-For regression problems, common loss functions adopted are the \gls*{mse} \citep{bussab2017} or \gls*{mae}.
+For regression problems, common loss functions adopted are the \gls*{mse} \citep{bussab2017} or \gls*{mae}. 
 %
 \begin{align}
     &\mse = \frac{1}{n} \sum_{i=1}^n (y_i - x_i)^2
