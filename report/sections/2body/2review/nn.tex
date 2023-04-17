@@ -41,12 +41,12 @@ There are several loss functions suitable to different kind of situation. For ea
     \label{fig:mae_chart}
 \end{figure}
 
-For a linear distribution of the data, for instance, a common loss function adopted is the \gls*{mse} \citep{bussab2017} or \gls*{mae}.
+For regression problems, common loss functions adopted are the \gls*{mse} \citep{bussab2017} or \gls*{mae}.
 %
 \begin{align}
-    \mse &= \frac{1}{n} \sum_{i=1}^n (y_i - x_i)^2
+    &\mse = \frac{1}{n} \sum_{i=1}^n (y_i - x_i)^2
     \label{eq:mse} \\
-    \mae &= \frac{1}{n} \sum_{i=1}^n |y_i - x_i|
+    &\mae = \frac{1}{n} \sum_{i=1}^n |y_i - x_i|
     \label{eq:mae}
 \end{align}
 %
@@ -59,9 +59,26 @@ Other methods like \emph{cross-entropy} are more likely to get better results wh
 Therefore, the loss function measures how far from the real value the data is. Many kinds of them are available and must be analyzed the most proper one to each case. 
 It will depend on not only the data and its pattern, but also the computational processing and the cost attached to it.
 
-\subsubsection*{Cross Entropy}
+\subsubsection*{Cross-Entropy}
 
-\subsubsection*{Binary Cross Entropy}
+There are several ways that the data can be classified like multi-classification or binary classification. For multi-classification, the cross-entropy function is a common loss function adopted.
+
+From a distribution \(Q\) relative to a distribution \(P\) over a given set, being both discrete probability distribution, the cross-entropy is defined as
+%
+\begin{equation}
+    H(P,Q) = - \sum_{i=1}^n P(x) \, \log Q(x)
+    \label{eq:cross_entropy_multi}
+\end{equation}
+%
+where \(n\) is the size of the sample and the~\cref{eq:cross_entropy_multi} is often used for multi-classification.
+
+The binary cross-entropy is defined by
+%
+\begin{equation}
+    H(P,Q) - \frac{1}{n} \sum_{i=1}^n x \, \log P(x) + (1-x) \, \log \Big(1-Q(x)\Big)
+    \label{eq:cross_entropy_binary}
+\end{equation}
+
 
 \subsection{Optimizer}
 

@@ -25,13 +25,13 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="3.9811461"
-     inkscape:cx="126.09434"
-     inkscape:cy="82.63952"
-     inkscape:window-width="1920"
-     inkscape:window-height="1003"
-     inkscape:window-x="0"
-     inkscape:window-y="40"
+     inkscape:zoom="1.4075477"
+     inkscape:cx="176.54819"
+     inkscape:cy="61.809628"
+     inkscape:window-width="1366"
+     inkscape:window-height="731"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer2">
     <sodipodi:guide
@@ -179,7 +179,8 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-76.416242,-68.056312)"
-     sodipodi:insensitive="true">
+     sodipodi:insensitive="true"
+     style="display:none">
     <g
        id="g1481"
        style="fill:#282a36">
@@ -408,21 +409,21 @@
     </g>
     <g
        id="g1209"
-       style="stroke:#ff5555;stroke-width:0.176389;stroke-dasharray:none">
+       style="stroke:#ff5555;stroke-width:0.176389;stroke-dasharray:none;fill:none">
       <circle
-         style="fill:#282a36;stroke:#ff5555;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#ff5555;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072"
          cx="42.068604"
          cy="27.447601"
          r="3.6924024" />
       <circle
-         style="fill:#282a36;stroke:#ff5555;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#ff5555;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-3"
          cx="42.068604"
          cy="38.579498"
          r="3.6924024" />
       <circle
-         style="fill:#282a36;stroke:#ff5555;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#ff5555;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-6"
          cx="42.068604"
          cy="49.711399"
@@ -495,27 +496,27 @@
     <g
        id="g1215"
        transform="translate(0.35444774,2.6915941)"
-       style="stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none">
+       style="stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;fill:none">
       <circle
-         style="fill:#282a36;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-7"
          cx="60.743607"
          cy="19.406054"
          r="3.6924024" />
       <circle
-         style="fill:#282a36;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-5"
          cx="60.743607"
          cy="30.393955"
          r="3.6924024" />
       <circle
-         style="fill:#282a36;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-35"
          cx="60.743607"
          cy="41.381859"
          r="3.6924024" />
       <circle
-         style="fill:#282a36;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-62"
          cx="60.743607"
          cy="52.369759"
@@ -559,15 +560,15 @@
     </g>
     <g
        id="g2803"
-       style="stroke:#50fa7b;stroke-width:0.176389;stroke-dasharray:none">
+       style="stroke:#50fa7b;stroke-width:0.176389;stroke-dasharray:none;fill:none">
       <circle
-         style="fill:#282a36;stroke:#50fa7b;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#50fa7b;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-9"
          cx="99.15696"
          cy="33.085548"
          r="3.6924024" />
       <circle
-         style="fill:#282a36;stroke:#50fa7b;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#50fa7b;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-1"
          cx="99.15696"
          cy="44.073452"
@@ -576,27 +577,27 @@
     <g
        id="g1215-2"
        transform="translate(19.383899,2.6915941)"
-       style="stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none">
+       style="stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;fill:none">
       <circle
-         style="fill:#282a36;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-7-7"
          cx="60.743607"
          cy="19.406054"
          r="3.6924024" />
       <circle
-         style="fill:#282a36;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-5-0"
          cx="60.743607"
          cy="30.393955"
          r="3.6924024" />
       <circle
-         style="fill:#282a36;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-35-9"
          cx="60.743607"
          cy="41.381859"
          r="3.6924024" />
       <circle
-         style="fill:#282a36;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+         style="fill:none;stroke:#bd93f9;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
          id="path1072-62-3"
          cx="60.743607"
          cy="52.369759"
