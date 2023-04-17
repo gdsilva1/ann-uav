@@ -14,7 +14,7 @@ However, all the three terms can be interchangeable in the major context.
 %
 \begin{figure}[!htb]
     \centering
-    \includegraphics{figures/3review/nn/venn_dl.pdf}
+    \includesvg{figures/3review/nn/venn_dl.svg}
     \caption{Subareas of Artificial Intelligence}
     \label{fig:venn_dl}
 \end{figure}
@@ -67,16 +67,16 @@ From a distribution \(Q\) relative to a distribution \(P\) over a given set, bei
 %
 \begin{equation}
     H(P,Q) = - \sum_{i=1}^n P(x) \, \log Q(x)
-    \label{eq:cross_entropy_multi}
+    \label{eq:cross_entropy}
 \end{equation}
 %
-where \(n\) is the size of the sample and the~\cref{eq:cross_entropy_multi} is often used for multi-classification.
+where \(n\) is the size of the sample.
 
-The binary cross-entropy is defined by
+As the~\cref{eq:cross_entropy} is used for muti-classification, the binary cross-entropy, as the name suggest, is used to binary classification. It is defined as
 %
 \begin{equation}
     H(P,Q) - \frac{1}{n} \sum_{i=1}^n x \, \log P(x) + (1-x) \, \log \Big(1-Q(x)\Big)
-    \label{eq:cross_entropy_binary}
+    \label{eq:binary_cross_entropy}
 \end{equation}
 
 

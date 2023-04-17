@@ -14,7 +14,7 @@
 \useinnertheme{circles}
 \setbeamertemplate{title page}[default][left]
 \setbeamertemplate{blocks}[default]
-\setbeamertemplate{footline}{\hfill\insertframenumber{} / \inserttotalframenumber}
+\setbeamertemplate{footline}{\hfill\insertframenumber{}}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{navigation symbols}{}
 \counterwithin{figure}{section}
@@ -36,10 +36,15 @@
 }
 \setbeamercolor{section in toc}{
     fg=white,
-    bg=red
+    bg=black!80
+}
+\setbeamercolor{section in toc shaded}{
+    fg=black,
+    bg=black
 }
 \setbeamercolor{section number projected}{
-    fg=black
+    fg=black,
+    bg=white
 }
 \setbeamercolor{subsection number projected}{
     fg=black,

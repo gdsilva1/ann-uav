@@ -12,7 +12,7 @@ def g(x):
 # Use 'seaborn-v0_8-darkgrid' for results/real data 
 # Use 'seaborn-v0_8-white' for literature review/theory explanations
 
-plt.style.use(['seaborn-v0_8-darkgrid'])
+plt.style.use(['seaborn-v0_8-darkgrid', 'seaborn-v0_8-dark-palette'])
 # plt.style.use(['dracula'])
 plt.rcParams.update({
     'axes.grid': True,

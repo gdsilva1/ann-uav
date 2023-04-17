@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 y_data = np.array([0.8, 2.5, 3.2, 3.5, 5.9])
 x_data = np.array([1, 2, 3, 4, 5])
 
-plt.style.use(['seaborn-v0_8-white'])
+plt.style.use(['seaborn-v0_8-white', 'seaborn-v0_8-dark-palette'])
 plt.rcParams.update({
     'axes.linewidth': 0.5,
     'lines.linewidth': 0.7,
@@ -23,7 +23,7 @@ plt.rcParams.update({
 fig, ax =  plt.subplots(1,1, figsize=(5,3)) # figsize=(5,x)
 
 
-ax.plot([5,5], [5,5.9], color='red')
+ax.plot([5,5], [5,5.9], '--', color='darkred')
 ax.scatter(x_data,y_data, label='Prediction Data', zorder=2)
 ax.plot(y_data,y_data, label='Target Data')
 ax.set_xlabel('Input data')
@@ -43,6 +43,6 @@ ax.annotate(
     },
 )
 fig.tight_layout()
-fig.savefig('mae_chart.pdf', backend='pgf')
-# fig.savefig('figures/3review/nn/mae_chart.pdf', backend='pgf')
+# fig.savefig('mae_chart.pdf', backend='pgf')
+fig.savefig('figures/3review/nn/mae_chart.pdf', backend='pgf')
 # plt.show()

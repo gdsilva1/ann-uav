@@ -10,7 +10,7 @@ x_points = np.array([2,1.5,1,0.6,0.3,0.1,0])*(-1)
 
 
 
-plt.style.use(['seaborn-v0_8-white'])
+plt.style.use(['seaborn-v0_8-white', 'seaborn-v0_8-dark-palette'])
 plt.rcParams.update({
     'axes.linewidth': 0.5,
     'lines.linewidth': 0.7,
@@ -60,6 +60,6 @@ ax.annotate(
 
 )
 fig.tight_layout()
-fig.savefig('gradient_descent.pdf', backend='pgf')
-# fig.savefig('figures/3review/nn/gradient_descent.pdf', backend='pgf')
+# fig.savefig('gradient_descent.pdf', backend='pgf')
+fig.savefig('figures/3review/nn/gradient_descent.pdf', backend='pgf')
 # plt.show()

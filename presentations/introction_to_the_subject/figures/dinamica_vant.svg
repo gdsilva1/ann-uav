@@ -26,8 +26,8 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="1.4075477"
-     inkscape:cx="232.31895"
-     inkscape:cy="105.14741"
+     inkscape:cx="366.95026"
+     inkscape:cy="144.22247"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
      inkscape:window-x="0"
@@ -227,89 +227,86 @@
      id="layer2"
      inkscape:label="Layer 2"
      transform="translate(-15.272597,-20.302932)">
-    <g
-       id="g1866">
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;fill:#f8f8f2;stroke-width:0.175695;paint-order:markers fill stroke"
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.175695;paint-order:markers fill stroke"
+       x="125.07548"
+       y="29.150766"
+       id="text589"><tspan
+         sodipodi:role="line"
+         id="tspan587"
+         style="font-size:4.23333px;fill:#ffffff;stroke-width:0.175695"
          x="125.07548"
-         y="29.150766"
-         id="text589"><tspan
-           sodipodi:role="line"
-           id="tspan587"
-           style="font-size:4.23333px;fill:#f8f8f2;stroke-width:0.175695"
-           x="125.07548"
-           y="29.150766">Trajetória</tspan><tspan
-           sodipodi:role="line"
-           style="font-size:4.23333px;fill:#f8f8f2;stroke-width:0.175695"
-           x="125.07548"
-           y="34.442429"
-           id="tspan591">(Posição do VANT)</tspan></text>
-      <rect
-         style="fill:none;stroke:#f8f8f2;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
-         id="rect593-3"
-         width="39.131443"
-         height="20.972736"
-         x="105.50765"
-         y="20.391127" />
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;fill:#f8f8f2;stroke-width:0.175695;paint-order:markers fill stroke"
+         y="29.150766">Trajetória</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#ffffff;stroke-width:0.175695"
+         x="125.07548"
+         y="34.442429"
+         id="tspan591">(Posição do VANT)</tspan></text>
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect593-3"
+       width="39.131443"
+       height="20.972736"
+       x="105.50765"
+       y="20.391127" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.175695;paint-order:markers fill stroke"
+       x="80.004158"
+       y="29.224558"
+       id="text589-5"><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#ffffff;stroke-width:0.175695"
          x="80.004158"
          y="29.224558"
-         id="text589-5"><tspan
-           sodipodi:role="line"
-           style="font-size:4.23333px;fill:#f8f8f2;stroke-width:0.175695"
-           x="80.004158"
-           y="29.224558"
-           id="tspan591-5">Dinâmica do VANT</tspan><tspan
-           sodipodi:role="line"
-           style="font-size:4.23333px;fill:#f8f8f2;stroke-width:0.175695"
-           x="80.004158"
-           y="34.51622"
-           id="tspan565">(Algoritmo)</tspan></text>
-      <rect
-         style="fill:none;stroke:#f8f8f2;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
-         id="rect593-3-6"
-         width="39.131443"
-         height="20.972736"
-         x="60.434223"
-         y="20.391127" />
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;fill:#f8f8f2;stroke-width:0.175695;paint-order:markers fill stroke"
+         id="tspan591-5">Dinâmica do VANT</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#ffffff;stroke-width:0.175695"
+         x="80.004158"
+         y="34.51622"
+         id="tspan565">(Algoritmo)</tspan></text>
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect593-3-6"
+       width="39.131443"
+       height="20.972736"
+       x="60.434223"
+       y="20.391127" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.175695;paint-order:markers fill stroke"
+       x="34.913864"
+       y="29.656769"
+       id="text589-3"><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#ffffff;stroke-width:0.175695"
          x="34.913864"
          y="29.656769"
-         id="text589-3"><tspan
-           sodipodi:role="line"
-           style="font-size:4.23333px;fill:#f8f8f2;stroke-width:0.175695"
-           x="34.913864"
-           y="29.656769"
-           id="tspan591-6">Posição</tspan><tspan
-           sodipodi:role="line"
-           style="font-size:4.23333px;fill:#f8f8f2;stroke-width:0.175695"
-           x="34.913864"
-           y="34.948433"
-           id="tspan582">Inicial</tspan></text>
-      <rect
-         style="fill:none;stroke:#f8f8f2;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
-         id="rect593-3-2"
-         width="39.131443"
-         height="20.972736"
-         x="15.360791"
-         y="20.391127" />
-      <path
-         style="fill:none;stroke:#f8f8f2;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1);paint-order:markers fill stroke"
-         d="m 54.492232,30.877496 c 1.883839,0 3.767426,0 5.650764,0"
-         id="path761"
-         inkscape:path-effect="#path-effect763"
-         inkscape:original-d="m 54.492232,30.877496 c 1.883839,2.63e-4 3.767426,2.63e-4 5.650764,0" />
-      <path
-         style="fill:none;stroke:#f8f8f2;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1);paint-order:markers fill stroke"
-         d="m 99.565662,30.877496 c 1.883838,0 3.767418,0 5.650758,0"
-         id="path765"
-         inkscape:path-effect="#path-effect767"
-         inkscape:original-d="m 99.565662,30.877496 c 1.883838,2.63e-4 3.767418,2.63e-4 5.650758,0" />
-    </g>
+         id="tspan591-6">Posição</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23333px;fill:#ffffff;stroke-width:0.175695"
+         x="34.913864"
+         y="34.948433"
+         id="tspan582">Inicial</tspan></text>
+    <rect
+       style="fill:none;stroke:#ffffff;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect593-3-2"
+       width="39.131443"
+       height="20.972736"
+       x="15.360791"
+       y="20.391127" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1);paint-order:markers fill stroke"
+       d="m 54.492232,30.877496 c 1.883839,0 3.767426,0 5.650764,0"
+       id="path761"
+       inkscape:path-effect="#path-effect763"
+       inkscape:original-d="m 54.492232,30.877496 c 1.883839,2.63e-4 3.767426,2.63e-4 5.650764,0" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1);paint-order:markers fill stroke"
+       d="m 99.565662,30.877496 c 1.883838,0 3.767418,0 5.650758,0"
+       id="path765"
+       inkscape:path-effect="#path-effect767"
+       inkscape:original-d="m 99.565662,30.877496 c 1.883838,2.63e-4 3.767418,2.63e-4 5.650758,0" />
   </g>
 </svg>
