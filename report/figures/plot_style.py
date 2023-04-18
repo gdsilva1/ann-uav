@@ -67,4 +67,4 @@ ax4.set_title('Funções Trigonométricas', fontsize=12)
 
 
 fig.tight_layout(pad=1)
-fig.savefig('plot_style.pdf', backend='pgf')
+fig.savefig('plot_style.pgf', backend='pgf')

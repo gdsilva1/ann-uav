@@ -29,6 +29,8 @@ Today it goes beyond the neuroscientist perspective and it is more of general pr
 
 \subsection{Neural Networks Models}
 
+\subsection{Activation Function}
+
 \subsection{Loss Function}
 
 The \emph{loss function}, also called \emph{cost function} or \emph{error function}, is the one used measure the error between the predicted output of an algorithm and the real target output. 
@@ -38,7 +40,7 @@ The~\cref{fig:mae_chart} represents domain of the loss function.
 %
 \begin{figure}[!htb]
     \centering
-    \includegraphics{figures/3review/nn/mae_chart.pdf}
+    \includesvg{figures/3review/nn/mae_chart.svg}
     \caption[Loss Function for Linear Regression]{Loss Function for Linear Regression. The loss function take all the distances between the predicted and the target value to verify if the model is in the right path. The lower the distance, the better.}
     \label{fig:mae_chart}
 \end{figure}
@@ -46,9 +48,9 @@ The~\cref{fig:mae_chart} represents domain of the loss function.
 For regression problems, common loss functions adopted are the \gls*{mse} \citep{bussab2017} or \gls*{mae}. 
 %
 \begin{align}
-    &\mse = \frac{1}{n} \sum_{i=1}^n (y_i - x_i)^2
+    &\mse = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2
     \label{eq:mse} \\
-    &\mae = \frac{1}{n} \sum_{i=1}^n |y_i - x_i|
+    &\mae = \frac{1}{n} \sum_{i=1}^n |y_i - \hat{y}_i|
     \label{eq:mae}
 \end{align}
 %
@@ -91,8 +93,8 @@ The \emph{gradient descent} is one of the main algorithm \citep{nesterov2004} th
 %
 \begin{figure}[!htb]
     \centering
-    \includegraphics{figures/3review/nn/gradient_descent.pdf}
-    \caption[Gradient Descent Process]{Gradient Descent Process. In this case, the loss function can be represented in a two-axes plan. Depending on the data, it is not possible to represent graphically due to its multi dimension.}
+    \includesvg{figures/3review/nn/gradient_descent.svg}
+    \caption[Gradient Descent Process]{Gradient Descent Process. In this case, the loss function can be represented in a two-axes plan. Depending on the data, it is not possible to represent graphically due to its multi dimension. Each point represents the learning step. When the gradient descent reaches the minimum of the loss function, it means that the model may be accurate. Note that the gradient descent can reach a local minimum of the function and not the global minimum necessarily.}
 \end{figure}
 
 \subsubsection*{Gradient Descent} 
