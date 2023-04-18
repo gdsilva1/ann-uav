@@ -31,6 +31,12 @@ Today it goes beyond the neuroscientist perspective and it is more of general pr
 
 \subsection{Activation Function}
 
+\subsubsection*{Linear Function}
+
+\subsubsection*{Relu Function}
+
+\subsubsection*{Sigmoid Function}
+
 \subsection{Loss Function}
 
 The \emph{loss function}, also called \emph{cost function} or \emph{error function}, is the one used measure the error between the predicted output of an algorithm and the real target output. 
@@ -41,7 +47,7 @@ The~\cref{fig:mae_chart} represents domain of the loss function.
 \begin{figure}[!htb]
     \centering
     \includesvg{figures/3review/nn/mae_chart.svg}
-    \caption[Loss Function for Linear Regression]{Loss Function for Linear Regression. The loss function take all the distances between the predicted and the target value to verify if the model is in the right path. The lower the distance, the better.}
+    \caption[Loss Function for Linear Regression]{Loss Function for Linear Regression. The loss function take all the distances between the predicted and the target value to verify if the model is in the right path. The lower the distance, the better. The \(y\)-axis represents the output data and the \(x\)-axis represents the input data.}
     \label{fig:mae_chart}
 \end{figure}
 
@@ -54,7 +60,7 @@ For regression problems, common loss functions adopted are the \gls*{mse} \citep
     \label{eq:mae}
 \end{align}
 %
-where \(n\) is the sample size; \(y_i\) is the predicted output; and \(x_i\) is the real target.
+where \(n\) is the sample size; \(y_i\) is the predicted output; and \(\hat{y}_i\) is the real target.
 
 \gls*{mae} and \gls*{mse} are simple methods and both lead to poor results for complex data patterns.
 Although, through them, it is easy to recognize the essence of what the cost function does. 
@@ -65,7 +71,8 @@ It will depend on not only the data and its pattern, but also the computational 
 
 \subsubsection*{Cross-Entropy}
 
-There are several ways that the data can be classified like multi-classification or binary classification. For multi-classification, the cross-entropy function is a common loss function adopted.
+From a determined data, there are several classifications that can be extracted from them. Their pattern will determine what kind of classification, whether it is a classification or a regression data, for instance.
+For classification, the cross-entropy function is a common loss function adopted.
 
 From a distribution \(Q\) relative to a distribution \(P\) over a given set, being both discrete probability distribution, the cross-entropy is defined as
 %
@@ -76,13 +83,16 @@ From a distribution \(Q\) relative to a distribution \(P\) over a given set, bei
 %
 where \(n\) is the size of the sample.
 
-As the~\cref{eq:cross_entropy} is used for muti-classification, the binary cross-entropy, as the name suggest, is used to binary classification. It is defined as
+As the~\cref{eq:cross_entropy} is used for multi-classification, the binary cross-entropy, as the name suggest, is used to binary classification. It is defined as
 %
 \begin{equation}
-    H(P,Q) - \frac{1}{n} \sum_{i=1}^n x \, \log P(x) + (1-x) \, \log \Big(1-Q(x)\Big)
+    H(P,Q) = - \frac{1}{n} \sum_{i=1}^n x \, \log P(x) + (1-x) \, \log \Big(1-Q(x)\Big)
     \label{eq:binary_cross_entropy}
 \end{equation}
 
+For classification problems, from the data, the model will try to conclude in what label should the input be classified. 
+It is done through probability. 
+The cross-entropy measures the ``distance'' between the probability distribution and the true probability, being ideal for this kind of problem.
 
 \subsection{Optimizer}
 
@@ -94,14 +104,14 @@ The \emph{gradient descent} is one of the main algorithm \citep{nesterov2004} th
 \begin{figure}[!htb]
     \centering
     \includesvg{figures/3review/nn/gradient_descent.svg}
-    \caption[Gradient Descent Process]{Gradient Descent Process. In this case, the loss function can be represented in a two-axes plan. Depending on the data, it is not possible to represent graphically due to its multi dimension. Each point represents the learning step. When the gradient descent reaches the minimum of the loss function, it means that the model may be accurate. Note that the gradient descent can reach a local minimum of the function and not the global minimum necessarily.}
+    \caption[Gradient Descent Process]{Gradient Descent Process. In this case, the loss function (yellow curve) can be represented in a two-axes plan. Depending on the data, it is not possible to represent graphically due to its multi dimension. Each point represents the learning step. When the gradient descent reaches the minimum of the loss function, it means that the model may be accurate. Note that the gradient descent can reach a local minimum of the function and not the global minimum necessarily. The \(y\)-axis represents the loss function and the \(x\)-axis represents the weight values.}
 \end{figure}
 
 \subsubsection*{Gradient Descent} 
 
 The gradient descent is a powerful algorithm that reduces the loss function, minimizing the error between the predicted value and the target value.
 
-Since the gradient of a function gives the direction of the steepest ascent of a function and it is orthogonal to the surface at a determined point, it seems reasonable that moving in the perpendicular direction gives the maximum increase of the function \cite{stewart2016}.
+Since the gradient of a function gives the direction of the steepest ascent of a function and it is orthogonal to the surface at a determined point, it seems reasonable that moving in the perpendicular direction gives the maximum increase of the function \citep{stewart2016}.
 On the other hand, the negative of the gradient may be used to find the opposite, that is, the steepest descent of the function, or the minimum decrease.
 If the steps given to the direction of the negative gradient of the function are small, there is a good chance to get minimum value of the function.
 However, if the steps are too long, the chance to pass by the minimum value is high \citep{nielsen2015}.
