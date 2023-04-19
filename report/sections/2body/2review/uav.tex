@@ -4,8 +4,9 @@
 
 An \gls*{uav} has several applications, going from the simplest to the mos sophisticated. It can be used since for entertainment, like toys; can be used commercially, for recording big shows in arenas, for example; and can be used in engineering, aiding in various context to improve some processing.
 
-Due to its portability and autonomy, it can be used to facilitate the delivery o medicines. In this sense, \gls*{uav} can be used for transportation of medical goods in critical times, where other means of transportation may not be feasible. R
-isks are inherent and in come countries, like the USA, its usage may be restricted \citep{thiels2015}.
+Due to its portability and autonomy, it can be used to facilitate the delivery o medicines. In this sense, \gls*{uav} can be used for transportation of medical goods in critical times, where other means of transportation may not be feasible.
+In the final of 2019, COVID-19 pandemics spread throughout the world, making it difficult to deliver patients their needed medicines \cite{ramakrishnan2023,mcphillips2022}.
+Besides, risks are inherent to the transportation and in come countries, like the USA, \gls*{uav} usage may be restricted \citep{thiels2015}.
 
 In the agriculture context, in order to boost the productivity, \gls*{uav} can be used to remotely sense the farming, obtaining information on the state of the fields with non-contact procedures, like nutrient evaluation and soil monitoring; or even for aerial spraying, using pesticide to prevent damages in the plantation \citep{delcerro2021}.
 
@@ -15,7 +16,7 @@ Combining those benefits with \gls*{ai} can be a powerful tool for the future. \
 
 \subsection{Motion Equation}
 
-Considering the \gls*{uav} a quadcopter, \citet{fossen1994} described the equation of motion as being
+Considering the \gls*{uav} a quadcopter, as the~\cref{fig:quadcopter_forces_scheme} shows, \citet{fossen1994} described the equation of motion as being
 %
 \begin{equation}
     \symbfup{M}_{\eta_c}(\symbfup{\eta}_c)\ddot{\symbfup{\eta}}_c +
@@ -32,6 +33,7 @@ where \(\symbfup{M}_{\eta_c}(\symbfup{\eta}_c)\) is the inertial matrix; \(\symb
 \begin{figure}[!htb]
     \centering
     \includesvg{figures/3review/uav/uav_forces.svg}
-    \caption{Scheme Quadcopter Forces}
+    \caption[Quadcopter Dynamic Scheme]{Quadcopter Dynamic Scheme. \(F_i\,\) and \(T_i\), for \(i=1,2,3,4\), are the forces and the torque applied in the propeller, respectively. \(\omega_j\) and \(v_j\), for \(j=x,y,z\), are the momentum and the velocities applied in the \gls*{uav}, respectively.}
+    \label{fig:quadcopter_forces_scheme}
 \end{figure}
 

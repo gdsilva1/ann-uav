@@ -49,19 +49,19 @@
 % \cftsetindents{chapter}{0em}{3em}
 % \cftsetindents{section}{3em}{2em}
 % \cftsetindents{subsection}{6em}{3em}
-% \renewcommand{\cftfigfont}{\sffamily}
-% \renewcommand{\cftfigpagefont}{\sffamily}
-% \renewcommand{\cfttabfont}{\sffamily}
-% \renewcommand{\cfttabpagefont}{\sffamily}
-\renewcommand{\cftchapfont}{\bfseries}
-% \renewcommand{\cftsecfont}{\sffamily}
-\renewcommand{\cftsubsecfont}{\itshape}
-\renewcommand{\cftchappagefont}{\bfseries}
-\renewcommand{\cftsecpagefont}{\bfseries}
-% \renewcommand{\cftsubsecpagefont}{\sffamily}
-\renewcommand{\cfttoctitlefont}{\large\bfseries\MakeUppercase}
-\renewcommand{\cftloftitlefont}{\large\bfseries\MakeUppercase}
-\renewcommand{\cftlottitlefont}{\large\bfseries\MakeUppercase}
+\renewcommand{\cftfigfont}{\sffamily}
+\renewcommand{\cftfigpagefont}{\sffamily}
+\renewcommand{\cfttabfont}{\sffamily}
+\renewcommand{\cfttabpagefont}{\sffamily}
+\renewcommand{\cftchapfont}{\sffamily\bfseries}
+\renewcommand{\cftsecfont}{\sffamily}
+\renewcommand{\cftsubsecfont}{\sffamily\itshape}
+\renewcommand{\cftchappagefont}{\sffamily\bfseries}
+\renewcommand{\cftsecpagefont}{\sffamily\bfseries}
+\renewcommand{\cftsubsecpagefont}{\sffamily}
+\renewcommand{\cfttoctitlefont}{\sffamily\large\bfseries\MakeUppercase}
+\renewcommand{\cftloftitlefont}{\sffamily\large\bfseries\MakeUppercase}
+\renewcommand{\cftlottitlefont}{\sffamily\large\bfseries\MakeUppercase}
 \usepackage{csquotes}
 % \usepackage[
 %     style=abnt-numeric,
@@ -105,25 +105,25 @@
 \setlength{\headheight}{14pt}
 \usepackage{titlesec}
 \titleformat{\chapter}
-            {\bfseries\large}
+            {\sffamily\bfseries\large}
             {\makebox[1.25cm][l]{\thechapter}}
             {0pt}
-            {\scshape\bfseries\large\MakeUppercase}
+            {\sffamily\scshape\bfseries\large\MakeUppercase}
 \titleformat{\section}
-            {\bfseries\large}
+            {\sffamily\bfseries\large}
             {\makebox[1.25cm][l]{\thesection}}
             {0pt}
-            {\bfseries\large}  
+            {\sffamily\bfseries\large}  
 \titleformat{\subsection}
-            {\itshape\large}
+            {\sffamily\itshape\large}
             {\makebox[1.25cm][l]{\thesubsection}}
             {0pt}
-            {\itshape\large}  
+            {\sffamily\itshape\large}  
 \titleformat{\subsubsection}
-            {\scshape\large}
+            {\sffamily\large}
             {\makebox[1.25cm][l]{\thesubsubsection}}
             {0pt}
-            {\scshape\large}
+            {\sffamily\large}
 \titlespacing{\chapter}{0em}{0.5em}{0.5em}
 \titlespacing{\section}{0em}{0.5em}{0.5em}
 \titlespacing{\subsection}{0em}{0.5em}{0.5em}
@@ -133,7 +133,7 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[
     labelsep=period,
-    labelfont={bf,footnotesize},
+    labelfont={sf,bf,footnotesize},
     textfont={footnotesize},
     justification=justified,
     % format=hang
@@ -166,6 +166,12 @@
 \setmathfont{NewCMMath-Book}[
     StylisticSet={02}
 ]
+\setsansfont{NewCMSans10}[
+    UprightFont=*-Book,
+    BoldFont=*-Bold,
+    ItalicFont=*-Oblique,
+    BoldItalicFont=*-BoldOblique
+]
 % \setmathfont{STIXTwoMath-Regular.otf}[
 %     Path=./fonts/STIXTwo/,
 %     Extension=.otf,
@@ -179,6 +185,8 @@
 %     ItalicFont=*-Italic,
 %     BoldItalicFont=*-BoldItalic,
 % ]
+% \setmainfont{TeX Gyre Schola}
+% \setmathfont{TeX Gyre Schola Math}
 % \setsansfont{TeX Gyre Heros}[
 %     LetterSpace=-0.2,
 %     Scale=0.92,
@@ -230,7 +238,6 @@
 \newabbreviation{mae}{MAE}{Mean Absolute Error}
 \newabbreviation{mse}{MSE}{Mean Squared Error}
 \newabbreviation{sgd}{SGD}{Stochastic Gradient Descent}
-
 % -----------------------------
 
 % =============================

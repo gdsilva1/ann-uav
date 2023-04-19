@@ -29,14 +29,6 @@ Today it goes beyond the neuroscientist perspective and it is more of general pr
 
 \subsection{Neural Networks Models}
 
-\subsection{Activation Function}
-
-\subsubsection*{Linear Function}
-
-\subsubsection*{Relu Function}
-
-\subsubsection*{Sigmoid Function}
-
 \subsection{Loss Function}
 
 The \emph{loss function}, also called \emph{cost function} or \emph{error function}, is the one used measure the error between the predicted output of an algorithm and the real target output. 
@@ -47,32 +39,31 @@ The~\cref{fig:mae_chart} represents domain of the loss function.
 \begin{figure}[!htb]
     \centering
     \includesvg{figures/3review/nn/mae_chart.svg}
-    \caption[Loss Function for Linear Regression]{Loss Function for Linear Regression. The loss function take all the distances between the predicted and the target value to verify if the model is in the right path. The lower the distance, the better. The \(y\)-axis represents the output data and the \(x\)-axis represents the input data.}
+    \caption[Loss Function for Linear Regression]{Loss Function for Linear Regression. The loss function take all the distances between the predicted and the target value to verify if the model is in the right path. The lower the distance, the better the model. The \(y\)-axis represents the output data and the \(x\)-axis represents the input data.}
     \label{fig:mae_chart}
 \end{figure}
 
-For regression problems, common loss functions adopted are the \gls*{mse} \citep{bussab2017} or \gls*{mae}. 
+For regression problems, a common loss functions adopted is the \gls*{mse} \citep{bussab2017}. 
 %
-\begin{align}
-    &\mse = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2
-    \label{eq:mse} \\
-    &\mae = \frac{1}{n} \sum_{i=1}^n |y_i - \hat{y}_i|
-    \label{eq:mae}
-\end{align}
+\begin{equation}
+    \mse = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2
+    \label{eq:mse}
+\end{equation}
 %
 where \(n\) is the sample size; \(y_i\) is the predicted output; and \(\hat{y}_i\) is the real target.
 
-\gls*{mae} and \gls*{mse} are simple methods and both lead to poor results for complex data patterns.
-Although, through them, it is easy to recognize the essence of what the cost function does. 
-Other methods like \emph{cross-entropy} are more likely to get better results when having a pattern of complex data.
+\gls*{mse} is a simple method and may lead to poor results if used for the wrong kind of data.
+
+For other data patterns, there are other methods used to get better results for each specific data.
 
 Therefore, the loss function measures how far from the real value the data is. Many kinds of them are available and must be analyzed the most proper one to each case. 
 It will depend on not only the data and its pattern, but also the computational processing and the cost attached to it.
 
 \subsubsection*{Cross-Entropy}
 
-From a determined data, there are several classifications that can be extracted from them. Their pattern will determine what kind of classification, whether it is a classification or a regression data, for instance.
-For classification, the cross-entropy function is a common loss function adopted.
+From a determined data, there are several classifications that can be extracted from them. 
+Their pattern will determine what kind of classification and there are lots of them, like multi-classification, binary classification, regression data, etc.
+For multi-classification, the cross-entropy function is a common loss function adopted.
 
 From a distribution \(Q\) relative to a distribution \(P\) over a given set, being both discrete probability distribution, the cross-entropy is defined as
 %

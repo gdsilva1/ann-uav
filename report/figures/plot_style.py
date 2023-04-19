@@ -9,16 +9,15 @@ def f(x):
 def g(x):
     return np.sin(x)
 
-# Use 'seaborn-v0_8-darkgrid' for results/real data 
-# Use 'seaborn-v0_8-white' for literature review/theory explanations
-
-plt.style.use(['seaborn-v0_8-darkgrid', 'seaborn-v0_8-dark-palette'])
-# plt.style.use(['dracula'])
+plt.style.use(['seaborn-v0_8-darkgrid'])
+# from cycler import cycler
 plt.rcParams.update({
+    'axes.prop_cycle': plt.cycler(linestyle=['solid','dashed','dotted', 'dashdot'], color=['darkblue','darkred','darkgreen', 'darkgoldenrod']),
+    # 'axes.facecolor': '#e6e6e6',
     'axes.grid': True,
     # 'axes.linewidth': 0.5, # Use with seaborn-v0_8-white and dracula
     # 'grid.alpha': 0.1, # Use with dracula
-    'lines.linewidth': 0.7,
+    'lines.linewidth': 1,
     'grid.linewidth': 0.5,
     'font.family': 'serif',
     'font.size': 12,
@@ -30,41 +29,34 @@ plt.rcParams.update({
     'pgf.rcfonts' : False
 })
 
-fig, ((ax1,ax2), (ax3,ax4)) =  plt.subplots(2,2, figsize=(5,5)) # figsize=(5,x)
+fig, ax =  plt.subplots(2,2, figsize=(5,5)) # figsize=(5,x)
 
-ax1.plot(x,f(x), label='$f(x) = x^3$')
-ax1.plot(x,-f(x), label='$f(x) = -x^3$')
-ax1.plot(x,2*f(x), label='$f(x) = 2x^3$')
-ax1.set_title('Funções Polinomiais', fontsize=12)
-# Measure unit is upright
-ax1.set_xlabel('Tempo (s)')
-ax1.set_ylabel('Trajetória (m)')
-ax1.legend(fontsize=10)
+ax[0,0].plot(x,f(x), label='$f(x) = x^3$')
+ax[0,0].plot(x,-f(x), label='$f(x) = -x^3$')
+ax[0,0].plot(x,2*f(x), label='$f(x) = 2x^3$')
+ax[0,0].plot(x,0.5*f(x), label='$f(x) = \\frac{1}{2}x^3$')
+ax[0,0].legend(fontsize=6, loc='lower center')
 
+ax[0,1].plot(x,g(x))
+ax[0,1].plot(x,-g(x))
+ax[0,1].plot(x,2*g(x))
 
-ax2.set_xlabel('Tempo (s)')
-ax2.set_ylabel('Trajetória (m)')
-ax2.plot(x,g(x))
-ax2.plot(x,-g(x))
-ax2.plot(x,2*g(x))
-ax2.set_title('Funções Trigonométricas', fontsize=12)
+ax[1,0].plot(x,f(x), label='$f(x) = x^3$')
+ax[1,0].plot(x,-f(x), label='$f(x) = -x^3$')
+ax[1,0].plot(x,2*f(x), label='$f(x) = 2x^3$')
+ax[1,0].legend()
 
-ax3.plot(x,f(x), label='$f(x) = x^3$')
-ax3.plot(x,-f(x), label='$f(x) = -x^3$')
-ax3.plot(x,2*f(x), label='$f(x) = 2x^3$')
-ax3.set_title('Funções Polinomiais', fontsize=12)
-ax3.set_xlabel('Tempo (s)')
-ax3.set_ylabel('Trajetória (m)')
-ax3.legend()
+ax[1,1].plot(x,g(x))
+ax[1,1].plot(x,-g(x))
+ax[1,1].plot(x,2*g(x))
 
+for i,j in zip(range(1),range(1)):
 
-ax4.set_xlabel('Tempo (s)')
-ax4.set_ylabel('Trajetória (m)')
-ax4.plot(x,g(x))
-ax4.plot(x,-g(x))
-ax4.plot(x,2*g(x))
-ax4.set_title('Funções Trigonométricas', fontsize=12)
+    ax[i,j].set_title('Funções')
+    ax[i,j].set_xlabel('Tempo (s)')
+    ax[i,j].set_ylabel('Trajetória (m)')
 
 
 fig.tight_layout(pad=1)
-fig.savefig('plot_style.pgf', backend='pgf')
+fig.savefig('figures/plot_style.pgf', backend='pgf')
+fig.savefig('figures/plot_style.pdf', backend='pgf')

@@ -27,8 +27,8 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="2.0560856"
-     inkscape:cx="128.15614"
-     inkscape:cy="99.70402"
+     inkscape:cx="134.47884"
+     inkscape:cy="111.37669"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
      inkscape:window-x="0"
@@ -99,7 +99,7 @@
     <color-profile
        name="Tela-embutida"
        xlink:href="../../../../.local/share/icc/edid-160067e8f544956d1cb3d616a4927506.icc"
-       id="color-profile1352" />
+       id="color-profile2201" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -107,75 +107,75 @@
      id="layer1"
      transform="translate(-59.098829,-59.112819)">
     <path
-       style="fill:#6b6b6b;stroke:#000000;stroke-width:0.176389;stroke-dasharray:1.05833396, 1.05833396;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#5fbcd3;stroke:#000000;stroke-width:0.176389;stroke-dasharray:1.05833396, 1.05833396;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
        d="M 115.33262,65.593334 V 82.779662"
        id="path992" />
     <path
-       style="fill:#000000;stroke:#646464;stroke-width:0.352778;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#33d6ff;stroke:#00ccff;stroke-width:0.352778;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
        d="M 70.879339,108.44478 143.24654,66.663555"
        id="path373" />
     <circle
-       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#00a3cc;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
        id="path427"
        cx="75.798103"
        cy="98.664871"
        r="1.0294642" />
     <circle
-       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#00a3cc;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
        id="path427-9"
        cx="100.92012"
        cy="96.477264"
        r="1.0294642" />
     <circle
-       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#00a3cc;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
        id="path427-1"
        cx="108.89847"
        cy="83.222916"
        r="1.0294642" />
     <circle
-       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#00a3cc;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
        id="path427-2"
        cx="131.80405"
        cy="84.123695"
        r="1.0294642" />
     <circle
-       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#00a3cc;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
        id="path427-7"
        cx="132.31877"
        cy="66.880165"
        r="1.0294642" />
     <circle
-       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#00a3cc;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
        id="path427-0"
        cx="89.982056"
        cy="101.4959"
        r="1.0294642" />
     <circle
-       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#00a3cc;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
        id="path427-93"
        cx="115.33262"
        cy="65.593338"
        r="1.0294642" />
     <circle
-       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#00a3cc;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
        id="path427-6"
        cx="122.15282"
        cy="96.219902"
        r="1.0294642" />
     <circle
-       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#00a3cc;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
        id="path427-26"
        cx="94.099915"
        cy="84.381058"
        r="1.0294642" />
     <circle
-       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#00a3cc;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
        id="path427-18"
        cx="123.56833"
        cy="73.957733"
        r="1.0294642" />
     <circle
-       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#00a3cc;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
        id="path427-79"
        cx="80.330833"
        cy="109.0882"
