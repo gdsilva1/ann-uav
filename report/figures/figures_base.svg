@@ -26,15 +26,15 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="2.9077442"
-     inkscape:cx="374.86104"
-     inkscape:cy="424.38396"
+     inkscape:zoom="0.72693605"
+     inkscape:cx="106.61185"
+     inkscape:cy="643.79803"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
      inkscape:window-x="0"
      inkscape:window-y="40"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2">
+     inkscape:current-layer="layer1">
     <sodipodi:guide
        position="25,201.63971"
        orientation="-1,0"
@@ -91,123 +91,10 @@
     <color-profile
        name="Tela-embutida"
        xlink:href="../../../../.local/share/icc/edid-160067e8f544956d1cb3d616a4927506.icc"
-       id="color-profile894" />
+       id="color-profile385" />
   </defs>
   <g
-     inkscape:label="boxes"
      inkscape:groupmode="layer"
-     id="layer1" />
-  <g
-     inkscape:label="arrows"
-     inkscape:groupmode="layer"
-     id="layer1-3"
-     transform="translate(58.815549)" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="text">
-    <g
-       id="g753"
-       transform="translate(16.832261,4.6325891)">
-      <rect
-         style="fill:none;stroke:#000000;stroke-width:0.136744;paint-order:markers fill stroke"
-         id="rect329"
-         width="20.544786"
-         height="12.697377"
-         x="56.481907"
-         y="79.54837" />
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.176389;paint-order:markers fill stroke"
-         x="66.756416"
-         y="84.262993"
-         id="text599"><tspan
-           sodipodi:role="line"
-           id="tspan597"
-           style="fill:#000000;stroke:none;stroke-width:0.176389"
-           x="66.756416"
-           y="84.262993">Nervous</tspan><tspan
-           sodipodi:role="line"
-           style="fill:#000000;stroke:none;stroke-width:0.176389"
-           x="66.756416"
-           y="89.554657"
-           id="tspan651">System</tspan></text>
-    </g>
-    <g
-       id="g881"
-       transform="translate(27.023437,4.1776254)">
-      <rect
-         style="fill:none;stroke:#000000;stroke-width:0.136744;paint-order:markers fill stroke"
-         id="rect329-2"
-         width="20.544786"
-         height="12.697377"
-         x="80.811241"
-         y="80.003334" />
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.176389;paint-order:markers fill stroke"
-         x="91.051888"
-         y="87.772308"
-         id="text599-6"><tspan
-           sodipodi:role="line"
-           style="fill:#000000;stroke:none;stroke-width:0.176389"
-           x="91.051888"
-           y="87.772308"
-           id="tspan651-8">Brain</tspan></text>
-    </g>
-    <g
-       id="g753-7"
-       transform="translate(16.832261,31.30569)">
-      <rect
-         style="fill:none;stroke:#000000;stroke-width:0.136744;paint-order:markers fill stroke"
-         id="rect329-9"
-         width="20.544786"
-         height="12.697377"
-         x="56.481907"
-         y="79.54837" />
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.176389;paint-order:markers fill stroke"
-         x="66.756416"
-         y="84.262993"
-         id="text599-2"><tspan
-           sodipodi:role="line"
-           style="fill:#000000;stroke:none;stroke-width:0.176389"
-           x="66.756416"
-           y="84.262993"
-           id="tspan651-2">Embbed</tspan><tspan
-           sodipodi:role="line"
-           style="fill:#000000;stroke:none;stroke-width:0.176389"
-           x="66.756416"
-           y="89.554657"
-           id="tspan872">Sensors</tspan></text>
-    </g>
-    <g
-       id="g753-3"
-       transform="translate(51.352775,29.848166)">
-      <rect
-         style="fill:none;stroke:#000000;stroke-width:0.136744;paint-order:markers fill stroke"
-         id="rect329-7"
-         width="20.544786"
-         height="12.697377"
-         x="56.481907"
-         y="79.54837" />
-      <text
-         xml:space="preserve"
-         style="font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;fill:none;stroke:#000000;stroke-width:0.176389;paint-order:markers fill stroke"
-         x="66.756416"
-         y="84.262993"
-         id="text599-5"><tspan
-           sodipodi:role="line"
-           style="fill:#000000;stroke:none;stroke-width:0.176389"
-           x="66.756416"
-           y="84.262993"
-           id="tspan651-22">Central</tspan><tspan
-           sodipodi:role="line"
-           style="fill:#000000;stroke:none;stroke-width:0.176389"
-           x="66.756416"
-           y="89.554657"
-           id="tspan876">Processing</tspan></text>
-    </g>
-  </g>
+     id="layer1"
+     inkscape:label="Layer 1" />
 </svg>

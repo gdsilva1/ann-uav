@@ -26,15 +26,15 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="5.8154884"
-     inkscape:cx="227.83985"
-     inkscape:cy="159.74583"
+     inkscape:zoom="2.0560856"
+     inkscape:cx="222.51019"
+     inkscape:cy="139.58563"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
      inkscape:window-x="0"
      inkscape:window-y="40"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer5">
+     inkscape:current-layer="layer2">
     <sodipodi:guide
        position="-34.098829,21.341629"
        orientation="-1,0"
@@ -173,7 +173,7 @@
     <color-profile
        name="Tela-embutida"
        xlink:href="../../../../.local/share/icc/edid-160067e8f544956d1cb3d616a4927506.icc"
-       id="color-profile16887" />
+       id="color-profile1389" />
     <inkscape:path-effect
        effect="spiro"
        id="path-effect14264-3"
@@ -210,10 +210,9 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="loss_function"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <path
-       style="fill:none;stroke:#c08600;stroke-width:0.352778;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:none;stroke:#646464;stroke-width:0.352778;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
        d="m 63.942549,67.477216 c 20.846922,19.731655 41.693581,39.463054 55.376781,43.859524 13.68319,4.39647 20.203,-6.54137 26.72299,-17.479502"
        id="path13595"
        inkscape:path-effect="#path-effect13597"
@@ -226,37 +225,37 @@
      inkscape:label="learning_steps"
      sodipodi:insensitive="true">
     <circle
-       style="fill:#c08600;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-1"
        cx="49.979645"
        cy="47.196182"
        r="1.0294642" />
     <circle
-       style="fill:#c08600;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-1-2"
        cx="44.307793"
        cy="43.177597"
        r="1.0294642" />
     <circle
-       style="fill:#c08600;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-1-0"
        cx="61.001713"
        cy="52.36343"
        r="1.0294642" />
     <circle
-       style="fill:#c08600;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-1-23"
        cx="54.147915"
        cy="49.629986"
        r="1.0294642" />
     <circle
-       style="fill:#c08600;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-1-7"
        cx="63.846783"
        cy="53.09922"
        r="1.0294642" />
     <circle
-       style="fill:#c08600;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-1-5"
        cx="57.677528"
        cy="51.333965"
@@ -268,19 +267,19 @@
        cy="53.196983"
        r="1.0294642" />
     <circle
-       style="fill:#c08600;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-1-22"
        cx="9.5087318"
        cy="12.807215"
        r="1.0294642" />
     <circle
-       style="fill:#c08600;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-1-8"
        cx="24.886488"
        cy="27.024817"
        r="1.0294642" />
     <circle
-       style="fill:#c08600;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#646464;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-1-97"
        cx="35.441635"
        cy="35.851101"
@@ -289,7 +288,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="minimum">
+     inkscape:label="minimum"
+     sodipodi:insensitive="true">
     <text
        xml:space="preserve"
        style="font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
@@ -302,7 +302,7 @@
          x="66.243088"
          y="36.24192">Minimum</tspan></text>
     <path
-       style="fill:#000000;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;marker-end:url(#Arrow1)"
+       style="fill:#000000;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1);paint-order:markers fill stroke"
        d="m 66.279074,53.196981 c 0,-5.023421 0,-10.04711 0,-15.071063"
        id="path16813"
        inkscape:path-effect="#path-effect16815"

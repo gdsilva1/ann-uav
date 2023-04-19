@@ -1,4 +1,37 @@
-\section{UAV Dynamics}
+\section{Unnamed Aerial Vehicle}
 
-% The equation of motion of a quadcopter (\gls*{uav}) is described by \citet{fossen1994}.
+\subsection{Usage}
+
+An \gls*{uav} has several applications, going from the simplest to the mos sophisticated. It can be used since for entertainment, like toys; can be used commercially, for recording big shows in arenas, for example; and can be used in engineering, aiding in various context to improve some processing.
+
+Due to its portability and autonomy, it can be used to facilitate the delivery o medicines. In this sense, \gls*{uav} can be used for transportation of medical goods in critical times, where other means of transportation may not be feasible. R
+isks are inherent and in come countries, like the USA, its usage may be restricted \citep{thiels2015}.
+
+In the agriculture context, in order to boost the productivity, \gls*{uav} can be used to remotely sense the farming, obtaining information on the state of the fields with non-contact procedures, like nutrient evaluation and soil monitoring; or even for aerial spraying, using pesticide to prevent damages in the plantation \citep{delcerro2021}.
+
+The main reason for its adoptions is the mobility, low maintenance costs, hovering capacity, ease of deployment, etc. 
+It is widely used for the civil infrastructure, gathering photographs faster than  satellite imagery and with better quality. 
+Combining those benefits with \gls*{ai} can be a powerful tool for the future. \citet{sivakumar2021}. 
+
+\subsection{Motion Equation}
+
+Considering the \gls*{uav} a quadcopter, \citet{fossen1994} described the equation of motion as being
+%
+\begin{equation}
+    \symbfup{M}_{\eta_c}(\symbfup{\eta}_c)\ddot{\symbfup{\eta}}_c +
+    \symbfup{C}_{\eta_c}(\symbfup{v},\symbfup{\eta}_c)\dot{\symbfup{\eta}}_c +
+    \symbfup{g}_{\eta_c}(\symbfup{\eta}_c) +
+    \symbfup{K}_{\eta_c}(\symbfup{\eta}_c)\symbfup{\eta}_c =
+    \symbfup{\tau}_{\eta_c}(\symbfup{\eta}_c) + 
+    \symbfup{F}_d
+    \label{eq:uav_motion_equation}
+\end{equation}
+%
+where \(\symbfup{M}_{\eta_c}(\symbfup{\eta}_c)\) is the inertial matrix; \(\symbfup{C}_{\eta_c}(\symbfup{v},\symbfup{\eta}_c)\) is the Coriolis matrix; \(\symbfup{g}_{\eta_c}(\symbfup{\eta}_c)\) is the gravitational vector; \(\symbfup{K}_{\eta_c}(\symbfup{\eta}_c)\) sf the stiffness matrix; \(\symbfup{\tau}_{\eta_c}(\symbfup{\eta}_c)\) is the control torque; \(\symbfup{F}_d\) is the gust vector; and \(\symbfup{v}\) is the velocity generalized coordinate in the body-frame.
+%
+\begin{figure}[!htb]
+    \centering
+    \includesvg{figures/3review/uav/uav_forces.svg}
+    \caption{Scheme Quadcopter Forces}
+\end{figure}
 

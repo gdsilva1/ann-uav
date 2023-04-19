@@ -63,10 +63,17 @@
 \renewcommand{\cftloftitlefont}{\large\bfseries\MakeUppercase}
 \renewcommand{\cftlottitlefont}{\large\bfseries\MakeUppercase}
 \usepackage{csquotes}
+% \usepackage[
+%     style=abnt-numeric,
+%     ittitles,
+%     noslsn,
+%     repeatfields,
+% ]{biblatex} 
+% \addbibresource{ref.bib}
 \usepackage[
     % authoryear
     numbers,
-    round,
+    % round,
     % super
 ]{natbib}
 \usepackage[automake]{glossaries-extra}
@@ -83,16 +90,15 @@
 % ============================
 % FORMATAÇÃO DA PÁGINA
 \usepackage[
-    left=2.5cm,
-    right=2.5cm,
-    top=2.5cm,
-    bottom=2.5cm
+    margin=2.5cm
 ]{geometry}
 \usepackage{fancyhdr}
 \setlength{\headheight}{15pt}
 \addtolength{\topmargin}{-0.5pt}
-\fancyhead[LO,RE]{\thepage}
-\fancyhead[RO,LE]{}
+% \fancyhead[LO,RE]{\thepage}
+% \fancyhead[RO,LE]{}
+\fancyhead[L]{}
+\fancyhead[R]{\thepage}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -198,6 +204,8 @@
 % COMANDOS
 \newcommand{\mae}{\text{MAE}}
 \newcommand{\mse}{\text{MSE}}
+% \newcommand{\citep}{\cite}
+% \newcommand{\citet}{\textcite}
 % ----------------------------
 
 % ============================
