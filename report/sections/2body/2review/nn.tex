@@ -28,13 +28,17 @@ Today it goes beyond the neuroscientist perspective and it is more of general pr
 \gls*{dl} dwells in the programming sphere. The approach, however, it is not like the traditional programming scripts and models. To automate stuff, there are three main parts: (i) the input data, (ii) the rule (function) and (iii) the output data. In both types there are two of three parts available, but different ones for each other. In the traditional programming, there is the input data and the rule, for the algorithm output the data. In deep learning, there is the input data and the output data, for the algorithm provides the rule. A good analogy is cooking: in the traditional programming context, one has the ingredients and the recipe to make the main course; in the deep learning context, one has the ingredients and the main course to discover the recipe.
 
 \subsection{Neural Networks Models}
+(feedforward, cnn, rnn, etc)
 
-Explain how neural networks works.
+A \gls*{ann} is machine learning a model that simulate a biological \gls*{nn} to make a machine learns as the human being learns.
+\gls*{ann} are the heart of \gls*{dl} and there are several implementationS of them for different kind of problems.
+Some of them are \gls*{mlp}, \gls*{cnn}, \gls*{rnn}, among others.
+
 
 \begin{figure}[!htb]
     \centering
     \includesvg{figures/3review/nn/nn.svg}
-    % \caption[Visual Representation of a Artificial Neural Network]{Visual Representation of a Artificial Neural Network}
+    \caption[Visual Representation of a Artificial Neural Network]{Visual Representation of a Artificial Neural Network}
 \end{figure}
 
 \subsection{Loss Function}
@@ -42,7 +46,21 @@ Explain how neural networks works.
 The \emph{loss function}, also called \emph{cost function} or \emph{error function}, is the one used measure the error between the predicted output of an algorithm and the real target output. 
 There are several loss functions suitable to different kind of situation. 
 For each distributed data there is one that fits better.
-The~\cref{fig:mae_chart} represents domain of the loss function.
+Many kinds of them are available and must be analyzed the most proper one to each case. 
+The choice of what loss function should be picked will depend on not only the data and its pattern, but also the computational processing and the cost attached to it.
+
+\subsubsection*{Regression}
+
+For regression problems, a common loss functions adopted is the \gls*{mse} \citep{bussab2017}. 
+
+\begin{equation}
+    \mse = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2
+    \label{eq:mse}
+\end{equation}
+%
+where \(n\) is the sample size; \(y_i\) is the predicted output; and \(\hat{y}_i\) is the real target.
+
+The~\cref{fig:mae_chart} shows a linear data and how the domain of the loss function is obtained for a linear regression.
 %
 \begin{figure}[!htb]
     \centering
@@ -51,52 +69,32 @@ The~\cref{fig:mae_chart} represents domain of the loss function.
     \label{fig:mae_chart}
 \end{figure}
 
-For regression problems, a common loss functions adopted is the \gls*{mse} \citep{bussab2017}. 
-%
-\begin{equation}
-    \mse = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2
-    \label{eq:mse}
-\end{equation}
-%
-where \(n\) is the sample size; \(y_i\) is the predicted output; and \(\hat{y}_i\) is the real target.
+\subsubsection*{Classification}
 
-\gls*{mse} is a simple method and may lead to poor results if used for the wrong kind of data.
-
-For other data patterns, there are other methods used to get better results for each specific data.
-
-Therefore, the loss function measures how far from the real value the data is. Many kinds of them are available and must be analyzed the most proper one to each case. 
-It will depend on not only the data and its pattern, but also the computational processing and the cost attached to it.
-
-\subsubsection*{Cross-Entropy}
-
-From a determined data, there are several classifications that can be extracted from them. 
-Their pattern will determine what kind of classification and there are lots of them, like multi-classification, binary classification, regression data, etc.
-For multi-classification, the cross-entropy function is a common loss function adopted.
-
-From a distribution \(Q\) relative to a distribution \(P\) over a given set, being both discrete probability distribution, the cross-entropy is defined as
+For classification problems, a common loss function adopted is the cross-entropy.
+It measures the ``distance'' between the probability distribution and the true probability, being ideal for this kind of problem.
+For multi-classification, i.e., when there are more than two outputs for the model, the cross-entropy is defined as
 %
 \begin{equation}
     H(P,Q) = - \sum_{i=1}^n P(x) \, \log Q(x)
     \label{eq:cross_entropy}
 \end{equation}
 %
-where \(n\) is the size of the sample.
+where \(Q\) is a distribution relative to another distribution \(P\) over a given set, being both discrete probability distribution, and \(n\) is the size of the sample.
 
-As the~\cref{eq:cross_entropy} is used for multi-classification, the binary cross-entropy, as the name suggest, is used to binary classification. It is defined as
+For binary classification, i.e., when there is only two outputs for the model (true or false), the cross-entropy is defined as
 %
 \begin{equation}
     H(P,Q) = - \frac{1}{n} \sum_{i=1}^n x \, \log P(x) + (1-x) \, \log \Big(1-Q(x)\Big)
     \label{eq:binary_cross_entropy}
 \end{equation}
 
-For classification problems, from the data, the model will try to conclude in what label should the input be classified. 
-It is done through probability. 
-The cross-entropy measures the ``distance'' between the probability distribution and the true probability, being ideal for this kind of problem.
-
 \subsection{Optimizer}
 
 The optimizer is an algorithm that updates the model in response to the output of the loss function, that is, it aids to minimize the loss function. 
 As the loss function minimizes, the model is getting closer to the target values and, hence, closer to the real pattern.
+
+\subsubsection*{Gradient Descent} 
 
 The \emph{gradient descent} is one of the main algorithm \citep{nesterov2004} that optimizes the model and many important ones are based on it, like the \gls*{sgd}. The goal is to get the minimum, as the error (loss) between the predicted and the target data is null. This would mean that the model fits to the pattern of the data.
 %
@@ -105,8 +103,6 @@ The \emph{gradient descent} is one of the main algorithm \citep{nesterov2004} th
     \includesvg{figures/3review/nn/gradient_descent.svg}
     \caption[Gradient Descent Process]{Gradient Descent Process. In this case, the loss function (yellow curve) can be represented in a two-axes plan. Depending on the data, it is not possible to represent graphically due to its multi dimension. Each point represents the learning step. When the gradient descent reaches the minimum of the loss function, it means that the model may be accurate. Note that the gradient descent can reach a local minimum of the function and not the global minimum necessarily. The \(y\)-axis represents the loss function and the \(x\)-axis represents the weight values.}
 \end{figure}
-
-\subsubsection*{Gradient Descent} 
 
 The gradient descent is a powerful algorithm that reduces the loss function, minimizing the error between the predicted value and the target value.
 
@@ -142,3 +138,7 @@ The \gls*{sgd} can be written as:
 where \(m\) is the mini-batch size, and \(\nabla L(\symbf{x}; p^{(i)}, q^{(i)})\) is the gradient of the loss function with respect to the parameter vector \(\symbf{x}\) for the \(i^{\text{th}}\) example \((p^{(i)}, q^{(i)})\) in the mini-batch.
 
 Yet, nowadays, with the amount of data, many techniques are still applied in \gls*{sgd} as creating an automatic adaptive learning rates which achieve the optimal rate of convergence \citep{darken1991} and the momentum technique to improve it \citep{sutskever2013}.
+
+\subsubsection*{Adam}
+
+Explain the Adam algorithm based on the \citet{kingma2017} article.

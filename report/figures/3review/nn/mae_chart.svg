@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="91.802345mm"
-   height="57.5891mm"
-   viewBox="0 0 91.802345 57.5891"
+   width="90.461304mm"
+   height="56.203499mm"
+   viewBox="0 0 90.461303 56.203499"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
@@ -26,9 +26,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="5.8154883"
-     inkscape:cx="162.92699"
-     inkscape:cy="80.130847"
+     inkscape:zoom="2.9077442"
+     inkscape:cx="156.65065"
+     inkscape:cy="106.61186"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
      inkscape:window-x="0"
@@ -36,28 +36,28 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <sodipodi:guide
-       position="-34.098829,21.341629"
+       position="-34.102611,21.275487"
        orientation="-1,0"
        id="guide686"
        inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="125.90117,-6.6841012"
+       position="125.89738,-6.7502422"
        orientation="-1,0"
        id="guide738"
        inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="-18.098829,21.341629"
+       position="-18.102612,21.275487"
        orientation="-1,0"
        id="guide230"
        inkscape:label=""
        inkscape:locked="false"
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="109.99067,41.293659"
+       position="109.98688,41.227517"
        orientation="-1,0"
        id="guide232"
        inkscape:label=""
@@ -66,6 +66,46 @@
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker7002"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path7000"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="3.6325591"
+       markerHeight="6"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path5057"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
     <marker
        inkscape:stockid="DistanceEnd"
        orient="auto"
@@ -125,25 +165,6 @@
            style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:square" />
       </g>
     </marker>
-    <marker
-       style="overflow:visible"
-       id="Arrow1L"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="Arrow1L"
-       markerWidth="12"
-       markerHeight="6.75"
-       viewBox="0 0 8.75 5"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="arrow1L"
-         transform="scale(-0.5)" />
-    </marker>
     <inkscape:path-effect
        effect="bspline"
        id="path-effect1676"
@@ -158,79 +179,79 @@
     <color-profile
        name="Tela-embutida"
        xlink:href="../../../../.local/share/icc/edid-160067e8f544956d1cb3d616a4927506.icc"
-       id="color-profile14121" />
+       id="color-profile7303" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-59.098829,-59.112819)">
+     transform="translate(-59.102612,-60.432279)">
     <path
-       style="fill:none;stroke:#33d7ff;stroke-width:0.352778;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        d="M 70.879339,108.44478 143.24654,66.663555"
        id="path373" />
     <circle
-       style="fill:#33d6ff;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427"
        cx="75.798103"
        cy="98.664871"
        r="1.0294642" />
     <circle
-       style="fill:#33d6ff;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-9"
        cx="100.92012"
        cy="96.477264"
        r="1.0294642" />
     <circle
-       style="fill:#33d6ff;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-1"
        cx="108.89847"
        cy="83.222916"
        r="1.0294642" />
     <circle
-       style="fill:#33d6ff;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-2"
        cx="131.80405"
        cy="84.123695"
        r="1.0294642" />
     <circle
-       style="fill:#33d6ff;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-7"
        cx="132.31877"
        cy="66.880165"
        r="1.0294642" />
     <circle
-       style="fill:#33d6ff;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-0"
        cx="89.982056"
        cy="101.4959"
        r="1.0294642" />
     <circle
-       style="fill:#33d6ff;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-93"
        cx="115.33262"
        cy="65.593338"
        r="1.0294642" />
     <circle
-       style="fill:#33d6ff;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-6"
        cx="122.15282"
        cy="96.219902"
        r="1.0294642" />
     <circle
-       style="fill:#33d6ff;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-26"
        cx="94.099915"
        cy="84.381058"
        r="1.0294642" />
     <circle
-       style="fill:#33d6ff;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-18"
        cx="123.56833"
        cy="73.957733"
        r="1.0294642" />
     <circle
-       style="fill:#33d6ff;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.176389;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path427-79"
        cx="80.330833"
        cy="109.0882"
@@ -247,11 +268,11 @@
          y="73.318665"
          id="tspan4265">\(y_i-\hat{y}_i\)</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1L);marker-end:url(#Arrow1L);paint-order:markers fill stroke"
+       style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker7002);marker-end:url(#Arrow1);paint-order:markers fill stroke"
        d="M 59.694142,60.601102 V 116.10661 H 149.41289"
        id="path7778" />
     <path
-       style="fill:#5fbcd3;stroke:#000000;stroke-width:0.17638889;stroke-dasharray:1.05833333,1.05833333;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;marker-start:url(#DistanceStart);marker-end:url(#DistanceEnd)"
+       style="fill:#5fbcd3;stroke:#000000;stroke-width:0.176389;stroke-dasharray:1.05833, 1.05833;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#DistanceStart);marker-end:url(#DistanceEnd);paint-order:markers fill stroke"
        d="M 115.33262,65.593334 V 82.779662"
        id="path992" />
   </g>

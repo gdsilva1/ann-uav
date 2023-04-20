@@ -11,7 +11,6 @@
    sodipodi:docname="venn_dl.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -27,13 +26,13 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="2.0560856"
-     inkscape:cx="-36.2339"
-     inkscape:cy="107.97216"
-     inkscape:window-width="1920"
-     inkscape:window-height="1003"
-     inkscape:window-x="0"
-     inkscape:window-y="40"
-     inkscape:window-maximized="1"
+     inkscape:cx="2.9181664"
+     inkscape:cy="108.94488"
+     inkscape:window-width="1663"
+     inkscape:window-height="743"
+     inkscape:window-x="128"
+     inkscape:window-y="126"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1">
     <sodipodi:guide
        position="-44.921885,66.217682"
@@ -65,38 +64,14 @@
        inkscape:color="rgb(0,134,229)" />
   </sodipodi:namedview>
   <defs
-     id="defs2">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient1379">
-      <stop
-         style="stop-color:#e5faff;stop-opacity:1;"
-         offset="0"
-         id="stop1377" />
-      <stop
-         style="stop-color:#b3efff;stop-opacity:1;"
-         offset="1"
-         id="stop1375" />
-    </linearGradient>
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1379"
-       id="radialGradient1381"
-       cx="173.67003"
-       cy="161.10892"
-       fx="173.67003"
-       fy="161.10892"
-       r="34.847385"
-       gradientTransform="matrix(1,0,0,0.89660272,0,16.658223)"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
+     id="defs2" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-138.82264,-129.86466)">
     <ellipse
-       style="fill:url(#radialGradient1381);stroke:#000000;stroke-width:0.167021;stroke-dasharray:none;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:0.167021;stroke-dasharray:none;paint-order:markers fill stroke;fill-opacity:1"
        id="path298"
        cx="173.67003"
        cy="161.10892"

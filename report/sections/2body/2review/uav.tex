@@ -19,16 +19,16 @@ Combining those benefits with \gls*{ai} can be a powerful tool for the future. \
 Considering the \gls*{uav} a quadcopter, as the~\cref{fig:quadcopter_forces_scheme} shows, \citet{fossen1994} described the equation of motion as being
 %
 \begin{equation}
-    \symbfup{M}_{\eta_c}(\symbfup{\eta}_c)\ddot{\symbfup{\eta}}_c +
-    \symbfup{C}_{\eta_c}(\symbfup{v},\symbfup{\eta}_c)\dot{\symbfup{\eta}}_c +
-    \symbfup{g}_{\eta_c}(\symbfup{\eta}_c) +
-    \symbfup{K}_{\eta_c}(\symbfup{\eta}_c)\symbfup{\eta}_c =
-    \symbfup{\tau}_{\eta_c}(\symbfup{\eta}_c) + 
+    \symbfup{M}_{\eta}(\symbfup{\eta})\ddot{\symbfup{\eta}} +
+    \symbfup{C}_{\eta}(\symbfup{\nu},\symbfup{\eta})\dot{\symbfup{\eta}} +
+    \symbfup{g}_{\eta}(\symbfup{\eta}) +
+    \symbfup{K}_{\eta}(\symbfup{\eta})\symbfup{\eta} =
+    \symbfup{\tau}_{\eta}(\symbfup{\eta}) + 
     \symbfup{F}_d
     \label{eq:uav_motion_equation}
 \end{equation}
 %
-where \(\symbfup{M}_{\eta_c}(\symbfup{\eta}_c)\) is the inertial matrix; \(\symbfup{C}_{\eta_c}(\symbfup{v},\symbfup{\eta}_c)\) is the Coriolis matrix; \(\symbfup{g}_{\eta_c}(\symbfup{\eta}_c)\) is the gravitational vector; \(\symbfup{K}_{\eta_c}(\symbfup{\eta}_c)\) sf the stiffness matrix; \(\symbfup{\tau}_{\eta_c}(\symbfup{\eta}_c)\) is the control torque; \(\symbfup{F}_d\) is the gust vector; and \(\symbfup{v}\) is the velocity generalized coordinate in the body-frame.
+where \(\symbfup{M}_{\eta}(\symbfup{\eta})\) is the inertial matrix; \(\symbfup{C}_{\eta}(\symbfup{v},\symbfup{\eta})\) is the Coriolis matrix; \(\symbfup{g}_{\eta}(\symbfup{\eta})\) is the gravitational vector; \(\symbfup{K}_{\eta}(\symbfup{\eta})\) sf the stiffness matrix; \(\symbfup{\tau}_{\eta}(\symbfup{\eta})\) is the control torque; \(\symbfup{F}_d\) is the gust vector; and \(\symbfup{\nu}\) is the velocity generalized coordinate in the body-frame.
 %
 \begin{figure}[!htb]
     \centering
@@ -36,4 +36,15 @@ where \(\symbfup{M}_{\eta_c}(\symbfup{\eta}_c)\) is the inertial matrix; \(\symb
     \caption[Quadcopter Dynamic Scheme]{Quadcopter Dynamic Scheme. \(F_i\,\) and \(T_i\), for \(i=1,2,3,4\), are the forces and the torque applied in the propeller, respectively. \(\omega_j\) and \(v_j\), for \(j=x,y,z\), are the momentum and the velocities applied in the \gls*{uav}, respectively.}
     \label{fig:quadcopter_forces_scheme}
 \end{figure}
+
+As detailed by \citet{geronel2023}, the matrices of the~\cref{eq:uav_motion_equation} are
+%
+\begin{align}
+    \symbfup{M}_{\eta}(\symbfup{\eta}) &= \symbfup{I}_{7\times7} \\
+    \symbfup{C}_{\eta}(\symbfup{\nu},\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{C}\symbfup{J}^{-1} - \dot{\symbfup{J}}\symbfup{J}^{-1} \\
+    \symbfup{g}_{\eta}(\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{g}_{0} \\
+    \symbfup{K}_{\eta}(\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{K} \\
+    \symbfup{\tau}_{\eta}(\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{\tau}
+\end{align}
+%
 

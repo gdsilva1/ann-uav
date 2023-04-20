@@ -26,9 +26,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="4.1121713"
-     inkscape:cx="169.01047"
-     inkscape:cy="30.154386"
+     inkscape:zoom="2.0560856"
+     inkscape:cx="182.62858"
+     inkscape:cy="177.52179"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
      inkscape:window-x="0"
@@ -113,18 +113,6 @@
     </marker>
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient4042">
-      <stop
-         style="stop-color:#ccf5ff;stop-opacity:1;"
-         offset="0"
-         id="stop4040" />
-      <stop
-         style="stop-color:#e5f9ff;stop-opacity:1;"
-         offset="1"
-         id="stop4038" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
        id="medio">
       <stop
          style="stop-color:#e5f9ff;stop-opacity:1;"
@@ -196,7 +184,7 @@
     <color-profile
        name="Tela-embutida"
        xlink:href="../../../.local/share/icc/edid-160067e8f544956d1cb3d616a4927506.icc"
-       id="color-profile11586" />
+       id="color-profile3065" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#escuro"
@@ -239,156 +227,6 @@
        fx="-10.393211"
        fy="10.393211"
        r="10.393211"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient3910"
-       cx="76.408081"
-       cy="133.29819"
-       fx="76.408081"
-       fy="133.29819"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient3912"
-       cx="76.408081"
-       cy="148.5"
-       fx="76.408081"
-       fy="148.5"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient3914"
-       cx="76.408081"
-       cy="163.7018"
-       fx="76.408081"
-       fy="163.7018"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient4018"
-       cx="95.46936"
-       cy="126.55967"
-       fx="95.46936"
-       fy="126.55967"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient4020"
-       cx="95.46936"
-       cy="141.18655"
-       fx="95.46936"
-       fy="141.18655"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient4022"
-       cx="95.46936"
-       cy="155.81343"
-       fx="95.46936"
-       fy="155.81343"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient4024"
-       cx="95.46936"
-       cy="170.44032"
-       fx="95.46936"
-       fy="170.44032"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient4026"
-       cx="114.53064"
-       cy="170.44032"
-       fx="114.53064"
-       fy="170.44032"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient4028"
-       cx="114.53064"
-       cy="155.81343"
-       fx="114.53064"
-       fy="155.81343"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient4030"
-       cx="114.53064"
-       cy="141.18655"
-       fx="114.53064"
-       fy="141.18655"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient4032"
-       cx="114.53064"
-       cy="126.55967"
-       fx="114.53064"
-       fy="126.55967"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient4034"
-       cx="133.59192"
-       cy="141.20311"
-       fx="133.59192"
-       fy="141.20311"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4042"
-       id="radialGradient4036"
-       cx="133.59192"
-       cy="155.79689"
-       fx="133.59192"
-       fy="155.79689"
-       r="3.8648696"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient4056"
-       cx="85.938721"
-       cy="176.87483"
-       fx="85.938721"
-       fy="176.87483"
-       r="1.7610738"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#claro"
-       id="radialGradient4058"
-       cx="105"
-       cy="176.87483"
-       fx="105"
-       fy="176.87483"
-       r="1.7610738"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <g
@@ -443,7 +281,7 @@
          y="20.786425" />
     </g>
     <circle
-       style="fill:url(#radialGradient3914);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126"
        cx="76.408081"
        cy="163.7018"
@@ -453,7 +291,7 @@
        d="M 72.309322,133.29819 H 65.886061"
        id="path3377" />
     <circle
-       style="fill:url(#radialGradient3912);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-3"
        cx="76.408081"
        cy="148.5"
@@ -463,7 +301,7 @@
        d="M 72.319033,148.77297 H 65.895772"
        id="path3377-1" />
     <circle
-       style="fill:url(#radialGradient3910);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-3-0"
        cx="76.408081"
        cy="133.29819"
@@ -473,7 +311,7 @@
        d="M 72.309322,163.7018 H 65.886061"
        id="path3377-8" />
     <circle
-       style="fill:url(#radialGradient4020);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-3-7"
        cx="95.46936"
        cy="141.18655"
@@ -483,7 +321,7 @@
        d="m 143.85692,141.2031 h -6.42326"
        id="path3377-7" />
     <circle
-       style="fill:url(#radialGradient4022);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-7"
        cx="95.46936"
        cy="155.81343"
@@ -493,7 +331,7 @@
        d="m 143.85692,155.79689 h -6.42326"
        id="path3377-9" />
     <circle
-       style="fill:url(#radialGradient4024);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-5"
        cx="95.46936"
        cy="170.44032"
@@ -503,7 +341,7 @@
        d="m 91.631269,126.72711 -11.381449,6.57108 11.377799,7.88836"
        id="path3557" />
     <circle
-       style="fill:url(#radialGradient4030);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-3-7-0"
        cx="114.53064"
        cy="141.18655"
@@ -512,27 +350,24 @@
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        d="m 80.24982,148.49999 11.377798,7.31345"
        id="path3559" />
-    <g
-       id="g5140">
-      <circle
-         style="fill:url(#radialGradient4018);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
-         id="path1126-3-9"
-         cx="95.46936"
-         cy="126.55967"
-         r="3.8417416" />
-      <circle
-         style="fill:url(#radialGradient4032);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
-         id="path1126-3-9-6"
-         cx="114.53064"
-         cy="126.55967"
-         r="3.8417416" />
-    </g>
+    <circle
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       id="path1126-3-9"
+       cx="95.46936"
+       cy="126.55967"
+       r="3.8417416" />
+    <circle
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       id="path1126-3-9-6"
+       cx="114.53064"
+       cy="126.55967"
+       r="3.8417416" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        d="M 91.627618,155.81344 80.24982,133.29819 91.627619,170.44032"
        id="path3561" />
     <circle
-       style="fill:url(#radialGradient4028);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-7-2"
        cx="114.53064"
        cy="155.81343"
@@ -542,7 +377,7 @@
        d="M 91.631269,126.72711 80.24982,148.49999 91.627619,141.18655"
        id="path3563" />
     <circle
-       style="fill:url(#radialGradient4026);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-5-6"
        cx="114.53064"
        cy="170.44032"
@@ -552,7 +387,7 @@
        d="m 80.24982,148.49999 11.377798,21.94033"
        id="path3565" />
     <circle
-       style="fill:url(#radialGradient4034);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-1"
        cx="133.59192"
        cy="141.20311"
@@ -562,7 +397,7 @@
        d="M 91.631269,126.72711 80.24982,163.7018 91.627619,141.18655"
        id="path3567" />
     <circle
-       style="fill:url(#radialGradient4036);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-2"
        cx="133.59192"
        cy="155.79689"
@@ -624,7 +459,7 @@
        d="m 129.75018,141.2031 -11.3778,29.23722 11.3778,-14.64343"
        id="path3658" />
     <circle
-       style="fill:url(#radialGradient4056);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path3788"
        cx="85.938721"
        cy="176.87483"
@@ -675,7 +510,7 @@
          x="136.67586"
          y="132.36807">Output Layer</tspan></text>
     <circle
-       style="fill:url(#radialGradient4058);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path3788-2"
        cx="105"
        cy="176.87483"
