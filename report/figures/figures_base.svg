@@ -26,9 +26,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="0.72693605"
-     inkscape:cx="106.61185"
-     inkscape:cy="643.79803"
+     inkscape:zoom="1.4538721"
+     inkscape:cx="192.93306"
+     inkscape:cy="232.48262"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
      inkscape:window-x="0"
@@ -66,6 +66,54 @@
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="medio">
+      <stop
+         style="stop-color:#e5f9ff;stop-opacity:1;"
+         offset="0"
+         id="stop1309" />
+      <stop
+         style="stop-color:#b3f0ff;stop-opacity:1;"
+         offset="1"
+         id="stop1311" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1297">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1293" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop1295" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="claro">
+      <stop
+         style="stop-color:#e5f9ff;stop-opacity:1;"
+         offset="0"
+         id="stop1184" />
+      <stop
+         style="stop-color:#ccf5ff;stop-opacity:1;"
+         offset="1"
+         id="stop1186" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="escuro">
+      <stop
+         style="stop-color:#e5f9ff;stop-opacity:1;"
+         offset="0"
+         id="stop1050" />
+      <stop
+         style="stop-color:#80e6ff;stop-opacity:1;"
+         offset="1"
+         id="stop1052" />
+    </linearGradient>
     <inkscape:path-effect
        effect="bspline"
        id="path-effect885"
@@ -91,10 +139,96 @@
     <color-profile
        name="Tela-embutida"
        xlink:href="../../../../.local/share/icc/edid-160067e8f544956d1cb3d616a4927506.icc"
-       id="color-profile385" />
+       id="color-profile1430" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#escuro"
+       id="radialGradient1056"
+       cx="-82.566151"
+       cy="35.773882"
+       fx="-82.566151"
+       fy="35.773882"
+       r="14.669865"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.70847354,0,0,0.70847354,6.5298903,-14.951638)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#medio"
+       id="radialGradient1172"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.70847354,0,0,0.70847354,27.31631,-14.951638)"
+       cx="-82.566154"
+       cy="35.773884"
+       fx="-82.566154"
+       fy="35.773884"
+       r="14.669865" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#claro"
+       id="radialGradient1182"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.70847354,0,0,0.70847354,48.10273,-14.951638)"
+       cx="-82.566151"
+       cy="35.773882"
+       fx="-82.566151"
+       fy="35.773882"
+       r="14.669865" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1297"
+       id="radialGradient1299"
+       cx="-10.393211"
+       cy="10.393211"
+       fx="-10.393211"
+       fy="10.393211"
+       r="10.393211"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:groupmode="layer"
      id="layer1"
-     inkscape:label="Layer 1" />
+     inkscape:label="Layer 1">
+    <rect
+       style="fill:url(#radialGradient1056);fill-opacity:1;fill-rule:evenodd;stroke-width:0.124967;paint-order:markers fill stroke;stop-color:#000000"
+       id="rect471"
+       width="20.786423"
+       height="20.786423"
+       x="-62.359261"
+       y="0" />
+    <rect
+       style="fill:url(#radialGradient1172);fill-opacity:1.0;fill-rule:evenodd;stroke-width:0.124967;paint-order:markers fill stroke;stop-color:#000000;stroke:none;stroke-opacity:1"
+       id="rect1170"
+       width="20.786423"
+       height="20.786423"
+       x="-41.572838"
+       y="0" />
+    <rect
+       style="fill:url(#radialGradient1182);fill-opacity:1;fill-rule:evenodd;stroke-width:0.124967;paint-order:markers fill stroke;stop-color:#000000;stroke:url(#radialGradient1299)"
+       id="rect1180"
+       width="20.786423"
+       height="20.786423"
+       x="-20.786423"
+       y="0" />
+    <rect
+       style="fill:#00ade5;fill-opacity:1;fill-rule:evenodd;stroke-width:0.124967;paint-order:markers fill stroke;stop-color:#000000"
+       id="rect1202"
+       width="20.786423"
+       height="20.786423"
+       x="-62.359261"
+       y="20.786425" />
+    <rect
+       style="fill:#4cd3ff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.124967;paint-order:markers fill stroke;stop-color:#000000"
+       id="rect1206"
+       width="20.786423"
+       height="20.786423"
+       x="-41.572838"
+       y="20.786425" />
+    <rect
+       style="fill:#b3ecff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.124967;paint-order:markers fill stroke;stop-color:#000000"
+       id="rect1208"
+       width="20.786423"
+       height="20.786423"
+       x="-20.786423"
+       y="20.786425" />
+  </g>
 </svg>
