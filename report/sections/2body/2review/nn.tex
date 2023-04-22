@@ -58,7 +58,12 @@ For regression problems, a common loss functions adopted is the \gls*{mse} \cite
     \label{eq:mse}
 \end{equation}
 %
-where \(n\) is the sample size; \(y_i\) is the predicted output; and \(\hat{y}_i\) is the real target.
+where 
+\begin{description}[labelsep=0.5cm]
+    \item[\(n\)] is the sample size; 
+    \item[\(y_i\)] is the predicted output; and
+    \item[\(\hat{y}_i\)] is the real target.
+\end{description}
 
 The~\cref{fig:mae_chart} shows a linear data and how the domain of the loss function is obtained for a linear regression.
 %
@@ -80,7 +85,12 @@ For multi-classification, i.e., when there are more than two outputs for the mod
     \label{eq:cross_entropy}
 \end{equation}
 %
-where \(Q\) is a distribution relative to another distribution \(P\) over a given set, being both discrete probability distribution, and \(n\) is the size of the sample.
+where 
+\begin{description}[labelsep=0.5cm]
+    \item[\(Q\)] is a discrete distribution relative to another distribution;
+    \item[\(P\)] is the another discrete distribution;
+    \item[\(n\)] is the size of the sample.
+\end{description}
 
 For binary classification, i.e., when there is only two outputs for the model (true or false), the cross-entropy is defined as
 %
@@ -135,7 +145,11 @@ The \gls*{sgd} can be written as:
     \symbf{x}_{t+1} = \symbf{x}_t - \frac{\epsilon}{m} \sum_{i=1}^m \nabla L(\symbf{x}_t; p^{(i)},q^{(i)})
 \end{equation}
 %
-where \(m\) is the mini-batch size, and \(\nabla L(\symbf{x}; p^{(i)}, q^{(i)})\) is the gradient of the loss function with respect to the parameter vector \(\symbf{x}\) for the \(i^{\text{th}}\) example \((p^{(i)}, q^{(i)})\) in the mini-batch.
+where 
+\begin{description}[labelsep=3cm]
+    \item[\(m\)]  is the mini-batch size
+    \item[\(\nabla L(\symbf{x}; p^{(i)}, q^{(i)})\)] is the gradient of the loss function with respect to the parameter vector \(\symbf{x}\) for the \(i^{\text{th}}\) example \((p^{(i)}, q^{(i)})\) in the mini-batch.
+\end{description}
 
 Yet, nowadays, with the amount of data, many techniques are still applied in \gls*{sgd} as creating an automatic adaptive learning rates which achieve the optimal rate of convergence \citep{darken1991} and the momentum technique to improve it \citep{sutskever2013}.
 

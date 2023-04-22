@@ -28,7 +28,16 @@ Considering the \gls*{uav} a quadcopter, as the~\cref{fig:quadcopter_forces_sche
     \label{eq:uav_motion_equation}
 \end{equation}
 %
-where \(\symbfup{M}_{\eta}(\symbfup{\eta})\) is the inertial matrix; \(\symbfup{C}_{\eta}(\symbfup{v},\symbfup{\eta})\) is the Coriolis matrix; \(\symbfup{g}_{\eta}(\symbfup{\eta})\) is the gravitational vector; \(\symbfup{K}_{\eta}(\symbfup{\eta})\) sf the stiffness matrix; \(\symbfup{\tau}_{\eta}(\symbfup{\eta})\) is the control torque; \(\symbfup{F}_d\) is the gust vector; and \(\symbfup{\nu}\) is the velocity generalized coordinate in the body-frame.
+where 
+\begin{description}[labelsep=1.7cm]
+    \item[\(\symbfup{M}_{\eta}(\symbfup{\eta})\)] is the inertial matrix;
+    \item[\(\symbfup{C}_{\eta}(\symbfup{v},\symbfup{\eta})\)] is the Coriolis matrix;
+    \item[\(\symbfup{g}_{\eta}(\symbfup{\eta})\)] is the gravitational vector;
+    \item[\(\symbfup{K}_{\eta}(\symbfup{\eta})\)] is the stiffness matrix;
+    \item[\(\symbfup{\tau}_{\eta}(\symbfup{\eta})\)] is the control torque;
+    \item[\(\symbfup{F}_d\)] is the gust vector; and
+    \item[\(\symbfup{\nu}\)] is the velocity generalized coordinate in the body-frame.
+\end{description}
 %
 \begin{figure}[!htb]
     \centering
@@ -40,11 +49,33 @@ where \(\symbfup{M}_{\eta}(\symbfup{\eta})\) is the inertial matrix; \(\symbfup{
 As detailed by \citet{geronel2023}, the matrices of the~\cref{eq:uav_motion_equation} are
 %
 \begin{align}
-    \symbfup{M}_{\eta}(\symbfup{\eta}) &= \symbfup{I}_{7\times7} \\
+    \symbfup{M}_{\eta}(\symbfup{\eta}) &= \symbfup{I}_{6\times6} \\
     \symbfup{C}_{\eta}(\symbfup{\nu},\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{C}\symbfup{J}^{-1} - \dot{\symbfup{J}}\symbfup{J}^{-1} \\
     \symbfup{g}_{\eta}(\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{g}_{0} \\
     \symbfup{K}_{\eta}(\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{K} \\
     \symbfup{\tau}_{\eta}(\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{\tau}
+    \label{eq:matrices_dynamic}
 \end{align}
 %
-
+where \(\symbfup{J}\) is the derivative of the transformation matrix with respect to time. The main matrices of the~\cref{eq:matrices_dynamic} are
+%
+\begin{align}
+    \symbfup{M} &= \diag(m,m,m,I_{xx},I_{yy},I_{zz})
+    \label{eq:diag_M} \\
+    \symbfup{C} &= \begin{bmatrix}
+        0 & -m\omega_z & m\omega_y & 0 & 0 & 0 \\
+        m\omega_z & 0 & -m\omega_x 0 & 0 & 0 & 0\\
+        -m\omega_y & m\omega_x & 0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 0 & 0 & (I_{zz}-I_{yy})\omega_y \\
+        0 & 0 & 0 & (I_{xx}-I_{zz})\omega_z & 0 & 0 \\
+        0 & 0 & 0 & 0 & (I_{yy}-I_{xx})\omega_x& 0 \\
+    \end{bmatrix}
+    \label{eq:coriolis_matrix} \\
+    \symbfup{J} &= \begin{bmatrix}
+        \symbfup{J}(\symbfup{\eta}) & \mathbf{0}_{6\times 1} \\
+        \symbfup{j}_n & c\theta c\phi
+    \end{bmatrix}
+    \label{eq:transformation}
+\end{align}
+%
+where
