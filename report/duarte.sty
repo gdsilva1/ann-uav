@@ -44,6 +44,9 @@
 \usepackage{blindtext}
 \usepackage{svg}
 \usepackage{import}
+\usepackage{tcolorbox}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 \usepackage{tocloft}
 \cftsetindents{figure}{0em}{3.5em}
 \cftsetindents{table}{0em}{3.5em}
@@ -78,8 +81,8 @@
     % super
 ]{natbib}
 \usepackage[automake]{glossaries-extra}
-% \renewcommand{\glossarypreamble}{\sffamily}
-% \renewcommand{\glsnamefont}[1]{\textsf{#1}}
+\renewcommand{\glossarypreamble}{\sffamily}
+\renewcommand{\glsnamefont}[1]{\textsf{#1}}
 \setglossarystyle{alttree}
 \glssetwidest{MEMS}
 \makeglossaries
@@ -186,12 +189,12 @@
 %     ItalicFont=*-Italic,
 %     BoldItalicFont=*-BoldItalic,
 % ]
-% \setmainfont{TeX Gyre Schola}
-% \setmathfont{TeX Gyre Schola Math}
 % \setsansfont{TeX Gyre Heros}[
 %     LetterSpace=-0.2,
 %     Scale=0.92,
 % ]
+% \setmainfont{TeX Gyre Schola}
+% \setmathfont{TeX Gyre Schola Math}
 % \setsansfont{SourceSans3}[
 %     Path=./fonts/SourceSans/,
 %     Extension=.otf,
