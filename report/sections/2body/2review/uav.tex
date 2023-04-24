@@ -2,11 +2,12 @@
 
 \subsection{Usage}
 
-An \gls*{uav} has several applications, going from the simplest to the mos sophisticated. It can be used since for entertainment, like toys; can be used commercially, for recording big shows in arenas, for example; and can be used in engineering, aiding in various context to improve some processing.
+An \gls*{uav} has several applications, going from the simplest to the most sophisticated. It can be used since for entertainment, like toys; commercially, to record big shows in arenas; surveillance, to monitor places; and also in engineering, aiding in various context to improve some processing.
 
 Due to its portability and autonomy, it can be used to facilitate the delivery o medicines. In this sense, \gls*{uav} can be used for transportation of medical goods in critical times, where other means of transportation may not be feasible.
 In the final of 2019, COVID-19 pandemics spread throughout the world, making it difficult to deliver patients their needed medicines \cite{ramakrishnan2023,mcphillips2022}.
-Besides, risks are inherent to the transportation and in come countries, like the USA, \gls*{uav} usage may be restricted \citep{thiels2015}.
+Besides, risks are inherent to the transportation and in come countries, like the USA, \gls*{uav} usage may be restricted \citep{thiels2015}. 
+A strategical way to use them is also welcome.
 
 In the agriculture context, in order to boost the productivity, \gls*{uav} can be used to remotely sense the farming, obtaining information on the state of the fields with non-contact procedures, like nutrient evaluation and soil monitoring; or even for aerial spraying, using pesticide to prevent damages in the plantation \citep{delcerro2021}.
 
@@ -98,4 +99,9 @@ and \(\symbfup{J}(\symbfup{\eta})\) is defined as
     \end{bmatrix}
 \end{equation}
 %
-where \(\symbfup{j}_n = \begin{bmatrix}-s\theta & c\theta s\phi & 0 & 0 & 0 & 0 \end{bmatrix}\).
+where \(\symbfup{j}_n = \begin{bmatrix}-s\theta & \theta s\phi & 0 & 0 & 0 & 0 \end{bmatrix}\).
+
+\subsection{Control Algorithm}
+
+\citet{geronel2023} also developed a MATLAB algorithm to control the quadrotor. It can control it in three different trajectories: rectangular, circular and linear.
+Given the initial pose and angles, the trajectory wanted, and the control required, it is able to give a complete overview of the quadrotor's motion.

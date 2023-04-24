@@ -28,18 +28,20 @@ Today it goes beyond the neuroscientist perspective and it is more of general pr
 \gls*{dl} dwells in the programming sphere. The approach, however, it is not like the traditional programming scripts and models. To automate stuff, there are three main parts: (i) the input data, (ii) the rule (function) and (iii) the output data. In both types there are two of three parts available, but different ones for each other. In the traditional programming, there is the input data and the rule, for the algorithm output the data. In deep learning, there is the input data and the output data, for the algorithm provides the rule. A good analogy is cooking: in the traditional programming context, one has the ingredients and the recipe to make the main course; in the deep learning context, one has the ingredients and the main course to discover the recipe.
 
 \subsection{Neural Networks Models}\label{sec:nn_models}
-(feedforward, cnn, rnn, etc)
 
 A \gls*{ann} is machine learning a model that simulate a biological \gls*{nn} to make a machine learns as the human being learns.
-\gls*{ann} are the heart of \gls*{dl} and there are several implementationS of them for different kind of problems.
+\gls*{ann} are the heart of \gls*{dl} and there are several models of them, each one most suitable for different kind of problems.
 Some of them are \gls*{mlp}, \gls*{cnn}, \gls*{rnn}, among others.
-
-
+%
 \begin{figure}[!htb]
     \centering
     \includesvg{figures/3review/nn/nn.svg}
     \caption[Visual Representation of a Artificial Neural Network]{Visual Representation of a Artificial Neural Network. The input data \(x_i\) is given in the input layer and \(i\) can assume any integer, just as the output data \(y_i\). The weights \(w_i\) are there to not allow the data to be biased.}
 \end{figure}
+
+\subsubsection*{Multi-layer Perceptron}
+
+\subsubsection*{Convulutional Neural Network}
 
 \subsection{Loss Function}\label{sec:loss_function}
 
@@ -145,27 +147,56 @@ Yet, nowadays, with the amount of data, many techniques are still applied in \gl
 It is based on adaptive estimates of low-order moments and computationally efficient, requiring little computational memory.
 Adam is a strategical choice when using large data or parameters and with very noisy/sparse gradients \citep{kingma2017}.
 
-\begin{algorithm}[!htb]
-\caption[Adam Algorithm]{Adam Algorithm. Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}
-\begin{algorithmic}
+The algorithm can be implemented as it follows
+
+% \begin{algorithm}
+% \caption[Adam Algorithm]{Adam Algorithm. Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}
+% \begin{algorithmic}
+% \Require \(\alpha\): stepsize
+% \Require \(\beta_1,\ \beta_2\ \in [0,1)\): exponential decay rates for the moment estimates
+% \Require \(f(\theta)\): loss function
+% \Require \(\theta_0\): initial parameter
+
+% \State \(m_0 \gets 0\)
+% \State \(v_0 \gets 0\)
+% \State \(t \gets 0\)
+% \While{\(\theta_t\) not converged}
+%     \State{\(t \gets t + 1\)}
+%     \State{\(g_t \gets \nabla_{\theta}f_t(\theta_{t-1})\)}
+%     \State{\(m_t \gets b_1 \cdot m_{t-1} + (1-\beta_1) \cdot g_t\)}
+%     \State{\(v_t \gets \beta_2\cdot v_{t-1} + (1-\beta_2)\cdot g_t^2\)}
+%     \State{\(\widehat{m}_t \gets m_t/(1-\beta_1^t)\)}
+%     \State{\(\widehat{v}_t \gets v_t/(1-\beta_2^t)\)}
+%     \State{\(\theta_t \gets \theta_{t-1} - \alpha\cdot\widehat{m}_t/(\sqrt{\widehat{v}_t + \epsilon})\)}
+% \EndWhile
+
+% \Return \(\theta_t\)
+% \end{algorithmic}
+% \end{algorithm}
+
+\begin{tcolorbox}[title=Adam Algorithm]
+\begin{algorithmic}\small
 \Require \(\alpha\): stepsize
 \Require \(\beta_1,\ \beta_2\ \in [0,1)\): exponential decay rates for the moment estimates
 \Require \(f(\theta)\): loss function
 \Require \(\theta_0\): initial parameter
 
-\State \(m_0 \gets 0\)
-\State \(v_0 \gets 0\)
-\State \(t \gets 0\)
+\State \(m_0 \gets 0\) \Comment{Initialize first moment vector}
+\State \(v_0 \gets 0\) \Comment{Initialize second moment vector}
+\State \(t \gets 0\) \Comment{Initialize timesep}
+
 \While{\(\theta_t\) not converged}
     \State{\(t \gets t + 1\)}
-    \State{\(g_t \gets \nabla_{\theta}f_t(\theta_{t-1})\)}
-    \State{\(m_t \gets b_1 \cdot m_{t-1} + (1-\beta_1) \cdot g_t\)}
-    \State{\(v_t \gets \beta_2\cdot v_{t-1} + (1-\beta_2)\cdot g_t^2\)}
-    \State{\(\widehat{m}_t \gets m_t/(1-\beta_1^t)\)}
-    \State{\(\widehat{v}_t \gets v_t/(1-\beta_2^t)\)}
-    \State{\(\theta_t \gets \theta_{t-1} - \alpha\cdot\widehat{m}_t/(\sqrt{\widehat{v}_t + \epsilon})\)}
+    \State{\(g_t \gets \nabla_{\theta}f_t(\theta_{t-1})\)} \Comment{Get gradients w.r.t. stochastic objective at time step \(t\)}
+    \State{\(m_t \gets b_1 \cdot m_{t-1} + (1-\beta_1) \cdot g_t\)} \Comment{Update biased first moment estimate}
+    \State{\(v_t \gets \beta_2\cdot v_{t-1} + (1-\beta_2)\cdot g_t^2\)} \Comment{Update biased second raw moment estimate}
+    \State{\(\widehat{m}_t \gets m_t/(1-\beta_1^t)\)} \Comment{Compute bias-corrected first moment estimate}
+    \State{\(\widehat{v}_t \gets v_t/(1-\beta_2^t)\)} \Comment{Compute bias-corrected second raw moment estimate}
+    \State{\(\theta_t \gets \theta_{t-1} - \alpha\cdot\widehat{m}_t/(\sqrt{\widehat{v}_t + \epsilon})\)} \Comment{Update parameters}
 \EndWhile
-\Return \(\theta_t\)
-\end{algorithmic}
-\end{algorithm}
 
+\noindent \Return \(\theta_t\) \Comment{Resulting parameters}
+\end{algorithmic}
+\end{tcolorbox}
+
+Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.
