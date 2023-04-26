@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="99.947136mm"
-   height="73.066856mm"
-   viewBox="0 0 99.947135 73.066856"
+   width="96.839867mm"
+   height="72.592728mm"
+   viewBox="0 0 96.839866 72.592727"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
@@ -27,8 +27,8 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="2.0560856"
-     inkscape:cx="125.23798"
-     inkscape:cy="177.52179"
+     inkscape:cx="193.32853"
+     inkscape:cy="144.44924"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
      inkscape:window-x="0"
@@ -36,35 +36,35 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <sodipodi:guide
-       position="-29.926336,87.563233"
+       position="-31.568869,87.08911"
        orientation="-1,0"
        id="guide686"
        inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="130.07365,59.537504"
+       position="128.43112,59.06338"
        orientation="-1,0"
        id="guide738"
        inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="-13.926336,87.563233"
+       position="-15.568868,87.08911"
        orientation="-1,0"
        id="guide230"
        inkscape:label=""
        inkscape:locked="false"
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="114.07365,59.537504"
+       position="112.43112,59.06338"
        orientation="-1,0"
        id="guide232"
        inkscape:label=""
        inkscape:locked="false"
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="-29.926334,94.384932"
+       position="-31.568867,93.910809"
        orientation="0,-1"
        id="guide11557"
        inkscape:locked="false" />
@@ -184,7 +184,7 @@
     <color-profile
        name="Tela-embutida"
        xlink:href="../../../.local/share/icc/edid-160067e8f544956d1cb3d616a4927506.icc"
-       id="color-profile3874" />
+       id="color-profile654" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#escuro"
@@ -233,7 +233,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="Layer 1"
-     transform="translate(-54.926336,-109.85666)">
+     transform="translate(-56.568868,-109.85666)">
     <g
        id="g9460"
        style="display:none">
@@ -483,32 +483,42 @@
        y="112.79459"
        id="text5136"><tspan
          sodipodi:role="line"
-         id="tspan5134"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
          x="104.98095"
-         y="112.79459">Hidden Layers</tspan></text>
+         y="112.79459"
+         id="tspan1231">Hidden Layers</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:STIX;-inkscape-font-specification:STIX;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
-       x="76.350929"
-       y="126.01814"
+       x="76.338234"
+       y="120.72649"
        id="text5136-7"><tspan
          sodipodi:role="line"
          id="tspan5134-5"
          style="stroke-width:0.176389"
-         x="76.350929"
-         y="126.01814">Input Layer</tspan></text>
+         x="76.338234"
+         y="120.72649">Input</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.176389"
+         x="76.338234"
+         y="126.01815"
+         id="tspan1229">Layer</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
-       x="136.67586"
-       y="132.36807"
+       x="133.59404"
+       y="128.66396"
        id="text5136-9"><tspan
          sodipodi:role="line"
          id="tspan5134-2"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
-         x="136.67586"
-         y="132.36807">Output Layer</tspan></text>
+         x="133.59404"
+         y="128.66396">Output</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
+         x="133.59404"
+         y="133.95561"
+         id="tspan1233">Layer</tspan></text>
     <circle
        style="fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path3788-2"
@@ -597,7 +607,7 @@
          x="102.35207"
          y="181.86519">$w_2$</tspan></text>
     <path
-       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.17638889;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        d="m 114.49004,120.22735 c 0,-5.6987 -6.95212,-0.0111 -9.49,-5.6931 -2.54263,5.6926 -9.490015,0.0252 -9.490015,5.6931"
        id="path11494"
        sodipodi:nodetypes="ccc" />

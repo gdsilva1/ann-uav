@@ -56,52 +56,53 @@ As detailed by \citet{geronel2023}, the matrices of the~\cref{eq:uav_motion_equa
     \label{eq:matrices_dynamic}
 \end{align}
 %
-where \(\symbfup{J}\) is the derivative of the transformation matrix with respect to time. 
-The main matrices of the~\cref{eq:matrices_dynamic} are
+where \(\symbfup{J}\) is the derivative of the transformation matrix with respect to time. All of them are explicit in the appendix of the work of \citet{geronel2023}. Note that in his work, the matrices refers to a quadcopter with a payload attached to it, while in the present work the payload is disconsidered, hence all the terms related to the payload is null.
 %
-\begin{align}
-    \symbfup{M} &= \diag(m,m,m,I_{xx},I_{yy},I_{zz})
-    \label{eq:diag_M} \\
-    \symbfup{C} &= \begin{bmatrix}
-        0 & -m\omega_z & m\omega_y & 0 & 0 & 0 \\
-        m\omega_z & 0 & -m\omega_x 0 & 0 & 0 & 0\\
-        -m\omega_y & m\omega_x & 0 & 0 & 0 & 0 \\
-        0 & 0 & 0 & 0 & 0 & I_1\omega_y \\
-        0 & 0 & 0 & I_2\omega_z & 0 & 0 \\
-        0 & 0 & 0 & 0 & I_3\omega_x& 0 \\
-    \end{bmatrix}
-    \label{eq:coriolis_matrix}
-\end{align}
-%
-where \(I_1\) \(=I_{zz}-I_{yy}\) is the moment of inertia along the \(x\) axis; \(I_2\) \(=I_{xx}-I_{zz}\) is the moment of inertia along the \(y\) axis;\(I_3\) \(=I_{yy}-I_{xx}\) is the moment of inertia along the \(z\) axis; \(\symbfup{g}_0\) \(= \begin{bmatrix} -mgs\theta & mg\theta s\phi & mg\theta \phi & 0 & 0 & 0\end{bmatrix}^{\intercal}\) is the gravitational vector.
+% \begin{align}
+%     \symbfup{M} &= \diag(m,m,m,I_{xx},I_{yy},I_{zz})
+%     \label{eq:diag_M} \\
+%     \symbfup{C} &= \begin{bmatrix}
+%         0 & -m\omega_z & m\omega_y & 0 & 0 & 0 \\
+%         m\omega_z & 0 & -m\omega_x 0 & 0 & 0 & 0\\
+%         -m\omega_y & m\omega_x & 0 & 0 & 0 & 0 \\
+%         0 & 0 & 0 & 0 & 0 & I_1\omega_y \\
+%         0 & 0 & 0 & I_2\omega_z & 0 & 0 \\
+%         0 & 0 & 0 & 0 & I_3\omega_x& 0 \\
+%     \end{bmatrix}
+%     \label{eq:coriolis_matrix}
+% \end{align}
+% %
+% where \(I_1\) \(=I_{zz}-I_{yy}\) is the moment of inertia along the \(x\) axis; \(I_2\) \(=I_{xx}-I_{zz}\) is the moment of inertia along the \(y\) axis;\(I_3\) \(=I_{yy}-I_{xx}\) is the moment of inertia along the \(z\) axis; \(\symbfup{g}_0\) \(= \begin{bmatrix} -mgs\theta & mg\theta s\phi & mg\theta \phi & 0 & 0 & 0\end{bmatrix}^{\intercal}\) is the gravitational vector.
 
 
-A new transformation matrix \(\symbfup{J}\) is considered by using the relationship \(\symbfup{\eta} = \symbfup{J}\symbfup{\nu}\), where \(\symbfup{J}\) is defined as
-%
-\begin{equation}
-    \symbfup{J} = \begin{bmatrix}
-        \symbfup{J}(\symbfup{\eta}) & \mathbf{0}_{6\times 1} \\
-        \symbfup{j}_n & \theta\phi
-    \end{bmatrix}
-    \label{eq:transformation}
-\end{equation}
-%
-and \(\symbfup{J}(\symbfup{\eta})\) is defined as
-%
-\begin{equation}
-    \symbfup{J}(\symbfup{\eta}) = \begin{bmatrix}
-        \psi \theta & s\phi s\theta \psi - \phi s\psi & \phi s\theta \psi + s \psi s\phi & 0 & 0 & 0 \\
-        s\psi \theta & s\phi s\theta s\psi + \phi \psi & \phi s\theta s \psi - s\phi \psi & 0 & 0 & 0 \\
-        -s\theta & s\phi \theta & \phi \theta & 0 & 0 & 0 \\
-        0 & 0 & 0 & 1 & s\phi t\theta & \phi t\theta \\
-        0 & 0 & 0 & 0 & \phi & -s\phi \\
-        0 & 0 & 0 & 0 & \frac{s\phi}{\theta} & \frac{\phi}{\theta}
-    \end{bmatrix}
-\end{equation}
-%
-where \(\symbfup{j}_n = \begin{bmatrix}-s\theta & \theta s\phi & 0 & 0 & 0 & 0 \end{bmatrix}\).
+% A new transformation matrix \(\symbfup{J}\) is considered by using the relationship \(\symbfup{\eta} = \symbfup{J}\symbfup{\nu}\), where \(\symbfup{J}\) is defined as
+% %
+% \begin{equation}
+%     \symbfup{J} = \begin{bmatrix}
+%         \symbfup{J}(\symbfup{\eta}) & \mathbf{0}_{6\times 1} \\
+%         \symbfup{j}_n & \theta\phi
+%     \end{bmatrix}
+%     \label{eq:transformation}
+% \end{equation}
+% %
+% and \(\symbfup{J}(\symbfup{\eta})\) is defined as
+% %
+% \begin{equation}
+%     \symbfup{J}(\symbfup{\eta}) = \begin{bmatrix}
+%         \psi \theta & s\phi s\theta \psi - \phi s\psi & \phi s\theta \psi + s \psi s\phi & 0 & 0 & 0 \\
+%         s\psi \theta & s\phi s\theta s\psi + \phi \psi & \phi s\theta s \psi - s\phi \psi & 0 & 0 & 0 \\
+%         -s\theta & s\phi \theta & \phi \theta & 0 & 0 & 0 \\
+%         0 & 0 & 0 & 1 & s\phi t\theta & \phi t\theta \\
+%         0 & 0 & 0 & 0 & \phi & -s\phi \\
+%         0 & 0 & 0 & 0 & \frac{s\phi}{\theta} & \frac{\phi}{\theta}
+%     \end{bmatrix}
+% \end{equation}
+% %
+% where \(\symbfup{j}_n = \begin{bmatrix}-s\theta & \theta s\phi & 0 & 0 & 0 & 0 \end{bmatrix}\).
 
 \subsection{Control Algorithm}
 
 \citet{geronel2023} also developed a MATLAB algorithm to control the quadrotor. It can control it in three different trajectories: rectangular, circular and linear.
 Given the initial pose and angles, the trajectory wanted, and the control required, it is able to give a complete overview of the quadrotor's motion.
+
+Through the algorithm, the data to train the model was obtained.

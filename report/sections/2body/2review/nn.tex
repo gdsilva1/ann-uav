@@ -53,6 +53,7 @@ The choice of what loss function should be picked will depend on not only the da
 
 \subsubsection*{Regression}
 
+Although regression problems do not require \gls*{dl} to create a satisfactory model, naturally it is possible to do so.
 For regression problems, a common loss functions adopted is the \gls*{mse} \citep{bussab2017}. 
 
 \begin{equation}
@@ -174,7 +175,7 @@ The algorithm can be implemented as it follows
 % \end{algorithmic}
 % \end{algorithm}
 
-\begin{tcolorbox}[title=Adam Algorithm]
+\begin{tcolorbox}[title={\textbf{Adam Algorithm.} Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}]
 \begin{algorithmic}\small
 \Require \(\alpha\): stepsize
 \Require \(\beta_1,\ \beta_2\ \in [0,1)\): exponential decay rates for the moment estimates
