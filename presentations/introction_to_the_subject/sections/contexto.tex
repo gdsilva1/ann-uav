@@ -8,13 +8,13 @@
 \begin{block}{Finalidade}
     Diagnóstico e análise de uma estrutura.
 \end{block} \pause
-\vfill
+
 \begin{itemize}
     \item Mecânica
     \item Civil
     \item Aeroespacial/Aeronáutica
 \end{itemize} \pause
-\vfill
+
 Sensores \(\rightarrow\) Sistema central \(\rightarrow\) Análise dos dados \(\rightarrow\) Decisão
 \end{frame}
 % ===========================
@@ -29,14 +29,12 @@ Métodos utilizados:
 % ===========================
 \begin{frame}{Controle do VANT}
 \pause
-\begin{block}{O que temos?}
-    \begin{itemize}
-        \item Algoritmo de controle do VANT.
-        \item Implementação em MATLAB.
-        \item Trajetórias: retangular, circular e linear.
-    \end{itemize}
-\end{block} \pause
-\vfill
+Atualmente, temos:
+\begin{itemize}
+    \item Algoritmo de controle do VANT.
+    \item Implementação em MATLAB.
+    \item Trajetórias: retangular, circular e linear.
+\end{itemize}\pause
 \begin{figure}
     \centering
     \includesvg{figures/dinamica_vant.svg}
@@ -44,15 +42,13 @@ Métodos utilizados:
 \end{frame}
 
 \begin{frame}{Controle do VANT}
+O que precisaremos:
+\begin{itemize}
+    \item Algoritmo para determinar as forças usadas.
+    \item Dados de entrada: trajetória e posição inicial.
+    \item Redes neurais.
+\end{itemize} 
 
-\begin{block}{O que será feito?}
-    \begin{itemize}
-        \item Algoritmo para determinar as forças usadas.
-        \item Dados de entrada: trajetória e posição inicial.
-        \item Redes neurais.
-    \end{itemize} 
-\end{block}
-\vfill
 \begin{figure}
 \centering
 \includesvg{figures/dinamica_vant.svg}

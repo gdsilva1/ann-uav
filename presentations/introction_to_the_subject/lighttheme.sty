@@ -1,18 +1,26 @@
 \ProvidesPackage{lighttheme}
-
+\usepackage{tikz}
 % ============================
 % CORES
 % \definecolor{cor}{HTML}{0b2d39}
-\definecolor{cor}{HTML}{033453}
+% \definecolor{cor}{HTML}{033453}
+% \definecolor{cor}{HTML}{10303c}
+\definecolor{cor}{HTML}{ffffff}
 \definecolor{azulunesp}{RGB}{0, 159, 224}
 \definecolor{vermelho}{rgb}{0.34, 0.01, 0.1}
 % ----------------------------
 
 % ============================
 % BASE
-\usetheme{Madrid}
+% \usetheme{Madrid}
+\setbeamertemplate{footline}{
+    \hfill
+    \insertframenumber\hspace{2pt}
+    \vskip2pt
+}
 \setbeamertemplate{title page}[default][left]
-\setbeamertemplate{blocks}[default]
+% \setbeamertemplate{frametitle}[default][center]
+\setbeamertemplate{blocks}[deafult]
 \useinnertheme{circles}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{navigation symbols}{}
@@ -22,11 +30,75 @@
 % \setbeamertemplate{background}{\tikz[overlay,remember picture]
 %     \node[opacity=0.04] at (12cm, -5.2cm){\includegraphics[scale=0.4]
 %     {figures/logos/unesp_acessorio2.eps}};}
+% \colorlet{white}{black}
+% \colorlet{black}{cor}
 % ----------------------------
 
 % ============================
 % COR
 \usecolortheme[named=cor]{structure}
+\setbeamercolor{title}{
+    fg=black,
+    bg=white
+}
+\setbeamercolor{frametitle}{
+    fg=black,
+    bg=white
+}
+\setbeamercolor{footline}{
+    fg=black,
+    bg=white
+}
+\setbeamercolor{block title}{
+    fg=black,
+    bg=black!10
+}
+\setbeamercolor{block body}{
+    fg=black,
+    bg=black!5
+}
+\setbeamercolor{block title alerted}{
+    fg=black,
+    bg=red!10!white
+}
+\setbeamercolor{block body alerted}{
+    fg=black,
+    bg=red!5!white
+}
+\setbeamercolor{block title example}{
+    fg=black,
+    bg=green!10!white
+}
+\setbeamercolor{block body example}{
+    fg=black,
+    bg=green!5!white
+}
+\setbeamercolor{section in toc}{
+    fg=black,
+    bg=white
+}
+\setbeamercolor{section in toc shaded}{
+    fg=black,
+    bg=black
+}
+\setbeamercolor{section number projected}{
+    fg=black,
+    bg=white
+}
+\setbeamercolor{subsection number projected}{
+    fg=black,
+}
+\setbeamercolor{enumerate item projected}{
+    fg=black,
+    bg=black
+}
+\setbeamercolor{item}{
+    fg=black
+}
+\setbeamercolor{item projected}{
+    fg=black,
+    bg=white
+}
 % ----------------------------
 
 % ============================
@@ -48,10 +120,10 @@
     series=\sffamily\bfseries
 }
 \setbeamerfont{block title}{
-    series=\sffamily\bfseries
+    series=\sffamily\sbseries
 }
 \setbeamerfont{section in toc}{
-    series=\sffamily\bfseries
+    series=\sffamily\sbseries
 }
 \setbeamerfont{subsection in toc}{
     series=\sffamily
@@ -60,7 +132,7 @@
     series=\sffamily
 }
 \setbeamerfont{section number projected}{
-    series=\sffamily\bfseries
+    series=\sffamily\sbseries
 }
 \setbeamerfont{footline}{
     series=\sffamily
