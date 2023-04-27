@@ -105,4 +105,14 @@ where \(\symbfup{J}\) is the derivative of the transformation matrix with respec
 \citet{geronel2023} also developed a MATLAB algorithm to control the quadrotor. It can control it in three different trajectories: rectangular, circular and linear.
 Given the initial pose and angles, the trajectory wanted, and the control required, it is able to give a complete overview of the quadrotor's motion.
 
-Through the algorithm, the data to train the model was obtained.
+The algorithm provides the state space \(\symbfup{x}_s\) with the position and the quadrotor angles, as their derivatives.
+%
+\begin{equation}\setcounter{MaxMatrixCols}{13}
+    \symbfup{x}_s =
+    \begin{bmatrix}
+        x&y&z&\phi&\theta&\psi&\dot{x}&\dot{y}&\dot{z}&\dot{\phi}&\dot{\theta}&\dot{\psi}
+    \end{bmatrix}        
+    \label{eq:xs_vector_matlab}
+\end{equation}
+
+It allows to study several trajectories of the quadrotor and create a big dataset to use with \gls*{ml}.

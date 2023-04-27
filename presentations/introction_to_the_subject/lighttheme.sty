@@ -1,9 +1,8 @@
 \ProvidesPackage{lighttheme}
-\usepackage{tikz}
 % ============================
 % CORES
 % \definecolor{cor}{HTML}{0b2d39}
-% \definecolor{cor}{HTML}{033453}
+\definecolor{destaque}{HTML}{033453}
 % \definecolor{cor}{HTML}{10303c}
 \definecolor{cor}{HTML}{ffffff}
 \definecolor{azulunesp}{RGB}{0, 159, 224}
@@ -27,23 +26,25 @@
 \counterwithin{figure}{section}
 \counterwithin{table}{section}
 \counterwithin{equation}{section}
+% Logo for 16:9 
 % \setbeamertemplate{background}{\tikz[overlay,remember picture]
-%     \node[opacity=0.04] at (12cm, -5.2cm){\includegraphics[scale=0.4]
-%     {figures/logos/unesp_acessorio2.eps}};}
-% \colorlet{white}{black}
-% \colorlet{black}{cor}
+%     \node[opacity=0.04] at (12.7cm, -5.7cm){\includegraphics[scale=0.12]
+%     {figures/logos/unesp_ilha.pdf}};}
+% Logo for 4:3
+% \setbeamertemplate{background}{\tikz[overlay,remember picture]
+% \node[opacity=0.04] at (9.5,-6.3){\includegraphics[scale=0.12]
+% {figures/logos/unesp_ilha.pdf}};}
 % ----------------------------
 
 % ============================
 % COR
-\usecolortheme[named=cor]{structure}
 \setbeamercolor{title}{
-    fg=black,
-    bg=white
+    fg=white,
+    bg=azulunesp!30!black!
 }
 \setbeamercolor{frametitle}{
-    fg=black,
-    bg=white
+    fg=white,
+    bg=azulunesp!30!black!
 }
 \setbeamercolor{footline}{
     fg=black,
@@ -102,14 +103,6 @@
 % ----------------------------
 
 % ============================
-% TAMANHO
-\setbeamersize{
-    text margin left=15mm,
-    text margin right=15mm,
-}
-% ----------------------------
-
-% ============================
 % FONTE
 \usefonttheme{professionalfonts}
 % \usefonttheme{serif}
@@ -137,4 +130,12 @@
 \setbeamerfont{footline}{
     series=\sffamily
 }
+% ----------------------------
+
+% ============================
+% TAMANHO
+% \setbeamersize{
+%     text margin left=15mm,
+%     text margin right=15mm,
+% }
 % ----------------------------

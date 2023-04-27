@@ -150,54 +150,53 @@ Adam is a strategical choice when using large data or parameters and with very n
 
 The algorithm can be implemented as it follows
 
-% \begin{algorithm}
-% \caption[Adam Algorithm]{Adam Algorithm. Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}
-% \begin{algorithmic}
-% \Require \(\alpha\): stepsize
-% \Require \(\beta_1,\ \beta_2\ \in [0,1)\): exponential decay rates for the moment estimates
-% \Require \(f(\theta)\): loss function
-% \Require \(\theta_0\): initial parameter
-
-% \State \(m_0 \gets 0\)
-% \State \(v_0 \gets 0\)
-% \State \(t \gets 0\)
-% \While{\(\theta_t\) not converged}
-%     \State{\(t \gets t + 1\)}
-%     \State{\(g_t \gets \nabla_{\theta}f_t(\theta_{t-1})\)}
-%     \State{\(m_t \gets b_1 \cdot m_{t-1} + (1-\beta_1) \cdot g_t\)}
-%     \State{\(v_t \gets \beta_2\cdot v_{t-1} + (1-\beta_2)\cdot g_t^2\)}
-%     \State{\(\widehat{m}_t \gets m_t/(1-\beta_1^t)\)}
-%     \State{\(\widehat{v}_t \gets v_t/(1-\beta_2^t)\)}
-%     \State{\(\theta_t \gets \theta_{t-1} - \alpha\cdot\widehat{m}_t/(\sqrt{\widehat{v}_t + \epsilon})\)}
-% \EndWhile
-
-% \Return \(\theta_t\)
-% \end{algorithmic}
-% \end{algorithm}
-
-\begin{tcolorbox}[title={\textbf{Adam Algorithm.} Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}]
-\begin{algorithmic}\small
+\begin{algorithm}
+\caption[Adam Algorithm]{Adam Algorithm. Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}
+\begin{algorithmic}
 \Require \(\alpha\): stepsize
 \Require \(\beta_1,\ \beta_2\ \in [0,1)\): exponential decay rates for the moment estimates
 \Require \(f(\theta)\): loss function
 \Require \(\theta_0\): initial parameter
 
-\State \(m_0 \gets 0\) \Comment{Initialize first moment vector}
-\State \(v_0 \gets 0\) \Comment{Initialize second moment vector}
-\State \(t \gets 0\) \Comment{Initialize timesep}
-
+\State \(m_0 \gets 0\)
+\State \(v_0 \gets 0\)
+\State \(t \gets 0\)
 \While{\(\theta_t\) not converged}
     \State{\(t \gets t + 1\)}
-    \State{\(g_t \gets \nabla_{\theta}f_t(\theta_{t-1})\)} \Comment{Get gradients w.r.t. stochastic objective at time step \(t\)}
-    \State{\(m_t \gets b_1 \cdot m_{t-1} + (1-\beta_1) \cdot g_t\)} \Comment{Update biased first moment estimate}
-    \State{\(v_t \gets \beta_2\cdot v_{t-1} + (1-\beta_2)\cdot g_t^2\)} \Comment{Update biased second raw moment estimate}
-    \State{\(\widehat{m}_t \gets m_t/(1-\beta_1^t)\)} \Comment{Compute bias-corrected first moment estimate}
-    \State{\(\widehat{v}_t \gets v_t/(1-\beta_2^t)\)} \Comment{Compute bias-corrected second raw moment estimate}
-    \State{\(\theta_t \gets \theta_{t-1} - \alpha\cdot\widehat{m}_t/(\sqrt{\widehat{v}_t + \epsilon})\)} \Comment{Update parameters}
+    \State{\(g_t \gets \nabla_{\theta}f_t(\theta_{t-1})\)}
+    \State{\(m_t \gets b_1 \cdot m_{t-1} + (1-\beta_1) \cdot g_t\)}
+    \State{\(v_t \gets \beta_2\cdot v_{t-1} + (1-\beta_2)\cdot g_t^2\)}
+    \State{\(\widehat{m}_t \gets m_t/(1-\beta_1^t)\)}
+    \State{\(\widehat{v}_t \gets v_t/(1-\beta_2^t)\)}
+    \State{\(\theta_t \gets \theta_{t-1} - \alpha\cdot\widehat{m}_t/(\sqrt{\widehat{v}_t + \epsilon})\)}
 \EndWhile
 
-\noindent \Return \(\theta_t\) \Comment{Resulting parameters}
+\Return \(\theta_t\)
 \end{algorithmic}
-\end{tcolorbox}
+\end{algorithm}
 
-Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.
+% \begin{tcolorbox}[title={\textbf{Adam Algorithm.} Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}]
+% \begin{algorithmic}\small
+% \Require \(\alpha\): stepsize
+% \Require \(\beta_1,\ \beta_2\ \in [0,1)\): exponential decay rates for the moment estimates
+% \Require \(f(\theta)\): loss function
+% \Require \(\theta_0\): initial parameter
+
+% \State \(m_0 \gets 0\) \Comment{Initialize first moment vector}
+% \State \(v_0 \gets 0\) \Comment{Initialize second moment vector}
+% \State \(t \gets 0\) \Comment{Initialize timesep}
+
+% \While{\(\theta_t\) not converged}
+%     \State{\(t \gets t + 1\)}
+%     \State{\(g_t \gets \nabla_{\theta}f_t(\theta_{t-1})\)} \Comment{Get gradients w.r.t. stochastic objective at time step \(t\)}
+%     \State{\(m_t \gets b_1 \cdot m_{t-1} + (1-\beta_1) \cdot g_t\)} \Comment{Update biased first moment estimate}
+%     \State{\(v_t \gets \beta_2\cdot v_{t-1} + (1-\beta_2)\cdot g_t^2\)} \Comment{Update biased second raw moment estimate}
+%     \State{\(\widehat{m}_t \gets m_t/(1-\beta_1^t)\)} \Comment{Compute bias-corrected first moment estimate}
+%     \State{\(\widehat{v}_t \gets v_t/(1-\beta_2^t)\)} \Comment{Compute bias-corrected second raw moment estimate}
+%     \State{\(\theta_t \gets \theta_{t-1} - \alpha\cdot\widehat{m}_t/(\sqrt{\widehat{v}_t + \epsilon})\)} \Comment{Update parameters}
+% \EndWhile
+
+% \noindent \Return \(\theta_t\) \Comment{Resulting parameters}
+% \end{algorithmic}
+% \end{tcolorbox}
+% Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.
