@@ -6,19 +6,20 @@ clear all; clc;
 % Controle utilizado PD https://www.cambridge.org/core/journals/aeronautical-journal/article/abs/dynamic-responses-due-to-the-dryden-gust-of-an-autonomous-quadrotor-uav-carrying-a-payload/07E3CD5EC5B160FFE51BFA2AC4176114
 
 %% Condições iniciais
-    
+ % for loop=1:1000
+
     t0=0;                                                                   % Tempo inicial
-    tf=40;                                                                  % Tempo final
+    tf=50;                                                                  % Tempo final
     dt=0.002;                                                               % Discretização do Tempo
     Fs=1/dt;                                                                % Frequência de amostragem
     t=t0:dt:tf;                                                             % Vetor tempo
     
     [xs,m,l,lambda,Ixx,Iyy,Izz,g,M,kf,km,Omegar,Cdj,Aj]=parametros;         % Parâmetros do Quad (massa,inércia e geométricos)
-    option = 1;         % 1 = retangular  2 = circular  e 3 = linear        % Escolher a trajetória desejada
+    option = 2;         % 1 = retangular  2 = circular  e 3 = linear        % Escolher a trajetória desejada
     
     x_des(1)=0;y_des(1)=0;z_des(1)=0; x_dot_des(1)=0;y_dot_des(1)=0;z_dot_des(1)=0;     % Condição inicial das trajetórias
     for ii=1:length(t)
-    [x_des0,y_des0,z_des0,x_dot_des0,y_dot_des0,z_dot_des0]=trajetoria(t(ii),option);                        % Trajetórias desejadas
+    [x_des0,y_des0,z_des0,x_dot_des0,y_dot_des0,z_dot_des0]=trajetoria(t(ii),option, 0);                        % Trajetórias desejadas
     x_des(ii)=x_des0;y_des(ii)=y_des0;z_des(ii)=z_des0;x_dot_des(ii)=x_dot_des0;y_dot_des(ii)=y_dot_des0;z_dot_des(ii)=z_dot_des0;
     end
     
@@ -32,139 +33,144 @@ clear all; clc;
  %note que x' é a derivada de x, sendo x deslocamento e x' velocidade
  
  % Funçao nftool
+    % str = compose("xs_%02d.csv",loop); 
+    % csvwrite(str, xs)
+ 
+% end
+ 
  
  %% Figuras
 
-figure();
-plot3(x_des(1:end-2),y_des(1:end-2),z_des(1:end-2),'r', 'linewidth',1.6);      
-hold on;
-plot3(xs(7,1:end-2),xs(8,1:end-2),xs(9,1:end-2),'b', 'linewidth',1.6);                
-grid on;  
-font_size=12;
- xlabel('$x(t)$','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
- ylabel('$y(t)$ ','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
- zlabel('$z(t)$ ','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
-set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
-    'FontSize',font_size,'FontName','Times');
-
-figure();
-subplot(3,1,1);
-plot(t(1:end-2),x_des(1:end-2),'r', 'linewidth',1.6);  
-hold on;
-plot(t(1:end-2),xs(7,1:end-2),'b', 'linewidth',1.6);                
-grid on;  
-font_size=12;
- xlabel('$t$','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
- ylabel('${x}(t)$ ','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
-set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
-    'FontSize',font_size,'FontName','Times');
-
-subplot(3,1,2);
-plot(t(1:end-2),y_des(1:end-2),'r', 'linewidth',1.6);  
-hold on;
-plot(t(1:end-2),xs(8,1:end-2),'b', 'linewidth',1.6);                
-grid on;  
-font_size=12;
- xlabel('$t$','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
- ylabel('${y}(t)$ ','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
-set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
-    'FontSize',font_size,'FontName','Times');
-
-subplot(3,1,3);
-plot(t(1:end-2),z_des(1:end-2),'r', 'linewidth',1.6);  
-hold on;
-plot(t(1:end-2),xs(9,1:end-2),'-b', 'linewidth',1.6);                
-grid on;  
-font_size=12;
-ylim([0 4]);
- xlabel('$t$','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
- ylabel('${z}(t)$ ','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
-set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
-    'FontSize',font_size,'FontName','Times');
-
-figure();
-subplot(3,1,1);
-plot(t(1:end-2),phi_des(1:end-2),'r', 'linewidth',1.6);  
-hold on;
-plot(t(1:end-2),xs(10,1:end-2),'b', 'linewidth',1.6);                
-grid on;  
-font_size=12;
- xlabel('$t$','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
- ylabel('$\phi$ ','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
-set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
-    'FontSize',font_size,'FontName','Times');
-subplot(3,1,2);
-plot(t(1:end-2),theta_des(1:end-2),'r', 'linewidth',1.6);  
-hold on;
-plot(t(1:end-2),xs(11,1:end-2),'b', 'linewidth',1.6);                
-grid on;  
-font_size=12;
- xlabel('$t$','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
- ylabel('$\theta$ ','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
-set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
-    'FontSize',font_size,'FontName','Times');
-subplot(3,1,3);
-plot(t(1:end-2),xs(12,1:end-2),'b', 'linewidth',1.6);                
-grid on;  
-font_size=12;
- xlabel('$t$','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
- ylabel('$\psi$ ','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
-set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
-    'FontSize',font_size,'FontName','Times');
-
-figure();
-subplot(2,2,1);plot(t(1:end-2),tau(1,1:end-2),'b', 'linewidth',1.6);             
-grid on;  
-font_size=12;
- xlabel('$t$','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
- ylabel('$U_1$ ','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
-set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
-    'FontSize',font_size,'FontName','Times');
-subplot(2,2,2);
-plot(t(1:end-2),tau(2,1:end-2),'b', 'linewidth',1.6);              
-grid on;  
-font_size=12;
- xlabel('$t$','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
- ylabel('$U_2$ ','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
-set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
-    'FontSize',font_size,'FontName','Times');
-subplot(2,2,3);
-plot(t(1:end-2),tau(3,1:end-2),'b', 'linewidth',1.6);                
-grid on;  
-font_size=12;
- xlabel('$t$','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
- ylabel('$U_3$ ','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
-set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
-    'FontSize',font_size,'FontName','Times');
-subplot(2,2,4);
-plot(t(1:end-2),tau(4,1:end-2),'b', 'linewidth',1.6);                
-grid on;  
-font_size=12;
- xlabel('$t$','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
- ylabel('$U_4$ ','FontUnits','points','interpreter','latex',...
-'FontSize',font_size,'FontName','Times');
-set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
-    'FontSize',font_size,'FontName','Times');
+% figure();
+% plot3(x_des(1:end-2),y_des(1:end-2),z_des(1:end-2),'r', 'linewidth',1.6);      
+% hold on;
+% plot3(xs(7,1:end-2),xs(8,1:end-2),xs(9,1:end-2),'b', 'linewidth',1.6);                
+% grid on;  
+% font_size=12;
+%  xlabel('$x(t)$','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+%  ylabel('$y(t)$ ','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+%  zlabel('$z(t)$ ','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+% set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
+%     'FontSize',font_size,'FontName','Times');
+% 
+% figure();
+% subplot(3,1,1);
+% plot(t(1:end-2),x_des(1:end-2),'r', 'linewidth',1.6);  
+% hold on;
+% plot(t(1:end-2),xs(7,1:end-2),'b', 'linewidth',1.6);                
+% grid on;  
+% font_size=12;
+%  xlabel('$t$','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+%  ylabel('${x}(t)$ ','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+% set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
+%     'FontSize',font_size,'FontName','Times');
+% 
+% subplot(3,1,2);
+% plot(t(1:end-2),y_des(1:end-2),'r', 'linewidth',1.6);  
+% hold on;
+% plot(t(1:end-2),xs(8,1:end-2),'b', 'linewidth',1.6);                
+% grid on;  
+% font_size=12;
+%  xlabel('$t$','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+%  ylabel('${y}(t)$ ','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+% set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
+%     'FontSize',font_size,'FontName','Times');
+% 
+% subplot(3,1,3);
+% plot(t(1:end-2),z_des(1:end-2),'r', 'linewidth',1.6);  
+% hold on;
+% plot(t(1:end-2),xs(9,1:end-2),'-b', 'linewidth',1.6);                
+% grid on;  
+% font_size=12;
+% ylim([0 4]);
+%  xlabel('$t$','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+%  ylabel('${z}(t)$ ','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+% set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
+%     'FontSize',font_size,'FontName','Times');
+% 
+% figure();
+% subplot(3,1,1);
+% plot(t(1:end-2),phi_des(1:end-2),'r', 'linewidth',1.6);  
+% hold on;
+% plot(t(1:end-2),xs(10,1:end-2),'b', 'linewidth',1.6);                
+% grid on;  
+% font_size=12;
+%  xlabel('$t$','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+%  ylabel('$\phi$ ','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+% set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
+%     'FontSize',font_size,'FontName','Times');
+% subplot(3,1,2);
+% plot(t(1:end-2),theta_des(1:end-2),'r', 'linewidth',1.6);  
+% hold on;
+% plot(t(1:end-2),xs(11,1:end-2),'b', 'linewidth',1.6);                
+% grid on;  
+% font_size=12;
+%  xlabel('$t$','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+%  ylabel('$\theta$ ','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+% set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
+%     'FontSize',font_size,'FontName','Times');
+% subplot(3,1,3);
+% plot(t(1:end-2),xs(12,1:end-2),'b', 'linewidth',1.6);                
+% grid on;  
+% font_size=12;
+%  xlabel('$t$','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+%  ylabel('$\psi$ ','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+% set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
+%     'FontSize',font_size,'FontName','Times');
+% 
+% figure();
+% subplot(2,2,1);plot(t(1:end-2),tau(1,1:end-2),'b', 'linewicsvwritedth',1.6);             
+% grid on;  
+% font_size=12;
+%  xlabel('$t$','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+%  ylabel('$U_1$ ','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+% set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
+%     'FontSize',font_size,'FontName','Times');
+% subplot(2,2,2);
+% plot(t(1:end-2),tau(2,1:end-2),'b', 'linewidth',1.6);              
+% grid on;  
+% font_size=12;
+%  xlabel('$t$','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+%  ylabel('$U_2$ ','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+% set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
+%     'FontSize',font_size,'FontName','Times');
+% subplot(2,2,3);
+% plot(t(1:end-2),tau(3,1:end-2),'b', 'linewidth',1.6);                
+% grid on;  
+% font_size=12;
+%  xlabel('$t$','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+%  ylabel('$U_3$ ','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+% set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
+%     'FontSize',font_size,'FontName','Times');
+% subplot(2,2,4);
+% plot(t(1:end-2),tau(4,1:end-2),'b', 'linewidth',1.6);                
+% grid on;  
+% font_size=12;
+%  xlabel('$t$','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+%  ylabel('$U_4$ ','FontUnits','points','interpreter','latex',...
+% 'FontSize',font_size,'FontName','Times');
+% set(gca,'Units','normalized','FontUnits','points','FontWeight','normal',...
+%     'FontSize',font_size,'FontName','Times');
     
