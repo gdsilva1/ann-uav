@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="96.839867mm"
+   width="104.26972mm"
    height="72.592728mm"
-   viewBox="0 0 96.839866 72.592727"
+   viewBox="0 0 104.26972 72.592727"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
@@ -27,46 +27,51 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="2.0560856"
-     inkscape:cx="193.32853"
-     inkscape:cy="144.44924"
+     inkscape:cx="330.23917"
+     inkscape:cy="119.64482"
      inkscape:window-width="1920"
-     inkscape:window-height="1003"
+     inkscape:window-height="1023"
      inkscape:window-x="0"
-     inkscape:window-y="40"
+     inkscape:window-y="30"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <sodipodi:guide
-       position="-31.568869,87.08911"
+       position="-26.037854,87.089119"
        orientation="-1,0"
        id="guide686"
        inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="128.43112,59.06338"
+       position="133.96214,59.063389"
        orientation="-1,0"
        id="guide738"
        inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="-15.568868,87.08911"
+       position="-10.037854,87.089119"
        orientation="-1,0"
        id="guide230"
        inkscape:label=""
        inkscape:locked="false"
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="112.43112,59.06338"
+       position="117.96213,59.063389"
        orientation="-1,0"
        id="guide232"
        inkscape:label=""
        inkscape:locked="false"
        inkscape:color="rgb(0,134,229)" />
     <sodipodi:guide
-       position="-31.568867,93.910809"
+       position="-26.037852,93.91082"
        orientation="0,-1"
        id="guide11557"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="11.281823,49.151208"
+       orientation="1,0"
+       id="guide1321"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
@@ -184,7 +189,7 @@
     <color-profile
        name="Tela-embutida"
        xlink:href="../../../.local/share/icc/edid-160067e8f544956d1cb3d616a4927506.icc"
-       id="color-profile654" />
+       id="color-profile2843" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#escuro"
@@ -233,7 +238,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="Layer 1"
-     transform="translate(-56.568868,-109.85666)">
+     transform="translate(-51.037853,-109.85666)">
     <g
        id="g9460"
        style="display:none">
@@ -288,8 +293,9 @@
        r="3.8417416" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-start:url(#Arrow1);paint-order:markers fill stroke;stop-color:#000000"
-       d="M 72.309322,133.29819 H 65.886061"
-       id="path3377" />
+       d="M 72.309322,133.29819 H 62.319677"
+       id="path3377"
+       sodipodi:nodetypes="cc" />
     <circle
        style="fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-3"
@@ -298,8 +304,9 @@
        r="3.8417416" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-start:url(#Arrow1);paint-order:markers fill stroke;stop-color:#000000"
-       d="M 72.319033,148.77297 H 65.895772"
-       id="path3377-1" />
+       d="M 72.319033,148.77297 H 62.319677"
+       id="path3377-1"
+       sodipodi:nodetypes="cc" />
     <circle
        style="fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-3-0"
@@ -308,8 +315,9 @@
        r="3.8417416" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-start:url(#Arrow1);paint-order:markers fill stroke;stop-color:#000000"
-       d="M 72.309322,163.7018 H 65.886061"
-       id="path3377-8" />
+       d="M 72.309322,163.7018 H 62.319677"
+       id="path3377-8"
+       sodipodi:nodetypes="cc" />
     <circle
        style="fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        id="path1126-3-7"
@@ -491,33 +499,33 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:STIX;-inkscape-font-specification:STIX;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        x="76.338234"
-       y="120.72649"
+       y="119.66815"
        id="text5136-7"><tspan
          sodipodi:role="line"
          id="tspan5134-5"
          style="stroke-width:0.176389"
          x="76.338234"
-         y="120.72649">Input</tspan><tspan
+         y="119.66815">Input</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.176389"
          x="76.338234"
-         y="126.01815"
+         y="124.95982"
          id="tspan1229">Layer</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        x="133.59404"
-       y="128.66396"
+       y="127.60563"
        id="text5136-9"><tspan
          sodipodi:role="line"
          id="tspan5134-2"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
          x="133.59404"
-         y="128.66396">Output</tspan><tspan
+         y="127.60563">Output</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
          x="133.59404"
-         y="133.95561"
+         y="132.89729"
          id="tspan1233">Layer</tspan></text>
     <circle
        style="fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
@@ -532,57 +540,90 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
-       x="62.216129"
+       x="56.680882"
        y="134.29938"
        id="text5299"><tspan
          sodipodi:role="line"
          id="tspan5297"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
-         x="62.216129"
+         x="56.680882"
          y="134.29938">$x_1$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
-       x="62.216129"
+       x="67.401031"
+       y="130.59523"
+       id="text5299-36"><tspan
+         sodipodi:role="line"
+         id="tspan5297-75"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
+         x="67.401031"
+         y="130.59523">$w_{x_1}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       x="67.405884"
+       y="146.00998"
+       id="text5299-36-3"><tspan
+         sodipodi:role="line"
+         id="tspan5297-75-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
+         x="67.405884"
+         y="146.00998">$w_{x_2}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       x="67.401031"
+       y="160.99884"
+       id="text5299-36-6"><tspan
+         sodipodi:role="line"
+         id="tspan5297-75-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
+         x="67.401031"
+         y="160.99884">$w_{x_3}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       x="56.680882"
        y="149.77415"
        id="text5299-2"><tspan
          sodipodi:role="line"
          id="tspan5297-8"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
-         x="62.216129"
+         x="56.680882"
          y="149.77415">$x_2$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
-       x="62.216129"
+       x="56.680882"
        y="164.70299"
        id="text5299-9"><tspan
          sodipodi:role="line"
          id="tspan5297-7"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
-         x="62.216129"
+         x="56.680882"
          y="164.70299">$x_3$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
-       x="147.76994"
+       x="149.66878"
        y="142.20428"
        id="text5299-3"><tspan
          sodipodi:role="line"
          id="tspan5297-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
-         x="147.76994"
+         x="149.66878"
          y="142.20428">$y_1$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
-       x="147.76994"
+       x="149.66878"
        y="156.79807"
        id="text5299-1"><tspan
          sodipodi:role="line"
          id="tspan5297-2"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
-         x="147.76994"
+         x="149.66878"
          y="156.79807">$y_2$</tspan></text>
     <text
        xml:space="preserve"
@@ -594,7 +635,7 @@
          id="tspan5297-1"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
          x="83.290771"
-         y="181.86519">$w_1$</tspan></text>
+         y="181.86519">$b_1$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
@@ -605,7 +646,7 @@
          id="tspan5297-78"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern10;-inkscape-font-specification:NewComputerModern10;stroke-width:0.176389"
          x="102.35207"
-         y="181.86519">$w_2$</tspan></text>
+         y="181.86519">$b_2$</tspan></text>
     <path
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
        d="m 114.49004,120.22735 c 0,-5.6987 -6.95212,-0.0111 -9.49,-5.6931 -2.54263,5.6926 -9.490015,0.0252 -9.490015,5.6931"

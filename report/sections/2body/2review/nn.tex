@@ -2,22 +2,14 @@
 
 \subsection{Deep Learning}\label{sec:deep_learning}
 
-The concepts of deep learning studied in this section is going to be based on the work of \citet{goodfellow2016} and the documentation of PyTorch\footnote{\url{https://pytorch.org/docs/stable/index.html}} and MATLAB\footnote{\url{https://www.mathworks.com/help/matlab/}}.
+The concepts of deep learning studied in this section is going to be based on the work of \citet{goodfellow2016}, \citet{haykin1999} and the documentation of PyTorch\footnote{\url{https://pytorch.org/docs/stable/index.html}} and MATLAB\footnote{\url{https://www.mathworks.com/help/matlab/}}.
 
 There are several definitions of \gls*{ai} \citep{winston1992}, but the  computer scientist \citet{mccarthy2007} defines it as ``the science and engineering of making intelligent machines, especially intelligent computer programs.''.
 He also states that ``it is related to the similar task of using computers to understand human intelligence, but AI does not have to confine itself to methods that are biologically observable.''.
 
-The big area of study is the \gls*{ai} and it includes several branches like fuzzy logics, robotics, machine learning and so on. 
+The big area of study is the \gls*{ai} and it includes several branches like fuzzy logics, robotics and machine learning.
 The later one, in turn, is another field with also some branches and one of them is the deep learning.
-This can be represented in a Venn diagram, as the \cref{fig:venn_dl} shows.
 However, all the three terms can be interchangeable in the major context.
-%
-\begin{figure}[!htb]
-    \centering
-    \includesvg{figures/3review/nn/venn_dl.svg}
-    \caption{Subareas of Artificial Intelligence}
-    \label{fig:venn_dl}
-\end{figure}
 
 The deep learning history goes back to the 1940s and it had several names over the years. 
 It was called by \emph{cybernetics} (1940s--1960s), \emph{connectionism} (1980s--1990s), and from 2006 until now is known as \emph{deep learning}.
@@ -32,16 +24,59 @@ Today it goes beyond the neuroscientist perspective and it is more of general pr
 A \gls*{ann} is machine learning a model that simulate a biological \gls*{nn} to make a machine learns as the human being learns.
 \gls*{ann} are the heart of \gls*{dl} and there are several models of them, each one most suitable for different kind of problems.
 Some of them are \gls*{mlp}, \gls*{cnn}, \gls*{rnn}, among others.
-%
-\begin{figure}[!htb]
-    \centering
-    \includesvg{figures/3review/nn/nn.svg}
-    \caption[Visual Representation of a Artificial Neural Network]{Visual Representation of a Artificial Neural Network. The input data \(x_i\) is given in the input layer and \(i\) can assume any integer, just as the output data \(y_i\). The weights \(w_i\) are there to not allow the data to be biased.}
-\end{figure}
 
 \subsubsection*{Multi-layer Perceptron}
 
-\subsubsection*{Convulutional Neural Network}
+A \gls*{mlp} is a important class of \gls*{nn}. It consists of a set of sensorial units that compose the \emph{input layer}; one or more \emph{hidden layers}; and an \emph{output layer}. The input signal propagates forward through the network, layer by layer. They are used to solving complex problems, with the supervised training with the \emph{error back-propagation} algorithm.
+
+The learning by back-propagation consists of two steps through the layers of the perceptron: a forward pass (propagation) and a backward pass (back-propagation). In the forward pass, an input vector is applied to the sensorial nodes of the network and it propagates through the network, layer by layer; in this step the weights are fixed. During the backward pass, the weights are fit accordingly through a loss function (see~\cref{sec:loss_function}). This error signal is propagated through the network in the opposite direction of the synaptic connections. The weights are adjusted to make that the network output gets closer of the wanted output. The~\cref{fig:mlp} represents a \gls*{mlp}.
+
+\begin{figure}[!htb]\footnotesize
+    \centering
+    \caption[Visual Representation of a MLP]{Visual Representation of a MLP. The input vector \(x_i\) is given in the input layer and \(i\) can assume any integer, just as the output data \(y_i\). The weights \(w_{x_i}\) are specific for each input data. The bias \(b_i\) are there to prevent the data to be biased.}
+    \includesvg{figures/3review/nn/nn.svg}
+    \begin{flushleft}\footnotesize
+        Source: prepared by the author.
+    \end{flushleft}
+    \label{fig:mlp}
+\end{figure}
+
+The three main features of the \gls*{mlp} are:
+%
+\begin{itemize}
+    \item Non-linear activation function. It is commonly used a smooth non-linear activation function, like a sigmoid function.
+    %
+    \begin{equation}
+        y_j = \frac{1}{1+\exp(-v_j)}
+        \label{eq:sigmoid_function}
+    \end{equation}
+    %
+    where \(v_j\) is the weighted sum of all input layers with their respective weights of the \(j\) neuron; and \(y_j\) is the output of the neuron.
+    \item Hidden layers. They allow the network to learn complex tasks, extracting progressively the most significantly features of the input vector.
+    \item Connectivity. High level of connectivity, determined by the network synapses.
+\end{itemize}
+
+These features plus the ability to learn from the experience of the training that makes the \gls*{mlp} so powerful, however, they are also responsible for its deficiency. First, the non-linearity and the high connectivity makes hard the theorical analysis of an \gls*{mlp}; second, the hidden layers make it more difficult to visualize the learning processing. The learning process is harder because the search must be conducted in a much bigger space of possible functions.
+
+
+\subsubsection*{Convolutional Neural Network}
+
+A convolutional network is a \gls*{mlp} specifically projected to recognize two-dimensional shapes with a high-level invariance relative to translation, scaling, skew, and other forms of distortion. This task is learned in a supervised way, through these restrictions:
+%
+\begin{itemize}
+    \item Features extraction. Each neuron takes its input signals from a local receptive field in the previous layer, forcing it to extract local features.
+    \item Features mapping. Each computational layer is composed by multiple feature maps, with each feature map in the shape of a plane within which the individual neurons are constrained to share the same weights. This provides the following benefits: (i) shift variance and (ii) reduction in the number of free parameters.
+    \item Subsampling. Each convolutional network is followed by a computational layer that calculates the local averaging and performs a subsampling, reducing the resolution of the feature maps.
+\end{itemize}
+%
+\begin{figure}[!htb]\scriptsize
+    \centering
+    \caption{Convolutional Neural Network}
+    \includesvg{figures/3review/nn/cnn.svg}
+    \begin{flushleft}\footnotesize
+        Source: prepared by the author.
+    \end{flushleft}
+\end{figure}
 
 \subsection{Loss Function}\label{sec:loss_function}
 
@@ -67,8 +102,12 @@ The~\cref{fig:mae_chart} shows a linear data and how the domain of the loss func
 %
 \begin{figure}[!htb]
     \centering
-    \includesvg{figures/3review/nn/mae_chart.svg}
     \caption[Loss Function for Linear Regression]{Loss Function for Linear Regression. The loss function take all the distances between the predicted and the target value to verify if the model is in the right path. The lower the distance, the better the model. The \(y\)-axis represents the output data and the \(x\)-axis represents the input data.}
+    \includesvg{figures/3review/nn/mae_chart.svg}
+    \begin{flushleft}\footnotesize
+        Source: prepared by the author.
+    \end{flushleft}
+    
     \label{fig:mae_chart}
 \end{figure}
 
@@ -103,8 +142,12 @@ The \emph{gradient descent} is one of the main algorithm \citep{nesterov2004} th
 %
 \begin{figure}[!htb]
     \centering
-    \includesvg{figures/3review/nn/gradient_descent.svg}
     \caption[Gradient Descent Process]{Gradient Descent Process. In this case, the loss function (yellow curve) can be represented in a two-axes plan. Depending on the data, it is not possible to represent graphically due to its multi dimension. Each point represents the learning step. When the gradient descent reaches the minimum of the loss function, it means that the model may be accurate. Note that the gradient descent can reach a local minimum of the function and not the global minimum necessarily. The \(y\)-axis represents the loss function and the \(x\)-axis represents the weight values.}
+    \includesvg{figures/3review/nn/gradient_descent.svg}
+    \begin{flushleft}\footnotesize
+        Source: prepared by the author.
+    \end{flushleft}
+    
 \end{figure}
 
 The gradient descent is a powerful algorithm that reduces the loss function, minimizing the error between the predicted value and the target value.
