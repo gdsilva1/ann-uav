@@ -26,7 +26,12 @@
 % ============================
 % LISTA DE FIGURAS
 % {\sffamily\listoffigures}
-\listoffigures
+% \listoffigures
+{%
+\let\oldnumberline\numberline%
+\renewcommand{\numberline}{\figurename~\oldnumberline}%
+\listoffigures%
+}
 \newpage
 % ----------------------------
 
@@ -34,6 +39,11 @@
 % LISTA DE TABELAS
 % {\sffamily\listoftables}
 % \listoftables
+{%
+\let\oldnumberline\numberline%
+\renewcommand{\numberline}{\tablename~\oldnumberline}%
+\listoftables%
+}
 % \newpage
 % ----------------------------
 
@@ -69,6 +79,7 @@
 \input{sections/2body/2review/nn.tex}
 
 \input{sections/2body/3methodology/intro.tex}
+\input{sections/2body/3methodology/softwares.tex}
 
 \input{sections/2body/4results/intro.tex}
 
