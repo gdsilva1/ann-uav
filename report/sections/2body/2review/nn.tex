@@ -191,7 +191,7 @@ Yet, nowadays, with the amount of data, many techniques are still applied in \gl
 It is based on adaptive estimates of low-order moments and computationally efficient, requiring little computational memory.
 Adam is a strategical choice when using large data or parameters and with very noisy/sparse gradients \citep{kingma2017}.
 
-The algorithm can be implemented as it follows
+\citet{kingma2017} showed that the algorithm can be implemented as it follows:
 
 \begin{algorithm}
 \caption[Adam Algorithm]{Adam Algorithm. Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}
