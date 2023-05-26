@@ -6,7 +6,7 @@ clear all; clc;
 % Controle utilizado PD https://www.cambridge.org/core/journals/aeronautical-journal/article/abs/dynamic-responses-due-to-the-dryden-gust-of-an-autonomous-quadrotor-uav-carrying-a-payload/07E3CD5EC5B160FFE51BFA2AC4176114
 
 %% Condições iniciais
- for loop=1:100
+ for loop=1:1000
 
     t0=0;                                                                   % Tempo inicial
     tf=50;                                                                  % Tempo final
