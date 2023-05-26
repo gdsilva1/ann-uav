@@ -6,7 +6,7 @@ clear all; clc;
 % Controle utilizado PD https://www.cambridge.org/core/journals/aeronautical-journal/article/abs/dynamic-responses-due-to-the-dryden-gust-of-an-autonomous-quadrotor-uav-carrying-a-payload/07E3CD5EC5B160FFE51BFA2AC4176114
 
 %% Condições iniciais
- % for loop=1:1000
+ for loop=1:100
 
     t0=0;                                                                   % Tempo inicial
     tf=50;                                                                  % Tempo final
@@ -19,7 +19,7 @@ clear all; clc;
     
     x_des(1)=0;y_des(1)=0;z_des(1)=0; x_dot_des(1)=0;y_dot_des(1)=0;z_dot_des(1)=0;     % Condição inicial das trajetórias
     for ii=1:length(t)
-    [x_des0,y_des0,z_des0,x_dot_des0,y_dot_des0,z_dot_des0]=trajetoria(t(ii),option, 0);                        % Trajetórias desejadas
+    [x_des0,y_des0,z_des0,x_dot_des0,y_dot_des0,z_dot_des0]=trajetoria(t(ii),option, 0.1);                        % Trajetórias desejadas
     x_des(ii)=x_des0;y_des(ii)=y_des0;z_des(ii)=z_des0;x_dot_des(ii)=x_dot_des0;y_dot_des(ii)=y_dot_des0;z_dot_des(ii)=z_dot_des0;
     end
     
@@ -33,10 +33,12 @@ clear all; clc;
  %note que x' é a derivada de x, sendo x deslocamento e x' velocidade
  
  % Funçao nftool
-    % str = compose("xs_%02d.csv",loop); 
-    % csvwrite(str, xs)
+    str = compose("xs_%1d.csv",loop);
+    csvwrite(str, xs)
+    str2 = compose("tau_%1d.csv",loop);
+    csvwrite(str2, tau)
  
-% end
+end
  
  
  %% Figuras

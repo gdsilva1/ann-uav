@@ -1,0 +1,36 @@
+{
+  "slides": [
+    {
+      "type": "slide",
+      "start_animation": 0,
+      "end_animation": 1,
+      "number": 1,
+      "terminated": false
+    },
+    {
+      "type": "slide",
+      "start_animation": 1,
+      "end_animation": 3,
+      "number": 2,
+      "terminated": false
+    },
+    {
+      "type": "last",
+      "start_animation": 3,
+      "end_animation": 4,
+      "number": 3,
+      "terminated": false
+    }
+  ],
+  "files": [
+    "slides/files/Ayala/1413466013_2299536948_223132457.mp4",
+    "slides/files/Ayala/1672018281_2207524457_223132457.mp4",
+    "slides/files/Ayala/1672018281_2627567715_3449136771.mp4",
+    "slides/files/Ayala/1672018281_1097479667_3306355128.mp4"
+  ],
+  "resolution": [
+    1920,
+    1080
+  ],
+  "background_color": "black"
+}

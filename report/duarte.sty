@@ -69,19 +69,19 @@
 \patchcmd{\l@chapter}{#1}{\MakeUppercase{#1}}{}{}
 
 \usepackage{csquotes}
-% \usepackage[
-%     style=abnt-numeric,
-%     ittitles,
-%     noslsn,
-%     repeatfields,
-% ]{biblatex} 
-% \addbibresource{ref.bib}
 \usepackage[
-    % authoryear
-    numbers,
-    % round,
-    % super
-]{natbib}
+    style=abnt-numeric,
+    ittitles,
+    noslsn,
+    repeatfields,
+]{biblatex} 
+\addbibresource{ref.bib}
+% \usepackage[
+%     % authoryear
+%     numbers,
+%     % round,
+%     % super
+% ]{natbib}
 \usepackage[automake]{glossaries-extra}
 \renewcommand{\glossarypreamble}{\sffamily}
 \renewcommand{\glsnamefont}[1]{\textsf{#1}}
@@ -158,12 +158,14 @@
 % ============================
 % FONTE DO TEXTO
 \urlstyle{rm}
-% \renewcommand{\sffamily}{\rm}
+\renewcommand{\sffamily}{\rm}
 \usepackage{fontspec}
 \usepackage[
     bold-style=ISO,
     math-style=ISO,
 ]{unicode-math}
+% \setmainfont{Latin Modern Roman}
+% \setsansfont{Latin Modern Roman}
 % \setsansfont{NewCM10}[
 %     UprightFont=*-Book,
 %     BoldFont=*-Bold,
@@ -206,10 +208,11 @@
 %     Path=./fonts/Inter/,
 %     Extension=.otf,
 %     UprightFont=*-Regular,
-%     BoldFont=*-SemiBold,
+%     BoldFont=*-Bold,
 %     ItalicFont=*-Italic,
 %     BoldItalicFont=*-BoldItalic,
 %     Scale=MatchLowercase,
+%     LetterSpace=-5
 % ]
 % \setsansfont{SourceSans3}[
 %     Path=./fonts/SourceSans/,
@@ -233,8 +236,8 @@
 \newcommand{\mse}{\text{MSE}}
 \newcommand{\matlab}{\textsc{Matlab\textregistered}\ }
 \DeclareMathOperator{\diag}{diag}
-% \newcommand{\citep}{\cite}
-% \newcommand{\citet}{\textcite}
+\newcommand{\citep}{\cite}
+\newcommand{\citet}{\textcite}
 % ----------------------------
 
 % ============================
