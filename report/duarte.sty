@@ -20,7 +20,8 @@
     colorlinks=true,
     allcolors=blue!50!black
 ]{hyperref}
-\usepackage{booktabs}
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs}
 \usepackage[
     capitalise,
     nameinlink
@@ -158,7 +159,7 @@
 % ============================
 % FONTE DO TEXTO
 \urlstyle{rm}
-\renewcommand{\sffamily}{\rm}
+% \renewcommand{\sffamily}{\rm}
 \usepackage{fontspec}
 \usepackage[
     bold-style=ISO,
@@ -187,23 +188,23 @@
 %     ItalicFont=*-Oblique,
 %     BoldItalicFont=*-BoldOblique
 % ]
-% \setmathfont{STIXTwoMath-Regular.otf}[
-%     Path=./fonts/STIXTwo/,
-%     Extension=.otf,
-%     StylisticSet={01,08,10}
-% ]
-% \setmainfont{STIXTwoText}[
-%     Path=./fonts/STIXTwo/,
-%     Extension=.otf,
-%     UprightFont=*-Regular,
-%     BoldFont=*-Bold,
-%     ItalicFont=*-Italic,
-%     BoldItalicFont=*-BoldItalic,
-% ]
-% \setsansfont{TeX Gyre Heros}[
-%     LetterSpace=-0.2,
-%     Scale=MatchLowercase,
-% ]
+\setmathfont{STIXTwoMath-Regular.otf}[
+    Path=./fonts/STIXTwo/,
+    Extension=.otf,
+    StylisticSet={01,08,10}
+]
+\setmainfont{STIXTwoText}[
+    Path=./fonts/STIXTwo/,
+    Extension=.otf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic,
+]
+\setsansfont{TeX Gyre Heros}[
+    LetterSpace=-0.2,
+    Scale=MatchLowercase,
+]
 % \setsansfont{Inter}[
 %     Path=./fonts/Inter/,
 %     Extension=.otf,
@@ -293,4 +294,8 @@
 }
 
 \lstset{style=mystyle}
+
+% vector \symbf{a}
+% matrix \symbfup{A}
+% tensor \symbfsfup{A}
 
