@@ -1,25 +1,29 @@
-%% Main script - Equações do movimento para um VANT sem carga - 6x6 PD
+%% Main script - Equaï¿½ï¿½es do movimento para um VANT sem carga - 6x6 PD
 % Renan Sanches Geronel
 
 clear all; clc; 
 
 % Controle utilizado PD https://www.cambridge.org/core/journals/aeronautical-journal/article/abs/dynamic-responses-due-to-the-dryden-gust-of-an-autonomous-quadrotor-uav-carrying-a-payload/07E3CD5EC5B160FFE51BFA2AC4176114
 
-%% Condições iniciais
- for loop=1:1000
+%% Condiï¿½ï¿½es iniciais
+nnn = 1000;
+tau_all = cell(nnn,1);
+xs_all = cell(nnn,1);
 
+  for loop=1:1000
+      
     t0=0;                                                                   % Tempo inicial
-    tf=50;                                                                  % Tempo final
-    dt=0.002;                                                               % Discretização do Tempo
-    Fs=1/dt;                                                                % Frequência de amostragem
+    tf=40;                                                                  % Tempo final
+    dt=0.002;                                                               % Discretizaï¿½ï¿½o do Tempo
+    Fs=1/dt;                                                                % Frequï¿½ncia de amostragem
     t=t0:dt:tf;                                                             % Vetor tempo
     
-    [xs,m,l,lambda,Ixx,Iyy,Izz,g,M,kf,km,Omegar,Cdj,Aj]=parametros;         % Parâmetros do Quad (massa,inércia e geométricos)
-    option = 2;         % 1 = retangular  2 = circular  e 3 = linear        % Escolher a trajetória desejada
+    [xs,m,l,lambda,Ixx,Iyy,Izz,g,M,kf,km,Omegar,Cdj,Aj]=parametros;         % Parï¿½metros do Quad (massa,inï¿½rcia e geomï¿½tricos)
+    option = 2;         % 1 = retangular  2 = circular  e 3 = linear        % Escolher a trajetï¿½ria desejada
     
-    x_des(1)=0;y_des(1)=0;z_des(1)=0; x_dot_des(1)=0;y_dot_des(1)=0;z_dot_des(1)=0;     % Condição inicial das trajetórias
+    x_des(1)=0;y_des(1)=0;z_des(1)=0; x_dot_des(1)=0;y_dot_des(1)=0;z_dot_des(1)=0;     % Condiï¿½ï¿½o inicial das trajetï¿½rias
     for ii=1:length(t)
-    [x_des0,y_des0,z_des0,x_dot_des0,y_dot_des0,z_dot_des0]=trajetoria(t(ii),option, 0.1);                        % Trajetórias desejadas
+    [x_des0,y_des0,z_des0,x_dot_des0,y_dot_des0,z_dot_des0]=trajetoria(t(ii),option, loop);                        % Trajetï¿½rias desejadas
     x_des(ii)=x_des0;y_des(ii)=y_des0;z_des(ii)=z_des0;x_dot_des(ii)=x_dot_des0;y_dot_des(ii)=y_dot_des0;z_dot_des(ii)=z_dot_des0;
     end
     
@@ -27,20 +31,22 @@ clear all; clc;
     
  [xs,phi_des,theta_des,tau,erro_total]=principal(dt,t,xs,m,Ixx,Iyy,Izz,g,x_des,y_des,z_des,x_dot_des,y_dot_des,z_dot_des);
  
- % xs = vetor de estados, phi_des e theta_des = ângulos desejados, tau = [U1,U2,U3,U4] e erro_total = erros entre (xs_des-xs)
+ % xs = vetor de estados, phi_des e theta_des = angulos desejados, tau = [U1,U2,U3,U4] e erro_total = erros entre (xs_des-xs)
  % xs Conferir abaixo. 
  % O vetor xs gera respectivamente (12 estados) [x' y' z' phi' theta' psi' x y z phi theta psi];
- %note que x' é a derivada de x, sendo x deslocamento e x' velocidade
+ %note que x' eh a derivada de x, sendo x deslocamento e x' velocidade
  
- % Funçao nftool
-    str = compose("xs_%1d.csv",loop);
-    csvwrite(str, xs)
-    str2 = compose("tau_%1d.csv",loop);
-    csvwrite(str2, tau)
- 
-end
- 
- 
+ % Funcao nftool
+    % str = compose("xs_%1d.csv",loop);
+    % csvwrite(str, xs)
+    % str2 = compose("tau_%1d.csv",loop);
+    % csvwrite(str2, tau)
+
+    tau_all{loop} = tau;
+    xs_all{loop} = xs;
+    disp(loop)
+
+  end
  %% Figuras
 
 % figure();
@@ -136,7 +142,7 @@ end
 %     'FontSize',font_size,'FontName','Times');
 % 
 % figure();
-% subplot(2,2,1);plot(t(1:end-2),tau(1,1:end-2),'b', 'linewicsvwritedth',1.6);             
+% subplot(2,2,1);plot(t(1:end-2),tau(1,1:end-2),'b', 'linewidth',1.6);             
 % grid on;  
 % font_size=12;
 %  xlabel('$t$','FontUnits','points','interpreter','latex',...

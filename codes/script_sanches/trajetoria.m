@@ -43,8 +43,8 @@ end
 
 elseif option ==2
     
-    x_des=0.5*cos(t/2) + var;
-    y_des=0.5*sin(t/2) + var;
+    x_des=0.5*cos(t/2) + var/600;
+    y_des=0.5*sin(t/2) + var/600;
     z_des=3*ones(1,length(t));
 %     z_des=1+t/10;
     x_dot_des=-0.25*sin(t/2);
@@ -53,7 +53,7 @@ elseif option ==2
     
 else
     
-    % Sobe/cruzeiro/desce(ou não)
+    % Sobe/cruzeiro/desce(ou nï¿½o)
     x_des=[zeros(1,round(length(t)/5)),2*ones(1,length(t)-round(2*length(t)/5)),zeros(1,round(length(t)/5))];
     y_des=[zeros(1,round(length(t)/5)),2*ones(1,length(t)-round(2*length(t)/5)),zeros(1,round(length(t)/5))];
     z_des=[zeros(1,round(length(t)/5)),2*ones(1,length(t)-round(2*length(t)/5)),zeros(1,round(length(t)/5))];
