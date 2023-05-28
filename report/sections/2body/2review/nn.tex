@@ -31,13 +31,12 @@ A \gls*{mlp} is a important class of \gls*{nn}. It consists of a set of sensoria
 
 The learning by back-propagation consists of two steps through the layers of the perceptron: a forward pass (propagation) and a backward pass (back-propagation). In the forward pass, an input vector is applied to the sensorial nodes of the network and it propagates through the network, layer by layer; in this step the weights are fixed. During the backward pass, the weights are fit accordingly through a loss function (see~\cref{sec:loss_function}). This error signal is propagated through the network in the opposite direction of the synaptic connections. The weights are adjusted to make that the network output gets closer of the wanted output. The~\cref{fig:mlp} represents a \gls*{mlp}.
 
-\begin{figure}[!htb]\footnotesize
+\begin{figure}[!htb]
     \centering
     \caption[Visual Representation of a MLP]{Visual Representation of a MLP. The input vector \(x_i\) is given in the input layer and \(i\) can assume any integer, just as the output data \(y_i\). The weights \(w_{x_i}\) are specific for each input data. The bias \(b_i\) are there to prevent the data to be biased.}
     \includesvg{figures/3review/nn/nn.svg}
-    \begin{flushleft}\footnotesize
-        Source: prepared by the author.
-    \end{flushleft}
+    
+    {\footnotesize Source: prepared by the author.}
     \label{fig:mlp}
 \end{figure}
 
@@ -71,13 +70,12 @@ A convolutional network is a \gls*{mlp} specifically projected to recognize two-
 %
 \citet{wang2021} presented an easy and more intuitive way to visualize \gls*{cnn}s.
 %
-\begin{figure}[!htb]\scriptsize
+\begin{figure}[!htb]
     \centering
     \caption[Convolutional Neural Network]{Convolutional Neural Network. It is commonly used to process images, for instance, to recognize manuscripts, to determine objects in a picture, or to recognize patterns to make decisions based on it.}
     \includesvg{figures/3review/nn/cnn.svg}
-    \begin{flushleft}\footnotesize
-        Source: prepared by the author.
-    \end{flushleft}
+    
+    {\footnotesize Source: prepared by the author.}
 \end{figure}
 
 
@@ -108,10 +106,8 @@ The~\cref{fig:mae_chart} shows a linear data and how the domain of the loss func
     \centering
     \caption[Loss Function for Linear Regression]{Loss Function for Linear Regression. The loss function take all the distances between the predicted and the target value to verify if the model is in the right path. The lower the distance, the better the model. The \(y\)-axis represents the output data and the \(x\)-axis represents the input data.}
     \includesvg{figures/3review/nn/mae_chart.svg}
-    \begin{flushleft}\footnotesize
-        Source: prepared by the author.
-    \end{flushleft}
     
+    {\footnotesize Source: prepared by the author.}
     \label{fig:mae_chart}
 \end{figure}
 
@@ -148,9 +144,8 @@ The \emph{gradient descent} is one of the main algorithm \citep{nesterov2004} th
     \centering
     \caption[Gradient Descent Process]{Gradient Descent Process. In this case, the loss function (yellow curve) can be represented in a two-axes plan. Depending on the data, it is not possible to represent graphically due to its multi dimension. Each point represents the learning step. When the gradient descent reaches the minimum of the loss function, it means that the model may be accurate. Note that the gradient descent can reach a local minimum of the function and not the global minimum necessarily. The \(y\)-axis represents the loss function and the \(x\)-axis represents the weight values.}
     \includesvg{figures/3review/nn/gradient_descent.svg}
-    \begin{flushleft}\footnotesize
-        Source: prepared by the author.
-    \end{flushleft}
+    
+    {\footnotesize Source: prepared by the author.}
     
 \end{figure}
 
@@ -197,7 +192,7 @@ Adam is a strategical choice when using large data or parameters and with very n
 
 \citet{kingma2017} showed that the algorithm can be implemented as it follows:
 
-\begin{algorithm}
+\begin{algorithm}[!htb]
 \caption[Adam Algorithm]{Adam Algorithm. Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}
 \begin{algorithmic}
 \Require \(\alpha\): stepsize

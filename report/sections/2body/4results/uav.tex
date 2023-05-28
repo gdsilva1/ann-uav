@@ -1,0 +1,19 @@
+\section{Unnamed Aerial Vehicle}
+
+\subsection{Comparison of the Model with the Script}
+
+The~\cref{fig:uxt_comparison_model_script} shows the comparison of the control torque from the script with the \gls*{nn} created model.
+%
+\begin{figure}[!htb]
+    \centering
+    \caption[Comparing the model with the script]{Comparing the model with the script. The continuous curve is the control torque from the script, while dashed curve is the output from the \gls*{nn} model.}
+    \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav}{uxt_comparasion_model_script.pgf}
+
+    {\footnotesize Source: prepared by the author.}
+    \label{fig:uxt_comparison_model_script}
+\end{figure}
+
+From the model statistics, the loss function for the test sample gave the result of 0.00091, which is an acceptable value for its purpose.
+Although the~\cref{fig:uxt_comparison_model_script} looks like to show some discrepancy for \(U_2(t)\) and \(U_3(t)\), they do not mean the model did not predict precisely the control torque. 
+After the first 10 seconds, which is the time that the \gls*{uav} is leaving the ground, the model is able to describe the control torque very well.
+The major error, i.e., in the beginning of the motion may be caused by the interference of the \(z\)-axis trajectory. The discrepancy, actually, represents very little in the major context, since the image scale may distort the real values.

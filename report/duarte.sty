@@ -20,6 +20,7 @@
     colorlinks=true,
     allcolors=blue!50!black
 ]{hyperref}
+\usepackage[table]{xcolor}
 \usepackage{tabularray}
 \UseTblrLibrary{booktabs}
 \usepackage[
@@ -38,7 +39,6 @@
 \usepackage{multicol}
 \usepackage{tikz, pgf}
 \usepackage{listings}
-\usepackage{xcolor}
 \usepackage{fancybox}
 \usepackage{authblk}
 \usepackage{blindtext}
@@ -141,8 +141,8 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[
     labelsep=period,
-    labelfont={sf,bf,footnotesize},
-    textfont={footnotesize},
+    labelfont={sf,bf},
+    % textfont={footnotesize},
     justification=justified,
     % format=hang
 ]{caption}
@@ -167,44 +167,44 @@
 ]{unicode-math}
 % \setmainfont{Latin Modern Roman}
 % \setsansfont{Latin Modern Roman}
-% \setsansfont{NewCM10}[
-%     UprightFont=*-Book,
-%     BoldFont=*-Bold,
-%     ItalicFont=*-BookItalic,
-%     BoldItalicFont=*-BoldItalic
-% ]
-% \setmainfont{NewCM10}[
-%     UprightFont=*-Book,
-%     BoldFont=*-Bold,
-%     ItalicFont=*-BookItalic,
-%     BoldItalicFont=*-BoldItalic
-% ]
-% \setmathfont{NewCMMath-Book}[
-%     StylisticSet={02}
-% ]
+\setsansfont{NewCM10}[
+    UprightFont=*-Book,
+    BoldFont=*-Bold,
+    ItalicFont=*-BookItalic,
+    BoldItalicFont=*-BoldItalic
+]
+\setmainfont{NewCM10}[
+    UprightFont=*-Book,
+    BoldFont=*-Bold,
+    ItalicFont=*-BookItalic,
+    BoldItalicFont=*-BoldItalic
+]
+\setmathfont{NewCMMath-Book}[
+    StylisticSet={02}
+]
 % \setsansfont{NewCMSans10}[
 %     UprightFont=*-Book,
 %     BoldFont=*-Bold,
 %     ItalicFont=*-Oblique,
 %     BoldItalicFont=*-BoldOblique
 % ]
-\setmathfont{STIXTwoMath-Regular.otf}[
-    Path=./fonts/STIXTwo/,
-    Extension=.otf,
-    StylisticSet={01,08,10}
-]
-\setmainfont{STIXTwoText}[
-    Path=./fonts/STIXTwo/,
-    Extension=.otf,
-    UprightFont=*-Regular,
-    BoldFont=*-Bold,
-    ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic,
-]
-\setsansfont{TeX Gyre Heros}[
-    LetterSpace=-0.2,
-    Scale=MatchLowercase,
-]
+% \setmathfont{STIXTwoMath-Regular.otf}[
+%     Path=./fonts/STIXTwo/,
+%     Extension=.otf,
+%     StylisticSet={01,08,10}
+% ]
+% \setmainfont{STIXTwoText}[
+%     Path=./fonts/STIXTwo/,
+%     Extension=.otf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Bold,
+%     ItalicFont=*-Italic,
+%     BoldItalicFont=*-BoldItalic,
+% ]
+% \setsansfont{TeX Gyre Heros}[
+%     LetterSpace=-0.2,
+%     Scale=MatchLowercase,
+% ]
 % \setsansfont{Inter}[
 %     Path=./fonts/Inter/,
 %     Extension=.otf,
@@ -273,6 +273,7 @@
 \definecolor{codepurple}{HTML}{6a0173}
 \definecolor{my_red}{HTML}{9e0100}
 \definecolor{backcolour}{HTML}{f0f6ff}
+\definecolor{light_color}{HTML}{eaeaf2}
 
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},   
