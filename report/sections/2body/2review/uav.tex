@@ -17,18 +17,19 @@ Combining those benefits with \gls*{ai} can be a powerful tool for the future. \
 
 \subsection{Motion Equation}
 
-Considering the \gls*{uav} a quadcopter, as the~\cref{fig:quadcopter_forces_scheme} shows, it is assumed a defined coordinate system fixed in the body (\(Z_M\)). \citet{fossen1994} described the equation of motion as being
+Considering the \gls*{uav} a quadcopter, as the~\cref{fig:quadcopter_forces_scheme} shows, it is assumed a defined coordinate system fixed in the body (\(Z_M\)). \citet{geronel2023}, based on the work of \citet{fossen1994}, described the equation of motion for a quadcopter with a payload as being:
 %
 \begin{equation}
-    \symbfup{M}_{\eta}(\symbfup{\eta})\ddot{\symbfup{\eta}} +
-    \symbfup{C}_{\eta}(\symbfup{\nu},\symbfup{\eta})\dot{\symbfup{\eta}} +
-    \symbfup{g}_{\eta}(\symbfup{\eta}) =
-    \symbfup{\tau}_{\eta}(\symbfup{\eta}) + 
+    \symbfup{M}_{\eta_{c}}(\symbfup{\eta}_c)\ddot{\symbfup{\eta}}_c +
+    \symbfup{C}_{\eta_c}(\symbfup{\nu},\symbfup{\eta}_c)\dot{\symbfup{\eta}_c} +
+    \symbfup{g}_{\eta_c}(\symbfup{\eta}_c) +
+    \symbfup{K}_{\eta_c}(\symbfup{\eta}_c)\symbfup{\eta}_c =
+    \symbfup{\tau}_{\eta_c}(\symbfup{\eta}_c) + 
     \symbfup{F}_d
     \label{eq:uav_motion_equation}
 \end{equation}
 %
-where \(\symbfup{M}_{\eta}(\symbfup{\eta})\) is the inertial matrix; \(\symbfup{C}_{\eta}(\symbfup{v},\symbfup{\eta})\) is the Coriolis matrix; \(\symbfup{g}_{\eta}(\symbfup{\eta})\) is the gravitational vector; \(\symbfup{\tau}_{\eta}(\symbfup{\eta})\) is the control torque; \(\symbfup{F}_d\) is the gust vector; and \(\symbfup{\nu}\) is the velocity generalized coordinate in the body-frame.
+where \(\symbfup{M}_{\eta_{c}}(\symbfup{\eta}_c)\) is the inertial matrix; \(\symbfup{C}_{\eta_c}(\symbfup{\nu},\symbfup{\eta}_c)\) is the Coriolis matrix; \(\symbfup{g}_{\eta_c}(\symbfup{\eta}_c)\) is the gravitational vector; \(\symbfup{K}_{\eta_c}(\symbfup{\eta}_c)\) is the stiffness matrix; \(\ \symbfup{\tau}_{\eta_c}(\symbfup{\eta}_c)\) is the control torque; \(\symbfup{F}_d\) is the gust vector; and \(\symbfup{\nu}\) is the velocity generalized coordinate in the body-frame. All matrices and the development of the equations are explicit in the \citet{geronel2023} work.
 %
 \begin{figure}[!htb]
     \centering
@@ -39,27 +40,27 @@ where \(\symbfup{M}_{\eta}(\symbfup{\eta})\) is the inertial matrix; \(\symbfup{
     \label{fig:quadcopter_forces_scheme}
 \end{figure}
 %
-The generalized coordinate's vector of the quadrotor in the inertial reference frame is
-%
-\begin{equation}
-    \symbfup{\eta} = \begin{Bmatrix}
-        x & y & z & \theta & \phi & \psi
-    \end{Bmatrix}^{\intercal}
-\end{equation}
-%
-where \(x,\ y,\ z\) and \(\phi,\ \theta,\ \psi\) are the positions and orientation angles of the quadrotor.
-As detailed by \citet{geronel2023}, the matrices of the~\cref{eq:uav_motion_equation} are
-%
-\begin{align}
-    \symbfup{M}_{\eta}(\symbfup{\eta}) &= \symbfup{I}_{6\times6} \\
-    \symbfup{C}_{\eta}(\symbfup{\nu},\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{C}\symbfup{J}^{-1} - \dot{\symbfup{J}}\symbfup{J}^{-1} \\
-    \symbfup{g}_{\eta}(\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{g}_{0} \\
-    \symbfup{\tau}_{\eta}(\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{\tau}
-    \label{eq:matrices_dynamic}
-\end{align}
-%
-where \(\symbfup{J}\) is the derivative of the transformation matrix with respect to time. All of them are explicit in the appendix of the work of \citet{geronel2023}. Note that in his work, the matrices refers to a quadcopter with a payload attached to it, while in the present work the payload is disconsidered, hence all the terms related to the payload is null.
-%
+% The generalized coordinate's vector of the quadrotor in the inertial reference frame is
+% %
+% \begin{equation}
+%     \symbfup{\eta} = \begin{Bmatrix}
+%         x & y & z & \theta & \phi & \psi
+%     \end{Bmatrix}^{\intercal}
+% \end{equation}
+% %
+% where \(x,\ y,\ z\) and \(\phi,\ \theta,\ \psi\) are the positions and orientation angles of the quadrotor.
+% As detailed by \citet{geronel2023}, the matrices of the~\cref{eq:uav_motion_equation} are
+% %
+% \begin{align}
+%     \symbfup{M}_{\eta}(\symbfup{\eta}) &= \symbfup{I}_{6\times6} \\
+%     \symbfup{C}_{\eta}(\symbfup{\nu},\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{C}\symbfup{J}^{-1} - \dot{\symbfup{J}}\symbfup{J}^{-1} \\
+%     \symbfup{g}_{\eta}(\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{g}_{0} \\
+%     \symbfup{\tau}_{\eta}(\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{\tau}
+%     \label{eq:matrices_dynamic}
+% \end{align}
+% %
+% where \(\symbfup{J}\) is the derivative of the transformation matrix with respect to time. All of them are explicit in the appendix of the work of \citet{geronel2023}. Note that in his work, the matrices refers to a quadcopter with a payload attached to it, while in the present work the payload is disconsidered, hence all the terms related to the payload is null.
+% %
 % \begin{align}
 %     \symbfup{M} &= \diag(m,m,m,I_{xx},I_{yy},I_{zz})
 %     \label{eq:diag_M} \\
@@ -105,16 +106,20 @@ where \(\symbfup{J}\) is the derivative of the transformation matrix with respec
 \subsection{Control Algorithm}
 
 \citet{geronel2023} also developed a \matlab algorithm to control the quadrotor. It can control it in three different trajectories: rectangular, circular and linear.
-Given the initial pose and angles, the trajectory wanted, and the control required, it is able to give a complete overview of the quadrotor's motion.
+Given the \(\symbf{\tau}\) as the input vector, which represents the Position Controller \(U_1(t)\) and the Attitude Controller \(U_2(t),\ U_3(t),\ U_4(t)\), it is able to give a complete overview of the quadrotor's motion.
+%
+\begin{equation}
+    \symbf{\tau} = \begin{Bmatrix}
+        U_1 & U_2 & U_3 & U_4
+    \end{Bmatrix}^{\intercal}
+\end{equation}
 
-The algorithm provides the state space \(\symbfup{x}_s\) with the position and the quadrotor angles, as their derivatives.
+The algorithm provides the state-space vector \(\symbfup{x}_s\) with the quadrotor position and angles, as their derivatives.
 %
 \begin{equation}\setcounter{MaxMatrixCols}{13}
-    \symbfup{x}_s =
+    \symbf{x}_s =
     \begin{bmatrix}
         x&y&z&\phi&\theta&\psi&\dot{x}&\dot{y}&\dot{z}&\dot{\phi}&\dot{\theta}&\dot{\psi}
     \end{bmatrix}        
     \label{eq:xs_vector_matlab}
 \end{equation}
-
-It allows to study several trajectories of the quadrotor and create a big dataset to use with \gls*{ml}.
