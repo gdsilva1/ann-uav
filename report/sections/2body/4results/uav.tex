@@ -1,6 +1,8 @@
-\section{Study Case 1: Unnamed Aerial Vehicle}
+\section{Case Study 1: Unnamed Aerial Vehicle}
 
-\subsection{Model Summary}
+\subsection{First Model}
+
+\subsubsection*{Model Summary}
 
 After the \gls*{nn} training, it was tested using the 200 samples, as the~\cref{tab:ann_parameters_uav}.
 The metrics to evaluate the model are shown in the~\cref{tab:model_summary_uav}.
@@ -23,13 +25,13 @@ The metrics to evaluate the model are shown in the~\cref{tab:model_summary_uav}.
     \label{tab:model_summary_uav}
 \end{table}
 
-\begin{figure}[!htb]
-    \centering
-    \caption{Some caption}
-    \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav/}{epochsxloss.pgf}
-\end{figure}
+% \begin{figure}[!htb]
+%     \centering
+%     \caption{Some caption}
+%     \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav/}{epochsxloss.pgf}
+% \end{figure}
 
-\subsection{Comparison of the Model with the Script}
+\subsubsection*{Comparison of the Model with the Script}
 
 The~\cref{fig:uxt_comparison_model_script} shows the comparison of the control torque from the script with the \gls*{nn} created model for the same \(\symbf{x}_s\).
 %
@@ -49,7 +51,18 @@ After the first 10 seconds, which is the time that the \gls*{uav} is leaving the
 The major error, i.e., in the beginning of the motion may be caused by the interference of the \(z\)-axis trajectory. 
 The discrepancy, actually, represents very little in the major context, since the image scale may distort the real values.
 That said, other possible reason for the error in the model is the quantity of samples to make the training of the neural network. 
-A thousand trajectories is not a good quantity for the model to make a good prediction.
+A thousand trajectories are not a good quantity for the model to make a good prediction.
 To have an accurate model, it should have at least one hundred thousand trajectories, but due to the processing limitation, it was not possible.
 
 Even though the model curve did not overlap the curve from the script, it gave the same pattern.
+
+\subsection{Second Model}
+
+\begin{figure}[!htb]
+    \centering
+    \caption[Comparing the model with the script(normalized)]{Comparing the model with the script (normalized). The continuous curve is the control torque from the script, while dashed curve is the output from the \gls*{nn} model.}
+    \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav}{model_4_comparison.pgf}
+
+    {\footnotesize Source: prepared by the author.}
+    \label{fig:model_4_comparison}
+\end{figure}
