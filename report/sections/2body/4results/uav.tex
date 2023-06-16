@@ -5,7 +5,7 @@
 \subsubsection*{First Model Summary}
 
 After the \gls*{nn} training, it was tested using the 200 samples, as the~\cref{tab:ann_parameters_uav}.
-The metrics to evaluate the second model are shown in the~\cref{tab:model_summary_uav} and in the~\cref{fig:metrics_model_3}.
+The metrics to evaluate the second model are shown in the~\cref{tab:model_summary_uav}.
 %
 \begin{table}[!htb]
     \centering
@@ -25,14 +25,14 @@ The metrics to evaluate the second model are shown in the~\cref{tab:model_summar
     \label{tab:model_summary_uav}
 \end{table}
 %
-\begin{figure}[!htb]
-    \centering
-    \caption[Loss function to the first model.]{Loss function to the first model.}
-    \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav}{metrics_model_3.pgf}
+% \begin{figure}[!htb]
+%     \centering
+%     \caption[Loss function to the first model.]{Loss function to the first model.}
+%     \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav}{metrics_model_3.pgf}
 
-    {\footnotesize Source: prepared by the author.}
-    \label{fig:metrics_model_3}
-\end{figure}
+%     {\footnotesize Source: prepared by the author.}
+%     \label{fig:metrics_model_3}
+% \end{figure}
 % \begin{figure}[!htb]
 %     \centering
 %     \caption{Some caption}
@@ -69,6 +69,13 @@ Even though the model curve did not overlap the curve from the script, it gave t
 The second model has the same parameters of the first model in terms of the \gls*{nn}.
 The only difference between the two models are the input and the output data.
 While in the first one both the input and output data were raw, the second one the data was normalized.
+The normalization was made as the~\cref{eq:normalization} shows.
+%
+\begin{equation}\label{eq:normalization}
+    x_{\text{norm}} = a + \frac{x - x_{\text{min}}}{x_{\text{max}} - x_{\text{min}}} \Big(b-a\Big)
+\end{equation}
+%
+where \(a=0\) and \(b=1\) are the maximum and minimum values after the normalization.
 
 \begin{figure}[!htb]
     \centering
@@ -79,7 +86,7 @@ While in the first one both the input and output data were raw, the second one t
     \label{fig:model_4_comparison}
 \end{figure}
 
-The metrics to evaluate the second model are shown in the~\cref{tab:model_normalized_summary_uav} and in the~\cref{fig:metrics_model_4}.
+The metrics to evaluate the second model are shown in the~\cref{tab:model_normalized_summary_uav}.
 %
 \begin{table}[!htb]
     \centering
@@ -99,14 +106,26 @@ The metrics to evaluate the second model are shown in the~\cref{tab:model_normal
     \label{tab:model_normalized_summary_uav}
 \end{table}
 %
-\begin{figure}[!htb]
-    \centering
-    \caption[Loss function to the second model.]{Loss function to the second model.}
-    \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav}{metrics_model_4.pgf}
+% \begin{figure}[!htb]
+%     \centering
+%     \caption[Loss function to the second model.]{Loss function to the second model.}
+%     \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav}{metrics_model_4.pgf}
 
-    {\footnotesize Source: prepared by the author.}
-    \label{fig:metrics_model_4}
-\end{figure}
+%     {\footnotesize Source: prepared by the author.}
+%     \label{fig:metrics_model_4}
+% \end{figure}
 Since the data is normalized, it is notable that the trained model could predict better when comparing to the previous model.
 The data processing before passing to the training made the model perform at its best.
 This happens because all the data is in a range from negative one to positive one, while the first model this range was very high, making it difficult to predict a
+
+
+
+
+\textcolor{red}{
+\begin{itemize}
+    \item ver como desnormalizar
+    \item falar com o Sanches pra ele verificar se o resultados normalizados estão ok
+    \item verificar o quanto a variação influencia na trajetoria
+    \item desnormalizar e testar no algoritmo do sanches
+\end{itemize}
+}

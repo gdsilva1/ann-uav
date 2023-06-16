@@ -9,10 +9,10 @@ def f(x):
 def g(x):
     return np.sin(x)
 
-plt.style.use(['seaborn-v0_8-darkgrid'])
+plt.style.use(['seaborn-v0_8-darkgrid', 'seaborn-v0_8-colorblind'])
 # from cycler import cycler
 plt.rcParams.update({
-    'axes.prop_cycle': plt.cycler(linestyle=['solid','dashed','dotted', 'dashdot'], color=['darkblue','darkred','darkgreen', 'darkgoldenrod']),
+    'axes.prop_cycle': plt.cycler(linestyle=['solid','dashed','dotted', 'dashdot']),
     # 'axes.facecolor': '#e6e6e6',
     'axes.grid': True,
     # 'axes.linewidth': 0.5, # Use with seaborn-v0_8-white and dracula
@@ -58,5 +58,7 @@ for i,j in zip(range(1),range(1)):
 
 
 fig.tight_layout(pad=1)
-fig.savefig('figures/plot_style.pgf', backend='pgf')
-fig.savefig('figures/plot_style.pdf', backend='pgf')
+# fig.savefig('figures/plot_style.pgf', backend='pgf')
+fig.savefig('plot_style.pdf', backend='pgf')
+
+plt.show()
