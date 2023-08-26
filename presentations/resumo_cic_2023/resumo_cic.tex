@@ -1,0 +1,54 @@
+\documentclass[
+    a4paper,
+    10pt,
+    twocolumn
+]{article}
+\usepackage{duarte}
+\usepackage{blindtext}
+
+% ============================
+% DADOS
+\newcommand{\titulo}{Modelo de Documento \LaTeX}
+\author{\small Gabriel Duarte da Silva
+(RA: 182054047) \\ gd.silva@unesp.br}
+\affil{\itshape UNESP --- Universidade Estadual Paulista \\
+ \itshape Faculdade de Engenharia de Ilha Solteira       \\
+ \itshape Departamento de Engenharia Mecânica            \\
+ \itshape Disciplina}
+\title{\bfseries\sffamily\titulo}
+\date{\today}
+% ----------------------------
+
+\begin{document}
+\pagestyle{fancy}
+
+% ============================
+% RESUMO
+\twocolumn[
+ \begin{@twocolumnfalse}
+  \begin{center}
+    \vspace{0.5cm}
+    {\Large\bfseries REDES NEURAIS: APRIMORAMENTO DE SISTEMAS INTELIGENTES UTILIZANDO APRENDIZADO PROFUNDO}
+
+    \vspace{0.1cm}
+    {Gabriel D. Silva, Renan S. Geronel, Douglas D. Bueno. FEIS, Câmpus de Ilha Solteira, gd.silva@unesp.br}
+
+    \vspace{0.1cm}
+    {Apresentado no XXXV Congresso de Iniciação Científica da Unesp --- CIC 2023}
+
+    {\itshape ``Desafios na produção do conhecimento: democratização e diversidade''}
+  \end{center}
+ 
+ \end{@twocolumnfalse}
+]
+% ----------------------------
+
+% ============================
+% SEÇÕES
+\input{sections/intro}
+% ----------------------------
+
+% ============================
+% REFERÊNCIAS
+% \printbibliography
+\end{document}

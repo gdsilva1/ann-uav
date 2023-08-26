@@ -1,0 +1,64 @@
+\section{Introdução}
+
+Diferentes abordagens são utilizadas para controle de sistemas eletro-mecânicos, como o modelo paramétrico caixa preta, em que determina-se as forças de controle através da posição inicial e a trajetória desenvolvida.
+Desta forma, é possível determinar as forças de controle de um VANT utilizando técnicas de aprendizado de máquina.
+
+\section{Objetivo}
+
+Desenvolver uma rede neural que determine as forças de controle a partir da trajetória do VANT.
+
+\section{Materiais e Métodos}
+
+A determinação das forças de controle a partir da trajetória é realizada a partir de uma rede neural.
+Esta é uma das técnicas de aprendizado de máquinas que permite reconhecimento de padrões em dados. A Fig.~\ref{fig:rede_neural} mostra esquematicamente o funcionamento de uma rede neural.\cite{haykin1999}
+%
+\begin{figure}[H]
+    \centering
+    \caption{Modelo de rede neural.}
+    \includesvg[width=\columnwidth]{../cic_2023/figures/nn.svg}
+
+    {\footnotesize Fonte: próprio autor.}
+    \label{fig:rede_neural}
+\end{figure}
+%
+Um modelo paramétrico caixa branca foi desenvolvido para determinar a trajetória de um VANT.\cite{geronel2023}.
+O objetivo da rede é fazer o papel de uma função inversa ao modelo caixa branca. 
+As matrizes das forças de controle e de espaço de estado são, respectivamente:
+%
+\begin{align}
+    \tau &= \begin{bmatrix}
+        U_1 & U_2 & U_3 & U_4 
+    \end{bmatrix} \\ 
+    \setcounter{MaxMatrixCols}{20}
+    \mathbf{x}_s &= \begin{bmatrix}
+        x & y & z & \theta & \phi & \psi & \dot{x} & \dot{y} & \dot{z} & \dot{\theta} & \dot{\phi} & \dot{\psi}
+    \end{bmatrix}
+\end{align}
+%
+Uma rede neural do tipo \emph{multi-layer perceptron} foi designada para realizar o treinamento nos dados.
+
+\section{Resultados e Discussão}
+
+A Fig.~\ref{fig:comparison} mostra uma comparação entre um valor real das forças de controle normalizada e as forças de controle normalizadas provenientes da rede neural relativa à mesma trajetória.
+%
+\begin{figure}[H]
+    \centering
+    \caption{Comparação entre a previsão do modelo e o valor real}
+    \resizebox{.7\columnwidth}{!}{
+    \import{/home/gabriel/Documentos/deep-learning/presentations/cic_2023/figures/}{comparison_default_normal.pgf}}
+
+    {\footnotesize Fonte: próprio autor.}
+
+    \label{fig:comparison}
+\end{figure}
+%
+É possível perceber que para \(U_i\) \((i = 1, 2, 3, 4)\), a rede neural conseguiu reconhecer os padrões e determinar as forças de controle.
+Vale notar que, apesar de \(U_1\) parecer estar discrepante na diferença entre os valores reais e os previstos, a escala do gráfico fortalece quem essa percepção.
+
+\section{Conclusão}
+
+A rede neural conseguiu determinar as forças de controle normalizadas de forma satisfatŕoia. Os próximos passos são: desenvolver um algoritmo para desnormalizar a matriz de saída da rede; sofisticar a rede neural; e simular as trajetórias com os valores normalizados e desnormalizados obtidos pela rede.
+%
+\bibliographystyle{acm}
+\bibliography{ref}
+

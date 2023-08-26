@@ -1,0 +1,138 @@
+\documentclass[serif,20pt]{beamer}
+\usepackage[size=custom,width=90,height=120,orientation=portrait, scale=1.55]{beamerposter}
+\useinnertheme{circles}
+% \usepackage{mlmodern}
+\usepackage{svg}
+\usepackage{tikz, pgf}
+\usepackage{import}
+\usepackage{wallpaper}
+\usepackage[super]{natbib}
+\usepackage[brazil]{babel}
+\setbeamertemplate{caption}[numbered]
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{background.png}}
+
+\begin{document}
+\begin{frame}[t]
+\vspace{5cm}
+\begin{columns}
+\column{0.2\textwidth}    
+\includegraphics[width=\columnwidth]{cic_logo.png}
+\column{0.6\textwidth}
+\begin{center}\Large{%
+    \bfseries REDES NEURAIS: APRIMORAMENTO DE SISTEMAS INTELIGENTES UTILIZANDO APRENDIZADO PROFUNDO}
+
+    \small{Gabriel D. Silva, Renan S. Geronel, Douglas D. Bueno. Universidade Estadual ``Paulista Júlio de Mesquita Filho'', Câmpus de Ilha Solteira, Engenharia Mecânica, gd.silva@unesp.br, Bolsa de Iniciação Científica --- CNPq}
+\end{center}
+\column{0.2\textwidth}
+\includegraphics[width=\columnwidth]{unesp_logo.png}
+\end{columns}
+
+\vspace{5cm}
+
+\begin{columns}[t]
+\column{0.45\textwidth}
+\begin{block}{\centering\bfseries INTRODUÇÃO}
+
+\begin{itemize}
+    \item Modelo paramétrico caixa preta.
+    \item Determinação das forças de controle a partir da posição inicial e trajetória.
+    \item Utilização de redes neurais.
+\end{itemize}
+\end{block}
+%
+\begin{block}{\centering\bfseries OBJETIVO}
+Desenvolver uma rede neural para determinar as forças de controle de um VANT a partir de sua trajetória para auxiliar no controle do mesmo.
+\end{block}
+%
+\begin{block}{\centering\bfseries MATERIAIS E MÉTODOS}
+
+\begin{itemize}
+    \item A determinação das forças de controle será determinada a partir de uma rede neural.
+    \item Rede neural é uma técnica de aprendizado de máquina para reconhecimento de padrões.\cite{haykin1999}
+\end{itemize}
+%
+\begin{figure}[H]
+    \centering
+    \caption{Rede Neural}
+    \includesvg[width=\columnwidth]{../cic_2023/figures/nn.svg}
+
+    {\footnotesize Fonte: próprio autor.}
+    \label{fig:rede_neural}
+\end{figure}
+
+\begin{itemize}
+    \item Algoritmo do modelo paramétrico de caixa branca.\cite{geronel2023}
+    \item A rede neural fará o papel de uma função inversa a este algoritmo.
+    \item As forças de controle são:
+    \begin{equation}
+        \tau = \begin{bmatrix}
+            U_1 & U_2 & U_3 & U_4
+        \end{bmatrix}
+    \end{equation}
+    \item A matriz de espaço de estado é:
+    \begin{equation}
+        \setcounter{MaxMatrixCols}{20}
+        \mathbf{x}_s = \begin{bmatrix}
+            x & y & z & \theta & \phi & \psi & \dot{x} & \dot{y} & \dot{z} & \dot{\theta} & \dot{\phi} & \dot{\psi}
+        \end{bmatrix}
+    \end{equation}
+    \item Uma rede neural do tipo \emph{multi-layer perceptron} foi designada para realizar o treinamento nos dados.
+\end{itemize}
+
+\end{block}
+
+\begin{block}{\centering\bfseries RESULTADOS E DISCUSSÕES}
+
+\begin{itemize}
+    \item A Fig.~\ref{fig:comparison} compara as forças de controle da rede neural em relação às trajetórias do algoritmo do modelo caixa branca.
+    \item Para \(U_i\, (i=1,2,3,4)\), a rede neural conseguiu reconhecer os padrões e determinar as forças de controle como esperado.
+    \item Apesar de \(U_1\) parecer estar discrepante na diferença entre os valores reais e os previstos, a escala do gráfico fortalece essa percepção.
+\end{itemize}
+\end{block}
+
+
+\column{0.45\textwidth}
+
+\begin{block}{}
+
+\begin{figure}[H]
+    \centering
+    \caption{Comparação entre a previsão do modelo e o valor real}
+    \resizebox{.7\columnwidth}{!}{
+    \import{/home/gabriel/Documentos/deep-learning/presentations/cic_2023/figures/}{comparison_default_normal.pgf}}
+
+    {\footnotesize Fonte: próprio autor.}
+
+    \label{fig:comparison}
+\end{figure}
+\end{block}
+
+\begin{block}{\centering\bfseries CONCLUSÃO}
+
+\begin{itemize}
+    \item A rede neural conseguiu determinar as forças de controle normalizadas de forma satisfatória.
+    \item Próximos passos:
+    \begin{itemize}
+        \item Desenvolver um algoritmo para desnormalizar a matriz de saída da rede.
+        \item Sofisticar a rede neural.
+        \item Simular as trajetórias com os valores normalizados e desnormalizados obtidos pela rede.
+    \end{itemize}
+\end{itemize}
+
+\end{block}
+
+\begin{block}{\centering\bfseries AGRADECIMENTOS}
+
+Ao Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)
+
+\rule{10cm}{0.4pt}
+
+\bibliographystyle{acm}
+\bibliography{ref}
+\end{block}
+
+
+\end{columns}    
+\end{frame}
+\end{document}

@@ -1,0 +1,144 @@
+\ProvidesPackage{lighttheme}
+% ============================
+% CORES
+% \definecolor{destaque}{HTML}{0b2d39}
+% \definecolor{destaque}{HTML}{033453}
+% \definecolor{destaque}{HTML}{10303c}
+\definecolor{destaque}{HTML}{000000}
+
+\definecolor{cor}{HTML}{ffffff}
+\definecolor{azulunesp}{RGB}{0, 159, 224}
+\definecolor{vermelho}{rgb}{0.34, 0.01, 0.1}
+% ----------------------------
+
+% ============================
+% BASE
+% \usetheme{Madrid}
+\setbeamertemplate{footline}{
+    \hfill
+    \insertframenumber\hspace{2pt}
+    \vskip2pt
+}
+\setbeamertemplate{title page}[default][left]
+% \setbeamertemplate{frametitle}[default][center]
+\setbeamertemplate{blocks}[deafult]
+\useinnertheme{circles}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{navigation symbols}{}
+% \counterwithin{figure}{section}
+% \counterwithin{table}{section}
+% \counterwithin{equation}{section}
+% Logo for 16:9 
+% \setbeamertemplate{background}{\tikz[overlay,remember picture]
+%     \node[opacity=0.04] at (12.7cm, -5.7cm){\includegraphics[scale=0.12]
+%     {figures/logos/unesp_ilha.pdf}};}
+% Logo for 4:3
+% \setbeamertemplate{background}{\tikz[overlay,remember picture]
+% \node[opacity=0.04] at (9.5,-6.3){\includegraphics[scale=0.12]
+% {figures/logos/unesp_ilha.pdf}};}
+% ----------------------------
+
+% ============================
+% COR
+\setbeamercolor{title}{
+    fg=white,
+    bg=destaque
+}
+\setbeamercolor{frametitle}{
+    fg=white,
+    bg=destaque
+}
+\setbeamercolor{footline}{
+    fg=black,
+    bg=white
+}
+\setbeamercolor{block title}{
+    fg=black,
+    bg=black!10
+}
+\setbeamercolor{block body}{
+    fg=black,
+    bg=black!5
+}
+\setbeamercolor{block title alerted}{
+    fg=black,
+    bg=red!10!white
+}
+\setbeamercolor{block body alerted}{
+    fg=black,
+    bg=red!5!white
+}
+\setbeamercolor{block title example}{
+    fg=black,
+    bg=green!10!white
+}
+\setbeamercolor{block body example}{
+    fg=black,
+    bg=green!5!white
+}
+\setbeamercolor{section in toc}{
+    fg=black,
+    bg=white
+}
+\setbeamercolor{section in toc shaded}{
+    fg=black,
+    bg=black
+}
+\setbeamercolor{section number projected}{
+    fg=black,
+    bg=white
+}
+\setbeamercolor{subsection number projected}{
+    fg=black,
+}
+\setbeamercolor{enumerate item projected}{
+    fg=black,
+    bg=black
+}
+\setbeamercolor{itemize item}{
+    bg=black,
+    fg=black
+}
+\setbeamercolor{item projected}{
+    fg=black,
+    bg=white
+}
+% ----------------------------
+
+% ============================
+% FONTE
+\usefonttheme{professionalfonts}
+% \usefonttheme{serif}
+\setbeamerfont{title}{
+    series=\sffamily\bfseries\large
+}
+\setbeamerfont{frametitle}{
+    series=\sffamily\bfseries
+}
+\setbeamerfont{block title}{
+    series=\sffamily\sbseries
+}
+\setbeamerfont{section in toc}{
+    series=\sffamily\sbseries
+}
+\setbeamerfont{subsection in toc}{
+    series=\sffamily
+}
+\setbeamerfont{footline}{
+    series=\sffamily
+}
+\setbeamerfont{section number projected}{
+    series=\sffamily\sbseries
+}
+\setbeamerfont{footline}{
+    series=\sffamily
+}
+% ----------------------------
+
+% ============================
+% TAMANHO
+% \setbeamersize{
+%     text margin left=15mm,
+%     text margin right=15mm,
+% }
+% ----------------------------
