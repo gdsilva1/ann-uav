@@ -1,0 +1,66 @@
+\section{Introdução}
+
+Diferentes abordagens são utilizadas para controle de sistemas aéreos, inclusive baseadas em modelo caixa preta, em que determina-se as forças de controle através da posição atual e a trajetória desejada.
+Desta forma, é possível determinar as forças de controle de um VANT utilizando técnicas de aprendizado de máquina.
+
+\section{Objetivo}
+
+Desenvolver uma rede neural que determine as forças de controle a partir da trajetória desejada para VANT.
+
+\section{Materiais e Métodos}
+
+A determinação das forças de controle a partir da trajetória é realizada a partir de uma rede neural.
+Esta é uma das técnicas de aprendizado de máquinas que permite reconhecimento de padrões em dados. A Fig.~\ref{fig:rede_neural} mostra esquematicamente o funcionamento de uma rede neural.\supercite{haykin1999}
+%
+\begin{figure}[H]
+    \centering
+    \caption{Modelo de rede neural.}
+    \includesvg[width=\columnwidth, pretex=\small]{../../../report/figures/3review/nn/nn2.svg}
+
+    {\footnotesize Fonte: próprio autor.}
+    \label{fig:rede_neural}
+\end{figure}
+%
+Um modelo paramétrico caixa branca foi desenvolvido para determinar a trajetória de um VANT e obter dados para treinamento.\supercite{geronel2023}.
+O objetivo da rede é fazer o papel de uma função inversa ao modelo caixa branca. 
+Os vetores de forças de controle e de estado são, respectivamente:
+%
+\begin{align}
+    \tau &= \begin{bmatrix}
+        U_1 & U_2 & U_3 & U_4 
+    \end{bmatrix}^{\intercal} \\ 
+    \setcounter{MaxMatrixCols}{20}
+    \mathbf{x}_s &= \begin{bmatrix}
+        x & y & z & \theta & \phi & \psi & \dot{x} & \dot{y} & \dot{z} & \dot{\theta} & \dot{\phi} & \dot{\psi}
+    \end{bmatrix}^{\intercal}
+\end{align}
+%
+Uma rede neural do tipo \emph{multi-layer perceptron} foi designada para realizar o treinamento nos dados.
+
+\section{Resultados e Discussão}
+
+A Fig.~\ref{fig:comparison} mostra uma comparação entre um valor real das forças de controle normalizada e as forças de controle normalizadas provenientes da rede neural relativa à mesma trajetória.
+%
+\begin{figure}[H]
+    \centering
+    \caption{Comparação entre a previsão do modelo e o valor real}
+    \resizebox{.8\columnwidth}{!}{
+    \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav/}{comparison_default_normal.pgf}}
+
+    {\footnotesize Fonte: próprio autor.}
+
+    \label{fig:comparison}
+\end{figure}
+%
+Nota-se que para \(U_i\) \((i = 1, 2, 3, 4)\), a rede neural cosnegue reconhecer os padrões e determinar as forças de controle.
+Apesar de \(U_1\) apresentar diferença entre os valores reais e os previstos, as demais entradas são adequadamente estimadas pela rede neural.
+
+\section{Conclusão}
+
+A rede neural consegue determinar as forças de controle normalizadas de forma satisfatória. Os próximos passos são: desenvolver um algoritmo para desnormalizar a matriz de saída da rede; sofisticar a rede neural; e simular as trajetórias com os valores normalizados e desnormalizados obtidos pela rede.
+%
+\AtNextBibliography{\footnotesize}
+\printbibliography
+% \bibliographystyle{acm}
+% \bibliography{ref}
+

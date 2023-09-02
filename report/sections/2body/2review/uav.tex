@@ -40,86 +40,21 @@ where \(\symbfup{M}_{\eta_{c}}(\symbfup{\eta}_c)\) is the inertial matrix; \(\sy
     \label{fig:quadcopter_forces_scheme}
 \end{figure}
 %
-% The generalized coordinate's vector of the quadrotor in the inertial reference frame is
-% %
-% \begin{equation}
-%     \symbfup{\eta} = \begin{Bmatrix}
-%         x & y & z & \theta & \phi & \psi
-%     \end{Bmatrix}^{\intercal}
-% \end{equation}
-% %
-% where \(x,\ y,\ z\) and \(\phi,\ \theta,\ \psi\) are the positions and orientation angles of the quadrotor.
-% As detailed by \citet{geronel2023}, the matrices of the~\cref{eq:uav_motion_equation} are
-% %
-% \begin{align}
-%     \symbfup{M}_{\eta}(\symbfup{\eta}) &= \symbfup{I}_{6\times6} \\
-%     \symbfup{C}_{\eta}(\symbfup{\nu},\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{C}\symbfup{J}^{-1} - \dot{\symbfup{J}}\symbfup{J}^{-1} \\
-%     \symbfup{g}_{\eta}(\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{g}_{0} \\
-%     \symbfup{\tau}_{\eta}(\symbfup{\eta}) &= \symbfup{J}\symbfup{M}^{-1}\symbfup{\tau}
-%     \label{eq:matrices_dynamic}
-% \end{align}
-% %
-% where \(\symbfup{J}\) is the derivative of the transformation matrix with respect to time. All of them are explicit in the appendix of the work of \citet{geronel2023}. Note that in his work, the matrices refers to a quadcopter with a payload attached to it, while in the present work the payload is disconsidered, hence all the terms related to the payload is null.
-% %
-% \begin{align}
-%     \symbfup{M} &= \diag(m,m,m,I_{xx},I_{yy},I_{zz})
-%     \label{eq:diag_M} \\
-%     \symbfup{C} &= \begin{bmatrix}
-%         0 & -m\omega_z & m\omega_y & 0 & 0 & 0 \\
-%         m\omega_z & 0 & -m\omega_x 0 & 0 & 0 & 0\\
-%         -m\omega_y & m\omega_x & 0 & 0 & 0 & 0 \\
-%         0 & 0 & 0 & 0 & 0 & I_1\omega_y \\
-%         0 & 0 & 0 & I_2\omega_z & 0 & 0 \\
-%         0 & 0 & 0 & 0 & I_3\omega_x& 0 \\
-%     \end{bmatrix}
-%     \label{eq:coriolis_matrix}
-% \end{align}
-% %
-% where \(I_1\) \(=I_{zz}-I_{yy}\) is the moment of inertia along the \(x\) axis; \(I_2\) \(=I_{xx}-I_{zz}\) is the moment of inertia along the \(y\) axis;\(I_3\) \(=I_{yy}-I_{xx}\) is the moment of inertia along the \(z\) axis; \(\symbfup{g}_0\) \(= \begin{bmatrix} -mgs\theta & mg\theta s\phi & mg\theta \phi & 0 & 0 & 0\end{bmatrix}^{\intercal}\) is the gravitational vector.
-
-
-% A new transformation matrix \(\symbfup{J}\) is considered by using the relationship \(\symbfup{\eta} = \symbfup{J}\symbfup{\nu}\), where \(\symbfup{J}\) is defined as
-% %
-% \begin{equation}
-%     \symbfup{J} = \begin{bmatrix}
-%         \symbfup{J}(\symbfup{\eta}) & \mathbf{0}_{6\times 1} \\
-%         \symbfup{j}_n & \theta\phi
-%     \end{bmatrix}
-%     \label{eq:transformation}
-% \end{equation}
-% %
-% and \(\symbfup{J}(\symbfup{\eta})\) is defined as
-% %
-% \begin{equation}
-%     \symbfup{J}(\symbfup{\eta}) = \begin{bmatrix}
-%         \psi \theta & s\phi s\theta \psi - \phi s\psi & \phi s\theta \psi + s \psi s\phi & 0 & 0 & 0 \\
-%         s\psi \theta & s\phi s\theta s\psi + \phi \psi & \phi s\theta s \psi - s\phi \psi & 0 & 0 & 0 \\
-%         -s\theta & s\phi \theta & \phi \theta & 0 & 0 & 0 \\
-%         0 & 0 & 0 & 1 & s\phi t\theta & \phi t\theta \\
-%         0 & 0 & 0 & 0 & \phi & -s\phi \\
-%         0 & 0 & 0 & 0 & \frac{s\phi}{\theta} & \frac{\phi}{\theta}
-%     \end{bmatrix}
-% \end{equation}
-% %
-% where \(\symbfup{j}_n = \begin{bmatrix}-s\theta & \theta s\phi & 0 & 0 & 0 & 0 \end{bmatrix}\).
-
 \subsection{Control Algorithm}
 
-\citet{geronel2023} also developed a \matlab algorithm to control the quadrotor. It can control it in three different trajectories: rectangular, circular and linear.
-Given the \(\symbf{\tau}\) as the input vector, which represents the Position Controller \(U_1(t)\) and the Attitude Controller \(U_2(t),\ U_3(t),\ U_4(t)\), it is able to give a complete overview of the quadrotor's motion.
+\citet{geronel2023} also developed a \matlab algorithm to control the quadrotor, as a \emph{white box} method. 
+It can control it in three different trajectories: rectangular, circular and linear.
+Given \(\symbf{\tau}\) as the input vector, which represents the Position Controller \(U_1(t)\) and the Attitude Controller \(U_2(t),\ U_3(t),\ U_4(t)\), it is able to give a complete overview of the quadrotor's motion.
+The algorithm provides the state-space vector \(\symbf{x}_s\) with the quadrotor position and angles, as their derivatives.
 %
-\begin{equation}
-    \symbf{\tau} = \begin{Bmatrix}
+\begin{align}
+    \symbf{\tau} &= \begin{Bmatrix}
         U_1 & U_2 & U_3 & U_4
-    \end{Bmatrix}^{\intercal}
-\end{equation}
-
-The algorithm provides the state-space vector \(\symbfup{x}_s\) with the quadrotor position and angles, as their derivatives.
-%
-\begin{equation}\setcounter{MaxMatrixCols}{13}
-    \symbf{x}_s =
-    \begin{bmatrix}
+    \end{Bmatrix}^{\top} \\
+    \setcounter{MaxMatrixCols}{13}
+    \symbf{x}_s &=
+    \begin{Bmatrix}
         x&y&z&\phi&\theta&\psi&\dot{x}&\dot{y}&\dot{z}&\dot{\phi}&\dot{\theta}&\dot{\psi}
-    \end{bmatrix}        
+    \end{Bmatrix}^{\top}
     \label{eq:xs_vector_matlab}
-\end{equation}
+\end{align}

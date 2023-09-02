@@ -43,7 +43,23 @@ The learning by back-propagation consists of two steps through the layers of the
 The three main features of the \gls*{mlp} are:
 %
 \begin{itemize}
-    \item Non-linear activation function. It is commonly used a smooth non-linear activation function, like a sigmoid function.
+    \item Non-linear activation function. It is commonly used a smooth non-linear activation function, like rectifier function (ReLU):
+    %
+    \begin{equation}
+        y_j = \left\{%
+        \begin{array}{ll}
+            x, & \text{if } x > 0, \\
+            0  & \text{otherwise.}
+        \end{array} \right.
+    \end{equation}
+    % \begin{equation}
+    %     y_j = \begin{cases}
+    %         x, & \text{if } x > 0, \\
+    %         0 & \text{otherwise.}
+    %     \end{cases}
+    %     \label{eq:relu_function }
+    % \end{equation}
+    Or sigmoid function:
     %
     \begin{equation}
         y_j = \frac{1}{1+\exp(-v_j)}
@@ -55,30 +71,7 @@ The three main features of the \gls*{mlp} are:
     \item Connectivity. High level of connectivity, determined by the network synapses.
 \end{itemize}
 
-These features plus the ability to learn from the experience of the training that makes the \gls*{mlp} so powerful, however, they are also responsible for its deficiency. First, the non-linearity and the high connectivity makes hard the theorical analysis of an \gls*{mlp}; second, the hidden layers make it more difficult to visualize the learning processing. The learning process is harder because the search must be conducted in a much bigger space of possible functions.
-
-
-\subsubsection*{Convolutional Neural Network}
-
-A convolutional network is a \gls*{mlp} specifically projected to recognize two-dimensional shapes with a high-level invariance relative to translation, scaling, skew, and other forms of distortion. This task is learned in a supervised way, through these restrictions:
-%
-\begin{itemize}
-    \item Features extraction. Each neuron takes its input signals from a local receptive field in the previous layer, forcing it to extract local features.
-    \item Features mapping. Each computational layer is composed by multiple feature maps, with each feature map in the shape of a plane within which the individual neurons are constrained to share the same weights. This provides the following benefits: (i) shift variance and (ii) reduction in the number of free parameters.
-    \item Subsampling. Each convolutional network is followed by a computational layer that calculates the local averaging and performs a subsampling, reducing the resolution of the feature maps.
-\end{itemize}
-%
-\citet{wang2021} presented an easy and more intuitive way to visualize \gls*{cnn}s.
-%
-\begin{figure}[!htb]
-    \centering
-    \caption[Convolutional Neural Network]{Convolutional Neural Network. It is commonly used to process images, for instance, to recognize manuscripts, to determine objects in a picture, or to recognize patterns to make decisions based on it.}
-    \includesvg{figures/3review/nn/cnn.svg}
-    
-    {\footnotesize Source: prepared by the author.}
-\end{figure}
-
-
+These features plus the ability to learn from the experience of the training that makes the \gls*{mlp} so powerful, however, they are also responsible for its deficiency. First, the non-linearity and the high connectivity makes hard the theoretical analysis of an \gls*{mlp}; second, the hidden layers make it more difficult to visualize the learning processing. The learning process is harder because the search must be conducted in a much bigger space of possible functions.
 
 \subsection{Loss Function}\label{sec:loss_function}
 
@@ -91,12 +84,14 @@ The choice of what loss function should be picked will depend on not only the da
 \subsubsection*{Regression}
 
 Although regression problems do not require \gls*{dl} to create a satisfactory model, naturally it is possible to do so.
-For regression problems, a common loss functions adopted is the \gls*{mse} \citep{bussab2017}. 
+For regression problems, common loss functions adopted are the \gls*{mae} and \gls*{mse} \citep{bussab2017}:
 
-\begin{equation}
-    \mse = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2
+\begin{align}
+    \mae &= \frac{1}{n} \sum_{i=1}^n |y_i - \hat{y}_i| 
+    \label{eq:mae} \\
+    \mse &= \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y}_i)^2
     \label{eq:mse}
-\end{equation}
+\end{align}
 %
 where \(n\) is the sample size; \(y_i\) is the predicted output; and \(\hat{y}_i\) is the real target.
 
@@ -111,25 +106,25 @@ The~\cref{fig:mae_chart} shows a linear data and how the domain of the loss func
     \label{fig:mae_chart}
 \end{figure}
 
-\subsubsection*{Classification}
+% \subsubsection*{Classification}
 
-For classification problems, a common loss function adopted is the cross-entropy.
-It measures the ``distance'' between the probability distribution and the true probability, being ideal for this kind of problem.
-For multi-classification, i.e., when there are more than two outputs for the model, the cross-entropy is defined as
-%
-\begin{equation}
-    H(P,Q) = - \sum_{i=1}^n P(x) \, \log Q(x)
-    \label{eq:cross_entropy}
-\end{equation}
-%
-where \(Q\) is a discrete distribution relative \(P\) distribution (both discrete); and \(n\) is the size of the sample.
+% For classification problems, a common loss function adopted is the cross-entropy.
+% It measures the ``distance'' between the probability distribution and the true probability, being ideal for this kind of problem.
+% For multi-classification, i.e., when there are more than two outputs for the model, the cross-entropy is defined as
+% %
+% \begin{equation}
+%     H(P,Q) = - \sum_{i=1}^n P(x) \, \log Q(x)
+%     \label{eq:cross_entropy}
+% \end{equation}
+% %
+% where \(Q\) is a discrete distribution relative \(P\) distribution (both discrete); and \(n\) is the size of the sample.
 
-For binary classification, i.e., when there is only two outputs for the model (true or false), the cross-entropy is defined as
-%
-\begin{equation}
-    H(P,Q) = - \frac{1}{n} \sum_{i=1}^n x \, \log P(x) + (1-x) \, \log \Big(1-Q(x)\Big)
-    \label{eq:binary_cross_entropy}
-\end{equation}
+% For binary classification, i.e., when there is only two outputs for the model (true or false), the cross-entropy is defined as
+% %
+% \begin{equation}
+%     H(P,Q) = - \frac{1}{n} \sum_{i=1}^n x \, \log P(x) + (1-x) \, \log \Big(1-Q(x)\Big)
+%     \label{eq:binary_cross_entropy}
+% \end{equation}
 
 \subsection{Optimizer}\label{sec:optimizer}
 
@@ -216,29 +211,3 @@ Adam is a strategical choice when using large data or parameters and with very n
 \Return \(\theta_t\)
 \end{algorithmic}
 \end{algorithm}
-
-% \begin{tcolorbox}[title={\textbf{Adam Algorithm.} Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}]
-% \begin{algorithmic}\small
-% \Require \(\alpha\): stepsize
-% \Require \(\beta_1,\ \beta_2\ \in [0,1)\): exponential decay rates for the moment estimates
-% \Require \(f(\theta)\): loss function
-% \Require \(\theta_0\): initial parameter
-
-% \State \(m_0 \gets 0\) \Comment{Initialize first moment vector}
-% \State \(v_0 \gets 0\) \Comment{Initialize second moment vector}
-% \State \(t \gets 0\) \Comment{Initialize timesep}
-
-% \While{\(\theta_t\) not converged}
-%     \State{\(t \gets t + 1\)}
-%     \State{\(g_t \gets \nabla_{\theta}f_t(\theta_{t-1})\)} \Comment{Get gradients w.r.t. stochastic objective at time step \(t\)}
-%     \State{\(m_t \gets b_1 \cdot m_{t-1} + (1-\beta_1) \cdot g_t\)} \Comment{Update biased first moment estimate}
-%     \State{\(v_t \gets \beta_2\cdot v_{t-1} + (1-\beta_2)\cdot g_t^2\)} \Comment{Update biased second raw moment estimate}
-%     \State{\(\widehat{m}_t \gets m_t/(1-\beta_1^t)\)} \Comment{Compute bias-corrected first moment estimate}
-%     \State{\(\widehat{v}_t \gets v_t/(1-\beta_2^t)\)} \Comment{Compute bias-corrected second raw moment estimate}
-%     \State{\(\theta_t \gets \theta_{t-1} - \alpha\cdot\widehat{m}_t/(\sqrt{\widehat{v}_t + \epsilon})\)} \Comment{Update parameters}
-% \EndWhile
-
-% \noindent \Return \(\theta_t\) \Comment{Resulting parameters}
-% \end{algorithmic}
-% \end{tcolorbox}
-% Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.
