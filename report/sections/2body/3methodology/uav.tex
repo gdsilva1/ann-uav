@@ -33,18 +33,18 @@ Both were stored in a \matlab variable and exported through the \texttt{.mat} ex
 
 \subsection{Modeling the Neural Network with TensorFlow}
 
-The problem was considered as a regression problem, as the~\cref{eq:function_training_model_uav} shows. Input and output data are all vector.
+The problem was considered as a regression problem, as the~\cref{eq:function_training_model_uav} shows. Input and output data are all matrices.
 %
 \begin{subequations}\label{eq:function_training_model_uav}
     \begin{align}
-        &f\big(x(t),y(t),\ldots,\dot{\theta}(t),\dot{\psi}(t)\big) = \langle \symbf{u}_1(t),\symbf{u}_2(t),\symbf{u}_3(t),\symbf{u}_4(t) \rangle \\
+        &f\big(x,y,\ldots,\dot{\theta},\dot{\psi}\big) = \langle U_1, U_2, U_3, U_4 \rangle \\
         &f(\symbfup{X}_s) = \symbfup{T}
     \end{align}
 \end{subequations}
 
 \begin{figure}[!htb]
     \centering
-    \caption{Schematical model of the neural network for the \gls*{uav} control.}
+    \caption[Schematic model of the NN for the UAV control.]{Schematic model of the \gls*{nn} for the \gls*{uav} control. The input layer receives every element of the \(\symbf{x}_s\) and returns every element of \(\symbf{\tau}\). There are two hidden layers, each one with 64 neurons.}
     \includesvg{./figures/3review/nn/nn2.svg}
 
     {\footnotesize Source: prepared by the author.}

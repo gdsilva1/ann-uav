@@ -17,7 +17,13 @@ The \gls*{dl} models were engineered systems inspired by the biological brain an
 One of the motivations of the neural  perspective was to understand that the brain provides a proof by example that intelligent behavior is possible and try to reverse engineer the computation principals behind the brain, duplicating its functionality.
 Today it goes beyond the neuroscientist perspective and it is more of general principle of learning multiple levels of composition.
 
-\gls*{dl} dwells in the programming sphere. The approach, however, it is not like the traditional programming scripts and models. To automate stuff, there are three main parts: (i) the input data, (ii) the rule (function) and (iii) the output data. In both types there are two of three parts available, but different ones for each other. In the traditional programming, there is the input data and the rule, for the algorithm output the data. In deep learning, there is the input data and the output data, for the algorithm provides the rule. A good analogy is cooking: in the traditional programming context, one has the ingredients and the recipe to make the main course; in the deep learning context, one has the ingredients and the main course to discover the recipe.
+\gls*{dl} dwells in the programming sphere. 
+The approach, however, it is not like the traditional programming scripts and models. 
+To automate stuff, there are three main parts: (i) the input data, (ii) the rule (function) and (iii) the output data. 
+In oth types there are two of three parts available, but different ones for each other. 
+In the traditional programming, there is the input data and the rule, for the algorithm output the data. 
+For deep learning, there is the input data and the output data, for the algorithm provides the rule. 
+A good analogy is cooking: in the traditional programming context, one has the ingredients and the recipe to make the main course; in the deep learning context, one has the ingredients and the main course to discover the recipe.
 
 \subsection{Neural Networks Models}\label{sec:nn_models}
 
@@ -27,14 +33,21 @@ Some of them are \gls*{mlp}, \gls*{cnn}, \gls*{rnn}, among others.
 
 \subsubsection*{Multi-layer Perceptron}
 
-A \gls*{mlp} is a important class of \gls*{nn}. It consists of a set of sensorial units that compose the \emph{input layer}; one or more \emph{hidden layers}; and an \emph{output layer}. The input signal propagates forward through the network, layer by layer. They are used to solving complex problems, with the supervised training with the \emph{error back-propagation} algorithm.
+A \gls*{mlp} is a important class of \gls*{nn}. It consists of a set of sensorial units that compose the \emph{input layer}; one or more \emph{hidden layers}; and an \emph{output layer}. 
+The input signal propagates forward through the network, layer by layer. 
+They are used to solving complex problems, with the supervised training with the \emph{error back-propagation} algorithm.
 
-The learning by back-propagation consists of two steps through the layers of the perceptron: a forward pass (propagation) and a backward pass (back-propagation). In the forward pass, an input vector is applied to the sensorial nodes of the network and it propagates through the network, layer by layer; in this step the weights are fixed. During the backward pass, the weights are fit accordingly through a loss function (see~\cref{sec:loss_function}). This error signal is propagated through the network in the opposite direction of the synaptic connections. The weights are adjusted to make that the network output gets closer of the wanted output. The~\cref{fig:mlp} represents a \gls*{mlp}.
+The learning by back-propagation consists of two steps through the layers of the perceptron: a forward pass (propagation) and a backward pass (back-propagation). 
+In the forward pass, an input vector is applied to the sensorial nodes of the network and it propagates through the network, layer by layer; in this step the weights are fixed. 
+During the backward pass, the weights are fit accordingly through a loss function (see~\cref{sec:loss_function}). 
+This error signal is propagated through the network in the opposite direction of the synaptic connections. 
+The weights are adjusted to make that the network output gets closer of the wanted output. 
+\cref{fig:mlp} represents a \gls*{mlp}.
 
 \begin{figure}[!htb]
     \centering
-    \caption[Visual Representation of a MLP]{Visual Representation of a MLP. The input vector \(x_i\) is given in the input layer and \(i\) can assume any integer, just as the output data \(y_i\). The weights \(w_{x_i}\) are specific for each input data. The bias \(b_i\) are there to prevent the data to be biased.}
-    \includesvg{figures/3review/nn/nn.svg}
+    \caption[Visual Representation of a MLP]{Visual Representation of a MLP. The input vector \(x_i\) is given in the input layer with \(i\) assuming any integer, just as the output data \(y_i\). The weights \(w_{x_i}\) are specific for each input data. Input and output data can have multiple entries.}
+    \includesvg{figures/3review/nn/nn3.svg}
     
     {\footnotesize Source: prepared by the author.}
     \label{fig:mlp}
@@ -52,13 +65,7 @@ The three main features of the \gls*{mlp} are:
             0  & \text{otherwise.}
         \end{array} \right.
     \end{equation}
-    % \begin{equation}
-    %     y_j = \begin{cases}
-    %         x, & \text{if } x > 0, \\
-    %         0 & \text{otherwise.}
-    %     \end{cases}
-    %     \label{eq:relu_function }
-    % \end{equation}
+    %
     Or sigmoid function:
     %
     \begin{equation}
@@ -71,7 +78,9 @@ The three main features of the \gls*{mlp} are:
     \item Connectivity. High level of connectivity, determined by the network synapses.
 \end{itemize}
 
-These features plus the ability to learn from the experience of the training that makes the \gls*{mlp} so powerful, however, they are also responsible for its deficiency. First, the non-linearity and the high connectivity makes hard the theoretical analysis of an \gls*{mlp}; second, the hidden layers make it more difficult to visualize the learning processing. The learning process is harder because the search must be conducted in a much bigger space of possible functions.
+These features, plus the ability to learn from the experience of the training, that makes the \gls*{mlp} so powerful, however, they are also responsible for its deficiency. 
+First, the non-linearity and the high connectivity makes hard the theoretical analysis of an \gls*{mlp}; second, the hidden layers make it more difficult to visualize the learning processing. 
+The learning process is harder because the search must be conducted in a much bigger space of possible functions.
 
 \subsection{Loss Function}\label{sec:loss_function}
 
@@ -95,7 +104,7 @@ For regression problems, common loss functions adopted are the \gls*{mae} and \g
 %
 where \(n\) is the sample size; \(y_i\) is the predicted output; and \(\hat{y}_i\) is the real target.
 
-The~\cref{fig:mae_chart} shows a linear data and how the domain of the loss function is obtained for a linear regression.
+\cref{fig:mae_chart} shows a linear data and how the domain of the loss function is obtained for a linear regression.
 %
 \begin{figure}[!htb]
     \centering
@@ -133,7 +142,9 @@ As the loss function minimizes, the model is getting closer to the target values
 
 \subsubsection*{Gradient Descent} 
 
-The \emph{gradient descent} is one of the main algorithm \citep{nesterov2004} that optimizes the model and many important ones are based on it, like the \gls*{sgd}. The goal is to get the minimum, as the error (loss) between the predicted and the target data is null. This would mean that the model fits to the pattern of the data.
+The \emph{gradient descent} is one of the main algorithm \citep{nesterov2004} that optimizes the model and many important ones are based on it, like the \gls*{sgd}. 
+The goal is to get the minimum, as the error (loss) between the predicted and the target data is null. 
+This would mean that the model fits to the pattern of the data.
 %
 \begin{figure}[!htb]
     \centering
@@ -163,9 +174,9 @@ In determined cases, it is possible to avoid running the iterative algorithm and
 \subsubsection*{Stochastic Gradient Descent}
 
 As seen, gradient descent is a powerful tool to minimize the loss function, however, for large data, the cost of operation is very high and its use is not feasible. 
-The main ideia of \gls*{sgd} is that the gradient is an expectation.
+The main idea of \gls*{sgd} is that the gradient is an expectation.
 Later, the data is divided in subsets, also called \emph{mini-batch} and then the gradient is performed over them.
-The mini-batche size is chosen to be a realatively small numbers of examples.
+The mini-batch size is chosen to be a relatively small numbers of examples.
 The data inside each subset may be considered redundant, that is why it uses one single value of the subset to compute the gradient descent.
 This way, the process is considerable better for computational resources.
 

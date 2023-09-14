@@ -68,23 +68,23 @@
 % \renewcommand{\cftlottitlefont}{\sffamily\large\bfseries\MakeUppercase}
 % \patchcmd{\l@section}{#1}{\MakeUppercase{#1}}{}{}
 % \patchcmd{\l@chapter}{#1}{\MakeUppercase{#1}}{}{}
-\usepackage{csquotes}
-\usepackage[
-    style=abnt-numeric,
-    ittitles,
-    noslsn,
-    repeatfields,
-]{biblatex} 
-\addbibresource{ref.bib}
+% \usepackage{csquotes}
 % \usepackage[
-%     % authoryear
-%     numbers,
-%     % round,
-%     % super
-% ]{natbib}
+%     style=abnt-numeric,
+%     ittitles,
+%     noslsn,
+%     repeatfields,
+% ]{biblatex} 
+% \addbibresource{ref.bib}
+\usepackage[
+    % authoryear
+    numbers,
+    % round,
+    % super
+]{natbib}
 \usepackage[automake]{glossaries-extra}
-\renewcommand{\glossarypreamble}{\sffamily}
-\renewcommand{\glsnamefont}[1]{\textsf{#1}}
+% \renewcommand{\glossarypreamble}{\sffamily}
+% \renewcommand{\glsnamefont}[1]{\textsf{#1}}
 \setglossarystyle{alttree}
 \glssetwidest{MEMS}
 \makeglossaries
@@ -133,7 +133,6 @@
 \titlespacing{\subsection}{0em}{0.5em}{0.5em}
 \titlespacing{\subsubsection}{0em}{0.5em}{0.5em}
 \usepackage[onehalfspacing]{setspace}
-    % \setstretch{1.5}
 \usepackage[nottoc]{tocbibind}
 \usepackage[
     labelsep=period,
@@ -246,8 +245,8 @@
 \newcommand{\mse}{\text{MSE}}
 \newcommand{\matlab}{\textsc{Matlab\textregistered}\ }
 \DeclareMathOperator{\diag}{diag}
-\newcommand{\citep}{\cite}
-\newcommand{\citet}{\textcite}
+% \newcommand{\citep}{\cite}
+% \newcommand{\citet}{\textcite}
 % ----------------------------
 
 % ============================
