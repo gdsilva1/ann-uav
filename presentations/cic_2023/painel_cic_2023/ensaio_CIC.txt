@@ -1,0 +1,17 @@
+Meu trabalho estuda a aplicação de redes neurais em controle de VANTs. VANT, um acrônimo para veículos aéreos não tripulados, são aeronaves que não precisam de pilotos embarcados para serem pilotados (popularmente conhecidos como drones).
+
+Um dos principais desafios dentro da engenharia é poder controlar o VANT para determinada atividade de forma satisfatória. Para isso, existem algumas abordagens, entre elas o modelo paramétrico de caixa branca e de caixa preta.
+
+No modelo de caixa branca, através de uma modelagem matemática, a gente descreve toda física envolvida no procedimento do controle do VANT, permitindo seu controle completo. Esta abordagem, entretanto, pode ser custosa, pois a modelagem matemática nem sempre é trivial para sistemas mais sofisticados.
+
+Assim, no modelo de caixa preta, é possível determinar as forças de controle do VANT a partir da posição que o VANT está e a trajetória sobre a qual deseja-se mantê-lo. O objetivo do trabalho é, portanto, desenvolver uma rede neural para determinar as forças de controle de um VANT a aprtir da trajetória e sua posição inicial.
+
+Mas o que é uma rede neural? Rede neural é uma técnica de aprendizado profundo em que o computador estabelece uma resposta a partir do reconhecimento de padrões. Especificamente no meu trabalho, a rede neural irá reconhecer os padrões de trajetória que o VANT deve manter e, a partir delas, determinar as forças para que ele não caia.
+
+Para isso a gente tem representado esquematicamente na Fig. 1 a rede neural, que receberá como entrada a trajetória do VANT e fornecerá as forças de controle como saída.
+
+Através de uma modelo de caixa branca, foram geradas diversas trajetórias e as respectivas forças para o treinamento da rede neural. Em seguida, os dados foram normzalizados e passado nas camdas da rede. O resultado está na Fig. 2.
+
+A curva em azul representa as forças previstas pela rede neural e a curva em laranja repreesnta as forças reais para manter o VANT na trajetória. É possível observar que a rede conseguiu determinar os padrões de forma satisfatória, principalmente para as forças U2, U3, U4.
+
+Dessa forma, a gente pode concluir que o treinamento da rede neural foi bom. Os próximos passos são: desnormalizar os valores, simular as trajetórias com os valores desnormalizados e, se necessario, sofisticar a rede.
