@@ -38,6 +38,7 @@
 \usepackage{cancel}
 \usepackage{multicol}
 \usepackage{tikz, pgf}
+\usetikzlibrary{positioning}
 \usepackage{listings}
 \usepackage{fancybox}
 \usepackage{authblk}
@@ -181,19 +182,19 @@
 %     ItalicFont=*-Oblique,
 %     BoldItalicFont=*-BoldOblique
 % ]
-% \setmathfont{STIXTwoMath-Regular.otf}[
-%     Path=./fonts/STIXTwo/,
-%     Extension=.otf,
-%     StylisticSet={01,08,10}
-% ]
-% \setmainfont{STIXTwoText}[
-%     Path=./fonts/STIXTwo/,
-%     Extension=.otf,
-%     UprightFont=*-Regular,
-%     BoldFont=*-Bold,
-%     ItalicFont=*-Italic,
-%     BoldItalicFont=*-BoldItalic,
-% ]
+\setmathfont{STIXTwoMath-Regular.otf}[
+    Path=./fonts/STIXTwo/,
+    Extension=.otf,
+    StylisticSet={01,08,10}
+]
+\setmainfont{STIXTwoText}[
+    Path=./fonts/STIXTwo/,
+    Extension=.otf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic,
+]
 % \setsansfont{TeX Gyre Heros}[
 %     LetterSpace=-0.2,
 %     Scale=MatchLowercase,
@@ -211,18 +212,18 @@
 %     Scale=MatchLowercase,
 %     LetterSpace=-5
 % ]
-% \setsansfont{SourceSans3}[
-%     Path=./fonts/SourceSans/,
-%     Extension=.otf,
-%     UprightFont=*-Regular,
-%     BoldFont=*-SemiBold,
-%     ItalicFont=*-It,
-%     BoldItalicFont=*-SemiBoldIt,
-%     Numbers=Proportional,
-%     % Scale=MatchLowercase,
-%     CharacterVariant={05,06,10},
-%     StylisticSet={03,04}
-% ]
+\setsansfont{SourceSans3}[
+    Path=./fonts/SourceSans/,
+    Extension=.otf,
+    UprightFont=*-Regular,
+    BoldFont=*-SemiBold,
+    ItalicFont=*-It,
+    BoldItalicFont=*-SemiBoldIt,
+    Numbers=Proportional,
+    % Scale=MatchLowercase,
+    CharacterVariant={05,06,10},
+    StylisticSet={03,04}
+]
 % \setmonofont{FiraCode}[
 %     Path=./fonts/FiraCode/,
 %     Extension=.ttf,
@@ -236,7 +237,6 @@
 %     % StylisticSet={03,04}
 % ]
 % % ----------------------------
-
 %\thispagestyle{empty} retira a numeracao da pagina
 
 % ============================
@@ -244,6 +244,7 @@
 \newcommand{\mae}{\text{MAE}}
 \newcommand{\mse}{\text{MSE}}
 \newcommand{\matlab}{\textsc{Matlab\textregistered}\ }
+\newcommand{\mathdefault}[1][]{}
 \DeclareMathOperator{\diag}{diag}
 % \newcommand{\citep}{\cite}
 % \newcommand{\citet}{\textcite}

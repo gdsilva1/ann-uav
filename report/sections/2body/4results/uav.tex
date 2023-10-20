@@ -4,9 +4,28 @@
 
 \begin{figure}[!htb]
     \centering
-    \caption[Comparison from the original script with Model A]{Comparison from the original script with Model A. The comparison was made with one of the test samples chosen randomly. The continuous blue curve represents the control force made by the model and the dash-dot orange curve represents the control forces used as input for the script.}
-    \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav/}{comparison_default_normal.pgf}
+    \caption[Forces normalized obtained from the neural network 1]{Forces normalized obtained from the neural network 1. Comparison is made from the results predicted from the neural network and the normalized preprocessing data, both for input and output data.}
+    \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav/}{forces_normalized.pgf}
 
     {\footnotesize Source: prepared by the author.}
-    \label{fig:model_a_comparison}
+    \label{fig:forces_normalized}
 \end{figure}
+
+\begin{figure}[!htb]
+    \centering
+    \caption[Forces denormalized obtained from the combination of neural network 1 and 2]{Forces denormalized obtained from the combination of neural network 1 and 2. Comparison is made from the results predicted from the combination of both neural network and the raw data got from the white box parametric model.}
+    \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav/}{forces_denormalized.pgf}
+
+    {\footnotesize Source: prepared by the author.}
+    \label{fig:forces_denormalized}
+\end{figure}
+
+\begin{figure}[!htb]
+    \centering
+    \caption[Forces denormalized obtained from the combination of neural network 1 and 2 plus correction][Forces denormalized obtained from the combination of neural network 1 and 2 plus correction. Comparison is made from the results predicted from the combination of both neural network and the raw data got from the white box parametric model with a correction for \(U_1\).]
+    \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav/}{forces_denormalized_correction.pgf}
+
+    {\footnotesize Source: prepared by the author.}
+    \label{fig:forces_denormalized_correction}
+\end{figure}
+
