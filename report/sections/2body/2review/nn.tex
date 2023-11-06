@@ -163,13 +163,13 @@ If the steps given to the direction of the negative gradient of the function are
 However, if the steps are too long, the chance to pass by the minimum value is high \citep{nielsen2015}.
 These steps are called \emph{learning rate} and should be chosen wisely.
 
-This way, let \(\symbf{x}\) be the entry vector with the predicted data and \(L\) the loss function adopted for some deep learning model, and \(\epsilon\) the learning rate, the gradient descent is:
+This way, let \(\mathbf{x}\) be the entry vector with the predicted data and \(L\) the loss function adopted for some deep learning model, and \(\epsilon\) the learning rate, the gradient descent is:
 %
 \begin{equation}
-    \symbf{x}_{t+1} = \symbf{x}_t - \epsilon \nabla L(\symbf{x}_t)
+    \mathbf{x}_{t+1} = \mathbf{x}_t - \epsilon \nabla L(\mathbf{x}_t)
 \end{equation}
 
-In determined cases, it is possible to avoid running the iterative algorithm and just go directly to the critical point by solving \(\nabla L(\symbf{x}_t) = 0\) for \(\symbf{x}\).
+In determined cases, it is possible to avoid running the iterative algorithm and just go directly to the critical point by solving \(\nabla L(\mathbf{x}_t) = 0\) for \(\mathbf{x}\).
 
 \subsubsection*{Stochastic Gradient Descent}
 
@@ -183,10 +183,10 @@ This way, the process is considerable better for computational resources.
 The \gls*{sgd} can be written as:
 %
 \begin{equation}
-    \symbf{x}_{t+1} = \symbf{x}_t - \frac{\epsilon}{m} \sum_{i=1}^m \nabla L(\symbf{x}_t; p^{(i)},q^{(i)})
+    \mathbf{x}_{t+1} = \mathbf{x}_t - \frac{\epsilon}{m} \sum_{i=1}^m \nabla L(\mathbf{x}_t; p^{(i)},q^{(i)})
 \end{equation}
 %
-where \(m\)  is the mini-batch size; and \(\nabla L(\symbf{x}; p^{(i)}, q^{(i)})\) is the gradient of the loss function with respect to the parameter vector \(\symbf{x}\) for the \(i^{\text{th}}\) example \((p^{(i)}, q^{(i)})\) in the mini-batch.
+where \(m\)  is the mini-batch size; and \(\nabla L(\mathbf{x}; p^{(i)}, q^{(i)})\) is the gradient of the loss function with respect to the parameter vector \(\mathbf{x}\) for the \(i^{\text{th}}\) example \((p^{(i)}, q^{(i)})\) in the mini-batch.
 
 Yet, nowadays, with the amount of data, many techniques are still applied in \gls*{sgd} as creating an automatic adaptive learning rates which achieve the optimal rate of convergence \citep{darken1991} and the momentum technique to improve it \citep{sutskever2013}.
 

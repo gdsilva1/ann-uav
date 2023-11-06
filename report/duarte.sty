@@ -11,6 +11,7 @@
     main=english,
     % brazil
 ]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage{microtype}
 \usepackage{graphicx}
 \usepackage{float}
@@ -33,7 +34,6 @@
 % PACOTES OPCIONAIS
 \usepackage[locale=DE]{siunitx}
 \usepackage{enumitem}
-\setlist[description]{labelindent=\parindent,parsep=-0.2cm,style=multiline}
 \usepackage{subcaption}
 \usepackage{cancel}
 \usepackage{multicol}
@@ -48,28 +48,6 @@
 \usepackage{tcolorbox}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
-% \usepackage{tocloft}
-% \cftsetindents{figure}{0em}{3.5em}
-% \cftsetindents{table}{0em}{3.5em}
-% \cftsetindents{chapter}{0em}{3em}
-% \cftsetindents{section}{0em}{3em}
-% \cftsetindents{subsection}{0em}{3em}
-% \renewcommand{\cftfigfont}{\sffamily}
-% \renewcommand{\cftfigpagefont}{\sffamily}
-% \renewcommand{\cfttabfont}{\sffamily}
-% \renewcommand{\cfttabpagefont}{\sffamily}
-% \renewcommand{\cftchapfont}{\sffamily\bfseries}
-% \renewcommand{\cftsecfont}{\sffamily}
-% \renewcommand{\cftsubsecfont}{\sffamily}
-% \renewcommand{\cftchappagefont}{\sffamily\bfseries}
-% \renewcommand{\cftsecpagefont}{\sffamily\bfseries}
-% \renewcommand{\cftsubsecpagefont}{\sffamily}
-% \renewcommand{\cfttoctitlefont}{\sffamily\large\bfseries\MakeUppercase}
-% \renewcommand{\cftloftitlefont}{\sffamily\large\bfseries\MakeUppercase}
-% \renewcommand{\cftlottitlefont}{\sffamily\large\bfseries\MakeUppercase}
-% \patchcmd{\l@section}{#1}{\MakeUppercase{#1}}{}{}
-% \patchcmd{\l@chapter}{#1}{\MakeUppercase{#1}}{}{}
-% \usepackage{csquotes}
 % \usepackage[
 %     style=abnt-numeric,
 %     ittitles,
@@ -91,7 +69,6 @@
 \makeglossaries
 % \glssetcategoryattribute{abbreviation}{glossnamefont}{textsf}
 % \glssetcategoryattribute{abbreviation}{glossdescfont}{textsf}
-\usepackage{bm}
 % ----------------------------
 
 % ============================
@@ -100,8 +77,6 @@
     margin=2.5cm
 ]{geometry}
 \usepackage{fancyhdr}
-% \fancyhead[LO,RE]{\thepage}
-% \fancyhead[RO,LE]{}
 \fancyhead[L]{}
 \fancyhead[R]{\thepage}
 \fancyfoot{}
@@ -154,90 +129,8 @@
 
 % ============================
 % FONTE DO TEXTO
-\urlstyle{rm}
-% \renewcommand{\sffamily}{\rm}
-\usepackage{fontspec}
-\usepackage[
-    bold-style=ISO,
-    math-style=ISO,
-]{unicode-math}
-% \setsansfont{NewCM10}[
-%     UprightFont=*-Book,
-%     BoldFont=*-Bold,
-%     ItalicFont=*-BookItalic,
-%     BoldItalicFont=*-BoldItalic
-% ]
-% \setmainfont{NewCM10}[
-%     UprightFont=*-Book,
-%     BoldFont=*-Bold,
-%     ItalicFont=*-BookItalic,
-%     BoldItalicFont=*-BoldItalic
-% ]
-% \setmathfont{NewCMMath-Book}[
-%     StylisticSet={02}
-% ]
-% \setsansfont{NewCMSans10}[
-%     UprightFont=*-Book,
-%     BoldFont=*-Bold,
-%     ItalicFont=*-Oblique,
-%     BoldItalicFont=*-BoldOblique
-% ]
-\setmathfont{STIXTwoMath-Regular.otf}[
-    Path=./fonts/STIXTwo/,
-    Extension=.otf,
-    StylisticSet={01,08,10}
-]
-\setmainfont{STIXTwoText}[
-    Path=./fonts/STIXTwo/,
-    Extension=.otf,
-    UprightFont=*-Regular,
-    BoldFont=*-Bold,
-    ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic,
-]
-% \setsansfont{TeX Gyre Heros}[
-%     LetterSpace=-0.2,
-%     Scale=MatchLowercase,
-% ]
-% \setsansfont{Inter Display}[
-%     Scale=MatchLowercase,
-%     ]
-% \setsansfont{Inter}[
-%     Path=./fonts/Inter/,
-%     Extension=.otf,
-%     UprightFont=*-Regular,
-%     BoldFont=*-Bold,
-%     ItalicFont=*-Italic,
-%     BoldItalicFont=*-BoldItalic,
-%     Scale=MatchLowercase,
-%     LetterSpace=-5
-% ]
-\setsansfont{SourceSans3}[
-    Path=./fonts/SourceSans/,
-    Extension=.otf,
-    UprightFont=*-Regular,
-    BoldFont=*-SemiBold,
-    ItalicFont=*-It,
-    BoldItalicFont=*-SemiBoldIt,
-    Numbers=Proportional,
-    % Scale=MatchLowercase,
-    CharacterVariant={05,06,10},
-    StylisticSet={03,04}
-]
-% \setmonofont{FiraCode}[
-%     Path=./fonts/FiraCode/,
-%     Extension=.ttf,
-%     UprightFont=*-Regular,
-%     BoldFont=*-SemiBold,
-%     % ItalicFont=*-It,
-%     % BoldItalicFont=*-SemiBoldIt,
-%     % Numbers=Proportional,
-%     Scale=MatchLowercase,
-%     % CharacterVariant={05,06,10},
-%     % StylisticSet={03,04}
-% ]
+\usepackage{lmodern}
 % % ----------------------------
-%\thispagestyle{empty} retira a numeracao da pagina
 
 % ============================
 % COMANDOS

@@ -2,21 +2,21 @@
 
 \subsection{Data Generation}
 
-Since the script of \citet{geronel2023} provides the control torque \(\symbf{\tau}\) as input and the state-space \(\symbf{x}_s\) as output vector through dynamic and control equations, the \gls*{nn} goal developed is to go in the opposite direction, as a inverse function: take \(\symbf{x}_s\) as the input vector and predict the \(\symbfup{\tau}_{\eta}\) vector as output.
+Since the script of \citet{geronel2023} provides the control torque \(\mathbf{\tau}\) as input and the state-space \(\mathbf{x}_s\) as output vector through dynamic and control equations, the \gls*{nn} goal developed is to go in the opposite direction, as a inverse function: take \(\mathbf{x}_s\) as the input vector and predict the \(\mathbf{\tau}_{\eta}\) vector as output.
 Modifications in the script are minimal.
 The time is a discrete vector with \SI{200}{s} and step 0.01, therefore the time vector has \(1\times 20001\) dimension.
 The ``extra'' value of time is the zero value.
 
-The output vector \(\symbfup{T}\) has \(20001\times 4\) dimension the and the input vector \(\symbfup{X}_s\) has  \(20001\times 12\) dimension:
+The output vector \(\mathbf{T}\) has \(20001\times 4\) dimension the and the input vector \(\mathbf{X}_s\) has  \(20001\times 12\) dimension:
 %
 \begin{align}
-    \symbfup{T} &= \begin{bmatrix}
+    \mathbf{T} &= \begin{bmatrix}
         U_1 & U_2 & U_3 & U_4 \\
         \vdots       & \vdots       & \vdots       & \vdots  \\
     \end{bmatrix} 
     \label{eq:tau_input} \\
     \setcounter{MaxMatrixCols}{13}
-    \symbfup{X}_s &=
+    \mathbf{X}_s &=
     \begin{bmatrix}
         x&y&z&\phi&\theta&\psi&\dot{x}&\dot{y}&\dot{z}&\dot{\phi}&\dot{\theta}&\dot{\psi} \\
         \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots 
@@ -72,13 +72,13 @@ The problem is considered as a regression problem, as the~\cref{eq:function_trai
 \begin{subequations}\label{eq:function_training_model_uav}
     \begin{align}
         &f\big(x,y,\ldots,\dot{\theta},\dot{\psi}\big) = \langle U_1, U_2, U_3, U_4 \rangle \\
-        &f(\symbfup{X}_s) = \symbfup{T}
+        &f(\mathbf{X}_s) = \mathbf{T}
     \end{align}
 \end{subequations}
 
 \begin{figure}[!htb]
     \centering
-    \caption[Schematic model of the neural network for the normalized data]{Schematic model of the neural network for the normalized data. The input layer receives every element of the \(\symbf{x}_s\) and returns every element of \(\symbf{\tau}\). There are two hidden layers, each one with 64 neurons.}
+    \caption[Schematic model of the neural network for the normalized data]{Schematic model of the neural network for the normalized data. The input layer receives every element of the \(\mathbf{x}_s\) and returns every element of \(\mathbf{\tau}\). There are two hidden layers, each one with 64 neurons.}
     \includesvg{./figures/3review/nn/nn2.svg}
 
     {\footnotesize Source: prepared by the author.}
@@ -89,6 +89,7 @@ Characteristics of the \gls*{nn} 1 are provided in the~\cref{tab:nn1_char}.
 
 \begin{table}[!htb]
     TABELA AQUI
+    \label{tab:nn1_char}
 \end{table}
 
 \begin{figure}[!htb]

@@ -21,23 +21,23 @@ Combining those benefits with \gls*{ai} can be a powerful tool for the future \c
 Considering the \gls*{uav} a quadcopter, as the~\cref{fig:quadcopter_forces_scheme} shows, \citet{geronel2023}, based on the work of \citet{fossen1994}, described the equation of motion for a quadcopter with a payload as being:
 %
 \begin{equation}
-    \symbfup{M}_{\eta_{c}}(\symbfup{\eta}_c)\ddot{\symbfup{\eta}}_c +
-    \symbfup{C}_{\eta_c}(\symbfup{\nu},\symbfup{\eta}_c)\dot{\symbfup{\eta}_c} +
-    \symbfup{g}_{\eta_c}(\symbfup{\eta}_c) +
-    \symbfup{K}_{\eta_c}(\symbfup{\eta}_c)\symbfup{\eta}_c =
-    \symbfup{\tau}_{\eta_c}(\symbfup{\eta}_c) + 
-    \symbfup{F}_d
+    \mathbf{M}_{\eta_{c}}(\mathbf{\eta}_c)\ddot{\mathbf{\eta}}_c +
+    \mathbf{C}_{\eta_c}(\mathbf{\nu},\mathbf{\eta}_c)\dot{\mathbf{\eta}_c} +
+    \mathbf{g}_{\eta_c}(\mathbf{\eta}_c) +
+    \mathbf{K}_{\eta_c}(\mathbf{\eta}_c)\mathbf{\eta}_c =
+    \mathbf{\tau}_{\eta_c}(\mathbf{\eta}_c) + 
+    \mathbf{F}_d
     \label{eq:uav_motion_equation}
 \end{equation}
 %
-where \(\symbfup{M}_{\eta_{c}}(\symbfup{\eta}_c)\) is the inertial matrix; \(\symbfup{C}_{\eta_c}(\symbfup{\nu},\symbfup{\eta}_c)\) is the Coriolis matrix; \(\symbfup{g}_{\eta_c}(\symbfup{\eta}_c)\) is the gravitational vector; \(\symbfup{K}_{\eta_c}(\symbfup{\eta}_c)\) is the stiffness matrix; \(\ \symbfup{\tau}_{\eta_c}(\symbfup{\eta}_c)\) is the control torque; \(\symbfup{F}_d\) is the gust vector; and \(\symbfup{\nu}\) is the velocity generalized coordinate in the body-frame. 
+where \(\mathbf{M}_{\eta_{c}}(\mathbf{\eta}_c)\) is the inertial matrix; \(\mathbf{C}_{\eta_c}(\mathbf{\nu},\mathbf{\eta}_c)\) is the Coriolis matrix; \(\mathbf{g}_{\eta_c}(\mathbf{\eta}_c)\) is the gravitational vector; \(\mathbf{K}_{\eta_c}(\mathbf{\eta}_c)\) is the stiffness matrix; \(\ \mathbf{\tau}_{\eta_c}(\mathbf{\eta}_c)\) is the control torque; \(\mathbf{F}_d\) is the gust vector; and \(\mathbf{\nu}\) is the velocity generalized coordinate in the body-frame. 
 The~\cref{eq:uav_motion_equation} can be represented in the state space form as:
 %
 \begin{equation}
-    \dot{x}_s = \symbfup{A}_cx_s(t) + \symbfup{B}\symbfup(u)(t) + \symbfup{X}
+    \dot{x}_s = \mathbf{A}_cx_s(t) + \mathbf{B}\mathbf(u)(t) + \mathbf{X}
 \end{equation}
 %
-where \(x_s = \begin{Bmatrix} \dot{\symbfup{\eta}}_c & \symbfup{\eta}_c \end{Bmatrix}^{\top}\) is the state vector; \(\symbfup{B}\symbfup(u)(t)\) is the input vector; \(\symbfup{X}\) is the state vector of gravity; and \(\symbfup{A}_c\) and \(\symbfup{B}\) are the dynamic and input matrices, respectively.
+where \(x_s = \begin{Bmatrix} \dot{\mathbf{\eta}}_c & \mathbf{\eta}_c \end{Bmatrix}^{\top}\) is the state vector; \(\mathbf{B}\mathbf(u)(t)\) is the input vector; \(\mathbf{X}\) is the state vector of gravity; and \(\mathbf{A}_c\) and \(\mathbf{B}\) are the dynamic and input matrices, respectively.
 %
 \begin{figure}[!htb]
     \centering
@@ -54,15 +54,15 @@ All non-explicit matrices and the development of the equations are shown in the 
 
 \citet{geronel2023} developed a \matlab algorithm to control the quadrotor, as a \emph{white box} method. 
 It controls the \gls*{uav} in three different trajectories: rectangular, circular and linear.
-Given \(\symbf{\tau}\) as the input vector, which represents the position controller \(U_1(t)\) and the attitude controller \(U_2(t),\ U_3(t),\ U_4(t)\), it is able to give a complete overview of the quadrotor's motion.
-The algorithm provides the state space vector \(\symbf{x}_s\) with the quadrotor position and angles, as their derivatives.
+Given \(\mathbf{\tau}\) as the input vector, which represents the position controller \(U_1(t)\) and the attitude controller \(U_2(t),\ U_3(t),\ U_4(t)\), it is able to give a complete overview of the quadrotor's motion.
+The algorithm provides the state space vector \(\mathbf{x}_s\) with the quadrotor position and angles, as their derivatives.
 %
 \begin{align}
-    \symbf{\tau} &= \begin{Bmatrix}
+    \mathbf{\tau} &= \begin{Bmatrix}
         U_1 & U_2 & U_3 & U_4
     \end{Bmatrix}^{\top} \\
     \setcounter{MaxMatrixCols}{13}
-    \symbf{x}_s &=
+    \mathbf{x}_s &=
     \begin{Bmatrix}
         x&y&z&\phi&\theta&\psi&\dot{x}&\dot{y}&\dot{z}&\dot{\phi}&\dot{\theta}&\dot{\psi}
     \end{Bmatrix}^{\top}
