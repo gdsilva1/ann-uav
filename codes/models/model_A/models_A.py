@@ -31,12 +31,12 @@ class ModelA(nn.Module):
         super().__init__()
 
         self.layers = nn.Sequential(
-            nn.Linear(12, 25),
-            nn.Linear(25, 25),
+            nn.Linear(12, 128),
+            nn.Linear(128, 128),
             nn.ReLU(),
-            nn.Linear(25, 25),
+            nn.Linear(128, 128),
             nn.ReLU(),
-            nn.Linear(25, 4)
+            nn.Linear(128, 4)
         )
 
     def forward(self, x):
@@ -68,12 +68,12 @@ class ModelAN(nn.Module):
         super().__init__()
 
         self.layers = nn.Sequential(
-            nn.Linear(12, 25),
-            nn.Linear(25, 25),
+            nn.Linear(12, 128),
+            nn.Linear(128, 128),
             nn.ReLU(),
-            nn.Linear(25, 25),
+            nn.Linear(128, 128),
             nn.ReLU(),
-            nn.Linear(25, 4)
+            nn.Linear(128, 4)
         )
 
     def forward(self, x):

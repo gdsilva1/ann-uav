@@ -53,7 +53,7 @@
 \begin{block}{\centering\bfseries OBJETIVO}
 \vspace{1cm}
 \begin{itemize}\justifying
-    \item Desenvolver um algoritmo com redes neurais para determinar as forças de controle de um VANT a partir de sua trajetória para auxiliar no controle do mesmo.
+    \item Desenvolver um algoritmo com redes neurais para controle de forças de de um VANT.
 \end{itemize}
 \vspace{1cm}
 \end{block}
@@ -67,7 +67,7 @@
 \begin{figure}[H]
     \centering
     \caption{Rede Neural}
-    \includesvg[width=\columnwidth, pretex=\small]{../../../report/figures/3methodology/full_scheme.svg}
+    \includegraphics[width=\columnwidth]{../../../report/figures/3methodology/full_scheme.pdf}
 
     {\footnotesize Fonte: próprio autor.}
     \label{fig:rede_neural}
@@ -78,7 +78,7 @@
 \begin{figure}
     \centering
     \caption{Rede Neural}
-    \includesvg[width=\columnwidth]{../../../report/figures/3review/nn/nn3.svg}
+    \includegraphics[width=\columnwidth]{../../../report/figures/3review/nn/nn3_ppgem.pdf}
 \end{figure}
 
 \begin{itemize}\justifying
@@ -107,8 +107,8 @@
     \item A Fig.~\ref{fig:comparison} compara as forças de controle da rede neural em relação às trajetórias do algoritmo do modelo caixa branca.
 \end{itemize}
 \begin{itemize}
-    \item Para \(U_i\, (i=1,2,3,4)\), a rede neural conseguiu reconhecer os padrões.
-    \item As forças de controle ficaram próximas das reais (fator de correção).
+    \item As redes neurais conseguiram reconhecer os padrões.
+    \item As forças de controle seguem a tendência das forças reais.
 \end{itemize}
 \end{block}
 
@@ -120,8 +120,7 @@
 \begin{figure}[H]
     \centering
     \caption{Comparação entre a previsão do modelo e o valor real}
-    \resizebox{\columnwidth}{!}{
-    \import{/home/gabriel/Documentos/deep-learning/report/figures/4results/uav/}{forces_denormalized_correction.pgf}}
+    \includegraphics[width=\columnwidth]{../../../report/figures/4results/uav/forces_denormalized.pdf}
 
     {\footnotesize Fonte: próprio autor.}
 
