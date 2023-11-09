@@ -1,0 +1,2350 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2023.11.7)  9 NOV 2023 04:36
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/gabriel/Documentos/deep-learning/report/deep_learning
+(/home/gabriel/Documentos/deep-learning/report/deep_learning.tex
+LaTeX2e <2023-06-01>
+L3 programming layer <2023-06-05>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
+\mathindent=\skip48
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen140
+) (./duarte.sty
+Package: duarte 
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen141
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count194
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count195
+\leftroot@=\count196
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count197
+\DOTSCASE@=\count198
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count199
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count266
+\dotsspace@=\muskip16
+\c@parentequation=\count267
+\dspbrk@lvl=\count268
+\tag@help=\toks18
+\row@=\count269
+\column@=\count270
+\maxfields@=\count271
+\andhelp@=\toks19
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks20
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks27
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2023/05/11 v3.89 The Babel package
+\babel@savecnt=\count272
+\U@D=\dimen150
+\l@unhyphenated=\language87
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count273
+Package babel Info: Main language set with 'main='. Except if you have
+(babel)             problems, prefer the default mechanism for setting
+(babel)             the main language, ie, as the last declared.
+(babel)             Reported on input line 4170.
+ (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language26). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language26). Reported on input line 108.
+)) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks28
+\inpenc@posthook=\toks29
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks30
+) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count274
+)
+\MT@toks=\toks31
+\MT@tempbox=\box53
+\MT@count=\count275
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks32
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen151
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count276
+ (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2023/03/13 v3.1a Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 902.
+LaTeX Info: Redefining \lslig on input line 902.
+\MT@outer@space=\skip57
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count277
+\float@exts=\toks33
+\float@box=\box54
+\@float@everytoks=\toks34
+\@floatcapt=\box55
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-05-16 v7.00y Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-05-16 v2.51 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count278
+)
+\@linkdim=\dimen154
+\Hy@linkcounter=\count279
+\Hy@pagecounter=\count280
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-05-16 v7.00y Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count281
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-05-16 v7.00y Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4050.
+Package hyperref Info: Hyper figures OFF on input line 4167.
+Package hyperref Info: Link nesting OFF on input line 4172.
+Package hyperref Info: Hyper index ON on input line 4175.
+Package hyperref Info: Plain pages OFF on input line 4182.
+Package hyperref Info: Backreferencing OFF on input line 4187.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4434.
+\c@Hy@tempcnt=\count282
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4772.
+\XeTeXLinkMargin=\dimen155
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count283
+\Field@Width=\dimen156
+\Fld@charsize=\dimen157
+Package hyperref Info: Hyper figures OFF on input line 6051.
+Package hyperref Info: Link nesting OFF on input line 6056.
+Package hyperref Info: Hyper index ON on input line 6059.
+Package hyperref Info: backreferencing OFF on input line 6066.
+Package hyperref Info: Link coloring ON on input line 6069.
+Package hyperref Info: Link coloring with OCG OFF on input line 6076.
+Package hyperref Info: PDF/A mode OFF on input line 6081.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count284
+\c@Item=\count285
+\c@Hfootnote=\count286
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2023-05-16 v7.00y Hyperref driver for pdfTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count287
+\c@bookmark@seq@number=\count288
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip58
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen158
+\ar@mcellbox=\box56
+\extrarowheight=\dimen159
+\NC@list=\toks35
+\extratabsurround=\skip59
+\backup@length=\skip60
+\ar@cellbox=\box57
+)
+\everycr=\toks36
+\minrowclearance=\skip61
+\rownum=\count289
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (/usr/share/texlive/texmf-dist/tex/latex/tabularray/tabularray.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-06-05 L3 programming layer (loader) 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count290
+\l__pdf_internal_box=\box58
+))
+Package: tabularray 2023-03-01 v2023A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count291
+\l__tblr_c_int=\count292
+\l__tblr_r_int=\count293
+\l__tblr_d_dim=\dimen160
+\l__tblr_h_dim=\dimen161
+\l__tblr_o_dim=\dimen162
+\l__tblr_p_dim=\dimen163
+\l__tblr_q_dim=\dimen164
+\l__tblr_r_dim=\dimen165
+\l__tblr_s_dim=\dimen166
+\l__tblr_t_dim=\dimen167
+\l__tblr_v_dim=\dimen168
+\l__tblr_w_dim=\dimen169
+\l__tblr_a_box=\box59
+\l__tblr_b_box=\box60
+\l__tblr_c_box=\box61
+\l__tblr_d_box=\box62
+\g__tblr_table_count_int=\count294
+\c@colnum=\count295
+\c@rowcount=\count296
+\c@colcount=\count297
+\abovesep=\dimen170
+\belowsep=\dimen171
+\leftsep=\dimen172
+\rightsep=\dimen173
+\g_tblr_level_int=\count298
+\g__tblr_data_row_key_count_int=\count299
+\g__tblr_data_column_key_count_int=\count300
+\g__tblr_data_cell_key_count_int=\count301
+\g__tblr_array_int=\count302
+\l__tblr_key_count_int=\count303
+\l__tblr_key_quotient_int=\count304
+\l__tblr_key_quotient_two_int=\count305
+\l__tblr_key_remainder_int=\count306
+\g__tblr_data_str_value_count_int=\count307
+\rulewidth=\dimen174
+\l__tblr_strut_dp_dim=\dimen175
+\l__tblr_strut_ht_dim=\dimen176
+\g__tblr_cell_wd_dim=\dimen177
+\g__tblr_cell_ht_dim=\dimen178
+\g__tblr_cell_head_dim=\dimen179
+\g__tblr_cell_foot_dim=\dimen180
+\l__column_target_dim=\dimen181
+\l__tblr_caption_box=\box63
+\l__tblr_caption_left_box=\box64
+\l__tblr_row_head_box=\box65
+\l__tblr_row_foot_box=\box66
+\l__tblr_row_head_foot_dim=\dimen182
+\tablewidth=\dimen183
+\l__tblr_table_firsthead_box=\box67
+\l__tblr_table_middlehead_box=\box68
+\l__tblr_table_lasthead_box=\box69
+\l__tblr_table_firstfoot_box=\box70
+\l__tblr_table_middlefoot_box=\box71
+\l__tblr_table_lastfoot_box=\box72
+\l__tblr_remain_height_dim=\dimen184
+\l__tblr_long_from_int=\count308
+\l__tblr_long_to_int=\count309
+\l__tblr_curr_i_int=\count310
+\l__tblr_prev_i_int=\count311
+\l__tblr_table_page_int=\count312
+\l__tblr_table_head_box=\box73
+\l__tblr_table_foot_box=\box74
+\l__tblr_table_head_foot_dim=\dimen185
+\l__tblr_table_head_body_foot_dim=\dimen186
+\l__tblr_table_box=\box75
+\l__tblr_table_hlines_box=\box76
+\l__tblr_hline_box=\box77
+\l__tblr_row_box=\box78
+\l__tblr_col_o_wd_dim=\dimen187
+\l__tblr_col_b_wd_dim=\dimen188
+\l__tblr_hline_leftskip_dim=\dimen189
+\l__tblr_hline_rightskip_dim=\dimen190
+\l__tblr_row_ht_dim=\dimen191
+\l__tblr_row_dp_dim=\dimen192
+\l__tblr_row_abovesep_dim=\dimen193
+\l__tblr_row_belowsep_dim=\dimen194
+\l__tblr_row_vlines_box=\box79
+\l__tblr_vline_box=\box80
+\l__tblr_cell_box=\box81
+\l__row_upper_dim=\dimen195
+\l__row_lower_dim=\dimen196
+\l__row_vpace_dim=\dimen197
+\l__tblr_vline_aboveskip_dim=\dimen198
+\l__tblr_vline_belowskip_dim=\dimen199
+\l__tblr_cell_wd_dim=\dimen256
+\l__tblr_cell_ht_dim=\dimen257
+\l__tblr_diag_box=\box82
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen258
+\lightrulewidth=\dimen259
+\cmidrulewidth=\dimen260
+\belowrulesep=\dimen261
+\belowbottomsep=\dimen262
+\aboverulesep=\dimen263
+\abovetopsep=\dimen264
+\cmidrulesep=\dimen265
+\cmidrulekern=\dimen266
+\defaultaddspace=\dimen267
+\@cmidla=\count313
+\@cmidlb=\count314
+\@aboverulesep=\dimen268
+\@belowrulesep=\dimen269
+\@thisruleclass=\count315
+\@lastruleclass=\count316
+\@thisrulewidth=\dimen270
+) (/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `amsthm' support loaded on input line 3026.
+Package cleveref Info: always capitalise cross-reference names on input line 7825.
+Package cleveref Info: include cross-reference names in hyperlinks on input line 7836.
+Package cleveref Info: always capitalise cross-reference names on input line 7852.
+Package cleveref Info: include cross-reference names in hyperlinks on input line 7852.
+) (/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2023-06-12 v3.2.6 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen271
+\l__siunitx_angle_marker_box=\box83
+\l__siunitx_angle_unit_box=\box84
+\l__siunitx_compound_count_int=\count317
+ (/usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+)
+\l__siunitx_number_exponent_fixed_int=\count318
+\l__siunitx_number_min_decimal_int=\count319
+\l__siunitx_number_min_integer_int=\count320
+\l__siunitx_number_round_precision_int=\count321
+\l__siunitx_number_lower_threshold_int=\count322
+\l__siunitx_number_upper_threshold_int=\count323
+\l__siunitx_number_group_first_int=\count324
+\l__siunitx_number_group_size_int=\count325
+\l__siunitx_number_group_minimum_int=\count326
+\l__siunitx_table_tmp_box=\box85
+\l__siunitx_table_tmp_dim=\dimen272
+\l__siunitx_table_column_width_dim=\dimen273
+\l__siunitx_table_integer_box=\box86
+\l__siunitx_table_decimal_box=\box87
+\l__siunitx_table_uncert_box=\box88
+\l__siunitx_table_before_box=\box89
+\l__siunitx_table_after_box=\box90
+\l__siunitx_table_before_dim=\dimen274
+\l__siunitx_table_carry_dim=\dimen275
+\l__siunitx_unit_tmp_int=\count327
+\l__siunitx_unit_position_int=\count328
+\l__siunitx_unit_total_int=\count329
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip62
+\enit@outerparindent=\dimen276
+\enit@toks=\toks37
+\enit@inbox=\box91
+\enit@count@id=\count330
+\enitdp@description=\count331
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen277
+\captionmargin=\dimen278
+\caption@leftmargin=\dimen279
+\caption@rightmargin=\dimen280
+\caption@width=\dimen281
+\caption@indent=\dimen282
+\caption@parindent=\dimen283
+\caption@hangindent=\dimen284
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count332
+\c@continuedfloat=\count333
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 239.
+\c@subfigure=\count334
+Package caption Info: New subtype `subtable' on input line 239.
+\c@subtable=\count335
+) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count336
+\mult@box=\box92
+\multicol@leftmargin=\dimen285
+\c@unbalance=\count337
+\c@collectmore=\count338
+\doublecol@number=\count339
+\multicoltolerance=\count340
+\multicolpretolerance=\count341
+\full@width=\dimen286
+\page@free=\dimen287
+\premulticols=\dimen288
+\postmulticols=\dimen289
+\multicolsep=\skip63
+\multicolbaselineskip=\skip64
+\partial@page=\box93
+\last@line=\box94
+\mc@boxedresult=\box95
+\maxbalancingoverflow=\dimen290
+\mult@rightbox=\box96
+\mult@grightbox=\box97
+\mult@firstbox=\box98
+\mult@gfirstbox=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\@tempa=\box133
+\@tempa=\box134
+\@tempa=\box135
+\c@minrows=\count342
+\c@columnbadness=\count343
+\c@finalcolumnbadness=\count344
+\last@try=\dimen291
+\multicolovershoot=\dimen292
+\multicolundershoot=\dimen293
+\mult@nat@firstbox=\box136
+\colbreak@box=\box137
+\mc@col@check@num=\count345
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks38
+\pgfutil@tempdima=\dimen294
+\pgfutil@tempdimb=\dimen295
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box138
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks39
+\pgfkeys@temptoks=\toks40
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks41
+))
+\pgf@x=\dimen296
+\pgf@y=\dimen297
+\pgf@xa=\dimen298
+\pgf@ya=\dimen299
+\pgf@xb=\dimen300
+\pgf@yb=\dimen301
+\pgf@xc=\dimen302
+\pgf@yc=\dimen303
+\pgf@xd=\dimen304
+\pgf@yd=\dimen305
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count346
+\c@pgf@countb=\count347
+\c@pgf@countc=\count348
+\c@pgf@countd=\count349
+\t@pgf@toka=\toks42
+\t@pgf@tokb=\toks43
+\t@pgf@tokc=\toks44
+\pgf@sys@id@count=\count350
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count351
+\pgfsyssoftpath@bigbuffer@items=\count352
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen306
+\pgfmath@count=\count353
+\pgfmath@box=\box139
+\pgfmath@toks=\toks45
+\pgfmath@stack@operand=\toks46
+\pgfmath@stack@operation=\toks47
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count354
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen307
+\pgf@picmaxx=\dimen308
+\pgf@picminy=\dimen309
+\pgf@picmaxy=\dimen310
+\pgf@pathminx=\dimen311
+\pgf@pathmaxx=\dimen312
+\pgf@pathminy=\dimen313
+\pgf@pathmaxy=\dimen314
+\pgf@xx=\dimen315
+\pgf@xy=\dimen316
+\pgf@yx=\dimen317
+\pgf@yy=\dimen318
+\pgf@zx=\dimen319
+\pgf@zy=\dimen320
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen321
+\pgf@path@lasty=\dimen322
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen323
+\pgf@shorten@start@additional=\dimen324
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box140
+\pgf@hbox=\box141
+\pgf@layerbox@main=\box142
+\pgf@picture@serial@count=\count355
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen325
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen326
+\pgf@pt@y=\dimen327
+\pgf@pt@temp=\dimen328
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen329
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen330
+\pgf@sys@shading@range@num=\count356
+\pgf@shadingcount=\count357
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box143
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box144
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen331
+\pgf@nodesepend=\dimen332
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen333
+\pgffor@skip=\dimen334
+\pgffor@stack=\toks48
+\pgffor@toks=\toks49
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count358
+\pgfplotmarksize=\dimen335
+)
+\tikz@lastx=\dimen336
+\tikz@lasty=\dimen337
+\tikz@lastxsaved=\dimen338
+\tikz@lastysaved=\dimen339
+\tikz@lastmovetox=\dimen340
+\tikz@lastmovetoy=\dimen341
+\tikzleveldistance=\dimen342
+\tikzsiblingdistance=\dimen343
+\tikz@figbox=\box145
+\tikz@figbox@bg=\box146
+\tikz@tempbox=\box147
+\tikz@tempbox@bg=\box148
+\tikztreelevel=\count359
+\tikznumberofchildren=\count360
+\tikznumberofcurrentchild=\count361
+\tikz@fig@count=\count362
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count363
+\pgfmatrixcurrentcolumn=\count364
+\pgf@matrix@numberofcolumns=\count365
+)
+\tikz@expandcount=\count366
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count367
+\lst@gtempboxa=\box149
+\lst@token=\toks50
+\lst@length=\count368
+\lst@currlwidth=\dimen344
+\lst@column=\count369
+\lst@pos=\count370
+\lst@lostspace=\dimen345
+\lst@width=\dimen346
+\lst@newlines=\count371
+\lst@lineno=\count372
+\lst@maxwidth=\dimen347
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count373
+\lst@skipnumbers=\count374
+\lst@framebox=\box150
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box151
+\shadowsize=\dimen348
+\@Sbox=\box152
+\do@VerbBox=\toks51
+\the@fancyput=\toks52
+\this@fancyput=\toks53
+\EndVerbatimTokens=\toks54
+\Verbatim@Outfile=\write4
+\Verbatim@Infile=\read4
+) (/usr/share/texlive/texmf-dist/tex/latex/preprint/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip65
+\@affilsep=\skip66
+\c@Maxaffil=\count375
+\c@authors=\count376
+\c@affil=\count377
+) (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count378
+\c@Blindtext=\count379
+\c@blind@countparstart=\count380
+\blind@countxx=\count381
+\blindtext@numBlindtext=\count382
+\blind@countyy=\count383
+\c@blindlist=\count384
+\c@blindlistlevel=\count385
+\c@blindlist@level=\count386
+\blind@listitem=\count387
+\c@blind@listcount=\count388
+\c@blind@levelcount=\count389
+\blind@mathformula=\count390
+\blind@Mathformula=\count391
+\c@blind@randomcount=\count392
+\c@blind@randommax=\count393
+\c@blind@pangramcount=\count394
+\c@blind@pangrammax=\count395
+) (/usr/share/texlive/texmf-dist/tex/latex/svg/svg.sty
+Package: svg 2020/11/26 v2.02k (include SVG pictures)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2023/04/24 v3.40 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2023/04/24 v3.40 KOMA-Script package (file load hooks)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2023/04/24 v3.40 KOMA-Script package (using LaTeX hooks)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2023/04/24 v3.40 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line 368.
+) (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/04/15 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+) (/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+ (/usr/share/texlive/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+runsystem(uname -s > "deep_learning.w18")...executed.
+
+ (./deep_learning.w18)
+runsystem(rm -- "deep_learning.w18")...executed.
+
+)
+\c@svg@param@lastpage=\count396
+\svg@box=\box153
+\c@svg@param@currpage=\count397
+) (/usr/share/texlive/texmf-dist/tex/latex/transparent/transparent.sty
+Package: transparent 2022-10-27 v1.5 Transparency with color stacks
+ (/usr/share/texlive/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
+Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
+)) (/usr/share/texlive/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2023/03/17 version 6.0.3 text color boxes
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks55
+\verbatim@line=\toks56
+\verbatim@in@stream=\read5
+) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+)
+\tcb@titlebox=\box154
+\tcb@upperbox=\box155
+\tcb@lowerbox=\box156
+\tcb@phantombox=\box157
+\c@tcbbreakpart=\count398
+\c@tcblayer=\count399
+\c@tcolorbox@number=\count400
+\tcb@temp=\box158
+\tcb@temp=\box159
+\tcb@temp=\box160
+\tcb@temp=\box161
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks57
+\c@algorithm=\count401
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+ (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count402
+\c@ALG@rem=\count403
+\c@ALG@nested=\count404
+\ALG@tlm=\skip67
+\ALG@thistlm=\skip68
+\c@ALG@Lnr=\count405
+\c@ALG@blocknr=\count406
+\c@ALG@storecount=\count407
+\c@ALG@tmpcounter=\count408
+\ALG@tmplength=\skip69
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip70
+\bibsep=\skip71
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count409
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries-extra/glossaries-extra.sty
+Package: glossaries-extra 2023/04/24 v1.51 (NLCT)
+ (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks58
+\XKV@tempa@toks=\toks59
+)
+\XKV@depth=\count410
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2022/11/03 v4.52 (NLCT)
+ (/usr/share/texlive/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2022/10/14 v2.08 (NLCT)
+\@glsmfirst=\toks60
+\@glsmrest=\toks61
+) (/usr/share/texlive/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2019/09/27 v2.32 (NLCT)
+ (/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count411
+) (/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+ (/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count412
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count413
+\FP@xia=\count414
+\FP@xib=\count415
+\FP@xfa=\count416
+\FP@xfb=\count417
+\FP@rega=\count418
+\FP@regb=\count419
+\FP@regs=\count420
+\FP@times=\count421
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count422
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+) (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks62
+\@dtl@tmpcount=\count423
+\dtl@tmplength=\skip72
+\dtl@sortresult=\count424
+\@dtl@numgrpsepcount=\count425
+\@dtl@datatype=\count426
+\dtl@codeA=\count427
+\dtl@codeB=\count428
+\@dtl@foreach@level=\count429
+) (/usr/share/texlive/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
+ (/usr/share/texlive/texmf-dist/tex/generic/tracklang/tracklang.tex)) (/usr/share/texlive/texmf-dist/tex/latex/glossaries-english/glossaries-english.ldf
+File: glossaries-english.ldf 2014/11/23 v1.0
+)
+\gls@level=\count430
+\@gls@tmpb=\toks63
+\gls@tmplen=\skip73
+\glskeylisttok=\toks64
+\glslabeltok=\toks65
+\glsshorttok=\toks66
+\glslongtok=\toks67
+ (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
+Package: glossary-hypernav 2022/11/03 v4.52 (NLCT)
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2022/11/03 v4.52 (NLCT)
+\glslistdottedwidth=\skip74
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2022/11/03 v4.52 (NLCT)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip75
+\LTright=\skip76
+\LTpre=\skip77
+\LTpost=\skip78
+\LTchunksize=\count431
+\LTcapwidth=\dimen349
+\LT@head=\box162
+\LT@firsthead=\box163
+\LT@foot=\box164
+\LT@lastfoot=\box165
+\LT@gbox=\box166
+\LT@cols=\count432
+\LT@rows=\count433
+\c@LT@tables=\count434
+\c@LT@chunks=\count435
+\LT@p@ftn=\toks68
+)
+\glsdescwidth=\skip79
+\glspagelistwidth=\skip80
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2022/11/03 v4.52 (NLCT)
+ (/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2020/02/02 v4.1g the supertabular environment
+\c@tracingst=\count436
+\ST@wd=\dimen350
+\ST@rightskip=\skip81
+\ST@leftskip=\skip82
+\ST@parfillskip=\skip83
+\ST@pageleft=\dimen351
+\ST@headht=\dimen352
+\ST@tailht=\dimen353
+\ST@pagesofar=\dimen354
+\ST@pboxht=\dimen355
+\ST@lineht=\dimen356
+\ST@prevht=\dimen357
+\ST@toadd=\dimen358
+\ST@dimen=\dimen359
+\ST@pbox=\box167
+)) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2022/11/03 v4.52 (NLCT)
+\glstreeindent=\skip84
+))
+\@glsxtr@leveloffset=\count437
+\glsxtrresourcecount=\count438
+\@glsxtrnewgls@inner=\count439
+\glsshortpltok=\toks69
+\glslongpltok=\toks70
+ (/usr/share/texlive/texmf-dist/tex/latex/glossaries-extra/glossaries-extra-abbrstyles.def
+File: glossaries-extra-abbrstyles.def 2022/06/16 v1.48b (NLCT)
+)
+\mglselementindex=\count440
+)
+
+Package glossaries Warning: can't automake `main': deep_learning.glo doesn't exist. Rerun may be required on input line 73.
+
+\glswrite=\write5
+\glo@main@file=\write6
+\openout6 = `deep_learning.glo'.
+
+Package glossaries Info: Writing glossary file deep_learning.glo on input line 73.
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count441
+\Gm@cntv=\count442
+\c@Gm@tempcnt=\count443
+\Gm@bindingoffset=\dimen360
+\Gm@wd@mp=\dimen361
+\Gm@odd@mp=\dimen362
+\Gm@even@mp=\dimen363
+\Gm@layoutwidth=\dimen364
+\Gm@layoutheight=\dimen365
+\Gm@layouthoffset=\dimen366
+\Gm@layoutvoffset=\dimen367
+\Gm@dimlist=\toks71
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip85
+\f@nch@O@elh=\skip86
+\f@nch@O@erh=\skip87
+\f@nch@O@olh=\skip88
+\f@nch@O@orh=\skip89
+\f@nch@O@elf=\skip90
+\f@nch@O@erf=\skip91
+\f@nch@O@olf=\skip92
+\f@nch@O@orf=\skip93
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box168
+\beforetitleunit=\skip94
+\aftertitleunit=\skip95
+\ttl@plus=\dimen368
+\ttl@minus=\dimen369
+\ttl@toksa=\toks72
+\titlewidth=\dimen370
+\titlewidthlast=\dimen371
+\titlewidthfirst=\dimen372
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+))
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 10.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+No file deep_learning.aux.
+\openout1 = `deep_learning.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Info: Redefining \microtypecontext on input line 10.
+Package microtype Info: Applying patch `item' on input line 10.
+Package microtype Info: Applying patch `toc' on input line 10.
+Package microtype Info: Applying patch `eqnum' on input line 10.
+
+Package microtype Warning: Unable to apply patch `footnote' on input line 10.
+
+Package microtype Info: Applying patch `verbatim' on input line 10.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 10.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count444
+\scratchdimen=\dimen373
+\scratchbox=\box169
+\nofMPsegments=\count445
+\nofMParguments=\count446
+\everyMPshowfont=\toks73
+\MPscratchCnt=\count447
+\MPscratchDim=\dimen374
+\MPnumerator=\count448
+\makeMPintoPDFobject=\count449
+\everyMPtoPDFconversion=\toks74
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring ON on input line 10.
+\@outlinefile=\write7
+\openout7 = `deep_learning.out'.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/ninecolors/ninecolors.sty
+Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
+ (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
+)) (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 10.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count450
+ (|'inkscape' -V )
+
+Package svg Warning: No version of Inkscape was detected by invoking
+(svg)                `inkscape -V'
+(svg)                so the Inkscape export will fail quite sure as the
+(svg)                command is probably unknown to your OS. You could set
+(svg)                `inkscapeversion=<version>' manually but this is very
+(svg)                unlikely to work on input line 10.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./sections/1pre/capa.tex
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 4.
+ (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [1
+
+\openout5 = `deep_learning.ist'.
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}]) (./sections/1pre/research.tex [1])
+
+LaTeX Font Warning: Font shape `OT1/lmss/bx/sc' undefined
+(Font)              using `OT1/lmss/bx/n' instead on input line 33.
+
+No file deep_learning.lof.
+\tf@lof=\write8
+\openout8 = `deep_learning.lof'.
+
+[2
+
+
+]
+No file deep_learning.lot.
+\tf@lot=\write9
+\openout9 = `deep_learning.lot'.
+
+No file deep_learning.gls.
+
+Package glossaries-extra Warning: Glossary `main' is missing on input line 53.
+
+[3
+
+]
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 53.
+ (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 53.
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 53.
+ (/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 53.
+ (/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 53.
+ (/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 53.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 53.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [4
+
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
+No file deep_learning.toc.
+\tf@toc=\write10
+\openout10 = `deep_learning.toc'.
+
+[5
+
+] (./sections/2body/1intro/intro.tex
+Chapter 1.
+
+Package natbib Warning: Citation `lee2020' on page 1 undefined on input line 3.
+
+
+Package natbib Warning: Citation `poola2017' on page 1 undefined on input line 3.
+
+
+Package natbib Warning: Citation `rabunal2006' on page 1 undefined on input line 3.
+
+
+Package natbib Warning: Citation `muthukrishnan2020' on page 1 undefined on input line 4.
+
+
+Package natbib Warning: Citation `leiner2009' on page 1 undefined on input line 5.
+
+
+Package natbib Warning: Citation `cohen-almagor2011' on page 1 undefined on input line 5.
+
+
+Package natbib Warning: Citation `goda2012' on page 1 undefined on input line 6.
+
+
+Package natbib Warning: Citation `duan2019' on page 1 undefined on input line 7.
+
+
+Package natbib Warning: Citation `chan-olmsted2019' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `milana2021' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `kollar2021' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `hubacek2019' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `goodfellow2016' on page 1 undefined on input line 11.
+
+
+Package natbib Warning: Citation `aurelien2022' on page 1 undefined on input line 11.
+
+
+Package natbib Warning: Citation `raschka2015' on page 1 undefined on input line 11.
+
+
+Package natbib Warning: Citation `raschka2022' on page 1 undefined on input line 11.
+
+
+Package natbib Warning: Citation `biswas2023' on page 1 undefined on input line 12.
+
+
+Package natbib Warning: Citation `biswas2023a' on page 1 undefined on input line 12.
+
+
+Package natbib Warning: Citation `lund2023' on page 1 undefined on input line 12.
+
+
+Package natbib Warning: Citation `baidoo-anu2023' on page 1 undefined on input line 12.
+
+
+Package natbib Warning: Citation `azimi2020' on page 1 undefined on input line 14.
+
+
+Package natbib Warning: Citation `ye2019' on page 1 undefined on input line 14.
+
+
+Package natbib Warning: Citation `farrar2012' on page 1 undefined on input line 15.
+
+
+Package natbib Warning: Citation `smarsly2007' on page 1 undefined on input line 17.
+
+
+Package natbib Warning: Citation `sun2020' on page 1 undefined on input line 17.
+
+
+Package natbib Warning: Citation `lahmeri2021' on page 1 undefined on input line 19.
+
+
+Package natbib Warning: Citation `ahirwar2019' on page 1 undefined on input line 19.
+
+
+Package natbib Warning: Citation `verdouw2016' on page 1 undefined on input line 19.
+
+
+Package natbib Warning: Citation `tzounis2017' on page 1 undefined on input line 19.
+
+
+Package natbib Warning: Citation `geronel2023' on page 1 undefined on input line 20.
+
+
+Package natbib Warning: Citation `guo2021' on page 1 undefined on input line 20.
+
+
+Package natbib Warning: Citation `assilian1974' on page 1 undefined on input line 20.
+
+
+Package natbib Warning: Citation `ruiz-real2020' on page 1 undefined on input line 22.
+
+
+Package natbib Warning: Citation `yu2018' on page 1 undefined on input line 22.
+
+
+Package natbib Warning: Citation `davenport2019' on page 1 undefined on input line 22.
+
+
+Package natbib Warning: Citation `verma2021' on page 1 undefined on input line 22.
+
+
+Package natbib Warning: Citation `mhlanga2020' on page 1 undefined on input line 22.
+
+
+Package natbib Warning: Citation `pannu2015' on page 1 undefined on input line 22.
+
+
+Package natbib Warning: Citation `ghatrehsamani2023' on page 1 undefined on input line 22.
+
+
+Package natbib Warning: Citation `jeble2018' on page 1 undefined on input line 23.
+
+
+Package natbib Warning: Citation `koscielniak2015' on page 1 undefined on input line 23.
+
+
+Package natbib Warning: Citation `baji2018' on page 1 undefined on input line 24.
+
+
+Package natbib Warning: Citation `meindl2021' on page 1 undefined on input line 28.
+
+
+Package natbib Warning: Citation `pham1998' on page 1 undefined on input line 30.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31 
+      [1
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}]
+
+Package natbib Warning: Citation `kahandawa2012' on page 2 undefined on input line 33.
+
+
+Package natbib Warning: Citation `nagayama2007' on page 2 undefined on input line 33.
+
+
+Package natbib Warning: Citation `loyola-gonzalez2019' on page 2 undefined on input line 39.
+
+
+Package natbib Warning: Citation `wu2016' on page 2 undefined on input line 39.
+
+) (./sections/2body/2review/intro.tex [2]
+Chapter 2.
+
+LaTeX Warning: Reference `sec:results' on page 1 undefined on input line 5.
+
+) (./sections/2body/2review/shm.tex
+
+Package natbib Warning: Citation `balageas2010' on page 3 undefined on input line 5.
+
+Package svg Info: Calling Inkscape on input line 12.
+runsystem(inkscape "figures/3review/shm/shm_nervous_system_analogy.svg" -D --export-latex --export-filename="shm_nervous_system_analogy_svg-tex.pdf")...executed.
+
+runsystem(inkscape "figures/3review/shm/shm_nervous_system_analogy.svg" -D --export-latex \relax --without-gui --export-pdf="shm_nervous_system_analogy_svg-tex.pdf")...executed.
+
+
+./sections/2body/2review/shm.tex:12: Package svg Error: Inkscape version not detected.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...review/shm/shm_nervous_system_analogy.svg}
+                                                  
+It was tried to invoke `inkscape'
+for file "figures/3review/shm/shm_nervous_system_analogy.svg"
+but no result was produced. Check the log file
+and set `inkscapeversion=<version>' manually.
+
+runsystem(inkscape "figures/3review/shm/shm_nervous_system_analogy.svg" -D --export-latex --export-filename="shm_nervous_system_analogy_svg-tex.pdf")...executed.
+
+
+Package svg Warning: The export with Inkscape failed for file
+(svg)                `figures/3review/shm/shm_nervous_system_analogy.svg'
+(svg)                Troubleshooting: Please check in the log file how
+(svg)                the invocation of Inkscape took place and try to
+(svg)                execute it yourself in the terminal on input line 12.
+
+
+./sections/2body/2review/shm.tex:12: Package svg Error: File `shm_nervous_system_analogy_svg-tex.pdf' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...review/shm/shm_nervous_system_analogy.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/shm_nervous_system_analogy_svg-tex.pdf'
+although `figures/3review/shm/shm_nervous_system_analogy.svg' was found.
+
+
+./sections/2body/2review/shm.tex:12: Package svg Error: File `shm_nervous_system_analogy_svg-tex.pdf_tex' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...review/shm/shm_nervous_system_analogy.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/shm_nervous_system_analogy_svg-tex.pdf_tex'
+although `figures/3review/shm/shm_nervous_system_analogy.svg' was found.
+
+
+LaTeX Warning: Reference `fig:shm_nervous_system' on page 1 undefined on input line 19.
+
+
+Package natbib Warning: Citation `farrar2007' on page 3 undefined on input line 29.
+
+
+Package natbib Warning: Citation `sohn2003' on page 3 undefined on input line 31.
+
+[3
+
+]
+
+Package natbib Warning: Citation `avci2017' on page 4 undefined on input line 34.
+
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <12> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 38.
+
+Package natbib Warning: Citation `dadafshar2014' on page 4 undefined on input line 43.
+
+
+Package natbib Warning: Citation `sabato2017' on page 4 undefined on input line 45.
+
+
+Package natbib Warning: Citation `sharma2016' on page 4 undefined on input line 54.
+
+
+Package natbib Warning: Citation `feng2018' on page 4 undefined on input line 55.
+
+
+Package natbib Warning: Citation `sankarasrinivasan2015' on page 4 undefined on input line 55.
+
+
+Package natbib Warning: Citation `jiao2020' on page 4 undefined on input line 62.
+
+
+Package natbib Warning: Citation `curie1880' on page 4 undefined on input line 64.
+
+
+Package natbib Warning: Citation `brown1962' on page 4 undefined on input line 66.
+
+[4]
+
+Package natbib Warning: Citation `maio2011' on page 5 undefined on input line 70.
+
+
+Package natbib Warning: Citation `karthick2017' on page 5 undefined on input line 77.
+
+
+Package natbib Warning: Citation `sakenabenazer2021' on page 5 undefined on input line 77.
+
+
+LaTeX Warning: Reference `sec:shm_main_techniques' on page 1 undefined on input line 79.
+
+
+Package natbib Warning: Citation `loveday2000' on page 5 undefined on input line 79.
+
+) (./sections/2body/2review/uav.tex
+
+Package natbib Warning: Citation `ramakrishnan2023' on page 5 undefined on input line 8.
+
+
+Package natbib Warning: Citation `mcphillips2022' on page 5 undefined on input line 8.
+
+
+Package natbib Warning: Citation `thiels2015' on page 5 undefined on input line 9.
+
+
+Package natbib Warning: Citation `delcerro2021' on page 5 undefined on input line 12.
+
+[5]
+
+Package natbib Warning: Citation `sivakumar2021' on page 6 undefined on input line 16.
+
+
+LaTeX Warning: Reference `fig:quadcopter_forces_scheme' on page 1 undefined on input line 21.
+
+
+Package natbib Warning: Citation `geronel2023' on page 6 undefined on input line 21.
+
+
+Package natbib Warning: Citation `fossen1994' on page 6 undefined on input line 21.
+
+
+LaTeX Warning: Reference `eq:uav_motion_equation' on page 1 undefined on input line 34.
+
+Package svg Info: Calling Inkscape on input line 45.
+runsystem(inkscape "figures/3review/uav/uav_forces.svg" -D --export-latex --export-filename="uav_forces_svg-tex.pdf")...executed.
+
+runsystem(inkscape "figures/3review/uav/uav_forces.svg" -D --export-latex \relax --without-gui --export-pdf="uav_forces_svg-tex.pdf")...executed.
+
+
+./sections/2body/2review/uav.tex:45: Package svg Error: Inkscape version not detected.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 ...udesvg{figures/3review/uav/uav_forces.svg}
+                                                  
+It was tried to invoke `inkscape'
+for file "figures/3review/uav/uav_forces.svg"
+but no result was produced. Check the log file
+and set `inkscapeversion=<version>' manually.
+
+runsystem(inkscape "figures/3review/uav/uav_forces.svg" -D --export-latex --export-filename="uav_forces_svg-tex.pdf")...executed.
+
+
+Package svg Warning: The export with Inkscape failed for file
+(svg)                `figures/3review/uav/uav_forces.svg'
+(svg)                Troubleshooting: Please check in the log file how
+(svg)                the invocation of Inkscape took place and try to
+(svg)                execute it yourself in the terminal on input line 45.
+
+
+./sections/2body/2review/uav.tex:45: Package svg Error: File `uav_forces_svg-tex.pdf' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 ...udesvg{figures/3review/uav/uav_forces.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/uav_forces_svg-tex.pdf'
+although `figures/3review/uav/uav_forces.svg' was found.
+
+
+./sections/2body/2review/uav.tex:45: Package svg Error: File `uav_forces_svg-tex.pdf_tex' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 ...udesvg{figures/3review/uav/uav_forces.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/uav_forces_svg-tex.pdf_tex'
+although `figures/3review/uav/uav_forces.svg' was found.
+
+
+Package natbib Warning: Citation `geronel2023' on page 6 undefined on input line 51.
+
+
+Package natbib Warning: Citation `geronel2023' on page 6 undefined on input line 55.
+
+) (./sections/2body/2review/nn.tex
+
+Package natbib Warning: Citation `goodfellow2016' on page 6 undefined on input line 5.
+
+
+Package natbib Warning: Citation `haykin1999' on page 6 undefined on input line 5.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 5.
+[6{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}]
+
+Package natbib Warning: Citation `winston1992' on page 7 undefined on input line 7.
+
+
+Package natbib Warning: Citation `mccarthy2007' on page 7 undefined on input line 7.
+
+
+LaTeX Warning: Reference `sec:loss_function' on page 1 undefined on input line 42.
+
+
+LaTeX Warning: Reference `fig:mlp' on page 1 undefined on input line 45.
+
+[7]
+Package svg Info: Calling Inkscape on input line 50.
+runsystem(inkscape "figures/3review/nn/nn3.svg" -D --export-latex --export-filename="nn3_svg-tex.pdf")...executed.
+
+runsystem(inkscape "figures/3review/nn/nn3.svg" -D --export-latex \relax --without-gui --export-pdf="nn3_svg-tex.pdf")...executed.
+
+
+
+./sections/2body/2review/nn.tex:50: Package svg Error: Inkscape version not detected.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50     \includesvg{figures/3review/nn/nn3.svg}
+                                                
+It was tried to invoke `inkscape'
+for file "figures/3review/nn/nn3.svg"
+but no result was produced. Check the log file
+and set `inkscapeversion=<version>' manually.
+
+runsystem(inkscape "figures/3review/nn/nn3.svg" -D --export-latex --export-filename="nn3_svg-tex.pdf")...executed.
+
+
+Package svg Warning: The export with Inkscape failed for file
+(svg)                `figures/3review/nn/nn3.svg'
+(svg)                Troubleshooting: Please check in the log file how
+(svg)                the invocation of Inkscape took place and try to
+(svg)                execute it yourself in the terminal on input line 50.
+
+
+./sections/2body/2review/nn.tex:50: Package svg Error: File `nn3_svg-tex.pdf' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50     \includesvg{figures/3review/nn/nn3.svg}
+                                                
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/nn3_svg-tex.pdf'
+although `figures/3review/nn/nn3.svg' was found.
+
+
+./sections/2body/2review/nn.tex:50: Package svg Error: File `nn3_svg-tex.pdf_tex' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50     \includesvg{figures/3review/nn/nn3.svg}
+                                                
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/nn3_svg-tex.pdf_tex'
+although `figures/3review/nn/nn3.svg' was found.
+
+
+Package natbib Warning: Citation `bussab2017' on page 8 undefined on input line 96.
+
+[8]
+
+LaTeX Warning: Reference `fig:mae_chart' on page 1 undefined on input line 107.
+
+Package svg Info: Calling Inkscape on input line 112.
+runsystem(inkscape "figures/3review/nn/mae_chart.svg" -D --export-latex --export-filename="mae_chart_svg-tex.pdf")...executed.
+
+runsystem(inkscape "figures/3review/nn/mae_chart.svg" -D --export-latex \relax --without-gui --export-pdf="mae_chart_svg-tex.pdf")...executed.
+
+
+./sections/2body/2review/nn.tex:112: Package svg Error: Inkscape version not detected.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 ...ludesvg{figures/3review/nn/mae_chart.svg}
+                                                  
+It was tried to invoke `inkscape'
+for file "figures/3review/nn/mae_chart.svg"
+but no result was produced. Check the log file
+and set `inkscapeversion=<version>' manually.
+
+runsystem(inkscape "figures/3review/nn/mae_chart.svg" -D --export-latex --export-filename="mae_chart_svg-tex.pdf")...executed.
+
+
+Package svg Warning: The export with Inkscape failed for file
+(svg)                `figures/3review/nn/mae_chart.svg'
+(svg)                Troubleshooting: Please check in the log file how
+(svg)                the invocation of Inkscape took place and try to
+(svg)                execute it yourself in the terminal on input line 112.
+
+
+./sections/2body/2review/nn.tex:112: Package svg Error: File `mae_chart_svg-tex.pdf' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 ...ludesvg{figures/3review/nn/mae_chart.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/mae_chart_svg-tex.pdf'
+although `figures/3review/nn/mae_chart.svg' was found.
+
+
+./sections/2body/2review/nn.tex:112: Package svg Error: File `mae_chart_svg-tex.pdf_tex' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 ...ludesvg{figures/3review/nn/mae_chart.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/mae_chart_svg-tex.pdf_tex'
+although `figures/3review/nn/mae_chart.svg' was found.
+
+
+Package natbib Warning: Citation `nesterov2004' on page 9 undefined on input line 145.
+
+Package svg Info: Calling Inkscape on input line 152.
+runsystem(inkscape "figures/3review/nn/gradient_descent.svg" -D --export-latex --export-filename="gradient_descent_svg-tex.pdf")...executed.
+
+runsystem(inkscape "figures/3review/nn/gradient_descent.svg" -D --export-latex \relax --without-gui --export-pdf="gradient_descent_svg-tex.pdf")...executed.
+
+
+./sections/2body/2review/nn.tex:152: Package svg Error: Inkscape version not detected.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 ...{figures/3review/nn/gradient_descent.svg}
+                                                  
+It was tried to invoke `inkscape'
+for file "figures/3review/nn/gradient_descent.svg"
+but no result was produced. Check the log file
+and set `inkscapeversion=<version>' manually.
+
+runsystem(inkscape "figures/3review/nn/gradient_descent.svg" -D --export-latex --export-filename="gradient_descent_svg-tex.pdf")...executed.
+
+
+Package svg Warning: The export with Inkscape failed for file
+(svg)                `figures/3review/nn/gradient_descent.svg'
+(svg)                Troubleshooting: Please check in the log file how
+(svg)                the invocation of Inkscape took place and try to
+(svg)                execute it yourself in the terminal on input line 152.
+
+
+./sections/2body/2review/nn.tex:152: Package svg Error: File `gradient_descent_svg-tex.pdf' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 ...{figures/3review/nn/gradient_descent.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/gradient_descent_svg-tex.pdf'
+although `figures/3review/nn/gradient_descent.svg' was found.
+
+
+./sections/2body/2review/nn.tex:152: Package svg Error: File `gradient_descent_svg-tex.pdf_tex' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 ...{figures/3review/nn/gradient_descent.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/gradient_descent_svg-tex.pdf_tex'
+although `figures/3review/nn/gradient_descent.svg' was found.
+
+
+Package natbib Warning: Citation `stewart2016' on page 9 undefined on input line 160.
+
+
+Package natbib Warning: Citation `nielsen2015' on page 9 undefined on input line 163.
+
+[9]
+
+Package natbib Warning: Citation `darken1991' on page 10 undefined on input line 191.
+
+
+Package natbib Warning: Citation `sutskever2013' on page 10 undefined on input line 191.
+
+
+LaTeX Warning: Reference `sec:loss_function' on page 1 undefined on input line 195.
+
+
+Package natbib Warning: Citation `kingma2017' on page 10 undefined on input line 197.
+
+
+Package natbib Warning: Citation `kingma2017' on page 10 undefined on input line 199.
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 202.
+) (./sections/2body/3methodology/intro.tex [10] [11]
+Chapter 3.
+
+Package natbib Warning: Citation `winston1992' on page 12 undefined on input line 5.
+
+) (./sections/2body/3methodology/softwares.tex
+
+LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <12> not available
+(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 3.
+
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 3.
+(/usr/share/texmf/tex/latex/lm/ts1lmss.fd
+File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+LaTeX Font Warning: Font shape `TS1/lmss/m/sc' in size <12> not available
+(Font)              Font shape `TS1/lmr/m/sc' tried instead on input line 3.
+
+
+Package natbib Warning: Citation `demirkaya2009' on page 12 undefined on input line 6.
+
+
+Package natbib Warning: Citation `bansal' on page 12 undefined on input line 6.
+
+
+Package natbib Warning: Citation `geronel2023' on page 12 undefined on input line 8.
+
+
+Package natbib Warning: Citation `abadi2016' on page 12 undefined on input line 13.
+
+
+Package natbib Warning: Citation `paszke2019' on page 12 undefined on input line 13.
+
+
+Package natbib Warning: Citation `goodman2017' on page 12 undefined on input line 15.
+
+
+Package natbib Warning: Citation `pytorch2019' on page 12 undefined on input line 15.
+
+
+Package natbib Warning: Citation `tensorflow2018' on page 12 undefined on input line 15.
+
+) (./sections/2body/3methodology/uav.tex
+
+Package natbib Warning: Citation `geronel2023' on page 12 undefined on input line 5.
+
+[12
+
+]
+
+LaTeX Warning: Reference `fig:nns_scheme' on page 1 undefined on input line 46.
+
+
+LaTeX Warning: Reference `fig:full_scheme' on page 1 undefined on input line 47.
+
+Package svg Info: Calling Inkscape on input line 52.
+runsystem(inkscape "figures/3methodology/nns_scheme.svg" -D --export-latex --export-filename="nns_scheme_svg-tex.pdf")...executed.
+
+runsystem(inkscape "figures/3methodology/nns_scheme.svg" -D --export-latex \relax --without-gui --export-pdf="nns_scheme_svg-tex.pdf")...executed.
+
+
+./sections/2body/3methodology/uav.tex:52: Package svg Error: Inkscape version not detected.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 ...desvg{figures/3methodology/nns_scheme.svg}
+                                                  
+It was tried to invoke `inkscape'
+for file "figures/3methodology/nns_scheme.svg"
+but no result was produced. Check the log file
+and set `inkscapeversion=<version>' manually.
+
+runsystem(inkscape "figures/3methodology/nns_scheme.svg" -D --export-latex --export-filename="nns_scheme_svg-tex.pdf")...executed.
+
+
+Package svg Warning: The export with Inkscape failed for file
+(svg)                `figures/3methodology/nns_scheme.svg'
+(svg)                Troubleshooting: Please check in the log file how
+(svg)                the invocation of Inkscape took place and try to
+(svg)                execute it yourself in the terminal on input line 52.
+
+
+./sections/2body/3methodology/uav.tex:52: Package svg Error: File `nns_scheme_svg-tex.pdf' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 ...desvg{figures/3methodology/nns_scheme.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/nns_scheme_svg-tex.pdf'
+although `figures/3methodology/nns_scheme.svg' was found.
+
+
+./sections/2body/3methodology/uav.tex:52: Package svg Error: File `nns_scheme_svg-tex.pdf_tex' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 ...desvg{figures/3methodology/nns_scheme.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/nns_scheme_svg-tex.pdf_tex'
+although `figures/3methodology/nns_scheme.svg' was found.
+
+Package svg Info: Calling Inkscape on input line 61.
+runsystem(inkscape "figures/3methodology/full_scheme.svg" -D --export-latex --export-filename="full_scheme_svg-tex.pdf")...executed.
+
+runsystem(inkscape "figures/3methodology/full_scheme.svg" -D --export-latex \relax --without-gui --export-pdf="full_scheme_svg-tex.pdf")...executed.
+
+
+./sections/2body/3methodology/uav.tex:61: Package svg Error: Inkscape version not detected.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...esvg{figures/3methodology/full_scheme.svg}
+                                                  
+It was tried to invoke `inkscape'
+for file "figures/3methodology/full_scheme.svg"
+but no result was produced. Check the log file
+and set `inkscapeversion=<version>' manually.
+
+runsystem(inkscape "figures/3methodology/full_scheme.svg" -D --export-latex --export-filename="full_scheme_svg-tex.pdf")...executed.
+
+
+Package svg Warning: The export with Inkscape failed for file
+(svg)                `figures/3methodology/full_scheme.svg'
+(svg)                Troubleshooting: Please check in the log file how
+(svg)                the invocation of Inkscape took place and try to
+(svg)                execute it yourself in the terminal on input line 61.
+
+
+./sections/2body/3methodology/uav.tex:61: Package svg Error: File `full_scheme_svg-tex.pdf' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...esvg{figures/3methodology/full_scheme.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/full_scheme_svg-tex.pdf'
+although `figures/3methodology/full_scheme.svg' was found.
+
+
+./sections/2body/3methodology/uav.tex:61: Package svg Error: File `full_scheme_svg-tex.pdf_tex' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...esvg{figures/3methodology/full_scheme.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/full_scheme_svg-tex.pdf_tex'
+although `figures/3methodology/full_scheme.svg' was found.
+
+
+LaTeX Warning: Reference `fig:nn1_scheme' on page 1 undefined on input line 69.
+
+
+LaTeX Warning: Reference `eq:function_training_model_uav' on page 1 undefined on input line 70.
+
+[13]
+Package svg Info: Calling Inkscape on input line 82.
+runsystem(inkscape "./figures/3review/nn/nn2.svg" -D --export-latex --export-filename="nn2_svg-tex.pdf")...executed.
+
+runsystem(inkscape "./figures/3review/nn/nn2.svg" -D --export-latex \relax --without-gui --export-pdf="nn2_svg-tex.pdf")...executed.
+
+
+
+./sections/2body/3methodology/uav.tex:82: Package svg Error: Inkscape version not detected.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82     \includesvg{./figures/3review/nn/nn2.svg}
+                                                  
+It was tried to invoke `inkscape'
+for file "./figures/3review/nn/nn2.svg"
+but no result was produced. Check the log file
+and set `inkscapeversion=<version>' manually.
+
+runsystem(inkscape "./figures/3review/nn/nn2.svg" -D --export-latex --export-filename="nn2_svg-tex.pdf")...executed.
+
+
+Package svg Warning: The export with Inkscape failed for file
+(svg)                `./figures/3review/nn/nn2.svg'
+(svg)                Troubleshooting: Please check in the log file how
+(svg)                the invocation of Inkscape took place and try to
+(svg)                execute it yourself in the terminal on input line 82.
+
+
+./sections/2body/3methodology/uav.tex:82: Package svg Error: File `nn2_svg-tex.pdf' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82     \includesvg{./figures/3review/nn/nn2.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/nn2_svg-tex.pdf'
+although `./figures/3review/nn/nn2.svg' was found.
+
+
+./sections/2body/3methodology/uav.tex:82: Package svg Error: File `nn2_svg-tex.pdf_tex' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82     \includesvg{./figures/3review/nn/nn2.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/nn2_svg-tex.pdf_tex'
+although `./figures/3review/nn/nn2.svg' was found.
+
+
+LaTeX Warning: Reference `tab:nn1_char' on page 1 undefined on input line 88.
+
+Package svg Info: Calling Inkscape on input line 98.
+runsystem(inkscape "./figures/3review/nn/nn4.svg" -D --export-latex --export-filename="nn4_svg-tex.pdf")...executed.
+
+runsystem(inkscape "./figures/3review/nn/nn4.svg" -D --export-latex \relax --without-gui --export-pdf="nn4_svg-tex.pdf")...executed.
+
+
+./sections/2body/3methodology/uav.tex:98: Package svg Error: Inkscape version not detected.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98     \includesvg{./figures/3review/nn/nn4.svg}
+                                                  
+It was tried to invoke `inkscape'
+for file "./figures/3review/nn/nn4.svg"
+but no result was produced. Check the log file
+and set `inkscapeversion=<version>' manually.
+
+runsystem(inkscape "./figures/3review/nn/nn4.svg" -D --export-latex --export-filename="nn4_svg-tex.pdf")...executed.
+
+
+Package svg Warning: The export with Inkscape failed for file
+(svg)                `./figures/3review/nn/nn4.svg'
+(svg)                Troubleshooting: Please check in the log file how
+(svg)                the invocation of Inkscape took place and try to
+(svg)                execute it yourself in the terminal on input line 98.
+
+
+./sections/2body/3methodology/uav.tex:98: Package svg Error: File `nn4_svg-tex.pdf' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98     \includesvg{./figures/3review/nn/nn4.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/nn4_svg-tex.pdf'
+although `./figures/3review/nn/nn4.svg' was found.
+
+
+./sections/2body/3methodology/uav.tex:98: Package svg Error: File `nn4_svg-tex.pdf_tex' is missing.
+
+See the svg package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98     \includesvg{./figures/3review/nn/nn4.svg}
+                                                  
+Did you run the export with Inkscape? There's no file
+`./svg-inkscape/nn4_svg-tex.pdf_tex'
+although `./figures/3review/nn/nn4.svg' was found.
+
+) (./sections/2body/3methodology/shm.tex) (./sections/2body/4results/intro.tex [14]
+Chapter 4.
+) (./sections/2body/4results/uav.tex
+<figures/4results/uav/forces_normalized.pdf, id=180, 455.2441pt x 455.2441pt>
+File: figures/4results/uav/forces_normalized.pdf Graphic file (type pdf)
+<use figures/4results/uav/forces_normalized.pdf>
+Package pdftex.def Info: figures/4results/uav/forces_normalized.pdf  used on input line 8.
+(pdftex.def)             Requested size: 455.24298pt x 455.24298pt.
+<figures/4results/uav/forces_denormalized.pdf, id=181, 455.2441pt x 682.86612pt>
+File: figures/4results/uav/forces_denormalized.pdf Graphic file (type pdf)
+<use figures/4results/uav/forces_denormalized.pdf>
+Package pdftex.def Info: figures/4results/uav/forces_denormalized.pdf  used on input line 17.
+(pdftex.def)             Requested size: 455.24298pt x 682.86444pt.
+
+
+LaTeX Warning: Float too large for page by 46.23137pt on input line 21.
+
+<figures/4results/uav/forces_denormalized_correction.pdf, id=182, 455.2441pt x 682.86612pt>
+File: figures/4results/uav/forces_denormalized_correction.pdf Graphic file (type pdf)
+<use figures/4results/uav/forces_denormalized_correction.pdf>
+Package pdftex.def Info: figures/4results/uav/forces_denormalized_correction.pdf  used on input line 26.
+(pdftex.def)             Requested size: 455.24298pt x 682.86444pt.
+
+LaTeX Warning: Float too large for page by 46.23137pt on input line 30.
+
+) (./sections/2body/4results/shm.tex) (./sections/2body/5conclusion/intro.tex [15
+
+ <./figures/4results/uav/forces_normalized.pdf>] [16] [17 <./figures/4results/uav/forces_denormalized.pdf>] [18 <./figures/4results/uav/forces_denormalized_correction.pdf>]
+Chapter 5.
+)
+No file deep_learning.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[19
+
+] (./deep_learning.aux)
+ ***********
+LaTeX2e <2023-06-01>
+L3 programming layer <2023-06-05>
+ ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `deep_learning.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `deep_learning.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  DD503020BCE9C542ADC7655356828BC1;5151.
+ ) 
+Here is how much of TeX's memory you used:
+ 49851 strings out of 475735
+ 1006901 string characters out of 5784786
+ 1870759 words of memory out of 5000000
+ 69508 multiletter control sequences out of 15000+600000
+ 589144 words of font info for 191 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 125i,16n,121p,2357b,1028s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{glo:nn} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
+Output written on deep_learning.pdf (25 pages, 559783 bytes).
+PDF statistics:
+ 378 PDF objects out of 1000 (max. 8388607)
+ 301 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 48156 words of extra memory for PDF output out of 51595 (max. 10000000)
+
