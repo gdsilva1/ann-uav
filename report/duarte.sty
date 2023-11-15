@@ -23,6 +23,7 @@
 ]{hyperref}
 \usepackage[table]{xcolor}
 \usepackage{tabularray}
+\UseTblrLibrary{diagbox}
 \UseTblrLibrary{booktabs}
 \usepackage[
     capitalise,
@@ -48,6 +49,7 @@
 \usepackage{tcolorbox}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+
 % \usepackage[
 %     style=abnt-numeric,
 %     ittitles,
@@ -112,10 +114,10 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[
     labelsep=period,
-    labelfont={sf,bf},
-    % textfont={footnotesize},
+    labelfont={sf, bf, footnotesize},
+    font={footnotesize},
     justification=justified,
-    % format=hang
+    % format=hang,
 ]{caption}
 \usepackage{indentfirst}
 \setlength{\parindent}{1.25cm}
@@ -130,6 +132,7 @@
 % ============================
 % FONTE DO TEXTO
 \usepackage{lmodern}
+% \renewcommand{\sffamily}{\rm}
 % % ----------------------------
 
 % ============================

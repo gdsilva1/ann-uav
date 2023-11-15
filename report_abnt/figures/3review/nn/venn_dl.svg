@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="69.694771mm"
+   height="62.488522mm"
+   viewBox="0 0 69.694772 62.488522"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="venn_dl.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#a3a3a3"
+     borderopacity="1"
+     inkscape:showpageshadow="true"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#dadada"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="2.0560856"
+     inkscape:cx="2.9181664"
+     inkscape:cy="108.94488"
+     inkscape:window-width="1663"
+     inkscape:window-height="743"
+     inkscape:window-x="128"
+     inkscape:window-y="126"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="-44.921885,66.217682"
+       orientation="-1,0"
+       id="guide686"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="114.60958,136.73599"
+       orientation="-1,0"
+       id="guide738"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="98.609582,136.73599"
+       orientation="-1,0"
+       id="guide367"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="-28.921886,66.217682"
+       orientation="-1,0"
+       id="guide369"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,134,229)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-138.82264,-129.86466)">
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.167021;stroke-dasharray:none;paint-order:markers fill stroke;fill-opacity:1"
+       id="path298"
+       cx="173.67003"
+       cy="161.10892"
+       rx="34.763874"
+       ry="31.160749" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.169433;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="circle354"
+       cx="173.67003"
+       cy="167.22325"
+       rx="24.883879"
+       ry="22.953634" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.165845;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="circle356"
+       cx="173.67003"
+       cy="172.72182"
+       rx="17.384867"
+       ry="15.359224" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;letter-spacing:0px;text-anchor:middle;fill:#000000;stroke-width:0"
+       x="173.64462"
+       y="173.7738"
+       id="text457-36"><tspan
+         sodipodi:role="line"
+         id="tspan455-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;fill:#000000;stroke:none;stroke-width:0"
+         x="173.64462"
+         y="173.7738">Deep Learning</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;letter-spacing:0px;text-anchor:middle;fill:#000000;stroke-width:0"
+       x="173.62558"
+       y="155.77994"
+       id="text457-3"><tspan
+         sodipodi:role="line"
+         id="tspan455-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;fill:#000000;stroke:none;stroke-width:0"
+         x="173.62558"
+         y="155.77994">Machine Learning</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;letter-spacing:0px;text-anchor:middle;fill:#000000;stroke-width:0"
+       x="173.66368"
+       y="140.90501"
+       id="text457-6"><tspan
+         sodipodi:role="line"
+         id="tspan455-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;fill:#000000;stroke:none;stroke-width:0"
+         x="173.66368"
+         y="140.90501">Artificial Intelligence</tspan></text>
+  </g>
+</svg>

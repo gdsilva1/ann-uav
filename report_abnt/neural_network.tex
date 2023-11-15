@@ -1,0 +1,52 @@
+\documentclass[
+    12pt,
+    % openright,
+    % twoside,
+    oneside
+    a4paper,
+    english,
+    brazil,
+    chapter=TITLE
+]{abntex2}
+
+\titulo{Artificial Neural Networks applied to Unnamed Aerial Vehicle Control}
+\autor{Gabriel Duarte da Silva}
+\data{\today}
+\instituicao{Universidade Estadual Paulista}
+\local{Ilha Solteira, SP}
+\tipotrabalho{Trabalho de Graduação}
+\orientador{Douglas D. Bueno}
+\input{configs.tex}
+
+\begin{document}
+
+\imprimirfolhaderosto
+
+\listoffigures
+\listoftables
+
+\begin{siglas}
+    \item[Fig.] Area of the $i^{th}$ component 30
+    \item[456] Isto éum número
+    \item[123] Isto éoutro número
+    \item[lauro cesar] este éo meu nome
+\end{siglas}
+
+\tableofcontents
+
+\input{sections/2body/1intro/intro.tex}
+
+\input{sections/2body/2review/intro.tex}
+\input{sections/2body/2review/uav.tex}
+\input{sections/2body/2review/nn.tex}
+
+\input{sections/2body/3methodology/intro.tex}
+\input{sections/2body/3methodology/softwares.tex}
+\input{sections/2body/3methodology/uav.tex}
+
+\input{sections/2body/4results/intro.tex}
+\input{sections/2body/4results/uav.tex}
+
+\printbibliography
+
+\end{document}

@@ -47,7 +47,7 @@ The weights are adjusted to make that the network output gets closer of the want
 \begin{figure}[!htb]
     \centering
     \caption[Visual Representation of a MLP]{Visual Representation of a MLP. The input vector \(x_i\) is given in the input layer with \(i\) assuming any integer, just as the output data \(y_i\). The weights \(w_{x_i}\) are specific for each input data. Input and output data can have multiple entries.}
-    \includesvg{figures/3review/nn/nn3.svg}
+    \includesvg[pretex=\footnotesize]{figures/3review/nn/nn3.svg}
     
     {\footnotesize Source: prepared by the author.}
     \label{fig:mlp}
@@ -109,7 +109,7 @@ where \(n\) is the sample size; \(y_i\) is the predicted output; and \(\hat{y}_i
 \begin{figure}[!htb]
     \centering
     \caption[Loss Function for Linear Regression]{Loss Function for Linear Regression. The loss function take all the distances between the predicted and the target value to verify if the model is in the right path. The lower the distance, the better the model. The \(y\)-axis represents the output data and the \(x\)-axis represents the input data.}
-    \includesvg{figures/3review/nn/mae_chart.svg}
+    \includesvg[pretex=\footnotesize]{figures/3review/nn/mae_chart.svg}
     
     {\footnotesize Source: prepared by the author.}
     \label{fig:mae_chart}
@@ -149,7 +149,7 @@ This would mean that the model fits to the pattern of the data.
 \begin{figure}[!htb]
     \centering
     \caption[Gradient Descent Process]{Gradient Descent Process. In this case, the loss function (yellow curve) can be represented in a two-axes plan. Depending on the data, it is not possible to represent graphically due to its multi dimension. Each point represents the learning step. When the gradient descent reaches the minimum of the loss function, it means that the model may be accurate. Note that the gradient descent can reach a local minimum of the function and not the global minimum necessarily. The \(y\)-axis represents the loss function and the \(x\)-axis represents the weight values.}
-    \includesvg{figures/3review/nn/gradient_descent.svg}
+    \includesvg[pretex=\footnotesize]{figures/3review/nn/gradient_descent.svg}
     
     {\footnotesize Source: prepared by the author.}
     
@@ -192,33 +192,31 @@ Yet, nowadays, with the amount of data, many techniques are still applied in \gl
 
 \subsubsection*{Adam}
 
-\emph{Adam} is an algorithm for first-order gradient-based optimization of stochastic objective functions, like the loss function, as seen in the~\cref{sec:loss_function}.
+\emph{Adam} is an algorithm developed by \citet{kingma2017} for first-order gradient-based optimization of stochastic objective functions, like the loss function, as seen in the~\cref{sec:loss_function}.
 It is based on adaptive estimates of low-order moments and computationally efficient, requiring little computational memory.
 Adam is a strategical choice when using large data or parameters and with very noisy/sparse gradients \citep{kingma2017}.
 
-\citet{kingma2017} showed that the algorithm can be implemented as it follows:
+% \begin{algorithm}[!htb]
+% \caption[Adam Algorithm]{Adam Algorithm. Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}
+% \begin{algorithmic}
+% \Require \(\alpha\): stepsize
+% \Require \(\beta_1,\ \beta_2\ \in [0,1)\): exponential decay rates for the moment estimates
+% \Require \(f(\theta)\): loss function
+% \Require \(\theta_0\): initial parameter
 
-\begin{algorithm}[!htb]
-\caption[Adam Algorithm]{Adam Algorithm. Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}
-\begin{algorithmic}
-\Require \(\alpha\): stepsize
-\Require \(\beta_1,\ \beta_2\ \in [0,1)\): exponential decay rates for the moment estimates
-\Require \(f(\theta)\): loss function
-\Require \(\theta_0\): initial parameter
+% \State \(m_0 \gets 0\)
+% \State \(v_0 \gets 0\)
+% \State \(t \gets 0\)
+% \While{\(\theta_t\) not converged}
+%     \State{\(t \gets t + 1\)}
+%     \State{\(g_t \gets \nabla_{\theta}f_t(\theta_{t-1})\)}
+%     \State{\(m_t \gets b_1 \cdot m_{t-1} + (1-\beta_1) \cdot g_t\)}
+%     \State{\(v_t \gets \beta_2\cdot v_{t-1} + (1-\beta_2)\cdot g_t^2\)}
+%     \State{\(\widehat{m}_t \gets m_t/(1-\beta_1^t)\)}
+%     \State{\(\widehat{v}_t \gets v_t/(1-\beta_2^t)\)}
+%     \State{\(\theta_t \gets \theta_{t-1} - \alpha\cdot\widehat{m}_t/(\sqrt{\widehat{v}_t + \epsilon})\)}
+% \EndWhile
 
-\State \(m_0 \gets 0\)
-\State \(v_0 \gets 0\)
-\State \(t \gets 0\)
-\While{\(\theta_t\) not converged}
-    \State{\(t \gets t + 1\)}
-    \State{\(g_t \gets \nabla_{\theta}f_t(\theta_{t-1})\)}
-    \State{\(m_t \gets b_1 \cdot m_{t-1} + (1-\beta_1) \cdot g_t\)}
-    \State{\(v_t \gets \beta_2\cdot v_{t-1} + (1-\beta_2)\cdot g_t^2\)}
-    \State{\(\widehat{m}_t \gets m_t/(1-\beta_1^t)\)}
-    \State{\(\widehat{v}_t \gets v_t/(1-\beta_2^t)\)}
-    \State{\(\theta_t \gets \theta_{t-1} - \alpha\cdot\widehat{m}_t/(\sqrt{\widehat{v}_t + \epsilon})\)}
-\EndWhile
-
-\Return \(\theta_t\)
-\end{algorithmic}
-\end{algorithm}
+% \Return \(\theta_t\)
+% \end{algorithmic}
+% \end{algorithm}

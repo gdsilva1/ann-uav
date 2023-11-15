@@ -5,7 +5,7 @@
 An \gls*{uav} has several applications, going from the simplest to the most sophisticated. It can be used since for entertainment, like toys; commercially, to record big shows in arenas; surveillance, to monitor places; and also in engineering, aiding in various context to improve some processing.
 
 Due to its portability and autonomy, it can be used to facilitate the delivery o medicines. In this sense, \gls*{uav} can be used for transportation of medical goods in critical times, where other means of transportation may not be feasible.
-In the final of 2019, COVID-19 pandemics spread throughout the world, making it difficult to deliver patients their needed medicines \cite{ramakrishnan2023,mcphillips2022}.
+In the final of 2019, COVID-19 pandemics spread throughout the world, making it difficult to deliver patients their needed medicines~\cite{ramakrishnan2023,mcphillips2022}.
 Besides, risks are inherent to the transportation and in come countries, like the USA, \gls*{uav} usage may be restricted \citep{thiels2015}. 
 A strategical way to use them is also welcome.
 
@@ -34,15 +34,15 @@ where \(\mathbf{M}_{\eta_{c}}(\mathbf{\eta}_c)\) is the inertial matrix; \(\math
 The~\cref{eq:uav_motion_equation} can be represented in the state space form as:
 %
 \begin{equation}
-    \dot{x}_s = \mathbf{A}_cx_s(t) + \mathbf{B}\mathbf(u)(t) + \mathbf{X}
+    \dot{x}_s = \mathbf{A}_c x_s(t) + \mathbf{B}\mathbf(u)(t) + \mathbf{X}
 \end{equation}
 %
 where \(x_s = \begin{Bmatrix} \dot{\mathbf{\eta}}_c & \mathbf{\eta}_c \end{Bmatrix}^{\top}\) is the state vector; \(\mathbf{B}\mathbf(u)(t)\) is the input vector; \(\mathbf{X}\) is the state vector of gravity; and \(\mathbf{A}_c\) and \(\mathbf{B}\) are the dynamic and input matrices, respectively.
 %
 \begin{figure}[!htb]
     \centering
-    \caption[Quadcopter dynamic scheme]{Quadcopter dynamic scheme. \(F_i\,\) and \(T_i\), (\(i=1,2,3,4\)), are the forces and the torque applied in the propeller, respectively. \(\omega_j\) and \(v_j\), (\(j=x,y,z\)), are the momentum and the velocities applied in the \gls*{uav}, respectively. The payload is not represented in the figure.}
-    \includesvg{figures/3review/uav/uav_forces.svg}
+    \caption[Quadcopter dynamic scheme]{Quadcopter dynamic scheme. \(F_i\) and \(T_i\), (\(i=1,2,3,4\)), are the forces and the torque applied in the propeller, respectively. \(\omega_j\) and \(v_j\), (\(j=x,y,z\)), are the momentum and the velocities applied in the \gls*{uav}, respectively. The payload is not represented in the figure.}
+    \includesvg[pretex=\footnotesize]{figures/3review/uav/uav_forces.svg}
     
     {\footnotesize Source: prepared by the author.}
     \label{fig:quadcopter_forces_scheme}

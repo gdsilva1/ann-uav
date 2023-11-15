@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="149.3132mm"
+   height="44.09663mm"
+   viewBox="0 0 149.3132 44.096629"
+   version="1.1"
+   id="svg21"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="nns_scheme.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview23"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="249.25514"
+     inkscape:cy="78.66563"
+     inkscape:window-width="1920"
+     inkscape:window-height="1003"
+     inkscape:window-x="0"
+     inkscape:window-y="40"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true" />
+  <defs
+     id="defs18">
+    <marker
+       style="overflow:visible"
+       id="Arrow1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1"
+       markerWidth="4.0606604"
+       markerHeight="6.7071066"
+       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         id="path5057"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-36.652113,-98.461507)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.176389;stroke-dasharray:none"
+       x="176.91234"
+       y="116.35058"
+       id="text149-7"><tspan
+         sodipodi:role="line"
+         id="tspan147-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="176.91234"
+         y="116.35058">Control </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="176.91234"
+         y="121.64224"
+         id="tspan333">Forces</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="176.91234"
+         y="126.9339"
+         id="tspan582">(Training)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.176389;stroke-dasharray:none"
+       x="45.70932"
+       y="116.29343"
+       id="text476"><tspan
+         sodipodi:role="line"
+         id="tspan472"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="45.70932"
+         y="116.29343">State</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="45.70932"
+         y="121.58509"
+         id="tspan474">Space</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="45.70932"
+         y="126.87675"
+         id="tspan580">(Training)</tspan></text>
+    <g
+       id="g1360"
+       transform="translate(0.89883335)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
+         d="m 55.253687,119.49382 6.067684,-15.21254 h 3.868851"
+         id="path528" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
+         d="m 55.252887,119.39253 5.960074,15.21254 h 3.800237"
+         id="path530" />
+    </g>
+    <g
+       id="g1370"
+       transform="translate(-0.89882886)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
+         d="m 167.36797,119.39254 -6.06768,15.21254 h -3.86885"
+         id="path528-5" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
+         d="m 167.36877,119.49383 -5.96007,-15.21254 h -3.80024"
+         id="path530-3" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.176389;stroke-dasharray:none"
+       x="78.518921"
+       y="101.44601"
+       id="text149-3"><tspan
+         sodipodi:role="line"
+         id="tspan147-6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="78.518921"
+         y="101.44601">State</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="78.518921"
+         y="106.73767"
+         id="tspan331">Space</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="78.518921"
+         y="112.02934"
+         id="tspan478">Normalized</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.176389;stroke-dasharray:none"
+       x="78.544319"
+       y="131.87109"
+       id="text356"><tspan
+         sodipodi:role="line"
+         id="tspan352"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="78.544319"
+         y="131.87109">State</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="78.544319"
+         y="137.16277"
+         id="tspan354">Space</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="78.544319"
+         y="142.45442"
+         id="tspan384">Norm</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.176389;stroke-dasharray:none"
+       x="144.05194"
+       y="101.50317"
+       id="text484"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="144.05194"
+         y="101.50317"
+         id="tspan482">Control</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="144.05194"
+         y="106.79483"
+         id="tspan488">Forces</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="144.05194"
+         y="112.0865"
+         id="tspan490">Normalized</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.176389;stroke-dasharray:none"
+       x="144.49855"
+       y="131.92824"
+       id="text370"><tspan
+         sodipodi:role="line"
+         id="tspan366"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="144.49855"
+         y="131.92824">Control </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="144.49855"
+         y="137.21991"
+         id="tspan368">Forces</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle;stroke-width:0.176389;stroke-dasharray:none"
+         x="144.49855"
+         y="142.51157"
+         id="tspan386">Norm</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';fill:#000000;stroke-width:0.176389;stroke-dasharray:none"
+       x="107.35479"
+       y="105.41476"
+       id="text149"><tspan
+         sodipodi:role="line"
+         id="tspan147"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.176389;stroke-dasharray:none"
+         x="107.35479"
+         y="105.41476">NN  1</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none"
+       id="rect253"
+       width="18.191151"
+       height="6.6970563"
+       x="102.21526"
+       y="100.93276" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';fill:#000000;stroke-width:0.176389;stroke-dasharray:none"
+       x="107.09285"
+       y="135.85571"
+       id="text360"><tspan
+         sodipodi:role="line"
+         id="tspan358"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.176389;stroke-dasharray:none"
+         x="107.09285"
+         y="135.85571">NN  2</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none"
+       id="rect1189"
+       width="18.191151"
+       height="6.6970563"
+       x="102.21526"
+       y="131.35783" />
+    <g
+       id="g1469"
+       transform="translate(1.2032379)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
+         d="m 120.45051,104.28128 9.96833,1e-5"
+         id="path1502" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
+         d="m 120.45051,134.52996 9.96833,1e-5"
+         id="path1504" />
+    </g>
+    <g
+       id="g1465"
+       transform="translate(-1.2032384)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
+         d="m 92.034013,104.28128 9.968327,1e-5"
+         id="path1500" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
+         d="m 92.034004,134.52996 9.968336,1e-5"
+         id="path1506" />
+    </g>
+  </g>
+</svg>
