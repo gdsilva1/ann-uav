@@ -2,23 +2,23 @@
 
 \subsection{Usage}
 
-An \gls*{uav} has several applications, going from the simplest to the most sophisticated. It can be used since for entertainment, like toys; commercially, to record big shows in arenas; surveillance, to monitor places; and also in engineering, aiding in various context to improve some processing.
+An UAV has several applications, going from the simplest to the most sophisticated. It can be used since for entertainment, like toys; commercially, to record big shows in arenas; surveillance, to monitor places; and also in engineering, aiding in various context to improve some processing.
 
-Due to its portability and autonomy, it can be used to facilitate the delivery o medicines. In this sense, \gls*{uav} can be used for transportation of medical goods in critical times, where other means of transportation may not be feasible.
+Due to its portability and autonomy, it can be used to facilitate the delivery o medicines. In this sense, UAV can be used for transportation of medical goods in critical times, where other means of transportation may not be feasible.
 In the final of 2019, COVID-19 pandemics spread throughout the world, making it difficult to deliver patients their needed medicines~\cite{ramakrishnan2023,mcphillips2022}.
-Besides, risks are inherent to the transportation and in come countries, like the USA, \gls*{uav} usage may be restricted \citep{thiels2015}. 
+Besides, risks are inherent to the transportation and in come countries, like the USA, UAV usage may be restricted \cite{thiels2015}. 
 A strategical way to use them is also welcome.
 
-In the agriculture context, in order to boost the productivity, \gls*{uav} can be used to remotely sense the farming, obtaining information on the state of the fields with non-contact procedures, like nutrient evaluation and soil monitoring; or even for aerial spraying, using pesticide to prevent damages in the plantation \citep{delcerro2021}.
+In the agriculture context, in order to boost the productivity, UAV can be used to remotely sense the farming, obtaining information on the state of the fields with non-contact procedures, like nutrient evaluation and soil monitoring; or even for aerial spraying, using pesticide to prevent damages in the plantation \cite{delcerro2021}.
 
 The main reason for its adoptions is the mobility, low maintenance costs, hovering capacity, ease of deployment, etc. 
 It is widely used for the civil infrastructure, gathering photographs faster than  satellite imagery and with better quality. 
-Combining those benefits with \gls*{ai} can be a powerful tool for the future \citep{sivakumar2021}. 
+Combining those benefits with AI can be a powerful tool for the future \cite{sivakumar2021}. 
 
 
 \subsection{Control Equations}
 
-Considering the \gls*{uav} a quadcopter, as the~\cref{fig:quadcopter_forces_scheme} shows, \citet{geronel2023}, based on the work of \citet{fossen1994}, described the equation of motion for a quadcopter with a payload as being:
+Considering the UAV a quadcopter, as the~\cref{fig:quadcopter_forces_scheme} shows, \textcite{geronel2023}, based on the work of \textcite{fossen1994}, described the equation of motion for a quadcopter with a payload as being:
 %
 \begin{equation}
     \mathbf{M}_{\eta_{c}}(\mathbf{\eta}_c)\ddot{\mathbf{\eta}}_c +
@@ -41,24 +41,24 @@ where \(x_s = \begin{Bmatrix} \dot{\mathbf{\eta}}_c & \mathbf{\eta}_c \end{Bmatr
 %
 \begin{figure}[!htb]
     \centering
-    \caption[Quadcopter dynamic scheme]{Quadcopter dynamic scheme. \(F_i\) and \(T_i\), (\(i=1,2,3,4\)), are the forces and the torque applied in the propeller, respectively. \(\omega_j\) and \(v_j\), (\(j=x,y,z\)), are the momentum and the velocities applied in the \gls*{uav}, respectively. The payload is not represented in the figure.}
+    \caption[Quadcopter Dynamic Scheme]{Quadcopter Dynamic Scheme. \(F_i\) and \(T_i\), (\(i=1,2,3,4\)), are the forces and the torque applied in the propeller, respectively. \(\omega_j\) and \(v_j\), (\(j=x,y,z\)), are the momentum and the velocities applied in the UAV, respectively. The payload is not represented in the figure.}
     \includesvg[pretex=\footnotesize]{figures/3review/uav/uav_forces.svg}
     
-    {\footnotesize Source: prepared by the author.}
+    \fonte{prepared by the author.}
     \label{fig:quadcopter_forces_scheme}
 \end{figure}
 
-All non-explicit matrices and the development of the equations are shown in the \citet{geronel2023} work.
+All non-explicit matrices and the development of the equations are shown in the \textcite{geronel2023} work.
 
 \subsection{Control Algorithm}
 
-\citet{geronel2023} developed a \matlab algorithm to control the quadrotor, as a \emph{white box} method. 
-It controls the \gls*{uav} in three different trajectories: rectangular, circular and linear.
+\textcite{geronel2023} developed a MATLAB algorithm to control the quadrotor, as a \emph{white box} method. 
+It controls the UAV in three different trajectories: rectangular, circular and linear.
 Given \(\mathbf{\tau}\) as the input vector, which represents the position controller \(U_1(t)\) and the attitude controller \(U_2(t),\ U_3(t),\ U_4(t)\), it is able to give a complete overview of the quadrotor's motion.
 The algorithm provides the state space vector \(\mathbf{x}_s\) with the quadrotor position and angles, as their derivatives.
 %
 \begin{align}
-    \mathbf{\tau} &= \begin{Bmatrix}
+    \bm{\tau} &= \begin{Bmatrix}
         U_1 & U_2 & U_3 & U_4
     \end{Bmatrix}^{\top} \\
     \setcounter{MaxMatrixCols}{13}

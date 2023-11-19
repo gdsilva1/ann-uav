@@ -7,7 +7,7 @@
    viewBox="0 0 149.3132 44.096629"
    version="1.1"
    id="svg21"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="nns_scheme.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,12 +25,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="2.8284271"
-     inkscape:cx="249.25514"
-     inkscape:cy="78.66563"
+     inkscape:cx="182.25677"
+     inkscape:cy="60.634407"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
      inkscape:window-x="0"
-     inkscape:window-y="40"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      showguides="true" />
@@ -215,62 +215,40 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';fill:#000000;stroke-width:0.176389;stroke-dasharray:none"
-       x="107.35479"
-       y="105.41476"
+       x="106.3007"
+       y="105.79682"
        id="text149"><tspan
          sodipodi:role="line"
          id="tspan147"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.176389;stroke-dasharray:none"
-         x="107.35479"
-         y="105.41476">NN  1</tspan></text>
-    <rect
-       style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none"
-       id="rect253"
-       width="18.191151"
-       height="6.6970563"
-       x="102.21526"
-       y="100.93276" />
+         x="106.3007"
+         y="105.79682">ANN  1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';fill:#000000;stroke-width:0.176389;stroke-dasharray:none"
-       x="107.09285"
-       y="135.85571"
+       x="106.2372"
+       y="136.0455"
        id="text360"><tspan
          sodipodi:role="line"
          id="tspan358"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';stroke-width:0.176389;stroke-dasharray:none"
-         x="107.09285"
-         y="135.85571">NN  2</tspan></text>
-    <rect
-       style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none"
-       id="rect1189"
-       width="18.191151"
-       height="6.6970563"
-       x="102.21526"
-       y="131.35783" />
-    <g
-       id="g1469"
-       transform="translate(1.2032379)">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
-         d="m 120.45051,104.28128 9.96833,1e-5"
-         id="path1502" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
-         d="m 120.45051,134.52996 9.96833,1e-5"
-         id="path1504" />
-    </g>
-    <g
-       id="g1465"
-       transform="translate(-1.2032384)">
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
-         d="m 92.034013,104.28128 9.968327,1e-5"
-         id="path1500" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
-         d="m 92.034004,134.52996 9.968336,1e-5"
-         id="path1506" />
-    </g>
+         x="106.2372"
+         y="136.0455">ANN  2</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
+       d="m 121.65375,104.28128 9.96833,1e-5"
+       id="path1502" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
+       d="m 121.65375,134.52996 9.96833,1e-5"
+       id="path1504" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
+       d="m 90.830775,104.28128 9.968325,1e-5"
+       id="path1500" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.176389;stroke-dasharray:none;marker-end:url(#Arrow1)"
+       d="m 90.830766,134.52996 9.968334,1e-5"
+       id="path1506" />
   </g>
 </svg>

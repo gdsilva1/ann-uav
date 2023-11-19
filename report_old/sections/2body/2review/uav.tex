@@ -1,0 +1,70 @@
+\section{Unnamed Aerial Vehicle Control}
+
+\subsection{Usage}
+
+An \gls*{uav} has several applications, going from the simplest to the most sophisticated. It can be used since for entertainment, like toys; commercially, to record big shows in arenas; surveillance, to monitor places; and also in engineering, aiding in various context to improve some processing.
+
+Due to its portability and autonomy, it can be used to facilitate the delivery o medicines. In this sense, \gls*{uav} can be used for transportation of medical goods in critical times, where other means of transportation may not be feasible.
+In the final of 2019, COVID-19 pandemics spread throughout the world, making it difficult to deliver patients their needed medicines~\cite{ramakrishnan2023,mcphillips2022}.
+Besides, risks are inherent to the transportation and in come countries, like the USA, \gls*{uav} usage may be restricted \citep{thiels2015}. 
+A strategical way to use them is also welcome.
+
+In the agriculture context, in order to boost the productivity, \gls*{uav} can be used to remotely sense the farming, obtaining information on the state of the fields with non-contact procedures, like nutrient evaluation and soil monitoring; or even for aerial spraying, using pesticide to prevent damages in the plantation \citep{delcerro2021}.
+
+The main reason for its adoptions is the mobility, low maintenance costs, hovering capacity, ease of deployment, etc. 
+It is widely used for the civil infrastructure, gathering photographs faster than  satellite imagery and with better quality. 
+Combining those benefits with \gls*{ai} can be a powerful tool for the future \citep{sivakumar2021}. 
+
+
+\subsection{Control Equations}
+
+Considering the \gls*{uav} a quadcopter, as the~\cref{fig:quadcopter_forces_scheme} shows, \citet{geronel2023}, based on the work of \citet{fossen1994}, described the equation of motion for a quadcopter with a payload as being:
+%
+\begin{equation}
+    \mathbf{M}_{\eta_{c}}(\mathbf{\eta}_c)\ddot{\mathbf{\eta}}_c +
+    \mathbf{C}_{\eta_c}(\mathbf{\nu},\mathbf{\eta}_c)\dot{\mathbf{\eta}_c} +
+    \mathbf{g}_{\eta_c}(\mathbf{\eta}_c) +
+    \mathbf{K}_{\eta_c}(\mathbf{\eta}_c)\mathbf{\eta}_c =
+    \mathbf{\tau}_{\eta_c}(\mathbf{\eta}_c) + 
+    \mathbf{F}_d
+    \label{eq:uav_motion_equation}
+\end{equation}
+%
+where \(\mathbf{M}_{\eta_{c}}(\mathbf{\eta}_c)\) is the inertial matrix; \(\mathbf{C}_{\eta_c}(\mathbf{\nu},\mathbf{\eta}_c)\) is the Coriolis matrix; \(\mathbf{g}_{\eta_c}(\mathbf{\eta}_c)\) is the gravitational vector; \(\mathbf{K}_{\eta_c}(\mathbf{\eta}_c)\) is the stiffness matrix; \(\ \mathbf{\tau}_{\eta_c}(\mathbf{\eta}_c)\) is the control torque; \(\mathbf{F}_d\) is the gust vector; and \(\mathbf{\nu}\) is the velocity generalized coordinate in the body-frame. 
+The~\cref{eq:uav_motion_equation} can be represented in the state space form as:
+%
+\begin{equation}
+    \dot{x}_s = \mathbf{A}_c x_s(t) + \mathbf{B}\mathbf(u)(t) + \mathbf{X}
+\end{equation}
+%
+where \(x_s = \begin{Bmatrix} \dot{\mathbf{\eta}}_c & \mathbf{\eta}_c \end{Bmatrix}^{\top}\) is the state vector; \(\mathbf{B}\mathbf(u)(t)\) is the input vector; \(\mathbf{X}\) is the state vector of gravity; and \(\mathbf{A}_c\) and \(\mathbf{B}\) are the dynamic and input matrices, respectively.
+%
+\begin{figure}[!htb]
+    \centering
+    \caption[Quadcopter dynamic scheme]{Quadcopter dynamic scheme. \(F_i\) and \(T_i\), (\(i=1,2,3,4\)), are the forces and the torque applied in the propeller, respectively. \(\omega_j\) and \(v_j\), (\(j=x,y,z\)), are the momentum and the velocities applied in the \gls*{uav}, respectively. The payload is not represented in the figure.}
+    \includesvg[pretex=\footnotesize]{figures/3review/uav/uav_forces.svg}
+    
+    {\footnotesize Source: prepared by the author.}
+    \label{fig:quadcopter_forces_scheme}
+\end{figure}
+
+All non-explicit matrices and the development of the equations are shown in the \citet{geronel2023} work.
+
+\subsection{Control Algorithm}
+
+\citet{geronel2023} developed a \matlab algorithm to control the quadrotor, as a \emph{white box} method. 
+It controls the \gls*{uav} in three different trajectories: rectangular, circular and linear.
+Given \(\mathbf{\tau}\) as the input vector, which represents the position controller \(U_1(t)\) and the attitude controller \(U_2(t),\ U_3(t),\ U_4(t)\), it is able to give a complete overview of the quadrotor's motion.
+The algorithm provides the state space vector \(\mathbf{x}_s\) with the quadrotor position and angles, as their derivatives.
+%
+\begin{align}
+    \mathbf{\tau} &= \begin{Bmatrix}
+        U_1 & U_2 & U_3 & U_4
+    \end{Bmatrix}^{\top} \\
+    \setcounter{MaxMatrixCols}{13}
+    \mathbf{x}_s &=
+    \begin{Bmatrix}
+        x&y&z&\phi&\theta&\psi&\dot{x}&\dot{y}&\dot{z}&\dot{\phi}&\dot{\theta}&\dot{\psi}
+    \end{Bmatrix}^{\top}
+    \label{eq:xs_vector_matlab}
+\end{align}

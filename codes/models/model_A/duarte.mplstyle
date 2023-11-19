@@ -4,6 +4,9 @@ patch.linewidth:             0.5
 font.family:                 serif
 font.size:                   10
 text.usetex:                 True
+pgf.texsystem:               lualatex
+pgf.rcfonts:                 False
+pgf.preamble:                \usepackage{unicode-math}\usepackage{fontspec}\setmainfont{STIX Two Text}\setmathfont{STIX Two Math}
 axes.linewidth:              0.5
 axes.formatter.limits:       -2,2
 axes.formatter.use_locale:   True

@@ -1,0 +1,101 @@
+% ===============
+%    PACKAGES    
+% ===============
+%
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\renewcommand{\sffamily}{\rmfamily}
+\usepackage{stix2}                                  % fonte serifada
+\usepackage[semibold, proportional]{sourcesanspro}  % fonte sem serifa
+\usepackage{graphicx}                               % permite inserir imagens 
+\usepackage{svg}                                    % permite inserir svg
+\usepackage{xcolor}                                 % habilita as cores
+\usepackage{siunitx}                                % unidade de medidas de forma descomplicada
+\usepackage{subcaption}                             % permite colocar subfiguras
+% \usepackage{microtype}                              % melhora da tipografia
+\usepackage[OT1]{fontenc}                            % define melhorias para o tipo da fonte
+\usepackage[utf8]{inputenc}                         % codificacao do texto
+\usepackage{indentfirst}                            % identa o primeiro paragrafo
+\usepackage{tabularray}                             % permite criacao de tabelas personalizadas
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{bm}
+\usepackage[
+    capitalise,                                     % nome das fig/tab/ em letras maiusculas
+    nameinlink                                      % hyperref no nome das fig/tab
+]{cleveref}
+% ==================
+%    REFERENCIAS    
+% ==================
+\usepackage{csquotes}
+\usepackage[
+    style=abnt,
+    justify,
+    indent,
+    giveninits,
+    extrayear,
+    noslsn,
+    ittitles
+]{biblatex}
+\addbibresource{ref.bib}
+% ==================
+%    DOC OPTIONS    
+% ==================
+% as configuracoes a seguir formatam o estilo dos headings
+\renewcommand{\ABNTEXchapterfont}{\sffamily\bfseries} % estilo do capitulo
+\renewcommand{\ABNTEXchapterfontsize}{\large}         % tamanho fonte capitulo
+\setsecheadstyle{\sffamily\bfseries\large}            % estilo da secao
+\setsubsecheadstyle{\sffamily\large}                  % estilo da subsecao
+\setsubsubsecheadstyle{\sffamily\large}               % estilo da subsubsecao
+\setlength{\afterchapskip}{\baselineskip}             % espacamento abaixo cap.
+\UseTblrLibrary{booktabs}                             % para tabularray
+\hypersetup{
+    colorlinks=true,
+    allcolors=blue!50!black,
+    pdftitle={\@title},
+    pdfauthor={\@author},
+    pdfsubject={\imprimirpreambulo}
+}
+\counterwithin{figure}{chapter}
+\counterwithin{table}{chapter}
+\captionnamefont{\footnotesize\sffamily\bfseries}
+\captiontitlefont{\footnotesize}
+% nas versoes atuais do texlive, o sumario nao compila como deveria,
+% entao a formatacao deve ser feita manualmente
+\usepackage{tocloft}
+\cftsetindents{part}{0em}{\cftlastnumwidth}
+\cftsetindents{chapter}{0em}{\cftlastnumwidth}
+\cftsetindents{section}{0em}{\cftlastnumwidth}
+\cftsetindents{subsection}{0em}{\cftlastnumwidth}
+\cftsetindents{subsubsection}{0em}{\cftlastnumwidth}
+\cftsetindents{paragraph}{0em}{\cftlastnumwidth}
+\cftsetindents{subparagraph}{0em}{\cftlastnumwidth}
+\renewcommand{\cftchapterfont}{\bfseries\MakeUppercase}
+\renewcommand{\cftchapterpagefont}{\normalsize\cftchapterfont}
+\renewcommand{\cftsectionfont}{\bfseries}
+\renewcommand{\cftsectionpagefont}{\cftsectionfont}
+\renewcommand{\cftsubsectionfont}{\normalfont\sffamily}
+\renewcommand{\cftsubsectionpagefont}{\cftsubsectionfont}
+% configuracao das fontes do pseudocodigo
+\algrenewcommand\algorithmicwhile{\textsf{\textbf{\textsf{while}}}}
+\algrenewcommand\algorithmicrequire{\textsf{\textbf{\textsf{Require: }}}}
+\algrenewcommand\algorithmicdo{\textsf{\textbf{\textsf{do}}}}
+\algrenewcommand\algorithmicend{\textsf{\textbf{\textsf{end}}}}
+\algrenewcommand\algorithmicreturn{\textsf{\textbf{\textsf{return}}}}
+% ===============
+%    DOC INFO    
+% ===============
+\titulo{Artificial Neural Networks applied to %
+        Unnamed Aerial Vehicle Control}
+\autor{Gabriel Duarte da Silva}
+\local{Ilha Solteira, SP}
+\data{2023}
+\instituicao{%
+    São Paulo State University (UNESP)
+    \par
+    School of Engineering of Ilha Solteira
+    \par
+    Mechanical Engineering Department
+}
+\tipotrabalho{Iniciação Científica}
+\preambulo{Undergraduate research report for Group of Intelligent Materials and Systems (GMSINT).}
+\orientador{Douglas D. Bueno}

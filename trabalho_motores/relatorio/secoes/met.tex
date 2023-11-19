@@ -1,0 +1,66 @@
+\chapter{Metodologia}
+
+\section{Revisão da Literatura}
+
+Os conceitos teóricos explicados a seguir são baseados nas obras de \textcite{heywood2018internal, ferguson2015internal} e nas notas de aula de
+
+\subsection{Áreas}
+
+\subsection{Coeficiente de Descarga}
+
+O coeficiente de descarga é a razão entre o fluxo de ar que está passando através do componente durante o ensaio, pelo fluxo de ar que deveriapassar pelo componente durante o ensaio caso o escoamento isentrópico.
+%
+\begin{equation}
+    C_d = \frac{V_r}{V_t}
+    \label{eq:coef_descarga}
+\end{equation}
+%
+onde $V_r$ o fluxo de massa real e $V_t$ é o fluxo de massa caso o escoamento fosse isentrópico.
+
+\subsection{Pressão Média}
+
+A pressão média indicada (IMEP) é aquela determinada baseada na geometria do motor e considerando as transformações do ciclo como irreversiveis. 
+A pressão média de atrito (FMEP) indica a pressão perdida devido ao atrito e o bombeamento.
+A pressão média efetiva (BMEP) é a pressão que o motor de fato tem trabalho líquido.
+A BMEP pode ser calculada como mostra a seguir:
+%
+\begin{equation}
+    \text{BMEP} = \frac{120 \dot{W}_b}{n V_d N}
+    \label{eq:bmep}
+\end{equation}
+%
+onde $\dot{W}_b$ e a potência, $n$ é quantidade de cilindros do motor, $V_d$ e o volume deslocado e $N$ é a rotação do motor em RPM.
+
+\subsection{Carga Lateral}
+
+A carga lateral do pistão é obtida através da análise de forças no pistão a partir das leis da mecânica dos sólidos e é dada por:
+%
+\begin{equation}
+    F_L = \frac{\pi d P (R/L) \sin\alpha}{4\sqrt{1-(R/L)^2\sin^2\alpha}}
+    \label{eq:carga_lateral}
+\end{equation}
+%
+onde $d$ é o diâmetro do pistão, $P$ é a pressão exercida, $R$ é o comprimento da biela, $L$ é o comprimento da manivela e $\alpha$ é o ângulo percorrido pela manivela a partir do ponto morto superior (PMS).
+
+\subsection{Velocidade do pistão}
+
+A partir de geometria simples, é possível determinar a posição do cilindro em relação ao ângulo de rotação da manivela. Sabendo que $\alpha=\omega t$, determina-se a velocidade através da derivada da posicão do cilindro:
+%
+\begin{equation}
+    v(t) = R \omega \sin{\left(\omega t \right)} + \frac{R^{2} \omega \sin{\left(\omega t \right)} \cos{\left(\omega t \right)}}{L \sqrt{1 - \dfrac{R^{2} \sin^{2}{\left(\omega t \right)}}{L^{2}}}}
+    \label{eq:velocidade}
+\end{equation}
+
+\subsection{Número de Mach}
+
+O número de Mach é um termo adimensional definido pela seguinte expressão:
+%
+\begin{equation}
+    \ma = \frac{V}{c} = \frac{\text{velocidade do escoamento}}{\text{velocidade do som}}
+    \label{eq:mach}
+\end{equation}
+%
+que descreve a velocidade do escoamento. Quando $\ma = 1$ o escoamento é considerado sônico; quando $\ma < 1$, subsônico; quando $\ma > 1$, supersônico e quando $\ma \gg 1$, hipersônico \cite{cengel2015mecanica}.
+\section{Montagem Experimental}
+
+\section{Procedimento Experimental}

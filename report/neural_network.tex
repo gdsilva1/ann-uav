@@ -1,0 +1,51 @@
+\documentclass[
+    12pt,
+    % openany,
+    % oneside,
+    openright,
+    twoside,
+    a4paper,
+    english,
+    brazil,
+    chapter=TITLE,
+    fleqn,
+    % sumario=tradicional
+]{abntex2}
+
+\input{configs.tex}
+
+\begin{document}
+\selectlanguage{english}
+
+\imprimirfolhaderosto
+\clearpage
+\chapter*{}
+\listoffigures
+\clearpage
+% \begin{siglas}
+%     \item[AI] Artificial Intelligence
+%     \item[SHM] Structural Health Monitoring
+%     \item[ANN] Artificial Neural Network
+%     \item[UAV] Unmanned Aerial Vehicle
+% \end{siglas}
+\tableofcontents
+
+\textual
+\input{sections/2body/1intro/intro.tex}
+
+\input{sections/2body/2review/intro.tex}
+\input{sections/2body/2review/uav.tex}
+\input{sections/2body/2review/nn.tex}
+
+\input{sections/2body/3methodology/intro.tex}
+\input{sections/2body/3methodology/softwares.tex}
+\input{sections/2body/3methodology/uav.tex}
+
+\input{sections/2body/4results/intro.tex}
+\input{sections/2body/4results/uav.tex}
+
+\input{sections/2body/5conclusion/intro.tex}
+
+\printbibliography
+
+\end{document}
