@@ -1,1 +1,4 @@
-plt.style.use("duarte")
+df = pd.read_csv('dados.xlsx',
+                 header=0)
+
+print(df.tail())

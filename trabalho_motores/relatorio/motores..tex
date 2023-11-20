@@ -1,6 +1,7 @@
 \documentclass[
     12pt,                % tamanho da fonte
-    brazil               % idioma
+    brazil,              % idioma
+    a4paper,             % tamanho do papel
     openany,             % capitulos podem comecar em qualquer pagina
     oneside,             % para impressao de um unico lado da folha
     chapter=TITLE,       % deixa a letra dos capitulos em maiuscula
@@ -21,7 +22,9 @@
 \usepackage[utf8]{inputenc}  % codificacao do texto
 \usepackage{indentfirst}     % identa o primeiro paragrafo
 \usepackage{tabularray}      % permite criacao de tabelas personalizadas
-\usepackage{xcolor}
+\usepackage{xcolor}          % cores no documento
+\usepackage{subfig}
+\usepackage{svg}
 \usepackage[locale=DE]{siunitx}
 \usepackage[
     capitalise,              % nome das fig/tab/ em letras maiusculas
@@ -70,9 +73,11 @@
 \hypersetup{
     colorlinks=true,
     allcolors=blue!50!black,
-    pdftitle={\@title},
-    pdfauthor={\@author},
-    pdfsubject={\imprimirpreambulo}
+    pdftitle={Relatório de Motores},
+    pdfauthor={Alice, Gabriel, Higor, Matheus, Yuri},
+    pdfsubject={Trabalho relativo a parte da nota atribuída na disciplina de Motores de Combustão Interna},
+    pdfkeywords={ensaio de fluxo, ensaio dinamométrico, motor de combustão interna},
+    pdfcreator={Gabriel D. Silva}
 }
 \captionnamefont{\footnotesize\sffamily\bfseries} % formatacao do titulo das figuras
 \captiontitlefont{\footnotesize} % formatacao do texto do titulo das figuras
@@ -86,7 +91,7 @@
     \begin{center}\sffamily
         \includegraphics{./figuras/feis_unesp.pdf}
         \vfill
-        {\bfseries\large AVALIAÇÃO DO MOTOR JOHN DEERE 6068 TIER 3}
+        {\bfseries\large TRABALHO DE MOTORES DE COMBUSTÃO INTERNA}
         \vfill
         \begin{tabular}{ll}
             Nome & RA \\ \hline
@@ -108,10 +113,10 @@
 \begin{document}
 %
 \imprimircapa\clearpage    % adicao da capa
-\chapter*{}
-\listoffigures\clearpage   % adicao da lista de figuras
-\listoftables\clearpage    % adicao da lista de tabelas
-\tableofcontents\clearpage % adicao do sumario
+% \chapter*{}
+\listoffigures*\clearpage   % adicao da lista de figuras
+\listoftables*\clearpage    % adicao da lista de tabelas
+\tableofcontents*\clearpage % adicao do sumario
 
 \textual
 
