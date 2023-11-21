@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="69.694771mm"
-   height="62.488522mm"
-   viewBox="0 0 69.694772 62.488522"
+   width="8.0108461cm"
+   height="7.1825466cm"
+   viewBox="0 0 80.108462 71.825467"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="venn_dl.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,42 +25,21 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="2.0560856"
-     inkscape:cx="2.9181664"
-     inkscape:cy="108.94488"
-     inkscape:window-width="1663"
-     inkscape:window-height="743"
-     inkscape:window-x="128"
-     inkscape:window-y="126"
-     inkscape:window-maximized="0"
+     inkscape:zoom="1.4538721"
+     inkscape:cx="84.945574"
+     inkscape:cy="168.85942"
+     inkscape:window-width="1920"
+     inkscape:window-height="1003"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <sodipodi:guide
-       position="-44.921885,66.217682"
-       orientation="-1,0"
-       id="guide686"
-       inkscape:locked="false"
-       inkscape:label=""
-       inkscape:color="rgb(0,134,229)" />
-    <sodipodi:guide
-       position="114.60958,136.73599"
+       position="114.62205,136.72351"
        orientation="-1,0"
        id="guide738"
        inkscape:locked="false"
        inkscape:label=""
-       inkscape:color="rgb(0,134,229)" />
-    <sodipodi:guide
-       position="98.609582,136.73599"
-       orientation="-1,0"
-       id="guide367"
-       inkscape:label=""
-       inkscape:locked="false"
-       inkscape:color="rgb(0,134,229)" />
-    <sodipodi:guide
-       position="-28.921886,66.217682"
-       orientation="-1,0"
-       id="guide369"
-       inkscape:label=""
-       inkscape:locked="false"
        inkscape:color="rgb(0,134,229)" />
   </sodipodi:namedview>
   <defs
@@ -69,60 +48,60 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-138.82264,-129.86466)">
+     transform="translate(-138.81017,-129.85218)">
     <ellipse
-       style="fill:none;stroke:#000000;stroke-width:0.167021;stroke-dasharray:none;paint-order:markers fill stroke;fill-opacity:1"
+       style="fill:#ff00ff;fill-opacity:0.1;stroke:#000000;stroke-width:0.191977;stroke-dasharray:none;paint-order:markers fill stroke"
        id="path298"
-       cx="173.67003"
-       cy="161.10892"
-       rx="34.763874"
-       ry="31.160749" />
+       cx="178.8644"
+       cy="165.76492"
+       rx="39.958244"
+       ry="35.816746" />
     <ellipse
-       style="fill:none;stroke:#000000;stroke-width:0.169433;stroke-dasharray:none;paint-order:markers fill stroke"
-       id="circle354"
-       cx="173.67003"
-       cy="167.22325"
-       rx="24.883879"
-       ry="22.953634" />
-    <ellipse
-       style="fill:none;stroke:#000000;stroke-width:0.165845;stroke-dasharray:none;paint-order:markers fill stroke"
+       style="fill:none;fill-opacity:0.1;stroke:#000000;stroke-width:0.190625;stroke-dasharray:none;paint-order:markers fill stroke"
        id="circle356"
-       cx="173.67003"
-       cy="172.72182"
-       rx="17.384867"
-       ry="15.359224" />
+       cx="178.8644"
+       cy="179.11301"
+       rx="19.982489"
+       ry="17.654179" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;letter-spacing:0px;text-anchor:middle;fill:#000000;stroke-width:0"
-       x="173.64462"
-       y="173.7738"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.86587px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;letter-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0;stroke:none"
+       x="178.83521"
+       y="180.32217"
        id="text457-36"><tspan
          sodipodi:role="line"
          id="tspan455-7"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;fill:#000000;stroke:none;stroke-width:0"
-         x="173.64462"
-         y="173.7738">Deep Learning</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.86587px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0"
+         x="178.83521"
+         y="180.32217">Deep Learning</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;letter-spacing:0px;text-anchor:middle;fill:#000000;stroke-width:0"
-       x="173.62558"
-       y="155.77994"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.86587px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;letter-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0;stroke:none"
+       x="178.81331"
+       y="159.63969"
        id="text457-3"><tspan
          sodipodi:role="line"
          id="tspan455-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;fill:#000000;stroke:none;stroke-width:0"
-         x="173.62558"
-         y="155.77994">Machine Learning</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.86587px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0"
+         x="178.81331"
+         y="159.63969">Machine Learning</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;letter-spacing:0px;text-anchor:middle;fill:#000000;stroke-width:0"
-       x="173.66368"
-       y="140.90501"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.86587px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;text-align:center;letter-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0;stroke:none"
+       x="178.8571"
+       y="142.54218"
        id="text457-6"><tspan
          sodipodi:role="line"
          id="tspan455-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;fill:#000000;stroke:none;stroke-width:0"
-         x="173.66368"
-         y="140.90501">Artificial Intelligence</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.86587px;font-family:NewComputerModern;-inkscape-font-specification:NewComputerModern;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0"
+         x="178.8571"
+         y="142.54218">Artificial Intelligence</tspan></text>
+    <ellipse
+       style="fill:none;fill-opacity:0.1;stroke:#000000;stroke-width:0.194749;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="circle354"
+       cx="178.8644"
+       cy="172.79285"
+       rx="28.601994"
+       ry="26.383333" />
   </g>
 </svg>

@@ -53,23 +53,22 @@
      id="defs1">
     <marker
        style="overflow:visible"
-       id="Arrow1"
+       id="Triangle"
        refX="0"
        refY="0"
        orient="auto-start-reverse"
-       inkscape:stockid="Arrow1"
-       markerWidth="4.0606604"
-       markerHeight="6.7071066"
-       viewBox="0 0 4.0606602 6.7071068"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
        inkscape:isstock="true"
        inkscape:collect="always"
        preserveAspectRatio="xMidYMid">
       <path
-         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
-         d="M 3,-3 0,0 3,3"
-         id="path5057"
-         transform="rotate(180,0.125,0)"
-         sodipodi:nodetypes="ccc" />
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
     </marker>
   </defs>
   <g
@@ -84,7 +83,7 @@
        cy="70.792183"
        r="3.607981" />
     <path
-       style="fill:#f2f2f2;stroke:#000000;stroke-width:0.176;stroke-dasharray:none;marker-end:url(#Arrow1);paint-order:normal"
+       style="fill:#f2f2f2;stroke:#000000;stroke-width:0.176;stroke-dasharray:none;marker-end:url(#Triangle);paint-order:normal"
        d="m 144.83707,70.792181 h 12.42337"
        id="path3-6" />
     <text
@@ -105,7 +104,7 @@
        cy="87.001671"
        r="3.607981" />
     <path
-       style="fill:#f2f2f2;stroke:#000000;stroke-width:0.176;stroke-dasharray:none;marker-end:url(#Arrow1);paint-order:normal"
+       style="fill:#f2f2f2;stroke:#000000;stroke-width:0.176;stroke-dasharray:none;marker-end:url(#Triangle);paint-order:normal"
        d="m 144.83707,87.001672 h 12.42337"
        id="path10" />
     <text
@@ -255,7 +254,7 @@
        r="3.607981"
        transform="scale(-1)" />
     <path
-       style="fill:#f2f2f2;stroke:#000000;stroke-width:0.176;stroke-dasharray:none;marker-end:url(#Arrow1);paint-order:normal"
+       style="fill:#f2f2f2;stroke:#000000;stroke-width:0.176;stroke-dasharray:none;marker-end:url(#Triangle);paint-order:normal"
        d="M 45.306182,55.022579 H 57.729551"
        id="path3" />
     <text
@@ -288,7 +287,7 @@
        r="3.607981"
        transform="scale(-1)" />
     <path
-       style="fill:#f2f2f2;stroke:#000000;stroke-width:0.176;stroke-dasharray:none;marker-end:url(#Arrow1);paint-order:normal"
+       style="fill:#f2f2f2;stroke:#000000;stroke-width:0.176;stroke-dasharray:none;marker-end:url(#Triangle);paint-order:normal"
        d="M 45.306182,71.207467 H 57.729551"
        id="path4" />
     <text
@@ -321,7 +320,7 @@
        r="3.607981"
        transform="scale(-1)" />
     <path
-       style="fill:#f2f2f2;stroke:#000000;stroke-width:0.176;stroke-dasharray:none;marker-end:url(#Arrow1);paint-order:normal"
+       style="fill:#f2f2f2;stroke:#000000;stroke-width:0.176;stroke-dasharray:none;marker-end:url(#Triangle);paint-order:normal"
        d="M 45.306182,87.392355 H 57.729551"
        id="path6" />
     <text
@@ -354,7 +353,7 @@
        r="3.607981"
        transform="scale(-1)" />
     <path
-       style="fill:#f2f2f2;stroke:#000000;stroke-width:0.176;stroke-dasharray:none;marker-end:url(#Arrow1);paint-order:normal"
+       style="fill:#f2f2f2;stroke:#000000;stroke-width:0.176;stroke-dasharray:none;marker-end:url(#Triangle);paint-order:normal"
        d="M 45.306182,103.57724 H 57.729551"
        id="path28" />
     <text
