@@ -4,13 +4,99 @@
 
 As condições iniciais proposta foram: (i) para o ensaio de fluxo no cabeçote do motor EA211 TSI, a pressão é de $25 \text{ pol \ce{H2O}}  \approx  \SI{6,2271}{kPa}$, variando a abertura das válvulas entre 0 e 10 mm, com passo de 1 mm; (ii) para o ensaio dinamométrico, o motor avaliado é um John Deere 6068 Tier 3, com condição de carga de 75\%.
 
+
+\begin{table}[!htb]\footnotesize
+    \centering
+    \caption{Parametros Geométricos das Válvulas de Escape e Admissão}
+    \begin{tblr}{
+            row{odd} = rosa!10,
+            row{1-2} = {bg=white},
+            colspec={ccccccc}
+        }
+    \toprule
+    \SetCell[r=2]{c} Medida & \SetCell[c=3]{c} Escape & & & \SetCell[c=3]{c} Admissão & & & \\
+      & {$D_v$ \\ (mm)} & {$D_h$ \\ (mm)} & {$D_g$ \\ (mm)} & {$D_v$ \\ (mm)} & {$D_h$ \\ (mm)} & {$D_g$ \\ (mm)} \\
+    \midrule
+    1 & 24,88 & 4,93 & 20,48 & 28,44 & 5,10 & 24,60 \\
+    2 & 25,10 & 4,90 & 19,85 & 28,40 & 5,00 & 24,35 \\
+    3 & 24,90 & 4,90 & 20,50 & 28,45 & 4,95 & 24,40 \\
+    4 & 24,47 & 5,00 & --- & 28,00 & 5,00 & --- \\
+    Média & 24,84 & 4,93 & 20,28 & 28,33 & 5,01 & 24,45 \\
+    \bottomrule
+    \end{tblr}
+    \label{tab:dados_medidos}
+\end{table}
+
+
 \section{Resultados calculados}
 
 \subsection{Ensaio de Fluxo no Cabeçote}
 
+\begin{table}[!htb]\footnotesize
+    \centering
+    \caption[Dados Obtidos pela Bancada de Fluxo]{Dados Obtidos pela Bancada de Fluxo. Os dados foram obtidos através do próprio software da bancada de fluxo Servitec WinSSFluxo. AVA: admissão na válvula de admissão; EVE: exaustão na válvula de escape; EVA: exaustão na válvula de admissão.}
+        \begin{tblr}{
+            row{odd} = rosa!10,
+            row{1-2} = {bg=white},
+            colspec={ccccccccc}
+        }
+        \toprule
+         \SetCell[c=3]{c} AVA & & & \SetCell[c=3]{c} EVE & & & \SetCell[c=3]{c} EVA & & &  \\
+         {Pressão \\ (pol \ce{H2O})} & {Abertura \\ (mm)} & {Fluxo \\ (cfm)} & {Pressão \\ (pol \ce{H2O})} & {Abertura \\ (mm)} & {Fluxo \\ (cfm)} & {Pressão \\ (pol \ce{H2O})} & {Abertura \\ (mm)} & {Fluxo \\ (cfm)}\\
+        \midrule
+        25,00 & 0 & 0,00 & 25,00 & 0 & 0,00 & 25,00 & 0 & 0,00 \\
+        25,03 & 1 & 29,11 & 25,01 & 1 & 25,97 & 25,01 & 1 & 24,12 \\
+        25,03 & 2 & 54,12 & 25,02 & 2 & 53,92 & 25,01 & 2 & 49,43 \\
+        25,02 & 3 & 74,55 & 25,02 & 3 & 75,77 & 25,02 & 3 & 72,81 \\
+        25,04 & 4 & 87,17 & 25,01 & 4 & 91,36 & 25,02 & 4 & 87,03 \\
+        25,03 & 5 & 94,37 & 25,02 & 5 & 105,32 & 25,02 & 5 & 92,68 \\
+        25,04 & 6 & 98,87 & 25,04 & 6 & 115,26 & 25,02 & 6 & 94,28 \\
+        25,04 & 7 & 101,04 & 25,03 & 7 & 119,16 & 25,02 & 7 & 95,16 \\
+        25,02 & 8 & 102,35 & 25,02 & 8 & 120,74 & 25,02 & 8 & 95,86 \\
+        24,99 & 9 & 103,70 & 24,92 & 9 & 121,74 & 25,02 & 9 & 96,33 \\
+        25,01 & 10 & 104,07 & 25,04 & 10 & 121,68 & 25,01 & 10 & 96,74 \\
+        \bottomrule
+        \end{tblr}
+     \fonte{elaborado pelos autores.}
+    \label{tab:my_label}
+\end{table}
+
+
+\begin{figure}[!htb]
+    \centering
+    \caption[Fluxo em Relação à Abertura da Válvula]{Fluxo em Relação à Abertura da Válvula. Os dados foram obtidos através do próprio software da bancada de fluxo Servitec WinSSFluxo.}
+    \import{./figuras/}{levante_fluxo.pgf}
+    \fonte{elaborado pelos autores.}
+    \label{fig:fluxo_levante}
+\end{figure}
+
 \subsubsection*{Áreas}
 
+\begin{figure}[!htb]
+    \centering
+    \caption[Área de Cortina em Relação à Abertura da Válvula]{Área de Cortina em Relação à Abertura da Válvula. A área de cortina aumenta gradativamente conforme a abertura da válvula aumenta, pois ela é uma função da abertura.}
+    \import{./figuras/}{levante_ac.pgf}
+    \fonte{elaborado pelos autores.}
+    \label{fig:fluxo_ac}
+\end{figure}
+
 \subsubsection*{Coeficiente de descarga}
+
+\begin{figure}[!htb]
+    \centering
+    \caption[Coeficiente de Descarga em Relação à Abertura da Válvula (Área de Garganta)]{Coeficiente de Descarga em Relação à Abertura da Válvula. Neste caso, a área considerada é a área de garganta.}
+    \import{./figuras/}{levante_cd_ag.pgf}
+    \fonte{elaborado pelos autores.}
+    \label{fig:fluxo_cd_ag}
+\end{figure}
+
+\begin{figure}[!htb]
+    \centering
+    \caption[Coeficiente de Descarga em Relação à Abertura da Válvula (Área Mínima)]{Coeficiente de Descarga em Relação à Abertura da Válvula. Neste caso, a área considerada é a área mínima quando compara-se a área de garganta e a área de cortina.}
+    \import{./figuras/}{levante_cd_amin.pgf}
+    \fonte{elaborado pelos autores.}
+    \label{fig:fluxo_cd_amin}
+\end{figure}
 
 
 \subsection{Ensaio Dinamométrico}

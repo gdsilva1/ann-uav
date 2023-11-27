@@ -9,7 +9,7 @@ Os conceitos teóricos explicados a seguir são baseados nas notas de aula, na o
 Parâmetros geométricos são de suma importância para o motor. 
 Áreas relacionadas às válvulas são necessárias para a compreensão do desempenho do motor.
 Á área de cortina é a região ao redor da haste da válvula que é projetada para direcionar o fluxo de fluidos, como mostra a~\cref{fig:area_cortina}.
-A área de garganta representa a seção mais estreita do canal de passagem, como mostra a~\cref{fig:area_garganta} influenciando a quantidade de massa fresca que entra na câmara de combustão.
+A área de garganta representa\ldots, como mostra a~\cref{fig:area_garganta} influenciando a quantidade de massa fresca que entra na câmara de combustão.
 
 
 \begin{figure}[!htb]
@@ -18,7 +18,6 @@ A área de garganta representa a seção mais estreita do canal de passagem, com
         \centering
         \caption{Área de Cortina em uma Válvula}
         \includesvg[width=0.5\textwidth]{figuras/area_de_cortina.svg}
-        \nota{A área hachurada representa a área de cortina.}
         \fonte{elaborado pelos autores.}
         \label{fig:area_cortina}
      \end{minipage}
@@ -27,15 +26,27 @@ A área de garganta representa a seção mais estreita do canal de passagem, com
         \centering
         \caption{Área de Garganta em uma Válvula}
         \includesvg[width=0.5\textwidth]{figuras/area_de_garganta.svg}
-        \nota{A área hachurada representa a área de garganta.}
         \fonte{elaborado pelos autores.}
         \label{fig:area_garganta}
      \end{minipage}
    \end{figure}
 
+A área de cortina é dada por: 
+%
+\begin{equation}
+    A_c = \pi D_v L
+\end{equation}
+%
+onde $D_v$ é o diâmetro da válvula e $L$ é abertura da d válvula. A área de garganta é dada por:
+%
+\begin{equation}
+    A_g = \frac{\pi}{4} \left(D^2_v - D^2_h\right)
+\end{equation}
+%
+onde $D_h$ é o diâmetro da haste da válvula.
 \subsection{Coeficiente de Descarga}
 
-O coeficiente de descarga é a razão entre o fluxo de ar que está passando através do componente durante o ensaio, pelo fluxo de ar que deveriapassar pelo componente durante o ensaio caso o escoamento isentrópico.
+O coeficiente de descarga é a razão entre o fluxo de ar que está passando através do componente durante o ensaio, pelo fluxo de ar que deveria passar pelo componente durante o ensaio caso o escoamento isentrópico e é dado por:
 %
 \begin{equation}
     C_d = \frac{V_r}{V_t}
@@ -52,7 +63,7 @@ A pressão média efetiva (BMEP) é a pressão que o motor de fato tem trabalho 
 A BMEP pode ser calculada como mostra a seguir:
 %
 \begin{equation}
-    \text{BMEP} = \frac{120 \dot{W}_b}{n V_d N}
+    \text{BMEP} = \text{IMEP} - \text{FMEP} =  \frac{120 \dot{W}_b}{n V_d N}
     \label{eq:bmep}
 \end{equation}
 %

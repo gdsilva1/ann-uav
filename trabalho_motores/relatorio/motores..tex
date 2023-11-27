@@ -14,8 +14,9 @@
 % ===============
 %
 \usepackage[version=4]{mhchem}
+\renewcommand{\sffamily}{\rmfamily}
 \usepackage[scaled]{helvet}  % fonte nao serifada 
-\usepackage{stix2}           % fonte serifada
+\usepackage{newtxtext, newtxmath}           % fonte serifada
 \usepackage{graphicx}        % permite inserir imagens 
 % \usepackage{microtype}      % melhora da tipografia (quebra o sumario)
 \usepackage[T1]{fontenc}     % define melhorias para o tipo da fonte
@@ -23,30 +24,20 @@
 \usepackage{indentfirst}     % identa o primeiro paragrafo
 \usepackage{tabularray}      % permite criacao de tabelas personalizadas
 \usepackage{xcolor}          % cores no documento
+\usepackage{import}
+\usepackage{siunitx}
+\usepackage{sansmath}
+\usepackage{tikz, pgf}
 \usepackage{subfig}
 \usepackage{svg}
-\usepackage[locale=DE]{siunitx}
 \usepackage[
     capitalise,              % nome das fig/tab/ em letras maiusculas
     nameinlink               % hyperref no nome das fig/tab
 ]{cleveref}
 \usepackage{csquotes}
-% nas versoes atuais do texlive, o sumario nao compila como deveria,
-% entao a formatacao deve ser feita manualmente
-% \usepackage{tocloft}
-% \cftsetindents{part}{0em}{\cftlastnumwidth}
-% \cftsetindents{chapter}{0em}{\cftlastnumwidth}
-% \cftsetindents{section}{0em}{\cftlastnumwidth}
-% \cftsetindents{subsection}{0em}{\cftlastnumwidth}
-% \cftsetindents{subsubsection}{0em}{\cftlastnumwidth}
-% \cftsetindents{paragraph}{0em}{\cftlastnumwidth}
-% \cftsetindents{subparagraph}{0em}{\cftlastnumwidth}
-% \renewcommand{\cftchapterfont}{\bfseries\MakeUppercase}
-% \renewcommand{\cftchapterpagefont}{\normalsize\cftchapterfont}
-% \renewcommand{\cftsectionfont}{\bfseries}
-% \renewcommand{\cftsectionpagefont}{\cftsectionfont}
 \renewcommand{\cftsubsectionfont}{\normalfont\sffamily}
 \renewcommand{\cftsubsectionpagefont}{\cftsubsectionfont}
+\newcommand{\mathdefault}{}
 %
 % ==================
 %    REFERENCIAS    
@@ -70,6 +61,8 @@
 \setsubsubsecheadstyle{\sffamily\large}               % estilo da subsubsecao
 \setlength{\afterchapskip}{\baselineskip}             % espacamento abaixo cap.
 \UseTblrLibrary{booktabs}                             % para tabularray
+\sisetup{locale=DE}
+
 \hypersetup{
     colorlinks=true,
     allcolors=blue!50!black,
@@ -82,6 +75,7 @@
 \captionnamefont{\footnotesize\sffamily\bfseries} % formatacao do titulo das figuras
 \captiontitlefont{\footnotesize} % formatacao do texto do titulo das figuras
 \newcommand{\ma}{\text{Ma}}
+\definecolor{rosa}{rgb}{1,0,1}
 %
 % ===========
 %    CAPA    
@@ -96,6 +90,7 @@
         \begin{tabular}{ll}
             Nome & RA \\ \hline
             Alícia Ramos Modesto                  & 181052725 \\
+            Ednei Soares de Azevedo Júnior        & 191052566 \\
             Gabriel Duarte da Silva               & 182054047 \\
             Higor Balsarini                       & 182055302 \\
             Matheus Henrique Panini               & 182053857 \\
