@@ -1,0 +1,240 @@
+\chapter{Resultados e Discussão}
+
+\section{Resultados medidos}
+
+Para o ensaio de fluxo no cabeçote, foi necessário determinar os parâmetros geométricos relativos às válvulas, tanto de escape como a de admissão, visto que possuem diferentes dimensões; e coletar a vazão do fluxo de ar através da bancada de ensaios de fluxo.
+Os parâmetros geométricos das válvulas de admissão e escape foram coletados e estão dispostos na~\cref{tab:dados_geometricos}. 
+Os cálculos que envolvem esses parâmetros foram realizados utilizando a média aritmética de cada um deles.
+Já com os ensaios realizados na bancada de ensaios de fluxo, foram obtidos os dados da~\cref{tab:dados_coletados_bancada}. Eles podem ser melhores visualizados na~\cref{fig:fluxo_levante}.
+%
+\begin{table}[!htb]
+    \centering\footnotesize
+    \caption{Parâmetros Geométricos das Válvulas}
+    \begin{tblr}{
+        row{odd} = azul!10, 
+        row{1-2} = white,
+        width=16cm,
+        colspec = {*{6}{X[c]}}
+    }
+    \toprule
+    \SetCell[c=3]{c} Admissão & & & \SetCell[c=3]{c} Exaustão & & & \\
+    {$D_v$ \\ (mm)} & {$D_h$ \\ (mm)} & {$D_g$ \\ (mm)} & {$D_v$ \\ (mm)} & {$D_h$ \\ (mm)} & {$D_g$ \\ (mm)} \\
+    \midrule
+    24,88 & 4,93 & 20,48 & 28,44 & 5,10 & 24,60 \\
+    25,10 & 4,90 & 19,85 & 28,40 & 5,00 & 24,35 \\
+    24,90 & 4,90 & 20,50 & 28,45 & 4,95 & 24,40 \\
+    24,47 & 5,00 & --- & 28,00 & 5,00 & --- \\
+    \bottomrule
+    \end{tblr}
+    \nota{AVA: admissão na válvula de admissão, EVE: escape na válvula de escape, EVA: escape na válvula de admissão.}
+    \fonte{elaborado pelos autores.}
+    
+    \label{tab:dados_geometricos}
+\end{table}
+%
+\begin{table}[!htb]
+    \centering\footnotesize
+    \caption{Dados Coletados pela Bancada de Fluxo}
+    \begin{tblr}{
+        row{odd} = azul!10, 
+        row{1-2} = {bg=white, font=\scriptsize},
+        width=16cm,
+        colspec = {*{9}{X[c]}}
+    }
+    \toprule
+    \SetCell[c=3]{c} AVA & & & \SetCell[c=3]{c} EVE & & & \SetCell[c=3]{c} EVA & & & \\
+     {Pressão \\ (in\ce{H2O})} & {Abertura \\ (mm)} & {Fluxo \\ (cfm)} & {Pressão \\ (in\ce{H2O})} & {Abertura \\ (mm)} & {Fluxo \\ (cfm)} & {Pressão \\ (in\ce{H2O})} & {Abertura \\ (mm)} & {Fluxo \\ (cfm)} \\
+     \midrule
+     25,00 & 0 & 0,00 & 25,00 & 0 & 0,00 & 25,00 & 0 & 0,00 \\
+     25,03 & 1 & 29,11 & 25,01 & 1 & 25,97 & 25,01 & 1 & 24,12 \\
+     25,03 & 2 & 54,12 & 25,02 & 2 & 53,92 & 25,01 & 2 & 49,43 \\
+     25,02 & 3 & 74,55 & 25,02 & 3 & 75,77 & 25,02 & 3 & 72,81 \\
+     25,04 & 4 & 87,17 & 25,01 & 4 & 91,36 & 25,02 & 4 & 87,03 \\
+     25,03 & 5 & 94,37 & 25,02 & 5 & 105,32 & 25,02 & 5 & 92,68 \\
+     25,04 & 6 & 98,87 & 25,04 & 6 & 115,26 & 25,02 & 6 & 94,28 \\
+     25,04 & 7 & 101,04 & 25,03 & 7 & 119,16 & 25,02 & 7 & 95,16 \\
+     25,02 & 8 & 102,35 & 25,02 & 8 & 120,74 & 25,02 & 8 & 95,86 \\
+     24,99 & 9 & 103,70 & 24,92 & 9 & 121,74 & 25,02 & 9 & 96,33 \\
+     25,01 & 10 & 104,07 & 25,04 & 10 & 121,68 & 25,01 & 10 & 96,74 \\
+     \bottomrule
+    \end{tblr}
+    \nota{AVA: admissão na válvula de admissão, EVE: escape na válvula de escape, EVA: escape na válvula de admissão.}
+    \fonte{elaborado pelos autores.}
+    
+    \label{tab:dados_coletados_bancada}
+\end{table}
+%
+A partir da \cref{fig:fluxo_levante}, nota-se que, para pequenos levantes da válvula, o fluxo cresce proporcionalmente a abertura da válvula. 
+Isto ocorre porque para pequenos levantes a área que limita o fluxo é a área de cortina. 
+Contudo, ao abrir a válvula, a área que limitará o fluxo passará a ser a área de garganta.
+Também pode ser visto que para a região de maiores levantes de válvula o fluxo tende a ser constante, mesmo com a contínua abertura da válvula.
+Por outro lado, o gráfico também indica que, mesmo a válvula de admissão sendo maior que a de escape ela possui um fluxo menor. Isto ocorre porque na admissão os dutos são menores do que no escape, já que no escape necessita-se de maior facilidade para expelir os gases, enquanto na admissão deseja-se uma cinética nos gases de modo que, mesmo quando o pistão estiver no PMS, ainda seja possível colocar mais massa de ar no cilindro.
+%
+\begin{figure}[!htb]
+    \centering
+    \caption[Fluxo em Relação à Abertura da Válvula]{Fluxo em Relação à Abertura da Válvula. Os dados foram obtidos através do próprio software da bancada de fluxo Servitec WinSSFluxo.}
+    \import{./figuras/}{levante_fluxo.pgf}
+    \nota{AVA: admissão na válvula de admissão, EVE: escape na válvula de escape, EVA: escape na válvula de admissão.}
+    \fonte{elaborado pelos autores.}
+    \label{fig:fluxo_levante}
+\end{figure}
+%
+
+Já em relação aos dados do motor John Deere, modelo 6068 Tier 3, os parâmetros geométricos foram retirados do manual do fabricante e os dados coletados foram retirados pelo sistema de controle durante o ensaio.
+
+\section{Resultados calculados}
+
+\subsection{Ensaio de Fluxo no Cabeçote}
+
+\subsubsection*{Áreas}
+
+A~\cref{fig:levante_ac} apresenta o comportamento da área da cortina em relação à abertura da válvula. Conforme ilustrado na~\cref{eq:area_cortina}, a área da cortina é diretamente proporcional ao levante da válvula. 
+Dessa forma, à medida que a válvula aumenta sua abertura, a área da cortina também aumenta de maneira linear. 
+A curva correspondente à válvula de admissão é mais íngreme devido ao maior diâmetro dessa válvula, que correspondete ao coeficiente angular da reta, como visto na~\cref{tab:dados_geometricos}.
+%
+\begin{figure}[!htb]
+    \centering
+    \caption[Área de Cortina em Relação à Abertura da Válvula]{Área de Cortina em Relação à Abertura da Válvula. A área de cortina aumenta gradativamente conforme a abertura da válvula aumenta, pois ela é uma função da abertura.}
+    \import{./figuras/}{levante_ac.pgf}
+    \nota{AVA: admissão na válvula de admissão, EVE: escape na válvula de escape, EVA: escape na válvula de admissão.}
+    \fonte{elaborado pelos autores.}
+    \label{fig:levante_ac}
+\end{figure}
+%
+Em relação a área de cortina, percebe-se que ela cresce linearmente e tende a continuar a aumentar mesmo após ter superado a área de garganta. 
+O fato de continuar abrindo a válvula mesmo após a área de garganta ser a limitante do fluxo, ocorre por alguns fatores, como por exemplo para evitar o fenômeno de flutuação da válvula. 
+Para isso, ela continua abrindo, mas sua aceleração vai diminui, de modo que no seu retorno a pressão da mola consiga garantir que a válvula não flutue.
+
+A área de garganta é fixa e foi calculada para as válvulas de admissão e escape, como mostra a~\cref{tab:area_garganta}.
+%
+\begin{table}[!htb]
+    \centering\footnotesize
+    \caption{Área de Garganta}
+    \begin{tblr}{
+        row{2} = azul!10,
+        colspec={*{2}{X[c]}}
+    }
+    \toprule
+    {Válvula de Admissão \\ (mm$^2$)} & {Válvula de Escape \\ (mm$^2$)} \\
+    \midrule 
+    610 & 465 \\
+    \bottomrule
+    \end{tblr}
+    \fonte{elaborado pelos autores.}
+    \label{tab:area_garganta}
+\end{table}
+%
+\subsubsection*{Coeficiente de descarga}
+
+O coeficiente de descarga leva em consideração a vazão real e a vazão isentrópica.
+Para o cálculo da vazão teórica, diferentes abordagens podem ser realizadas.
+Considerando a área de garganta e a área de cortina, no início da abertura da válvula, a área de cortina é muito menor que a área de garganta.
+Conforme a abertura aumenta, a área de cortina aumenta, mas ela é fator limitante para o fluxo de ar.
+Em um determinado instante, quando a área de garganta se iguala a área de cortina, então a área de garganta se torna um fator limitante, porque a área de cortina pode aumentar, mas a vazão não depende mais dela e sim da área de garganta.
+A vazão, portanto, será limitada por uma das duas áreas, ou seja, no início do levante, a área de cortina será o fator limitante ($A_c < A_g$) até o momento em que as duas áreas se igualarem e então a partir daí a área de garganta será o fator limitante ($A_c > A_g$).
+O coeficiente de descarga foi calculado a partir da~\cref{eq:coef_descarga_area_efetiva}, como visto na~\cref{fig:fluxo_cd}.
+%
+\begin{figure}[!htb]
+    \centering
+    \caption[Coeficiente de Descarga em Relação à Abertura da Válvula]{Coeficiente de Descarga em Relação à Abertura da Válvula. A figura a esquerda mostra $C_d$ em relação a área de garganta, enquanto a figura a direita mostra $C_d$ em relação a área mínima.}
+    \import{./figuras/}{levante_cd_new.pgf}
+    \nota{AVA: admissão na válvula de admissão, EVE: escape na válvula de escape, EVA: escape na válvula de admissão.}
+    \fonte{elaborado pelos autores.}
+    \label{fig:fluxo_cd}
+\end{figure}
+%
+No primeiro gráfico estão  os valores do coeficiente de descarga considerando a área de garganta. 
+Quando a válvula de admissão se abre, tem-se pequenos valores de coeficiente de descarga, pois a vazão é pequena quando comparada com a vazão da garganta para um escoamento isentrópico. 
+Quando a abertura aumenta, o coeficiente de descarga aproxima-se da unidade, porém em nenhum momento ele a atinge. 
+Isso ocorre, pois quando o levante de válvula aumenta, o escoamento se torna mais próximo ao escoamento da área de garganta, porém ele não chega à unidade, pois o escoamento que está ocorrendo na válvula não é um processo isentrópico, devido ao atrito e à irreversbilidade do sistema.
+Já no segundo gráfico, coeficiente de descarga varia em relação a área miníma.
+Ele representa variação real que acontece do coeficiente de descarga, visto que para pequenos levantes da válvula, área mínima é a área de cortina e, a medida que aumenta o levante de válvula, a área mínima passa a ser a área de garganta. 
+Esta mudança de área mínima ocorre no levante de válvula de 5 mm para as condições de AVA e EVA, e 4 mm para EVE. Nestes pontos nota-se a mudança no gráfico, com as curvas tornando-se idênticas ao gráfico do lado esquerdo.
+
+\subsection{Ensaio Dinamométrico}
+
+A partir do ensaio realizado, sendo este monitorado e controlado pelo software, na sala de controle, uma planilha foi gerada com diversas informações em cada instante de tempo, para cada rotação em que o motor foi solicitado.
+Considerando a variação da rotação, alguns parâmetros importantes foram coletados e dipostos na~\cref{fig:PTPotF_rot} em função da rotação, afim de observar o comportamento de cada um deles.
+
+Enquanto a potência, torque e pressão foram coletados diretamente dos dados do software, a carga lateral foi calculada utilizando a~\cref{eq:carga_lateral},  considerando a pressão média efetiva, calculada através da~\cref{eq:bmep}.
+Os pontos coletados são altamente variáveis, cada um com seu grau de variação, mesmo em um pequeno intervalo de variação da rotação. 
+Portanto, foi feita a média dos valores coletados para cada intervalo de rotação e suas incertezas foram determinadas a partir do desvio padrão, portanto as curvas apresentam as barras de erro para melhor interpretação do resultados coletados.
+%
+\begin{figure}[!htb]
+    \centering
+    \caption{Principais Parâmetros em Função da Rotação}
+    \import{./figuras/}{PTPotF_rot.pgf}
+    \fonte{elaborado pelos autores.}
+    \label{fig:PTPotF_rot}
+\end{figure}
+%
+A manutenção do BMEP constante a partir de 1600 RPM, como mostra a \cref{fig:PTPotF_rot}, destaca a eficiência do motor na conversão de combustível em energia mecânica. 
+Isso sugere um projeto otimizado, ajustado para condições operacionais específicas, maximizando a eficiência térmica e mecânica em uma faixa específica de rotações.
+O torque constante, em torno de \SI{670}{N.m}, desempenha um papel importante na força de rotação do motor, impactando diretamente a aceleração e a resposta do veículo. Essa característica é útil em aplicações que demandam força constante, como em veículos pesados, proporcionando estabilidade em condições de carga variável.
+A potência, como é esperado, varia quase que linearmente e aumenta gradativamente com o aumento da rotação.
+A força lateral do pistão também contribui para a estabilidade global do motor, especialmente e estabiliza-se na faixa de 1600 RPM, assim como o BMEP, algo naturalmente esperado, visto que a força lateral é uma função dependente da BMEP.
+
+\subsubsection*{Velocidade}
+
+A velocidade média, como visto na~\cref{eq:velocidade_media}, varia linearmente com o curso do pistão, então naturalmente o gráfico da esquerda é uma reta que cresce linearmente a medida que a rotação também aumenta. 
+%
+\begin{figure}[!htb]
+    \centering
+    \caption{Velocidades em Função da Rotação}
+    \import{./figuras/}{velocidades_rot.pgf}
+    \fonte{elaborado pelos autores.}
+    \label{fig:velocidades_rot}
+\end{figure}
+%
+Já a velocidade instantânea, quando vizualizada em função do ângulo de manivela, tem o comportamento de uma senoide quando considerado seu comportamento padrão ideal, tendo picos de máximos e mínimos, que indicam a velocidade máxima do pistão em diferentes sentidos, isto é, quando sobe e quando desce.
+No gráfico a direita, para um determinado valor de rotação, verifica-se quase uma linha vertical.
+Representa o conjunto de velocidades instantâneas para aquela determinada rotação. 
+Sendo assim, o valor mais alto e mais baixo em cada rotação representam as velocidades máximas, onde a abscissa representa a mudança de direção da velocidade.
+Nota-se que com o aumento da rotação, a velocidade máxima do pistão auementa de forma gradativa e quase linear, atingindo \SI{15}{m.s^{-1}}, quando a rotação aproxima-se da 2000 RPM.
+
+\subsubsection*{Pressão de Boost}
+
+A pressão de boost é aquela relativa à pressão no coletor de admissão, e ocasionada pela presença do turbocompressor. 
+Na~\cref{fig:pressao_boost_rot}, verifica-se o quanto a pressão de boost influencia principalmente na BMEP. 
+No eixo esquerdo, com a curva em preto, está a pressão de boost; e no eixo da direita, com a curva em azul, está a BMEP. 
+Duas ordenadas foram plotadas para melhor visualização da influência de uma na outra, pois a ordem de grandeza das duas são diferentes.
+%
+\begin{figure}[!htb]
+    \centering
+    \caption{Pressão de Boost em Função da Rotação}
+    \import{./figuras/}{pressao_boost_rotacao.pgf}
+    \fonte{elaborado pelos autores.}
+    \label{fig:pressao_boost_rot}
+\end{figure}
+%
+Observa-se que a pressão de boost corresponde a aproximadamente 10\% da BMEP e  ambas as curvas tem comportamento similar ao longo da variação da rotação. 
+Este já é o comportamentamento esperado, visto que este motor é sobrecarregado, então a pressão de boost naturalmente fornece uma pressão maior e garante uma pressão média efetiva também maior.
+
+\subsubsection*{Índice de Mach}
+
+O índice de Mach considera a vazão de escoamento no motor em relação à velocidade do som.
+Para a melhor eficiência volumétrica, deseja-se $\ma = 0,5$.
+Duas abordagens foram realizadas, uma considerando a velocidade de escoamento isentrópica a partir da~\cref{eq:velocidade_isentropica} e aplicando na~\cref{eq:mach}; e outra utilizando os parâmetros geométricos do motor e a velocidade média, como visto na~\cref{eq:mach_f}. Os resultados estão dispostos na~\cref{tab:mach}.
+%
+\begin{table}[!htb]
+    \centering
+    \caption{Índice de Mach}
+    \begin{tblr}{
+        row{even} = azul!10,
+        colspec={*{3}{X[c]}}
+    }
+    \toprule
+     Método & Condição & Indice de Mach \\
+     \midrule
+     \cref{eq:mach} & Torque máximo & 0,59 $\pm$ 0,01 \\
+     \cref{eq:mach} & Potência máxima & 2,7$\pm$ 0,2 \\
+     \cref{eq:mach_f} & Torque máximo & 0,0808 $\pm$ 0,0001 \\
+     \cref{eq:mach_f} & Potência máxima & 0,15022 $\pm$ 0,00015 \\
+     \bottomrule
+    \end{tblr}
+    \fonte{elaborado pelos autores.}
+    \label{tab:mach}
+\end{table}
+%
+Considerando a~\cref{eq:mach}, verifica-se que para condições de potência máxima, a velocidade de escoamento não garante uma boa eficiência volumétrica, mas para condições de torque máximo, se aproxima do índice de Mach ideal.
+Já pela~\cref{eq:mach_f}, para ambas as condições o índice de Mach se mostra bem baixo, revelando baixa eficiência volumétrica.
