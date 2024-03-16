@@ -1,5 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:/home/gabriel/Documentos/deep-learning/presentations/ayala_120523/manim/media/videos/ayala/1080p60/partial_movie_files/Ayala/1413466013_2299536948_223132457.mp4'
-file 'file:/home/gabriel/Documentos/deep-learning/presentations/ayala_120523/manim/media/videos/ayala/1080p60/partial_movie_files/Ayala/1672018281_2207524457_223132457.mp4'
-file 'file:/home/gabriel/Documentos/deep-learning/presentations/ayala_120523/manim/media/videos/ayala/1080p60/partial_movie_files/Ayala/1672018281_2627567715_3449136771.mp4'
-file 'file:/home/gabriel/Documentos/deep-learning/presentations/ayala_120523/manim/media/videos/ayala/1080p60/partial_movie_files/Ayala/1672018281_1097479667_3306355128.mp4'
