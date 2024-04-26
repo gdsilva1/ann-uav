@@ -1,6 +1,5 @@
 from scipy.io import loadmat
 from matplotlib import pyplot as plt
-from numpy import linspace, array
 from gmodels.models import gNN
 from ghelpers.misc import preprocessing_from_matlab, denormalize, plot_forces
 import torch
@@ -45,5 +44,5 @@ forces = denormalize(normalized_forces, forces_norms)
 
 # Plotting comparison
 plt.style.use("duarte.mplstyle")
-plot_forces(random_force_denorm, forces)
-plot_forces(normalized_forces)
+plot_forces(random_force_denorm, forces=forces, n=100)
+plot_forces(normalized_forces, n=100)

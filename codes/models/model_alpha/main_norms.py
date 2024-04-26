@@ -33,8 +33,8 @@ states_raw = loadmat(path_to_states)
 forces_raw = loadmat(path_to_forces)
 
 # List with 1000 matrices for states and forces
-_, states_norms = preprocessing_from_matlab(states_raw)
-_, forces_norms = preprocessing_from_matlab(forces_raw)
+_, states_norms = preprocessing_from_matlab(states_raw, n=100)
+_, forces_norms = preprocessing_from_matlab(forces_raw, n=100)
 
 # Standard format for Torch dataset
 dataset = StatesAndForces(states_norms, forces_norms)

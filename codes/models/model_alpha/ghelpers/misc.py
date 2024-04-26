@@ -46,14 +46,14 @@ def plot_loss_function(
     fig.savefig(f"./figures/ann{n}_loss_function.pdf")
 
 
-def plot_forces(random_forces, forces=None):
+def plot_forces(random_forces, n, forces=None):
     t = linspace(0, 30, len(random_forces))
     CM = 1 / 2.54
     fig, axs = plt.subplots(4, 1, figsize=(16 * CM, 20 * CM))
     for i, ax in enumerate(axs.flatten()):
-        ax.plot(t, random_forces[:, i], label="Real")
+        ax.plot(t[n:], random_forces[:, i][n:], label="Real")
         if forces is not None:
-            ax.plot(t, forces[:, i], label="Pred")
+            ax.plot(t[n:], forces[:, i][n:], label="Pred")
         ax.set_xlabel("Time (s)")
         ax.set_ylabel(f"$U_{i+1}$")
         if forces is not None:
