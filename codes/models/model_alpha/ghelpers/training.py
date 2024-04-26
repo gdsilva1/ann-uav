@@ -1,5 +1,6 @@
 import torch
 
+
 def train(dataloader, model, loss_fn, optimizer, device):
     size = len(dataloader.dataset)
     model.train()
@@ -14,8 +15,9 @@ def train(dataloader, model, loss_fn, optimizer, device):
         loss.backward()
         optimizer.step()
         optimizer.zero_grad()
-        
+
         return loss
+
 
 def test(dataloader, model, loss_fn, device):
     model.eval()

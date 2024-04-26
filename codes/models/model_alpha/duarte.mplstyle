@@ -1,0 +1,30 @@
+lines.linewidth: 1
+
+font.family:  serif
+font.size:    10.0
+
+text.usetex: True
+
+axes.facecolor: (0.95,0.95,0.95) # use white for 3D plot
+axes.linewidth: 0.5
+axes.grid: True
+axes.formatter.use_locale: True
+axes.formatter.use_mathtext: True
+axes.prop_cycle: cycler(color=['6272A4', (0.4,0.4,0.4), (0.6,0.6,0.6), (0.8,0.8,0.8), '6272A4', (0.4,0.4,0.4), (0.6,0.6,0.6), (0.8,0.8,0.8), '6272A4', (0.4,0.4,0.4), (0.6,0.6,0.6), (0.8,0.8,0.8)]) + cycler(linestyle=['-', '--', ':', '-.', '--', ':', '-.', '-', ':', '-.', '-', '--'])
+
+grid.linewidth: 0.2
+
+axes3d.xaxis.panecolor:    (0.95, 0.95, 0.95)
+axes3d.yaxis.panecolor:    (0.95, 0.95, 0.95)  
+axes3d.zaxis.panecolor:    (0.95, 0.95, 0.95)
+
+legend.edgecolor: black
+legend.fancybox: False
+
+patch.linewidth: 0.5
+
+xtick.top: True
+xtick.direction: in
+
+ytick.right: True
+ytick.direction: in

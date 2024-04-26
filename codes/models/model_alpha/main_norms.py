@@ -1,11 +1,10 @@
-# %%    
 import torch
 from torch import nn
 from torch.utils.data import random_split, DataLoader
 
 from scipy.io import loadmat
 
-from ghelpers.misc import preprocessing_from_matlab
+from ghelpers.misc import preprocessing_from_matlab, plot_loss_function
 from gdataset.states_forces import StatesAndForces
 from gmodels.models import gNN
 from ghelpers.training import train, test
@@ -17,8 +16,9 @@ from alive_progress import alive_bar
 # Setting GPU if avaiable
 device = "cuda" if torch.cuda.is_available() else "cpu"
 torch.cuda.empty_cache()
-print(f"DEVICE: {device}")
-print(30*"=", end="\n\n")
+print("=" * 40)
+print("|" + f"DEVICE: {device}".center(38) + "|")
+print(40 * "=", end="\n\n")
 
 # Setting sedd to reproducibility
 torch.manual_seed(42)
@@ -33,8 +33,8 @@ states_raw = loadmat(path_to_states)
 forces_raw = loadmat(path_to_forces)
 
 # List with 1000 matrices for states and forces
-_, states_norms = preprocessing_from_matlab(states_raw, n=500)
-_, forces_norms = preprocessing_from_matlab(forces_raw, n=500)
+_, states_norms = preprocessing_from_matlab(states_raw)
+_, forces_norms = preprocessing_from_matlab(forces_raw)
 
 # Standard format for Torch dataset
 dataset = StatesAndForces(states_norms, forces_norms)
@@ -50,25 +50,24 @@ LOSS_FUNCTION = nn.MSELoss()
 EPOCHS = 500
 
 # Splititng data into train and test
-train_data, test_data = random_split(dataset, [TRAIN_PROP, 1-TRAIN_PROP])
+train_data, test_data = random_split(dataset, [TRAIN_PROP, 1 - TRAIN_PROP])
 
 # Standard format for Torch dataloader (iterable)
-train_dataloader = DataLoader(dataset=train_data,
-                              batch_size=BATCH_SIZE,
-                              shuffle=True)
-test_dataloader = DataLoader(test_data, 
-                             batch_size=BATCH_SIZE,
-                             shuffle=True) 
+train_dataloader = DataLoader(dataset=train_data, batch_size=BATCH_SIZE, shuffle=True)
+test_dataloader = DataLoader(test_data, batch_size=BATCH_SIZE, shuffle=True)
 
-print(f"Lenght of train data: {len(train_dataloader)}")
-print(f"Lenght of test data: {len(test_dataloader)}")
-print(30*"=", end="\n\n")
+print(40 * "=")
+print("|" + f"Lenght of train data: {len(train_dataloader)}".center(38) + "|")
+print("|" + f"Lenght of test data: {len(test_dataloader)}".center(38) + "|")
+print(40 * "=", end="\n\n")
 
 # Creating the model
-model = gNN(input_layer=INPUT_LAYER,
-            hidden_layers=HIDDEN_LAYERS,
-            output_layer=OUTPUT_LAYER,
-            activation_function=ACTIVATION_FUNCTION).to(device)
+model = gNN(
+    input_layer=INPUT_LAYER,
+    hidden_layers=HIDDEN_LAYERS,
+    output_layer=OUTPUT_LAYER,
+    activation_function=ACTIVATION_FUNCTION,
+).to(device)
 loss_fn = LOSS_FUNCTION
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 
@@ -77,22 +76,25 @@ epochs = EPOCHS
 loss_overall = []
 loss_overall_test = []
 
-with alive_bar(EPOCHS, 
-               title="TRAINING", 
-               stats=False,
-               length=10,
-               elapsed=False) as bar:
-    for epoch in range(epochs): 
+with alive_bar(
+    EPOCHS,
+    title="TRAINING",
+    stats=False,
+    length=10,
+    spinner="classic",
+    bar="brackets",
+    elapsed=False,
+) as bar:
+    for epoch in range(epochs):
         loss = train(train_dataloader, model, loss_fn, optimizer, device)
         test_loss = test(test_dataloader, model, loss_fn, device)
-        # if epoch % 100 == 0:
-            # bar.text(f"{epoch}")
         bar.text(f"| Train loss: {loss:.6f} | Test loss: {test_loss:.6f}")
-        #     print("-"*50)
         loss_overall.append(loss.item())
         loss_overall_test.append(test_loss.item())
         bar()
-    
+
+plot_loss_function(epochs=EPOCHS, loss=loss_overall, loss_test=loss_overall_test, n=2)
+
 print("\nDone!")
 
 # Saving the model

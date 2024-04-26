@@ -9,7 +9,7 @@
 \usepackage{xcolor}                                 % habilita as cores
 \usepackage{siunitx}                                % unidade de medidas de forma descomplicada
 \usepackage{subcaption}                             % permite colocar subfiguras
-% \usepackage{microtype}                            % melhora da tipografia
+\usepackage{microtype}                            % melhora da tipografia
 % \usepackage[T1]{fontenc}                            % define melhorias para o tipo da fonte
 % \usepackage[utf8]{inputenc}                         % codificacao do texto
 \usepackage{indentfirst}                            % identa o primeiro paragrafo
@@ -59,8 +59,7 @@
 }
 \captionnamefont{\footnotesize\sffamily\bfseries}
 \captiontitlefont{\footnotesize}
-\definecolor{magenta}{rgb}{1,0,1}
-\colorlet{rosa}{magenta!10}
+\definecolor{rosa}{rgb}{0.95,0.95,0.95}
 % configuracoes do pseudocodigo (Adam)
 \algrenewcommand\algorithmicwhile{\textsf{\textbf{\textsf{while}}}}
 \algrenewcommand\algorithmicrequire{\textsf{\textbf{\textsf{Require: }}}}
@@ -72,7 +71,7 @@
 % ==================
 \usepackage{csquotes}
 \usepackage[
-    style=abnt,
+    style=abnt-numeric,
     justify,
     indent,
     giveninits,
