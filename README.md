@@ -12,16 +12,22 @@ With a small sample of a forces-trajectory set, a simple regression ANN model wa
 
 ## 3. Results
 
-THe results are rudimentar but shows good perspective, given the limitations of the implementation.
+THe results are rudimentar but shows good potential, given the limitations of the implementation.
 
 ### 3.1 Limitations
 
-The samples were generated using MATLAB, as the control model was implemented within the software. This way, the mathematical control model was not optimized to generete multiple trajectories, thus to generate the sample, a powerful computer processor is mandatory. An alternative is to reimplement the mathematical model considering the the memory and processor use. To this project, this is out of scope.
+The samples were generated using MATLAB, as the control model was implemented within the software. Thus, the mathematical control model was not optimized to generete multiple trajectories. THerefore, to generate the sample, a powerful computer processor is mandatory. An alternative is to reimplement the mathematical model considering the the memory and processor use. However, this is out of scope for this project.
 
-To traing the ANN, it was used 1000 samples, being 800 to training and 200 to testing, which is a small sample for training.
+To traing the ANNs, 1000 were used, with 800 for training and 200 for testing, which is a small sample for training.
 
-Since it started with the simplest model possible (regression ANN), the model not necessary performs well to the predicted data.
+Since it started with the simplest model possible (regression ANN), the model may not necessarily perform well on the predicted data.
 
 ## 4. Next Steps
 
-TBD
+Some suggestions to improve the model:
+
+- get a bigger sample;
+- build a more sophisticated ANN architecture;
+- split different segments of the trajectory among different ANNs;
+- utilize the forces predicted by the ANNs in the white box script and verify if the flight is executed appropriately;
+- use different out-of-scope deep learning techniques and try traditional machine learning techniques for well-structured data.
