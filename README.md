@@ -1,3 +1,3 @@
-# Artificial Neural Networks applied to Unnamed Aerial Vehicle Control
+# ANN applied to UAV
 
 The project is a research project for applying deep leraning concepts into Mechanical Engineering field.
