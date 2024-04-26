@@ -1,4 +1,4 @@
-# ANN applied to UAV
+# ANN Applied to UAV Control
 
 This repositpry contains a research project that aims to apply artifical neural netowrks (ANN) in the control system field.
 
