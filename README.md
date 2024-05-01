@@ -4,7 +4,7 @@ This repositpry contains a research project that aims to apply artifical neural 
 
 ## 1. Main Goal
 
-Literature has not much content using ANNs in the control system applied to unnamed aerial vehicles (UAv). The goal is to build a model that can predict the control forces based on the trajectory of an UAV.
+Literature has not much content using ANNs in the control system applied to unmanned aerial vehicles (UAv). The goal is to build a model that can predict the control forces based on the trajectory of an UAV.
 
 ## 2. Methodolody
 
