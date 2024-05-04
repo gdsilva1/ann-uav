@@ -65,14 +65,26 @@ def plot_forces(random_forces, n, forces=None):
         fig.savefig("./figures/normalized_forces.pdf")
 
 
-def preprocessing_from_matlab_new(matlab_file_path):
-    data_file_raw = loadmat(matlab_file_path)
-    data_name = list(data_file_raw.keys())[-1]
-    data = data_file_raw[data_name].squeeze()
-    for variable in data:
-        yield variable.T
+from scipy.io import loadmat
+from sklearn.preprocessing import normalize as n
+import numpy as np
 
+def preprocessing_from_matlab_new(matlab_file_path: str) -> list[np.ndarray]:
+    data: dict = loadmat(matlab_file_path)
+    dict_keys = list(data.keys())
+    last_key: str = dict_keys[-1]
+    data_all_messed = data[last_key]
 
-def normalize_data_new(data):
-    for item in data:
-        yield normalize(item, return_norm=True, axis=0)
+    data_organized: list = []
+    for row in data_all_messed:
+        data_organized.append(row[0].T)
+    return data_organized
+
+def normalize_new(data: list[np.ndarray]) -> list[np.ndarray]:
+    data_normalized: list = []
+    data_norms: list = []
+    for row in data:
+        var_normalized, var_norm = n(X=row, norm="l2", return_norm=True, axis=0)
+        data_normalized.append(var_normalized)
+        data_norms.append(var_norm)
+    return data_normalized, data_norms

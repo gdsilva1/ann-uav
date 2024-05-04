@@ -14,23 +14,23 @@ from alive_progress import alive_bar
 
 
 # Setting GPU if avaiable
-device = "cuda" if torch.cuda.is_available() else "cpu"
+device: str = "cuda" if torch.cuda.is_available() else "cpu"
 torch.cuda.empty_cache()
 print("=" * 40)
 print("|" + f"DEVICE: {device}".center(38) + "|")
 print(40 * "=", end="\n\n")
 
-# Setting sedd to reproducibility
+# Setting seed to reproducibility
 torch.manual_seed(42)
 torch.cuda.manual_seed_all(42)
 
 # Path to the MATLAB files
-path_to_states = "/home/gabriel/Documents/matlab_files/xs_all.mat"
-path_to_forces = "/home/gabriel/Documents/matlab_files/tau_all.mat"
+STATES_FILE_PATH: str = "/home/gabriel/Documents/matlab_files/xs_all.mat"
+FORCES_FILE_PATH: str = "/home/gabriel/Documents/matlab_files/tau_all.mat"
 
 # Raw files from MATLAB
-states_raw = loadmat(path_to_states)
-forces_raw = loadmat(path_to_forces)
+states_raw: dict = loadmat(STATES_FILE_PATH)
+forces_raw: dict = loadmat(FORCES_FILE_PATH)
 
 # List with 1000 matrices for states and forces
 states, _ = preprocessing_from_matlab(states_raw, n=100)
