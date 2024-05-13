@@ -2,9 +2,24 @@ from sklearn.preprocessing import normalize
 from scipy.io import loadmat
 from matplotlib import pyplot as plt
 from numpy import array, linspace, ndarray
+from typing import Any
 
 
-def preprocessing_from_matlab(data: dict, n: int = 0) -> list[list]:
+def preprocessing_from_matlab(data: dict[Any], n: int = 0) -> list[list]:
+    """Return the matlab trajectories normalized and ready to use.
+
+    Parameters
+    ----------
+    data : dict[Any]
+        The MATLAB loaded file (with scipy.io.loadmat)
+    n : int, optional
+        Number of samples that are going to be used., by default 0
+
+    Returns
+    -------
+    list[list]
+        The data preprocessed.
+    """
     key = list(data.keys())[-1]
     all_data = data[key].squeeze()
     all_data_normalized: list = []
@@ -18,19 +33,46 @@ def preprocessing_from_matlab(data: dict, n: int = 0) -> list[list]:
     return all_data_normalized, all_data_norms
 
 
-def denormalize(normalized_forces, forces_norms):
-    forces = []
+def denormalize(normalized_forces: list | ndarray, forces_norms: list | ndarray) -> ndarray:
+    """Denormalize the forces.
+
+    Parameters
+    ----------
+    normalized_forces : list | ndarray
+        The normalized forces.
+    forces_norms : list | ndarray
+        The norms related to the normalized forces.
+
+    Returns
+    -------
+    ndarray
+        The denormalized forces.
+    """
+    forces: list = []
     for i in range(normalized_forces.shape[-1]):
-        force_denorm = normalized_forces[:, i] * forces_norms[i]
+        force_denorm: list | ndarray = normalized_forces[:, i] * forces_norms[i]
         force_denorm = force_denorm.numpy()
         forces.append(force_denorm)
-    forces = array(forces).T
+    forces: ndarray = array(forces).T
     return forces
 
 
 def plot_loss_function(
     epochs: int, loss: list | ndarray, loss_test: list | ndarray, n: int
 ) -> None:
+    """Return the plot of the loss function vs epochs. 
+
+    Parameters
+    ----------
+    epochs : int
+        Number of epochs.
+    loss : list | ndarray
+        Loss number per epoch.
+    loss_test : list | ndarray
+        Test loss number per epoch.
+    n : int
+        Which neural network is being used.
+    """
     CM = 1 / 2.54
     plt.style.use("duarte.mplstyle")
     fig, ax = plt.subplots(figsize=(7 * CM, 7 * CM))
