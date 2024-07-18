@@ -1,8 +1,7 @@
 codes/matlab_files/*
-codes/.venv
-report/svg-inkscape
-report/fonts
-report/.vscode
+codes/.venv/*
+report/svg-inkscape/*
+report/.vscode/*
 report/neural_network.aux
 report/neural_network.bbl
 report/neural_network.bcf
