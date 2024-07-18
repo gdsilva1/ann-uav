@@ -1,5 +1,5 @@
-codes/models/model_alpha/matlab_files
-codes/models/model_alpha/.venv
+codes/matlab_files/*
+codes/.venv
 report/svg-inkscape
 report/fonts
 report/.vscode
