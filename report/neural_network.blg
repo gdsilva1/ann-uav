@@ -1,0 +1,19 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'neural_network.blg'
+[49] biber:340> INFO - === Wed Jul 17, 2024, 19:56:46
+[59] Biber.pm:419> INFO - Reading 'neural_network.bcf'
+[104] Biber.pm:979> INFO - Found 66 citekeys in bib section 0
+[112] Biber.pm:4419> INFO - Processing section 0
+[119] Biber.pm:4610> INFO - Looking for bibtex file 'ref.bib' for section 0
+[121] bibtex.pm:1713> INFO - LaTeX decoding ...
+[182] bibtex.pm:1519> INFO - Found BibTeX data source 'ref.bib'
+[527] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[527] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[527] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'pt-BR'
+[527] Biber.pm:4245> INFO - No sort tailoring available for locale 'pt-BR'
+[564] bbl.pm:660> INFO - Writing 'neural_network.bbl' with encoding 'UTF-8'
+[580] bbl.pm:763> INFO - Output to neural_network.bbl
+[581] Biber.pm:131> WARN - ISBN '9789811576942 9789811576959' in entry 'lee2020' is invalid - run biber with '--validate_datamodel' for details.
+[581] Biber.pm:131> WARN - ISBN '978-1-59140-902-1 978-1-59140-903-8 978-1-59140-904-5' in entry 'rabunal2006' is invalid - run biber with '--validate_datamodel' for details.
+[581] Biber.pm:131> WARN - ISBN '978-1-285-74062-1 978-1-305-27176-0' in entry 'stewart2016' is invalid - run biber with '--validate_datamodel' for details.
+[581] Biber.pm:133> INFO - WARNINGS: 3

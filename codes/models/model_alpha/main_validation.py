@@ -5,8 +5,8 @@ from ghelpers.misc import preprocessing_from_matlab, denormalize, plot_forces
 import torch
 
 # Path to the MATLAB files
-path_to_states = "/home/gabriel/Documents/matlab_files/xs_all.mat"
-path_to_forces = "/home/gabriel/Documents/matlab_files/tau_all.mat"
+path_to_states = "./matlab_files/xs_all.mat"
+path_to_forces = "./matlab_files/tau_all.mat"
 
 # Raw files from MATLAB
 states_raw = loadmat(path_to_states)
@@ -43,6 +43,6 @@ with torch.inference_mode():
 forces = denormalize(normalized_forces, forces_norms)
 
 # Plotting comparison
-plt.style.use("duarte.mplstyle")
+plt.style.use("/home/gabriel/Documents/matplotlib_style/duarte.mplstyle")
 plot_forces(random_force_denorm, forces=forces, n=100)
 plot_forces(normalized_forces, n=100)

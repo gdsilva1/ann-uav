@@ -1,0 +1,78 @@
+%% Creator: Inkscape 1.3.2 (091e20ef0f, 2023-11-25), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'nn3_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{381.31637453bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.50177929)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{nn3_svg-tex.pdf}}%
+    \put(0.97385579,0.26572404){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$y_1$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{nn3_svg-tex.pdf}}%
+    \put(0.97385579,0.14522521){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$y_2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{nn3_svg-tex.pdf}}%
+    \put(0.02656276,0.38295273){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$x_1$\end{tabular}}}}%
+    \put(0.1302608,0.41094916){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$w_1$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{nn3_svg-tex.pdf}}%
+    \put(0.02656276,0.26263683){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$x_2$\end{tabular}}}}%
+    \put(0.1302608,0.29063324){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$w_2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{nn3_svg-tex.pdf}}%
+    \put(0.02656276,0.14232091){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$x_3$\end{tabular}}}}%
+    \put(0.1302608,0.17031738){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$w_3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{nn3_svg-tex.pdf}}%
+    \put(0.02656276,0.02200499){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$x_4$\end{tabular}}}}%
+    \put(0.1302608,0.05000146){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$w_4$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{nn3_svg-tex.pdf}}%
+    \put(0.25504408,0.47930977){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Input\\Layer\end{tabular}}}}%
+    \put(0.50005159,0.45329215){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Hidden\\Layers\end{tabular}}}}%
+    \put(0.74449325,0.36190794){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Output\\Layer\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{nn3_svg-tex.pdf}}%
+  \end{picture}%
+\endgroup%

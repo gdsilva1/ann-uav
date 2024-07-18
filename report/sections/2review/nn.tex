@@ -18,8 +18,8 @@ However, all the three terms can be interchangeable in the major context.
 
 \begin{figure}[!htb]
     \centering
-    \caption[The Relationship Between Artificial Intelligence, Machine Learning, and Deep Learning.]{The Relationship Between Artificial Intelligence, Machine Learning, and Deep Learning Deep learning is a specific field inside the artificial intelligence umbrella.}
-    \includesvg[pretex=\footnotesize]{figures/2review/nn/venn_dl.svg}
+    \caption[The Relationship Between Artificial Intelligence, Machine Learning, and Deep Learning.]{The Relationship Between Artificial Intelligence, Machine Learning, and Deep Learning. Deep learning is a specific field inside the artificial intelligence umbrella.}
+    \includesvg[pretex=\footnotesize\sffamily\mathversion{sf}]{figures/2review/nn/venn_dl.svg}
     \fonte{prepared by the author.}
 \end{figure}
 
@@ -46,7 +46,7 @@ Some of them are multi-layer perceptron (MLP), convolutional neural network, rec
 \begin{figure}[htb]
     \centering
     \caption[Artificial and Biological Neuron]{Artificial and Biological Neuron. Dendrites are corresponding with the inputs; nucleus with sums and activation functions; and axon terminals with the outputs.}
-    \includesvg[pretex=\footnotesize]{figures/2review/nn/ann_bnn.svg}
+    \includesvg[pretex=\footnotesize\sffamily\mathversion{sf}]{figures/2review/nn/ann_bnn.svg}
     \fonte{preapared by the author.}
 \end{figure}
 \subsubsection*{Multi-layer Perceptron}
@@ -65,7 +65,7 @@ The weights are adjusted to make that the network output gets closer of the want
 \begin{figure}[!htb]
     \centering
     \caption[Visual Representation of a MLP]{Visual Representation of a MLP. Let \(x_i\) be the input vector and \(y_i\) the output vector, \(i \in \mathbb{N}\). The weights \(w_{x_i}\) are specific for each input data. Input and output data can have multiple entries.}
-    \includesvg[pretex=\footnotesize]{figures/2review/nn/nn3.svg}
+    \includesvg[pretex=\footnotesize\sffamily\mathversion{sf}]{figures/2review/nn/nn3.svg}
     
     \fonte{prepared by the author.}
     \label{fig:mlp}
@@ -155,7 +155,7 @@ This would mean that the model fits to the pattern of the data.
 
 The gradient descent is a powerful algorithm that reduces the loss function, minimizing the error between the predicted value and the target value.
 
-Since the gradient of a function gives the direction of the steepest ascent of a function and it is orthogonal to the surface at a determined point, it seems reasonable that moving in the perpendicular direction gives the maximum increase of the function \cite{stewart2016}.
+Since the gradient of a function gives the direction of the steepest ascent of a function, and it is orthogonal to the surface at a determined point, it seems reasonable that moving in the perpendicular direction gives the maximum increase of the function \cite{stewart2016}.
 On the other hand, the negative of the gradient may be used to find the opposite, that is, the steepest descent of the function, or the minimum decrease.
 If the steps given to the direction of the negative gradient of the function are small, there is a good chance to get minimum value of the function.
 However, if the steps are too long, the chance to pass by the minimum value is high \cite{nielsen2015}.
@@ -171,7 +171,7 @@ In determined cases, it is possible to avoid running the iterative algorithm and
 
 \subsubsection*{Stochastic Gradient Descent}
 
-As seen, gradient descent is a powerful tool to minimize the loss function, however, for large data, the cost of operation is very high and its use is not feasible. 
+As seen, gradient descent is a powerful tool to minimize the loss function, however, for large data, the cost of operation is very high, and its use is not feasible. 
 The main idea of SGD is that the gradient is an expectation.
 Later, the data is divided in subsets, also called \emph{mini-batch} and then the gradient is performed over them.
 The mini-batch size is chosen to be a relatively small numbers of examples.
@@ -198,7 +198,7 @@ Adam is a strategical choice when using large data or parameters and with very n
 \captionsetup{labelfont={sf,bf}, labelsep=endash, font={footnotesize}}
 \caption[Adam Algorithm]{Adam Algorithm. Good default setting are \(\alpha = 0.001,\ \beta_1 = 0.9,\ \beta_2 = 0.999\ \text{and}\ \epsilon = 10^{-8}\). Operations on vectors are element-wise.}
 \begin{algorithmic}\footnotesize
-\Require \(\alpha\): stepsize
+\Require \(\alpha\): step size
 \Require \(\beta_1,\ \beta_2\ \in [0,1)\): exponential decay rates for the moment estimates
 \Require \(f(\theta)\): loss function
 \Require \(\theta_0\): initial parameter

@@ -1,0 +1,14 @@
+codes/models/model_alpha/matlab_files
+codes/models/model_alpha/.venv
+report/svg-inkscape
+report/fonts
+report/.vscode
+report/neural_network.aux
+report/neural_network.bbl
+report/neural_network.bcf
+report/neural_network.blg
+report/neural_network.lof
+report/neural_network.log
+report/neural_network.run.xml
+report/neural_network.synctex.gz
+report/neural_network.toc

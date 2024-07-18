@@ -74,7 +74,7 @@ def plot_loss_function(
         Which neural network is being used.
     """
     CM = 1 / 2.54
-    plt.style.use("duarte.mplstyle")
+    plt.style.use("/home/gabriel/Documents/matplotlib_style/duarte.mplstyle")
     fig, ax = plt.subplots(figsize=(7 * CM, 7 * CM))
 
     ax.plot(range(epochs), loss, label="Train loss")
@@ -85,7 +85,7 @@ def plot_loss_function(
     ax.legend()
     ax.set_title(f"ANN {n} Loss Function", fontsize=10)
     fig.tight_layout()
-    fig.savefig(f"./figures/ann{n}_loss_function.pdf")
+    fig.savefig(f"./figures/ann{n}_loss_function.pdf", backend="pgf")
 
 
 def plot_forces(random_forces, n, forces=None):
@@ -102,9 +102,9 @@ def plot_forces(random_forces, n, forces=None):
             ax.legend()
     fig.tight_layout()
     if forces is not None:
-        fig.savefig("./figures/comparison.pdf")
+        fig.savefig("./figures/comparison.pdf", backend="pgf")
     else:
-        fig.savefig("./figures/normalized_forces.pdf")
+        fig.savefig("./figures/normalized_forces.pdf", backend="pgf")
 
 
 from scipy.io import loadmat

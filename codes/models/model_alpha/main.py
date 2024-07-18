@@ -25,8 +25,8 @@ torch.manual_seed(42)
 torch.cuda.manual_seed_all(42)
 
 # Path to the MATLAB files
-STATES_FILE_PATH: str = "/home/gabriel/Documents/matlab_files/xs_all.mat"
-FORCES_FILE_PATH: str = "/home/gabriel/Documents/matlab_files/tau_all.mat"
+STATES_FILE_PATH: str = "./matlab_files/xs_all.mat"
+FORCES_FILE_PATH: str = "./matlab_files/tau_all.mat"
 
 # Raw files from MATLAB
 states_raw: dict = loadmat(STATES_FILE_PATH)

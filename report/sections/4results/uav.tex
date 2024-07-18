@@ -55,7 +55,7 @@ After stabilization, although it improved compared to the beginning of the traje
     \label{fig:forces_normalized}
 \end{figure}
 
-As can be seen in~\cref{fig:forces_denormalized}, the curves are pratically identical to the normalized ones, but with different order of magnitude.
+As can be seen in~\cref{fig:forces_denormalized}, the curves are practically identical to the normalized ones, but with different order of magnitude.
 This shows that ANN 2 had great performance in recognizing the norm patterns, especially considering the stabilization region.
 For \(U_2\), \(U_3\) and \(U_4\) the curves are overlapping, and the order of magnitude is very low, indicating good accuracy.
 For \(U_1\), as happened with ANN 1, it did not perform as well, and the difference is bigger from the real value compared to the other ones. Yet, after stabilization, the ANN was precise, but not exact. 
@@ -76,7 +76,7 @@ The main problem of the ANN is the quantity of the samples.
 For a ANN, it is necessary a large amount of samples, at least hundreds of thousands of them. 
 The data generation was limited by some factors: (i) computational resources, which were not sufficient to generate more than two thousand matrices with twenty thousand lines; (ii) the MATLAB version used, which could not generate files over 2 GB to export the files generated to the Python environment. These situations can be improved with powerful data processing and by using newer MATLAB versions.
 
-This initial approach used a MLP, which is a  simple ANN architecture.
+This initial approach used an MLP, which is a  simple ANN architecture.
 Although efficient for regression problems, the limited quantity of samples hindered its capability to determine the patterns more efficiently.
 Therefore, exploring alternative ANNs architectures and approaches that can use less data and get more results is an alternative.
 Since the methodology used is in the AI field, then machine learning techniques can also be a good approach, due to the data nature that is structured and well-defined matrices.

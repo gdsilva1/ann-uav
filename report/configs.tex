@@ -2,7 +2,6 @@
 %    PACKAGES    
 % ===============
 \usepackage{amsmath,amsfonts,amssymb,amsthm}
-\usepackage{lmodern}
 % \usepackage[semibold,proportional]{sourcesanspro}
 \usepackage{graphicx}                               % permite inserir imagens 
 \usepackage{svg}                                    % permite inserir svg
@@ -20,10 +19,11 @@
     capitalise,                                     % nome das fig/tab/ em letras maiusculas
     nameinlink                                      % hyperref no nome das fig/tab
 ]{cleveref}
+\usepackage{fontspec, unicode-math}
 % ===============
 %    DOC INFO    
 % ===============
-\titulo{Artificial Neural Networks applied to Unmanned Aerial Vehicle Control}
+\titulo{\MakeUppercase{Artificial Neural Networks applied to Unmanned Aerial Vehicle Control}}
 \autor{Gabriel Duarte da Silva}
 \local{Ilha Solteira, SP}
 \data{2024}
@@ -57,15 +57,29 @@
     pdfcreator={Gabriel D. Silva},
     pdfkeywords={neural networks, control, unmanned aerial vehicle}
 }
+
 \captionnamefont{\footnotesize\sffamily\bfseries}
-\captiontitlefont{\footnotesize}
-\definecolor{rosa}{rgb}{0.95,0.95,0.95}
+\captiontitlefont{\footnotesize\sffamily\mathversion{sf}}
+\definecolor{rosa}{rgb}{0.9,0.9,0.9}
 % configuracoes do pseudocodigo (Adam)
 \algrenewcommand\algorithmicwhile{\textsf{\textbf{\textsf{while}}}}
 \algrenewcommand\algorithmicrequire{\textsf{\textbf{\textsf{Require: }}}}
 \algrenewcommand\algorithmicdo{\textsf{\textbf{\textsf{do}}}}
 \algrenewcommand\algorithmicend{\textsf{\textbf{\textsf{end}}}}
 \algrenewcommand\algorithmicreturn{\textsf{\textbf{\textsf{return}}}}
+\setmainfont{STIX Two Text}
+\setmathfont[
+ RawFeature={ss01},
+ ]{STIX Two Math}
+\setsansfont[
+ BoldFont=Fira Sans Medium,
+ Numbers=Lining,
+ Scale=MatchLowercase
+]{Fira Sans}
+\setmathfont[
+ Scale=MatchLowercase,
+ version=sf,
+]{Fira Math}
 % ==================
 %    REFERENCIAS    
 % ==================
