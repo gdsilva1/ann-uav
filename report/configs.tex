@@ -67,30 +67,45 @@
 \algrenewcommand\algorithmicdo{\textsf{\textbf{\textsf{do}}}}
 \algrenewcommand\algorithmicend{\textsf{\textbf{\textsf{end}}}}
 \algrenewcommand\algorithmicreturn{\textsf{\textbf{\textsf{return}}}}
-\setmainfont{STIX Two Text}
+\setmainfont[
+ Path=/home/gabriel/.fonts/STIXTwo/,
+ Extension=.otf,
+ UprightFont=*-Regular,
+ BoldFont=*-SemiBold,
+ ItalicFont=*-Italic,
+BoldItalicFont=*-SemiBoldItalic
+]{STIXTwoText}
 \setmathfont[
- RawFeature={ss01},
- ]{STIX Two Math}
+ Path=/home/gabriel/.fonts/STIXTwo/,
+ Extension=.otf,
+ RawFeature = {ss01}
+]{STIXTwoMath-Regular}
 \setsansfont[
- BoldFont=Fira Sans Medium,
- Numbers=Lining,
- Scale=MatchLowercase
-]{Fira Sans}
-\setmathfont[
+ Path=/home/gabriel/.fonts/NotoSans/,
+ Extension=.otf,
  Scale=MatchLowercase,
+ UprightFont=*-Regular,
+ BoldFont=*-SemiBold,
+ ItalicFont=*-Italic,
+ BoldItalicFont=*-SemiBoldItalic
+]{NotoSans}
+\setmathfont[
  version=sf,
-]{Fira Math}
+ Path=/home/gabriel/.fonts/NotoSansMath/,
+ Extension=.otf,
+ Scale=MatchLowercase
+]{NotoSansMath-Regular}
 % ==================
 %    REFERENCIAS    
 % ==================
 \usepackage{csquotes}
 \usepackage[
-    style=abnt-numeric,
-    justify,
-    indent,
-    giveninits,
-    extrayear,
-    noslsn,
-    ittitles
+style=abnt-numeric,
+justify,
+indent,
+giveninits,
+extrayear,
+noslsn,
+ittitles
 ]{biblatex}
 \addbibresource{ref.bib}

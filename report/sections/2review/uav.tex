@@ -21,23 +21,23 @@ Combining those benefits with AI can be a powerful tool for the future \cite{siv
 Considering the UAV a quadcopter, as the~\cref{fig:quadcopter_forces_scheme} shows, \textcite{geronel2023}, based on the work of \textcite{fossen1994}, described the equation of motion for a quadcopter with a payload as being:
 %
 \begin{equation}
-    \mathbf{M}_{\eta_{c}}(\mathbf{\eta}_c)\ddot{\mathbf{\eta}}_c +
-    \mathbf{C}_{\eta_c}(\mathbf{\nu},\mathbf{\eta}_c)\dot{\mathbf{\eta}_c} +
-    \mathbf{g}_{\eta_c}(\mathbf{\eta}_c) +
-    \mathbf{K}_{\eta_c}(\mathbf{\eta}_c)\mathbf{\eta}_c =
-    \mathbf{\tau}_{\eta_c}(\mathbf{\eta}_c) + 
-    \mathbf{F}_d
+    \symbf{M}_{\eta_{c}}(\symbf{\eta}_c)\ddot{\symbf{\eta}}_c +
+    \symbf{C}_{\eta_c}(\symbf{\nu},\symbf{\eta}_c)\dot{\symbf{\eta}_c} +
+    \symbf{g}_{\eta_c}(\symbf{\eta}_c) +
+    \symbf{K}_{\eta_c}(\symbf{\eta}_c)\symbf{\eta}_c =
+    \symbf{\tau}_{\eta_c}(\symbf{\eta}_c) + 
+    \symbf{F}_d
     \label{eq:uav_motion_equation}
 \end{equation}
 %
-where \(\mathbf{M}_{\eta_{c}}(\mathbf{\eta}_c)\) is the inertial matrix; \(\mathbf{C}_{\eta_c}(\mathbf{\nu},\mathbf{\eta}_c)\) is the Coriolis matrix; \(\mathbf{g}_{\eta_c}(\mathbf{\eta}_c)\) is the gravitational vector; \(\mathbf{K}_{\eta_c}(\mathbf{\eta}_c)\) is the stiffness matrix; \(\ \mathbf{\tau}_{\eta_c}(\mathbf{\eta}_c)\) is the control torque; \(\mathbf{F}_d\) is the gust vector; and \(\mathbf{\nu}\) is the velocity generalized coordinate in the body-frame. 
+where \(\symbf{M}_{\eta_{c}}(\symbf{\eta}_c)\) is the inertial matrix; \(\symbf{C}_{\eta_c}(\symbf{\nu},\symbf{\eta}_c)\) is the Coriolis matrix; \(\symbf{g}_{\eta_c}(\symbf{\eta}_c)\) is the gravitational vector; \(\symbf{K}_{\eta_c}(\symbf{\eta}_c)\) is the stiffness matrix; \(\ \symbf{\tau}_{\eta_c}(\symbf{\eta}_c)\) is the control torque; \(\symbf{F}_d\) is the gust vector; and \(\symbf{\nu}\) is the velocity generalized coordinate in the body-frame. 
 The~\cref{eq:uav_motion_equation} can be represented in the state space form as:
 %
 \begin{equation}
-    \dot{x}_s = \mathbf{A}_c x_s(t) + \mathbf{B}\mathbf(u)(t) + \mathbf{X}
+    \dot{x}_s = \symbf{A}_c x_s(t) + \symbf{B}\symbf(u)(t) + \symbf{X}
 \end{equation}
 %
-where \(x_s = \begin{Bmatrix} \dot{\mathbf{\eta}}_c & \mathbf{\eta}_c \end{Bmatrix}^{\top}\) is the state vector; \(\mathbf{B}\mathbf(u)(t)\) is the input vector; \(\mathbf{X}\) is the state vector of gravity; and \(\mathbf{A}_c\) and \(\mathbf{B}\) are the dynamic and input matrices, respectively.
+where \(x_s = \begin{Bmatrix} \dot{\symbf{\eta}}_c & \symbf{\eta}_c \end{Bmatrix}^{\top}\) is the state vector; \(\symbf{B}\symbf(u)(t)\) is the input vector; \(\symbf{X}\) is the state vector of gravity; and \(\symbf{A}_c\) and \(\symbf{B}\) are the dynamic and input matrices, respectively.
 %
 \begin{figure}[!htb]
     \centering
@@ -54,15 +54,15 @@ All non-explicit matrices and the development of the equations are shown in the 
 
 \textcite{geronel2023} developed a MATLAB algorithm to control the quadrotor, as a \emph{white box} method. 
 It controls the UAV in three different trajectories: rectangular, circular and linear.
-Given \(\mathbf{\tau}\) as the input vector, which represents the position controller \(U_1(t)\) and the attitude controller \(U_2(t),\ U_3(t),\ U_4(t)\), it is able to give a complete overview of the quadrotor's motion.
-The algorithm provides the state space vector \(\mathbf{x}_s\) with the quadrotor position and angles, as their derivatives.
+Given \(\symbf{\tau}\) as the input vector, which represents the position controller \(U_1(t)\) and the attitude controller \(U_2(t),\ U_3(t),\ U_4(t)\), it is able to give a complete overview of the quadrotor's motion.
+The algorithm provides the state space vector \(\symbf{x}_s\) with the quadrotor position and angles, as their derivatives.
 %
 \begin{align}
     \tau &= \begin{Bmatrix}
         U_1 & U_2 & U_3 & U_4
     \end{Bmatrix}^{\top} \\
     \setcounter{MaxMatrixCols}{13}
-    \mathbf{x}_s &=
+    \symbf{x}_s &=
     \begin{Bmatrix}
         x&y&z&\phi&\theta&\psi&\dot{x}&\dot{y}&\dot{z}&\dot{\phi}&\dot{\theta}&\dot{\psi}
     \end{Bmatrix}^{\top}
